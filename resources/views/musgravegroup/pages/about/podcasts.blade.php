@@ -1,5 +1,7 @@
 @extends('musgravegroup.base')
-
+@section('body')
+    page-template page-template-page-templates page-template-page-podcasts page-template-page-templatespage-podcasts-php page page-id-21630 wp-custom-logo
+@endsection
 @section('content')
 
     <section class="blog-hero" style="background-color: #a9c23f; background-image:url()">

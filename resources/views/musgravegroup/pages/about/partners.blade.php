@@ -1,6 +1,9 @@
 @extends('musgravegroup.base')
+@section('body')
+    page-template page-template-page-templates page-template-page-content page-template-page-templatespage-content-php page page-id-8815 page-child parent-pageid-19 wp-custom-logo
+@endsection
+    @section('content')
 
-@section('content')
     <article id="post-8815" class="post-8815 page type-page status-publish hentry">
         <div class="colour-block orange"></div>
         <header class="entry-header">
@@ -33,24 +36,22 @@
 
                     <div class="related-content">
                         <div class="related-column" data-aos="fade-up">
-                            <div class="background-zoom lazyload" style="background-image:inherit;"
-                                 data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/10/500x500-food-leadership0aa7.html?lossy=0&amp;strip=1&amp;webp=1)"></div>
-                            <a href="../food-leadership/index.html"><h2>Food leadership</a></div>
+                            <div class="background-zoom lazyload" style="background-image: url('{{ asset('img/about/food.webp') }}')"></div>
+                            <a href="../food-leadership/index.html"><h2>Food leadership</h2></a>
+                        </div>
                         <div class="related-column" data-aos="fade-up">
-                            <div class="background-zoom lazyload" style="background-image:inherit;"
-                                 data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/food-innovation0aa7.html?lossy=0&amp;strip=1&amp;webp=1)"></div>
-                            <a href="../../news-blogs/index.html"><h2>News</a></div>
+                            <div class="background-zoom lazyload" style="background-image: url('{{ asset('img/about/news.webp') }}');"></div>
+                            <a href="../../news-blogs/index.html"><h2>News</h2></a>
+                        </div>
                         <div class="related-column" data-aos="fade-up">
-                            <div class="background-zoom lazyload" style="background-image:inherit;"
-                                 data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-brands-10aa7.html?lossy=0&amp;strip=1&amp;webp=1)"></div>
-                            <a href="../../brands/index.html"><h2>Our brands</a></div>
+                            <div class="background-zoom lazyload" style="background-image: url('{{ asset('img/about/brands.webp') }}')"></div>
+                            <a href="../../brands/index.html"><h2>Our brands</h2></a>
+                        </div>
                     </div>
-
-
                 </div>
             </div><!-- .entry-content -->
+        </div>
     </article><!-- #post-8815 -->
-
 
     <div class="latest-feature">
         <div class="container">

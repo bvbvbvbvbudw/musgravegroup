@@ -1,0 +1,332 @@
+.annualstatement-text-block {
+    padding:2em 6em;
+}
+
+section.blog-hero {
+    height: 600px !important;
+}
+
+section.blog-hero:before {
+    display: none;
+}
+section.blog-hero .text h1 {
+    display: table;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #AECB3B;
+}
+
+.sustainability-ar {
+    background-color: #99BE4D;
+    color:#fff;
+    padding:50px 0;
+    background-image: url(https://b2833840.smushcdn.com/2833840/wp-content/uploads/2022/11/Background-v2.png?lossy=0&strip=1&webp=1);
+    background-size: cover;
+    background-position: left center;
+}
+
+.site-main h2,
+.site-main h3 {
+    font-size:2.75rem;
+    margin:0.25em 0;
+}
+
+.site-main p {
+    font-size: 1.15rem;
+}
+
+.graphs {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.graphs .first {
+    flex: 1 0 300px;
+}
+
+.kpis {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.panel-item {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.stat-block {
+    flex: 1 0 45%;
+    margin: 10px;
+    text-align: center;
+}
+
+.stat-block img {
+    max-height: 100px;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.stat-block h3 {
+    color: #6584B7;
+    font-size: 1.5rem;
+}
+
+.kpis .icon-block {
+    flex: 1 0 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.kpis .icon-block img {
+    max-height: 120px;
+}
+
+.ar-divider {
+    border-top:3px solid #fff;
+    position: relative;
+    margin:100px 0 50px;
+    width:100%;
+}
+
+.ar-divider.blue {
+    border-top:3px solid #6584B7;
+}
+
+.ar-divider.green {
+    border-top: 3px solid #AECB3B;
+}
+
+
+.download-btn {
+    height:100px;
+    width:100px;
+    background: #AECB3B;
+    color:#fff;
+    display: block;
+    position: fixed;
+    bottom:60px;
+    right: 60px;
+    transform: rotate(-45deg);
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s ease-in-out all;
+    z-index: 999;
+}
+
+
+.download-btn:hover {
+    transform: rotate(0deg);
+}
+
+.download-btn span {
+    display: flex;
+    height:100px;
+    width:100px;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    transform: rotate(45deg);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:0.9rem;
+    transition: 0.2s ease-in-out all;
+}
+
+.download-btn:hover span {
+    transform: rotate(0deg);
+}
+
+@media only screen and (max-width:500px) {
+    .download-btn {
+        width: 100%;
+        height:50px;
+        transform: none;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+
+    .download-btn span {
+        transform: none;
+        width:100%;
+        display: table;
+        padding-top:10px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+}
+
+.ceo-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ceo-title {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.ceo-content {
+    text-align: left;
+}
+
+.ceo-content h3 {
+    display: inline;
+    font-family: Avenir,sans-serif;
+    font-size:1.5rem;
+    font-weight: 700;
+    margin-top:0;
+
+}
+
+.ceo-content img {
+    margin-bottom: 5px;
+}
+
+.slide-nav .nav-item {
+    border: 1px solid #6584B7 !important;
+    height:120px;
+    width:120px;
+    margin: 0 auto;
+    padding:0;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    transform: rotate(45deg);
+    overflow:hidden;
+    text-align: center;
+}
+
+.slide-nav .nav-item div {
+    display: flex;
+    height:120px;
+    width:120px;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    transform: rotate(-45deg);
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide-nav .nav-item.slick-current,
+.slide-nav .nav-item:hover {
+    background: #6584B7;
+    color: #fff;
+}
+
+.slide-nav .slick-track {
+    padding: 50px 0 !important;
+}
+
+.slider-text-nav .slick-arrow.slide-nav {
+    background-color: #6584B7;
+    border-color: #6584B7;
+    top:-140px;
+}
+
+.ar-table td{
+    border-bottom: 1px solid #fff;
+    font-size: 1.2rem;
+}
+.ar-table tr {
+    border-right: 1px solid #fff;
+}
+
+.panel-row.threecol {
+    display: flex;
+}
+
+.ar-awards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ar-awards div.block {
+    width: 49%;
+}
+
+.ar-awards div.block img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.ar-awards div.block span {
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    display: block;
+}
+
+.ar-awards div.block h4 {
+    font-size:1.5rem;
+    color: #6584B7;
+    border-top: 1px solid #6584B7;
+    border-bottom: 1px solid #6584B7;
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
+}
+
+.ar-awards div.block p {
+
+}
+
+.giving-back {
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.giving-back h3 {
+    color: #AECB3B
+}
+
+.giving-back .image1 {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width:200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.giving-back .image2 {
+    position: absolute;
+    bottom: 40px;
+    left: -50px;
+    width:260px;
+    height: auto;
+    object-fit: contain;
+}
+
+.giving-back .image3 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 1200px) {
+    .giving-back .image1,
+    .giving-back .image2,
+    .giving-back .image3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .ar-awards div.block {
+        width: 100%;
+    }
+}

@@ -2,7 +2,10 @@
 <html lang="en-GB">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <head>
-    <!-- CookiePro Cookies Consent Notice start for musgravegroup.com -->
+{{--    <link rel="stylesheet" href="{{ asset('main.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('annual.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('dod.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('index.css') }}">--}}
     <script type="text/javascript"
             src="https://cookie-cdn.cookiepro.com/consent/f8cb599b-1d94-420a-987e-57e7cbe63041/OtAutoBlock.js"></script>
     <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8"
@@ -11,57 +14,34 @@
         function OptanonWrapper() {
         }
     </script>
-    <!-- CookiePro Cookies Consent Notice end for musgravegroup.com -->
-
-    <!-- Google tag (gtag.js) -->
     <script class="optanon-category-C0002" async
             src="https://www.googletagmanager.com/gtag/js?id=G-JMQNTCKESQ"></script>
-    <script type="text/plain" class="optanon-category-C0002">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JMQNTCKESQ');
-
-
-
-
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
-    <!-- This site is optimized with the Yoast SEO plugin v22.9 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>£1 million investment for Londis retailers                 - Musgrave Group</title>
+    <title>@yield('title', "MusGraveGroup")</title>
     <link rel="canonical" href="index.html"/>
+    @yield('meta')
+    @yield('head')
+    @yield('style')
     <meta property="og:locale" content="en_GB"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="£1 million investment for Londis retailers                 - Musgrave Group"/>
-    <meta property="og:description" content="There&rsquo;s never been a better time to join Londis as..."/>
-    <meta property="og:url" content="https://www.musgravegroup.com/1-million-investment-for-londis-retailers/"/>
+    <meta property="og:title" content="About us - Musgrave Group"/>
+    <meta property="og:description"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan..."/>
+    <meta property="og:url" content="https://www.musgravegroup.com/about-us/"/>
     <meta property="og:site_name" content="Musgrave Group"/>
-    <meta property="article:published_time" content="2011-05-17T23:00:00+00:00"/>
+    <meta property="article:modified_time" content="2024-01-24T14:56:00+00:00"/>
     <meta property="og:image"
           content="https://www.musgravegroup.com/wp-content/uploads/2023/03/Musgrave-logo-black-on-white-background.png"/>
     <meta property="og:image:width" content="1034"/>
     <meta property="og:image:height" content="592"/>
     <meta property="og:image:type" content="image/png"/>
-    <meta name="author" content="Musgrave"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:label1" content="Written by"/>
-    <meta name="twitter:data1" content="Musgrave"/>
-    <meta name="twitter:label2" content="Estimated reading time"/>
-    <meta name="twitter:data2" content="1 minute"/>
-    <script type="application/ld+json" class="yoast-schema-graph">
-        {"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.musgravegroup.com/1-million-investment-for-londis-retailers/#article","isPartOf":{"@id":"https://www.musgravegroup.com/1-million-investment-for-londis-retailers/"},"author":{"name":"Musgrave","@id":"https://www.musgravegroup.com/#/schema/person/501ac9ff5bb1f1190c80132b6b0ef248"},"headline":"£1 million investment for Londis retailers                ","datePublished":"2011-05-17T23:00:00+00:00","dateModified":"2011-05-17T23:00:00+00:00","mainEntityOfPage":{"@id":"https://www.musgravegroup.com/1-million-investment-for-londis-retailers/"},"wordCount":275,"publisher":{"@id":"https://www.musgravegroup.com/#organization"},"articleSection":["News"],"inLanguage":"en-GB"},{"@type":"WebPage","@id":"https://www.musgravegroup.com/1-million-investment-for-londis-retailers/","url":"https://www.musgravegroup.com/1-million-investment-for-londis-retailers/","name":"£1 million investment for Londis retailers                 - Musgrave Group","isPartOf":{"@id":"https://www.musgravegroup.com/#website"},"datePublished":"2011-05-17T23:00:00+00:00","dateModified":"2011-05-17T23:00:00+00:00","breadcrumb":{"@id":"https://www.musgravegroup.com/1-million-investment-for-londis-retailers/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.musgravegroup.com/1-million-investment-for-londis-retailers/"]}]},{"@type":"BreadcrumbList","@id":"https://www.musgravegroup.com/1-million-investment-for-londis-retailers/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.musgravegroup.com/"},{"@type":"ListItem","position":2,"name":"£1 million investment for Londis retailers                "}]},{"@type":"WebSite","@id":"https://www.musgravegroup.com/#website","url":"https://www.musgravegroup.com/","name":"Musgrave Group","description":"Ireland&#039;s leading grocery retail and wholesale company, providing great quality, healthy and inspiring food.","publisher":{"@id":"https://www.musgravegroup.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.musgravegroup.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.musgravegroup.com/#organization","name":"Musgrave Group","url":"https://www.musgravegroup.com/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.musgravegroup.com/#/schema/logo/image/","url":"https://www.musgravegroup.com/wp-content/uploads/2023/03/Musgrave-logo-black-on-white-background.png","contentUrl":"https://www.musgravegroup.com/wp-content/uploads/2023/03/Musgrave-logo-black-on-white-background.png","width":1034,"height":592,"caption":"Musgrave Group"},"image":{"@id":"https://www.musgravegroup.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.musgravegroup.com/#/schema/person/501ac9ff5bb1f1190c80132b6b0ef248","name":"Musgrave","image":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.musgravegroup.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/?s=96&d=mm&r=g","caption":"Musgrave"},"url":"https://www.musgravegroup.com/author/musgrave/"}]}
-
-
-
-    </script>
-    <!-- / Yoast SEO plugin. -->
-
-
+    <meta name="twitter:label1" content="Estimated reading time"/>
+    <meta name="twitter:data1" content="1 minute"/>
     <link rel='dns-prefetch' href='http://unpkg.com/'/>
     <link rel='dns-prefetch' href='http://cdn.jsdelivr.net/'/>
     <link rel='dns-prefetch' href='http://hb.wpmucdn.com/'/>
@@ -446,14 +426,14 @@
             src="https://hb.wpmucdn.com/www.musgravegroup.com/91cadda9-454e-491d-9d22-4c4358bf61d4.js"
             id="wphb-4-js"></script>
     <link rel="https://api.w.org/" href="../wp-json/index.html"/>
-    <link rel="alternate" type="application/json" href="../wp-json/wp/v2/posts/2077.json"/>
+    <link rel="alternate" type="application/json" href="../wp-json/wp/v2/pages/19.json"/>
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd"/>
     <meta name="generator" content="WordPress 6.5.5"/>
-    <link rel='shortlink' href='../index17d2.html?p=2077'/>
+    <link rel='shortlink' href='../index5831.html?p=19'/>
     <link rel="alternate" type="application/json+oembed"
-          href="../wp-json/oembed/1.0/embed1e53.json?url=https%3A%2F%2Fwww.musgravegroup.com%2F1-million-investment-for-londis-retailers%2F"/>
+          href="../wp-json/oembed/1.0/embed7289.json?url=https%3A%2F%2Fwww.musgravegroup.com%2Fabout-us%2F"/>
     <link rel="alternate" type="text/xml+oembed"
-          href="../wp-json/oembed/1.0/embedbee2?url=https%3A%2F%2Fwww.musgravegroup.com%2F1-million-investment-for-londis-retailers%2F&amp;format=xml"/>
+          href="../wp-json/oembed/1.0/embedd84b?url=https%3A%2F%2Fwww.musgravegroup.com%2Fabout-us%2F&amp;format=xml"/>
     <style type="text/css">
         .ctl-bullets-container {
             display: block;
@@ -466,7 +446,8 @@
             overflow-x: hidden;
             overflow-y: auto;
             margin: 15vh auto;
-        }</style>
+        }
+    </style>
     <script>
         document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
@@ -479,7 +460,8 @@
             min-width: 150px;
         }
 
-        .lazyload, .lazyloading {
+        .lazyload,
+        .lazyloading {
             opacity: 0;
         }
 
@@ -488,13 +470,14 @@
             transition: opacity 400ms;
             transition-delay: 0ms;
         }
-
     </style>
-    <style type="text/css">.recentcomments a {
+    <style type="text/css">
+        .recentcomments a {
             display: inline !important;
             padding: 0 !important;
             margin: 0 !important;
-        }</style>
+        }
+    </style>
     <style type="text/css" id="wp-custom-css">
         .brands-thumbs ul li {
             align-self: center;
@@ -577,11 +560,12 @@
 
         .cat-block.podcasts-color img {
             object-fit: contain !important;
-        }        </style>
+        }
+    </style>
 </head>
-
 <body
-    class="page-template page-template-page-templates page-template-page-about page-template-page-templatespage-about-php page page-id-19 page-parent wp-custom-logo">
+    class="@yield('body-classes')">
+{{--    class="home page-template page-template-page-content page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo">--}}
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -1184,6 +1168,22 @@
         });
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elementsWithBgImage = document.querySelectorAll('[data-bg-image]');
+        elementsWithBgImage.forEach(function (element) {
+            const bgImage = element.getAttribute('data-bg-image');
+            element.style.backgroundImage = bgImage;
+        });
 
-<!-- Mirrored from www.musgravegroup.com/1-million-investment-for-londis-retailers/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jul 2024 07:17:28 GMT -->
+        const elementsWithSrc = document.querySelectorAll('[data-src]');
+        elementsWithSrc.forEach(function (element) {
+            let srcIm = element.getAttribute('data-src');
+            // srcIm = srcIm.replace("https", '');
+            element.setAttribute('src', srcIm);
+        });
+    });
+</script>
+@yield('js')
 </html>
+{{--    class="page-template page-template-page-content page-template-page-templates page-template-page-about page-template-page-templatespage-about-php page page-id-19 page-parent wp-custom-logo">--}}
