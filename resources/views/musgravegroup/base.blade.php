@@ -600,7 +600,7 @@
             <div class="menu-main-menu-container">
                 <ul id="primary-menu" class="menu">
                     <li id="menu-item-52"
-                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-19 {{ str_contains(request()->path(), 'about-us') ? 'current_page_item' : '' }} menu-item-has-children menu-item-52 menu-item-about-us">
+                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-19 {{ str_contains(request()->path(), 'about-us') || str_contains(request()->path(), 'podcasts') ? 'current_page_item' : '' }} menu-item-has-children menu-item-52 menu-item-about-us">
                         <a href="{{route('page.about')}}">
                             About us
                         </a>
@@ -1184,6 +1184,7 @@
         });
     });
 </script>
+
 @yield('js')
 </html>
 {{--    class="page-template page-template-page-content page-template-page-templates page-template-page-about page-template-page-templatespage-about-php page page-id-19 page-parent wp-custom-logo">--}}

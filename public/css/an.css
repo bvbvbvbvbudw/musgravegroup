@@ -11,14 +11,14 @@ section.blog-hero:before {
 }
 section.blog-hero .text h1 {
     display: table;
-    margin: 0 auto;
+    margin: 0 auto!important;
     padding: 0 20px;
     background: #AECB3B;
 }
 
 .sustainability-ar {
     background-color: #99BE4D;
-    color:#fff!important;
+    color:#fff;
     padding:50px 0;
     background-image: url(https://b2833840.smushcdn.com/2833840/wp-content/uploads/2022/11/Background-v2.png?lossy=0&strip=1&webp=1);
     background-size: cover;
@@ -234,7 +234,6 @@ section.blog-hero .text h1 {
 .ar-table td{
     border-bottom: 1px solid #fff;
     font-size: 1.2rem;
-    color: #fff;
 }
 .ar-table tr {
     border-right: 1px solid #fff;
@@ -331,3 +330,4 @@ section.blog-hero .text h1 {
         width: 100%;
     }
 }
+

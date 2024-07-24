@@ -1,0 +1,56 @@
+section.blog-hero:before {
+    display: none;
+}
+
+.podcast-block {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.podcast-block .img {
+    width: 30%;
+}
+
+.podcast-block .content {
+    text-align: left;
+    padding: 0 0 0 1rem;
+    width: 70%;
+}
+
+.podcast-block h4 {
+    font-family: Avenir,sans-serif !important;
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.podcast-block h4 a {
+    text-decoration: none;
+    color: #404040;
+}
+
+.podcast-block h4 a:hover {
+    color: #a9c23f;
+}
+
+.podcast-block p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.podcast-block .button {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .podcast-block .img, .podcast-block .content {
+        width: 100%;
+    }
+
+    .podcast-block .content {
+        margin-top: 1rem;
+        padding: 0;
+    }
+}

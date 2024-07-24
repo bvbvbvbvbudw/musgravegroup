@@ -1,7 +1,10 @@
 @extends('musgravegroup.base')
-@section('body')
-    page-template page-template-page-templates page-template-page-podcasts page-template-page-templatespage-podcasts-php page page-id-21630 wp-custom-logo
+@section('head')
+    <link rel='stylesheet'
+          href='{{ asset('css/podcasts.css') }}' type='text/css'
+          media='all'/>
 @endsection
+@section('body-classes', 'page-template page-template-page-templates page-template-page-podcasts page-template-page-templatespage-podcasts-php page page-id-21630 wp-custom-logo')
 @section('content')
 
     <section class="blog-hero" style="background-color: #a9c23f; background-image:url()">
