@@ -1,5 +1,5 @@
 @extends('musgravegroup.base')
-@section('body') home page-template page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo @endsection
+@section('body-classes', 'home page-template page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo')
 @section("content")
         <section class="home-hero slick-slider">
             <div>
@@ -83,8 +83,7 @@
                                 community a sustainable community.</p>
                             <a href="about-us/index.html" class="button">Find out more</a>
                         </div>
-                        <div class="col-2-3 lazyload" style="background-image:inherit"
-                             data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Homepage-image0aa7.html?lossy=0&amp;strip=1&amp;webp=1)">
+                        <div class="col-2-3 lazyload" style="background-image:url('{{asset('img/Homepage-image.webp')}}')">
                         </div>
                     </div>
                 </div>

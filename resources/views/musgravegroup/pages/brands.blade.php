@@ -1,7 +1,7 @@
 @extends('musgravegroup.base')
+@section('body-classes', 'archive post-type-archive post-type-archive-brands wp-custom-logo hfeed')
 @section('content')
-    <section class="blog-hero lazyload" style="background-image:inherit"
-             data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/brands_v20aa7.html?lossy=0&amp;strip=1&amp;webp=1)">
+    <section class="blog-hero lazyload" style="background-image:url('{{asset('img/brands/brands.webp')}}')">
         <div class="text">
             <h1>Brands</h1>
         </div>
@@ -681,17 +681,17 @@
 
                 <div class="related-content">
                     <div class="related-column" data-aos="fade-up" data-aos-once="true">
-                        <div class="background-zoom lazyload" style="background-image:inherit;"
-                             data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/sub-brands0aa7.html?lossy=0&amp;strip=1&amp;webp=1)"></div>
-                        <a href="../mood-ice-cream/index.html"><h2>Moo'd Ice Cream</a></div>
+                        <div class="background-zoom lazyload"
+                             style="background-image:url('{{asset('img/brands/sub-brands.webp')}}');"></div>
+                        <a href="../mood-ice-cream/index.html"><h2>Moo'd Ice Cream</h2></a></div>
                     <div class="related-column" data-aos="fade-up" data-aos-once="true">
-                        <div class="background-zoom lazyload" style="background-image:inherit;"
-                             data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/caramico_v20aa7.html?lossy=0&amp;strip=1&amp;webp=1)"></div>
-                        <a href="../caramico-pizza/index.html"><h2>Caramico Pizza</a></div>
+                        <div class="background-zoom lazyload"
+                             style="background-image:url('{{asset('img/brands/caramico_v2.webp')}}');"></div>
+                        <a href="../caramico-pizza/index.html"><h2>Caramico Pizza</h2></a></div>
                     <div class="related-column" data-aos="fade-up" data-aos-once="true">
-                        <div class="background-zoom lazyload" style="background-image:inherit;"
-                             data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/the-green-kitchen0aa7.html?lossy=0&amp;strip=1&amp;webp=1)"></div>
-                        <a href="../the-green-kitchen/index.html"><h2>The Green Kitchen</a></div>
+                        <div class="background-zoom lazyload"
+                             style="background-image:url('{{asset('img/brands/the-green-kitchen.webp')}}');"></div>
+                        <a href="../the-green-kitchen/index.html"><h2>The Green Kitchen</h2></a></div>
                 </div>
             </section>
         </div>

@@ -1,8 +1,8 @@
 @extends('musgravegroup.base')
 
 @section('content')
-    <section class="blog-hero lazyload" style="background-image:inherit" data-aos="fade-in" data-aos-once="true"
-             data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/career-sectors0aa7.html?lossy=0&amp;strip=1&amp;webp=1)">
+    <section class="blog-hero lazyload" style="background-image:url('{{asset('img/careers/3.webp')}}')" data-aos="fade-in" data-aos-once="true"
+    >
         <div class="text">
             <h1>Career sectors</h1>
         </div>

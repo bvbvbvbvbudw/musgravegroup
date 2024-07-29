@@ -670,7 +670,7 @@
                         </ul>
                     </li>
                     <li id="menu-item-9754"
-                        class="menu-item menu-item-type-post_type {{ request()->is('news') ? 'current_page_item' : '' }} menu-item-object-page menu-item-has-children menu-item-9754 menu-item-musgrave-news">
+                        class="menu-item menu-item-type-post_type {{ request()->is('news') || str_contains(request()->path(), 'musgrave-news') || str_contains(request()->path(), 'press-pack') || str_contains(request()->path(), 'press-contacts') ? 'current_page_item' : '' }} menu-item-object-page menu-item-has-children menu-item-9754 menu-item-musgrave-news">
                         <a href="{{ route('page.news') }}">News</a>
                         <ul class="sub-menu">
                             <li id="menu-item-9755"

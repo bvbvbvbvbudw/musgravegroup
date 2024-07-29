@@ -1,8 +1,7 @@
 @extends('musgravegroup.base')
 
 @section('content')
-    <section class="blog-hero lazyload" style="background-image:inherit"
-             data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2023/06/Caring-for-the-planet-hero-image-20aa7.html?lossy=0&amp;strip=1&amp;webp=1)">
+    <section class="blog-hero lazyload" style="background-image:url('{{asset('img/sus/carring.webp')}}')">
         <div class="text">
             <h1>Caring for the planet</h1>
         </div>

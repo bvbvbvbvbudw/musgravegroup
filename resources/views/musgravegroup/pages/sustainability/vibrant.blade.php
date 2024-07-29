@@ -1,8 +1,7 @@
 @extends('musgravegroup.base')
 
 @section('content')
-    <section class="blog-hero lazyload" style="background-image:inherit"
-             data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2021/12/EDITSuperValu.TT_.Final_MG_4063-scaled0aa7.html?lossy=0&amp;strip=1&amp;webp=1)">
+    <section class="blog-hero lazyload" style="background-image:urL('{{asset('img/sus/vibrant.webp')}}')">
         <div class="text">
             <h1>Creating vibrant communities</h1>
         </div>
