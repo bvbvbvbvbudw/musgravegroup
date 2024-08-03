@@ -1,5 +1,5 @@
 @extends('musgravegroup.base')
-
+@section('body-classes', 'page-template page-template-page-templates page-template-page-contact page-template-page-templatespage-contact-php page page-id-87 wp-custom-logo')
 @section('content')
     <section class="blog-hero lazyload" style="background-image:inherit"
              data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2023/01/musgrave-group-contact-e16733697103110aa7.html?lossy=0&amp;strip=1&amp;webp=1)">

@@ -1,7 +1,5 @@
 @extends('musgravegroup.base')
-@section('body')
-    page-template page-template-page-templates page-template-page-about page-template-page-templatespage-about-php page page-id-19 page-parent wp-custom-logo
-@endsection
+@section('body-classes', 'page-template page-template-page-templates page-template-page-about page-template-page-templatespage-about-php page page-id-19 page-parent wp-custom-logo')
 @section('content')
     <main id="main" class="site-main">
 

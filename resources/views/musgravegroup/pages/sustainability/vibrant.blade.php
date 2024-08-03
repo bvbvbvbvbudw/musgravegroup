@@ -1,5 +1,5 @@
 @extends('musgravegroup.base')
-
+@section('body-classes', 'page-template page-template-page-templates page-template-page-sustainability-page-22 page-template-page-templatespage-sustainability-page-22-php page page-id-14969 page-child parent-pageid-14935 wp-custom-logo')
 @section('content')
     <section class="blog-hero lazyload" style="background-image:urL('{{asset('img/sus/vibrant.webp')}}')">
         <div class="text">

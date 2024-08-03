@@ -1,5 +1,5 @@
 @extends('musgravegroup.base')
-
+@section('body-classes', 'page-template page-template-page-templates page-template-page-mediapack page-template-page-templatespage-mediapack-php page page-id-9740 wp-custom-logo')
 @section('content')
     <section class="blog-hero lazyload" style="background-image:url('{{asset('img/bg-contact.webp')}}')">
         <div class="text">

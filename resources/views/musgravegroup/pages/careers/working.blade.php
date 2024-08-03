@@ -1,5 +1,5 @@
 @extends('musgravegroup.base')
-
+@section('body-classes', 'page-template page-template-page-templates page-template-page-careers-template page-template-page-templatespage-careers-template-php page page-id-7799 page-child parent-pageid-68 wp-custom-logo')
 @section('content')
 
     <section class="blog-hero lazyload" style="background-image:url('{{asset('img/careers/2.webp')}}')" data-aos="fade-in" data-aos-once="true">

@@ -1,4 +1,5 @@
 @extends('musgravegroup.base')
+@section('body-classes', 'page-template page-template-page-templates page-template-page-test-blog page-template-page-templatespage-test-blog-php page page-id-9579 wp-custom-logo')
 
 @section('content')
     <div class="filter-options">
