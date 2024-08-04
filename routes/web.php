@@ -43,6 +43,7 @@ Route::get('/careers/sectors', [CareerController::class, 'sectors'])->name('page
 Route::get('/careers/current-vacancies', [CareerController::class, 'current'])->name('page.careers.current');
 
 Route::get('/news', [NewsController::class, 'index'])->name('page.news');
+Route::get('/{url}', [NewsController::class, 'show'])->name('page.news.show');
 Route::get('/musgrave-news', [NewsController::class, 'musgrave'])->name('page.news.musgrave');
 Route::get('/press-pack', [NewsController::class, 'press'])->name('page.news.press');
 Route::get('/press-contacts', [NewsController::class, 'contacts'])->name('page.news.contacts');

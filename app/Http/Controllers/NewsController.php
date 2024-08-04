@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use App\Models\News;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -29,5 +30,13 @@ class NewsController extends Controller
     public function contacts()
     {
         return view('musgravegroup.pages.news.contacts');
+    }
+
+    public function show($url)
+    {
+        $news = News::firstWhere('url', $url)->first();
+        if($news){
+            return view('musgravegroup.pages.news.single', compact('news'));
+        }
     }
 }

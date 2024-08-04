@@ -2,6 +2,11 @@
 <html lang="en-GB">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <head>
+    <style>
+        #onetrust-banner-sdk {
+            display: none;
+        }
+    </style>
     {{--    <link rel="stylesheet" href="{{ asset('main.css') }}">--}}
     {{--    <link rel="stylesheet" href="{{ asset('annual.css') }}">--}}
     {{--    <link rel="stylesheet" href="{{ asset('dod.css') }}">--}}

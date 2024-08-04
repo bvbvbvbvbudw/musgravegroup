@@ -21,7 +21,7 @@
                                 <h2>Latest feature from <em>News</em></h2>
                                 <span class="the-date">| {{ $popularNews->formatted_date }}</span>
                             </div>
-                            <a class="feat-img" href="{{ $popularNews->url }}">
+                            <a class="feat-img" href="{{ route('page.news.show', $popularNews->url) }}">
                                 <span class="the-date">{{ $popularNews->formatted_date }}</span>
                                 <div class="image lazyload" style="background-image:url('{{ $popularNews->image_url }}')"></div>
                             </a>
@@ -31,12 +31,12 @@
                                 </div>
                                 <div class="post-content">
                                     <h3 class="entry-title">
-                                        <a href="{{ $popularNews->url }}">
+                                        <a href="{{ route('page.news.show', $popularNews->url) }}">
                                             {{ $popularNews->title }}
                                         </a>
                                     </h3>
                                     <p>{{ $popularNews->small_description }}</p>
-                                    <a class="find-out-more" href="{{ $popularNews->url }}">
+                                    <a class="find-out-more" href="{{ route('page.news') }}">
                                         Find out more
                                     </a>
                                 </div>
@@ -49,7 +49,7 @@
             <div class="latest-feature-new-nav grid-setter">
                 @foreach($news as $item)
                     @if(!$item->is_popular)
-                        <a href="{{ $item->url }}">
+                        <a href="{{ route('page.news.show', $item->url) }}">
                             <article id="post-{{ $item->id }}" class="category-listing post-{{ $item->id }} post type-post status-publish format-standard has-post-thumbnail hentry category-centra tag-run-together">
                                 <div class="img">
                                     <img width="300" height="200" src="{{ $item->image_url }}" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" fetchpriority="high" sizes="(max-width: 300px) 100vw, 300px" />
