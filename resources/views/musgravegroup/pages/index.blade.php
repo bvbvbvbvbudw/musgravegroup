@@ -65,7 +65,6 @@
                 </div>
             </div>
         </section>
-
         <div class="values-container">
             <div class="container">
                 <div class="values">
@@ -89,7 +88,6 @@
                 </div>
             </div>
         </div><!-- container -->
-
         <section class="videos">
             <div class="container">
                 <h3>Videos from around the business</h3>
@@ -283,7 +281,6 @@
                 </div>
             </div>
         </section>
-
         <script>
             jQuery(document).ready(function ($) {
                 $('.load-video-button').click(function () {
@@ -292,7 +289,6 @@
                 });
             });
         </script>
-
         <div class="values-container">
             <div class="container">
                 <div class="values">
@@ -340,7 +336,7 @@
                 </div>
             </div>
         </div><!-- container -->
-        @include('musgravegroup.components.news.news')
+        <x-news/>
         <section class="brands-block">
             <div class="container">
                 <h3 class="entry-title" data-aos="fade-in" data-aos-delay="150">We own 15 retail and
