@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use App\Models\Podcast;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 
@@ -33,6 +35,15 @@ class AboutController extends Controller
     }
     public function podcasts ()
     {
-        return view('musgravegroup.pages.about.podcasts');
+        $podcasts = Cache::remember('podcasts_data', now()->addHours(1), function(){
+            return Podcast::all();
+        });
+        return view('musgravegroup.pages.about.podcasts', compact('podcasts'));
+    }
+
+    public function showPodcast ($url)
+    {
+        $podcast = Podcast::firstWhere('url', $url)->first();
+        if($podcast) return view('musgravegroup.pages.about.podcast-single', compact('podcast'));
     }
 }

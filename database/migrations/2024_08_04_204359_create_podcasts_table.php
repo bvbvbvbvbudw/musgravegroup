@@ -3,17 +3,19 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateNewsTable extends Migration
+class CreatePodcastsTable extends Migration
 {
     public function up()
     {
-        Schema::create('news', function (Blueprint $table) {
+        Schema::create('podcasts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->string('url');
-            $table->string('category');
+            $table->string('spotify')->nullable();
+            $table->string('apple')->nullable();
+            $table->string('buzz')->nullable();
             $table->text('small_description');
-            $table->boolean('is_popular')->default(false);
+            $table->text('content');
             $table->foreignId('media_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
@@ -21,6 +23,6 @@ class CreateNewsTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('news');
+        Schema::dropIfExists('podcasts');
     }
 }

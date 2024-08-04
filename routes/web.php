@@ -68,7 +68,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/{url}', [NewsController::class, 'show'])->name('page.news.show');
-
+Route::get('news/{url}', [NewsController::class, 'show'])->name('page.news.show');
+Route::get('podcasts/{url}', [AboutController::class, 'showPodcast'])->name('page.about.podcasts.show');
+// TODO: make dymanic routes
 
 require __DIR__.'/auth.php';
