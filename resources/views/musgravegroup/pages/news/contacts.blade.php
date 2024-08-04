@@ -6,10 +6,6 @@
             <h1>Press Contacts</h1>
         </div>
     </section>
-
-
-
-
     <article id="post-9726" class="post-9726 page type-page status-publish hentry">
         <div class="container">
             <div class="contact-text-block">
@@ -82,8 +78,6 @@
 
         </div><!-- container -->
     </article><!-- #post-9726 -->
-
-
     <div class="latest-feature">
         <div class="container">
             <div class="grid new-feature-grid">
@@ -940,4 +934,21 @@
             </div>
         </div>
     </div>
+    <script>
+        $('.toggle').click(function (e) {
+            e.preventDefault();
+
+            var $this = $(this);
+
+            if ($this.next().hasClass('show')) {
+                $this.next().removeClass('show');
+                $this.next().slideUp(350);
+            } else {
+                $this.parent().parent().find('li .inner').removeClass('show');
+                $this.parent().parent().find('li .inner').slideUp(350);
+                $this.next().toggleClass('show');
+                $this.next().slideToggle(350);
+            }
+        });
+    </script>
 @endsection

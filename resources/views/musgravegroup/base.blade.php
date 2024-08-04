@@ -2,10 +2,10 @@
 <html lang="en-GB">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <head>
-{{--    <link rel="stylesheet" href="{{ asset('main.css') }}">--}}
-{{--    <link rel="stylesheet" href="{{ asset('annual.css') }}">--}}
-{{--    <link rel="stylesheet" href="{{ asset('dod.css') }}">--}}
-{{--    <link rel="stylesheet" href="{{ asset('index.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('main.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('annual.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('dod.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('index.css') }}">--}}
     <script type="text/javascript"
             src="https://cookie-cdn.cookiepro.com/consent/f8cb599b-1d94-420a-987e-57e7cbe63041/OtAutoBlock.js"></script>
     <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8"
@@ -409,19 +409,6 @@
     <script type="text/javascript"
             src="https://hb.wpmucdn.com/www.musgravegroup.com/403c915c-dded-42fe-b77f-25f6b6485cb6.js"
             id="wphb-3-js"></script>
-    <script type="text/javascript" id="wphb-4-js-extra">
-        /* <![CDATA[ */
-        var wpstg = {"nonce": "1829801c3b"};
-        ;
-        ;var my_ajax_object = {"ajax_url": "https:\/\/www.musgravegroup.com\/wp-admin\/admin-ajax.php"};
-        ;
-        ;var SF_LDATA = {
-            "ajax_url": "https:\/\/www.musgravegroup.com\/wp-admin\/admin-ajax.php",
-            "home_url": "https:\/\/www.musgravegroup.com\/",
-            "extensions": []
-        };
-        /* ]]> */
-    </script>
     <script type="text/javascript"
             src="https://hb.wpmucdn.com/www.musgravegroup.com/91cadda9-454e-491d-9d22-4c4358bf61d4.js"
             id="wphb-4-js"></script>
@@ -563,9 +550,7 @@
         }
     </style>
 </head>
-<body
-    class="@yield('body-classes')">
-{{--    class="home page-template page-template-page-content page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo">--}}
+<body class="@yield('body-classes', 'home page-template page-template-page-content page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo')" @yield('body-attr')>
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -600,8 +585,8 @@
             <div class="menu-main-menu-container">
                 <ul id="primary-menu" class="menu">
                     <li id="menu-item-52"
-                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-19 {{ str_contains(request()->path(), 'about-us') || str_contains(request()->path(), 'podcasts') ? 'current_page_item' : '' }} menu-item-has-children menu-item-52 menu-item-about-us">
-                        <a href="{{route('page.about')}}">
+                        class="menu-item menu-item-type-post_type menu-item-object-page {{ str_contains(request()->path(), 'about-us') || str_contains(request()->path(), 'podcasts') ? 'current_page_item' : '' }} menu-item-has-children menu-item-52 menu-item-about-us">
+                        <a href="{{ route('page.about') }}">
                             About us
                         </a>
                         <ul class="sub-menu">
@@ -628,11 +613,11 @@
                     </li>
                     <li id="menu-item-86"
                         class="menu-item menu-item-type-post_type_archive menu-item-object-brands menu-item-86 menu-item-">
-                        <a href="{{route('page.brand')}}">Our brands</a></li>
+                        <a href="{{ route('page.brand') }}">Our brands</a></li>
                     <li id="menu-item-14986"
-                        style="{{ request()->is('sustainability') ? 'background: #a9c23f!important; color: white;' : '' }}"
+                        style="{{ str_contains(request()->path(), 'sustainability') ? 'background: #a9c23f!important; color: white!important;' : '' }}"
                         class="menu-item menu-item-type-post_type menu-item-object-page {{ str_contains(request()->path(), 'sustainability') ? 'current_page_item' : '' }} menu-item-has-children menu-item-14986 menu-item-sustainability">
-                        <a style="color:white;" href="{{ route('page.sustainability') }}">Sustainability</a>
+                        <a style="{{ str_contains(request()->path(), 'sustainability') ? 'color: white!important;' : '' }}" href="{{ route('page.sustainability') }}">Sustainability</a>
                         <ul class="sub-menu" style="background: #a9c23f!important;">
                             <li id="menu-item-14987"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14987 menu-item-caring-for-the-planet">
@@ -640,8 +625,7 @@
                             </li>
                             <li id="menu-item-14988"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14988 menu-item-creating-vibrant-communities">
-                                <a href="{{ route('page.sustainability.vibrant') }}">Creating vibrant
-                                    communities</a></li>
+                                <a href="{{ route('page.sustainability.vibrant') }}">Creating vibrant communities</a></li>
                             <li id="menu-item-14989"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14989 menu-item-sourcing-for-good">
                                 <a href="{{ route('page.sustainability.source') }}">Sourcing for good</a></li>
@@ -689,6 +673,7 @@
                         <a href="{{ route('page.contact') }}">Contact</a></li>
                 </ul>
             </div>
+
         </nav><!-- #site-navigation -->
 
         <div class="search-icon">
@@ -702,7 +687,7 @@
             </a>
             <a id="close-btn" class="search-trigger">&times;</a>
         </div>
-    </header><!-- #masthead -->
+    </header>
     <div id="content" class="site-content">
 
         <div id="primary" class="content-area">
@@ -1187,4 +1172,3 @@
 
 @yield('js')
 </html>
-{{--    class="page-template page-template-page-content page-template-page-templates page-template-page-about page-template-page-templatespage-about-php page page-id-19 page-parent wp-custom-logo">--}}
