@@ -1013,7 +1013,6 @@
             <div class="site-info">
                 <small>
                     <p>© 2024 Musgrave Group plc, Ballycurreen, Airport Road, Cork. Reg No. 105820. VAT no. IE 8G05913L.
-                        | Website by <a href="https://www.kavacommunications.com/" target="_blank">Kava</a>
                         <!-- CookiePro Cookies Settings button start --><br/>
                         <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
                         <br/>

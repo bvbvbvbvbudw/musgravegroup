@@ -8,6 +8,16 @@ use App\Http\Controllers\Controller;
 
 class AdminNewsController extends Controller
 {
+
+    protected function getFields()
+    {
+        return  [
+            ['name' => 'title', 'label' => 'Заголовок', 'type' => 'text', 'required' => true],
+            ['name' => 'content', 'label' => 'Контент', 'type' => 'textarea', 'required' => true],
+            // Добавьте другие поля по необходимости
+        ];
+    }
+
     public function index()
     {
         return view('musgravegroup.admin.pages.news.index');
@@ -15,7 +25,9 @@ class AdminNewsController extends Controller
 
     public function create()
     {
-        return view('musgravegroup.admin.pages.news.create'); // maybe make universal form, ICU.
+        $title = "Create news";
+        $fields = $this->getFields();
+        return view('musgravegroup.admin.pages.form', compact('fields', 'title')); // maybe make universal form, ICU.
     }
 
     public function store(RequestStoreNews $request) // change name

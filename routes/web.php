@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ContactController;
@@ -43,7 +44,6 @@ Route::get('/careers/sectors', [CareerController::class, 'sectors'])->name('page
 Route::get('/careers/current-vacancies', [CareerController::class, 'current'])->name('page.careers.current');
 
 Route::get('/news', [NewsController::class, 'index'])->name('page.news');
-Route::get('/{url}', [NewsController::class, 'show'])->name('page.news.show');
 Route::get('/musgrave-news', [NewsController::class, 'musgrave'])->name('page.news.musgrave');
 Route::get('/press-pack', [NewsController::class, 'press'])->name('page.news.press');
 Route::get('/press-contacts', [NewsController::class, 'contacts'])->name('page.news.contacts');
@@ -53,6 +53,8 @@ Route::get('/contact', [ContactController::class, 'index'])->name('page.contact'
 
 // Admin
 Route::get('/admin', [AdminNewsController::class, 'index'])->name('admin.news.index');
+Route::get('/admin/news/create', [AdminNewsController::class, 'create'])->name('admin.news.create');
+Route::get('/admin/news/store', [AdminNewsController::class, 'store'])->name('admin.news.store');
 
 
 
@@ -65,5 +67,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/{url}', [NewsController::class, 'show'])->name('page.news.show');
+
 
 require __DIR__.'/auth.php';

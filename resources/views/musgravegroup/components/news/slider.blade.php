@@ -18,8 +18,7 @@
                             sizes="(max-width: 300px) 100vw, 300px"/></noscript>
                     <div class="colour-block"></div>
                     <div class="text">
-                        <h3><a
-                                href="{{ route('page.news.show', $item -> url) }}">{{ $item -> title }}</a></h3>
+                        <h3><a href="{{ route('page.news.show', $item -> url) }}">{{ $item -> title }}</a></h3>
                         <p>{{ $item -> small_description }}</p>
                     </div>
                 </div>
