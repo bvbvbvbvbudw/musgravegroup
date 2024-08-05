@@ -21,4 +21,9 @@ class News extends Model
     {
         return $this->hasOne(NewsContent::class);
     }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

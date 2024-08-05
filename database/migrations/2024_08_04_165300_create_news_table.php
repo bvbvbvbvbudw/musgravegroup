@@ -11,7 +11,7 @@ class CreateNewsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('url');
-            $table->string('category');
+            $table->foreignId('category_id')->constrained('categories')->onDelete('restrict');
             $table->text('small_description');
             $table->boolean('is_popular')->default(false);
             $table->foreignId('media_id')->constrained()->onDelete('cascade');

@@ -7,6 +7,7 @@ use App\Models\News;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 
@@ -14,7 +15,10 @@ class NewsController extends Controller
 {
     public function index()
     {
-        return view('musgravegroup.pages.news.news');
+        $news = Cache::remember('news_page_data', now()->addHours(1), function(){
+            return News::with('media', 'content')->get();
+        });
+        return view('musgravegroup.pages.news.news', compact('news'));
     }
 
     public function musgrave()

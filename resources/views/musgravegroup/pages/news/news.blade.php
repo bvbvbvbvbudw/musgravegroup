@@ -6,42 +6,42 @@
 
         <div class="blog-list-archive is-on">
             <span>Filter by date</span>
-            <div class="stay">
+            <div class="stay" style="display: none;">
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2024</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2024/06/index.html">
+                    <ul class="archive-sub-menu" style="display: block;">
+                        <li><a href="https://www.musgravegroup.com/2024/06/">
 
                                 June 2024</a>
 
                         </li>
 
-                        <li><a href="../2024/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2024/05/">
 
                                 May 2024</a>
 
                         </li>
 
-                        <li><a href="../2024/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2024/04/">
 
                                 April 2024</a>
 
                         </li>
 
-                        <li><a href="../2024/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2024/03/">
 
                                 March 2024</a>
 
                         </li>
 
-                        <li><a href="../2024/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2024/02/">
 
                                 February 2024</a>
 
                         </li>
 
-                        <li><a href="../2024/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2024/01/">
 
                                 January 2024</a>
 
@@ -55,68 +55,68 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2023</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2023/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2023/12/">
 
                                 December 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/11/">
 
                                 November 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/10/">
 
                                 October 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/09/">
 
                                 September 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/07/">
 
                                 July 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/06/">
 
                                 June 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/05/">
 
                                 May 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/04/">
 
                                 April 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/03/">
 
                                 March 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/02/">
 
                                 February 2023</a>
 
                         </li>
 
-                        <li><a href="../2023/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2023/01/">
 
                                 January 2023</a>
 
@@ -130,74 +130,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2022</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2022/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2022/12/">
 
                                 December 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/11/">
 
                                 November 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/10/">
 
                                 October 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/09/">
 
                                 September 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/08/">
 
                                 August 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/07/">
 
                                 July 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/06/">
 
                                 June 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/05/">
 
                                 May 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/04/">
 
                                 April 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/03/">
 
                                 March 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/02/">
 
                                 February 2022</a>
 
                         </li>
 
-                        <li><a href="../2022/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2022/01/">
 
                                 January 2022</a>
 
@@ -211,74 +211,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2021</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2021/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2021/12/">
 
                                 December 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/11/">
 
                                 November 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/10/">
 
                                 October 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/09/">
 
                                 September 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/08/">
 
                                 August 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/07/">
 
                                 July 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/06/">
 
                                 June 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/05/">
 
                                 May 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/04/">
 
                                 April 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/03/">
 
                                 March 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/02/">
 
                                 February 2021</a>
 
                         </li>
 
-                        <li><a href="../2021/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2021/01/">
 
                                 January 2021</a>
 
@@ -292,74 +292,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2020</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2020/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2020/12/">
 
                                 December 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/11/">
 
                                 November 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/10/">
 
                                 October 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/09/">
 
                                 September 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/08/">
 
                                 August 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/07/">
 
                                 July 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/06/">
 
                                 June 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/05/">
 
                                 May 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/04/">
 
                                 April 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/03/">
 
                                 March 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/02/">
 
                                 February 2020</a>
 
                         </li>
 
-                        <li><a href="../2020/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2020/01/">
 
                                 January 2020</a>
 
@@ -373,74 +373,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2019</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2019/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2019/12/">
 
                                 December 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/11/">
 
                                 November 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/10/">
 
                                 October 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/09/">
 
                                 September 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/08/">
 
                                 August 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/07/">
 
                                 July 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/06/">
 
                                 June 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/05/">
 
                                 May 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/04/">
 
                                 April 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/03/">
 
                                 March 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/02/">
 
                                 February 2019</a>
 
                         </li>
 
-                        <li><a href="../2019/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2019/01/">
 
                                 January 2019</a>
 
@@ -454,74 +454,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2018</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2018/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2018/12/">
 
                                 December 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/11/">
 
                                 November 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/10/">
 
                                 October 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/09/">
 
                                 September 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/08/">
 
                                 August 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/07/">
 
                                 July 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/06/">
 
                                 June 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/05/">
 
                                 May 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/04/">
 
                                 April 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/03/">
 
                                 March 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/02/">
 
                                 February 2018</a>
 
                         </li>
 
-                        <li><a href="../2018/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2018/01/">
 
                                 January 2018</a>
 
@@ -535,74 +535,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2017</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2017/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2017/12/">
 
                                 December 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/11/">
 
                                 November 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/10/">
 
                                 October 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/09/">
 
                                 September 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/08/">
 
                                 August 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/07/">
 
                                 July 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/06/">
 
                                 June 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/05/">
 
                                 May 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/04/">
 
                                 April 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/03/">
 
                                 March 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/02/">
 
                                 February 2017</a>
 
                         </li>
 
-                        <li><a href="../2017/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2017/01/">
 
                                 January 2017</a>
 
@@ -616,74 +616,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2016</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2016/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2016/12/">
 
                                 December 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/11/">
 
                                 November 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/10/">
 
                                 October 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/09/">
 
                                 September 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/08/">
 
                                 August 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/07/">
 
                                 July 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/06/">
 
                                 June 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/05/">
 
                                 May 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/04/">
 
                                 April 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/03/">
 
                                 March 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/02/">
 
                                 February 2016</a>
 
                         </li>
 
-                        <li><a href="../2016/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2016/01/">
 
                                 January 2016</a>
 
@@ -697,68 +697,68 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2015</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2015/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2015/12/">
 
                                 December 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/11/">
 
                                 November 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/10/">
 
                                 October 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/09/">
 
                                 September 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/08/">
 
                                 August 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/06/">
 
                                 June 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/05/">
 
                                 May 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/04/">
 
                                 April 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/03/">
 
                                 March 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/02/">
 
                                 February 2015</a>
 
                         </li>
 
-                        <li><a href="../2015/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2015/01/">
 
                                 January 2015</a>
 
@@ -772,74 +772,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2014</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2014/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2014/12/">
 
                                 December 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/11/">
 
                                 November 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/10/">
 
                                 October 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/09/">
 
                                 September 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/08/">
 
                                 August 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/07/">
 
                                 July 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/06/">
 
                                 June 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/05/">
 
                                 May 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/04/">
 
                                 April 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/03/">
 
                                 March 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/02/">
 
                                 February 2014</a>
 
                         </li>
 
-                        <li><a href="../2014/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2014/01/">
 
                                 January 2014</a>
 
@@ -853,68 +853,68 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2013</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2013/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2013/12/">
 
                                 December 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/11/">
 
                                 November 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/10/">
 
                                 October 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/09/">
 
                                 September 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/08/">
 
                                 August 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/07/">
 
                                 July 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/06/">
 
                                 June 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/04/">
 
                                 April 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/03/">
 
                                 March 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/02/">
 
                                 February 2013</a>
 
                         </li>
 
-                        <li><a href="../2013/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2013/01/">
 
                                 January 2013</a>
 
@@ -928,62 +928,62 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2012</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2012/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2012/12/">
 
                                 December 2012</a>
 
                         </li>
 
-                        <li><a href="../2012/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2012/11/">
 
                                 November 2012</a>
 
                         </li>
 
-                        <li><a href="../2012/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2012/10/">
 
                                 October 2012</a>
 
                         </li>
 
-                        <li><a href="../2012/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2012/09/">
 
                                 September 2012</a>
 
                         </li>
 
-                        <li><a href="../2012/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2012/08/">
 
                                 August 2012</a>
 
                         </li>
 
-                        <li><a href="../2012/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2012/07/">
 
                                 July 2012</a>
 
                         </li>
 
-                        <li><a href="../2012/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2012/05/">
 
                                 May 2012</a>
 
                         </li>
 
-                        <li><a href="../2012/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2012/03/">
 
                                 March 2012</a>
 
                         </li>
 
-                        <li><a href="../2012/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2012/02/">
 
                                 February 2012</a>
 
                         </li>
 
-                        <li><a href="../2012/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2012/01/">
 
                                 January 2012</a>
 
@@ -997,74 +997,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2011</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2011/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2011/12/">
 
                                 December 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/11/">
 
                                 November 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/10/">
 
                                 October 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/09/">
 
                                 September 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/08/">
 
                                 August 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/07/">
 
                                 July 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/06/">
 
                                 June 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/05/">
 
                                 May 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/04/">
 
                                 April 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/03/">
 
                                 March 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/02/">
 
                                 February 2011</a>
 
                         </li>
 
-                        <li><a href="../2011/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2011/01/">
 
                                 January 2011</a>
 
@@ -1078,74 +1078,74 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2010</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2010/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2010/12/">
 
                                 December 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/11/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/11/">
 
                                 November 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/10/">
 
                                 October 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/09/">
 
                                 September 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/08/">
 
                                 August 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/07/">
 
                                 July 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/06/">
 
                                 June 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/05/">
 
                                 May 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/04/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/04/">
 
                                 April 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/03/">
 
                                 March 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/02/">
 
                                 February 2010</a>
 
                         </li>
 
-                        <li><a href="../2010/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2010/01/">
 
                                 January 2010</a>
 
@@ -1159,62 +1159,62 @@
 
                 <li class="drop"><a class="arrow" href="JavaScript:void()">2009</a>
 
-                    <ul class="archive-sub-menu">
-                        <li><a href="../2009/12/index.html">
+                    <ul class="archive-sub-menu" style="display: none;">
+                        <li><a href="https://www.musgravegroup.com/2009/12/">
 
                                 December 2009</a>
 
                         </li>
 
-                        <li><a href="../2009/10/index.html">
+                        <li><a href="https://www.musgravegroup.com/2009/10/">
 
                                 October 2009</a>
 
                         </li>
 
-                        <li><a href="../2009/09/index.html">
+                        <li><a href="https://www.musgravegroup.com/2009/09/">
 
                                 September 2009</a>
 
                         </li>
 
-                        <li><a href="../2009/08/index.html">
+                        <li><a href="https://www.musgravegroup.com/2009/08/">
 
                                 August 2009</a>
 
                         </li>
 
-                        <li><a href="../2009/07/index.html">
+                        <li><a href="https://www.musgravegroup.com/2009/07/">
 
                                 July 2009</a>
 
                         </li>
 
-                        <li><a href="../2009/06/index.html">
+                        <li><a href="https://www.musgravegroup.com/2009/06/">
 
                                 June 2009</a>
 
                         </li>
 
-                        <li><a href="../2009/05/index.html">
+                        <li><a href="https://www.musgravegroup.com/2009/05/">
 
                                 May 2009</a>
 
                         </li>
 
-                        <li><a href="../2009/03/index.html">
+                        <li><a href="https://www.musgravegroup.com/2009/03/">
 
                                 March 2009</a>
 
                         </li>
 
-                        <li><a href="../2009/02/index.html">
+                        <li><a href="https://www.musgravegroup.com/2009/02/">
 
                                 February 2009</a>
 
                         </li>
 
-                        <li><a href="../2009/01/index.html">
+                        <li><a href="https://www.musgravegroup.com/2009/01/">
 
                                 January 2009</a>
 
@@ -1231,18 +1231,18 @@
 
         <div class="cat-list-archive is-on">
             <span>Filter by brand</span>
-            <div class="stay">
+            <div class="stay" style="display: none;">
                 <ul>
 
-                    <li><a href="brands/awards/index.html">Awards</a></li>
-                    <li><a href="brands/centra/index.html">Centra</a></li>
-                    <li><a href="brands/daybreak/index.html">Daybreak</a></li>
-                    <li><a href="brands/donnybrook-fair/index.html">Donnybrook Fair</a></li>
-                    <li><a href="brands/frank-and-honest/index.html">Frank and Honest</a></li>
-                    <li><a href="brands/la-rousse-foods/index.html">La Rousse Foods</a></li>
-                    <li><a href="brands/mace/index.html">Mace</a></li>
-                    <li><a href="brands/marketplace/index.html">MarketPlace</a></li>
-                    <li><a href="brands/supervalu/index.html">SuperValu</a></li>
+                    <li><a href="https://www.musgravegroup.com/news/brands/awards/">Awards</a></li>
+                    <li><a href="https://www.musgravegroup.com/news/brands/centra/">Centra</a></li>
+                    <li><a href="https://www.musgravegroup.com/news/brands/daybreak/">Daybreak</a></li>
+                    <li><a href="https://www.musgravegroup.com/news/brands/donnybrook-fair/">Donnybrook Fair</a></li>
+                    <li><a href="https://www.musgravegroup.com/news/brands/frank-and-honest/">Frank and Honest</a></li>
+                    <li><a href="https://www.musgravegroup.com/news/brands/la-rousse-foods/">La Rousse Foods</a></li>
+                    <li><a href="https://www.musgravegroup.com/news/brands/mace/">Mace</a></li>
+                    <li><a href="https://www.musgravegroup.com/news/brands/marketplace/">MarketPlace</a></li>
+                    <li><a href="https://www.musgravegroup.com/news/brands/supervalu/">SuperValu</a></li>
 
 
                 </ul>
@@ -1303,34 +1303,34 @@
     </script>
 
 
-    <div class="container">
 
 
-        <div class="category-block news-color">
+    <div class="container filter-overlay">
 
-            <h2>Latest From <strong>News</strong></h2>
+        <div class="filtered-posts">
+            @foreach($news as $item)
+                <div class="cat-block centra-color ">
 
-            <div style="" class="colour-block"></div>
-
-            <div id="ajax-load-more" class="ajax-load-more-wrap default" data-alm-id=""
-                 data-canonical-url="https://www.musgravegroup.com/news/" data-slug="news" data-post-id="3"
-                 data-localized="ajax_load_more_vars" data-alm-object="ajax_load_more">
-                <ul aria-live="polite" aria-atomic="true" class="alm-listing alm-ajax boo" data-container-type="ul"
-                    data-loading-style="default" data-repeater="default" data-post-type="post" data-sticky-posts="true"
-                    data-category="news" data-order="DESC" data-orderby="date" data-offset="0" data-posts-per-page="9"
-                    data-scroll="false" data-button-label="More from News &lt;span&gt;+&lt;/span&gt;"
-                    data-images-loaded="true"></ul>
-                <div class="alm-btn-wrap" data-rel="ajax-load-more">
-                    <button class="alm-load-more-btn more " type="button">More from News &lt;span&gt;+&lt;/span&gt;
-                    </button>
+                    <p class="colour-block post-date">{{ $item->formatted_date }}</p>
+                    <a href="{{ route('page.news.show', $item->url) }}"><img width="300" height="200"
+                                                                             src="{{ asset($item->media->path) }}"
+                                                                             class="attachment-medium size-medium wp-post-image"
+                                                                             alt="" decoding="async"
+                                                                             fetchpriority="high"
+                                                                             sizes="(max-width: 300px) 100vw, 300px">
+                        <div class="colour-block"></div>
+                    </a>
+                    <div class="text"><a
+                            href="{{ route('page.news.show', $item->url) }}">
+                        </a>
+                        <h3>
+                            <a href="{{ route('page.news.show', $item->url) }}"></a><a
+                                href="{{ route('page.news.show', $item->url) }}">{{ $item->title }}</a></h3>
+                        <p>{{ $item->small_description }}</p>
+                    </div>
                 </div>
-                <div class="alm-no-results" style="display: none;">We are all outta news</div>
-            </div>
-
-
+            @endforeach
         </div>
 
-
-    </div>
-
+    </div><!-- container -->
 @endsection
