@@ -1231,7 +1231,7 @@
             <div class="stay" style="display: none;">
                 <ul>
                     @foreach($brands as $brand)
-                        <li><a href="{{ asset($brand->url }}">{{ $brand->name }}</a></li>
+                        <li><a href="{{ asset($brand->url) }}">{{ $brand->name }}</a></li>
                     @endforeach
 
 {{--                    <li><a href="https://www.musgravegroup.com/news/brands/awards/">Awards</a></li>--}}

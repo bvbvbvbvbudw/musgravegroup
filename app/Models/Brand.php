@@ -14,4 +14,14 @@ class Brand extends Model
         'media_logo_id',
         'media_bg_id'
     ];
+
+    public function logo()
+    {
+        return $this->belongsTo(Media::class, 'media_logo_id');
+    }
+
+    public function bg()
+    {
+        return $this->belongsTo(Media::class, 'media_bg_id');
+    }
 }

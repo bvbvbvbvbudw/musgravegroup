@@ -13,8 +13,8 @@ class CreateBrandsTable extends Migration
             $table->text('title');
             $table->text('small_description');
             $table->string('url');
-            $table->foreignId('media_logo_id')->constrained()->onDelete('cascade');
-            $table->foreignId('media_bg_id')->constrained()->onDelete('cascade');
+            $table->foreignId('media_logo_id')->constrained('media')->onDelete('cascade');
+            $table->foreignId('media_bg_id')->constrained('media')->onDelete('cascade');
             $table->timestamps();
         });
     }
