@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use App\Models\Brand;
 use App\Models\News;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -18,7 +19,10 @@ class NewsController extends Controller
         $news = Cache::remember('news_page_data', now()->addHours(1), function(){
             return News::with('media', 'content')->get();
         });
-        return view('musgravegroup.pages.news.news', compact('news'));
+        $brands = Cache::remember('brands_news_page_data', now()->addHours(1), function(){
+            return Brand::all();
+        });
+        return view('musgravegroup.pages.news.news', compact('news', 'brands'));
     }
 
     public function musgrave()

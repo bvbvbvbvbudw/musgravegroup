@@ -3,7 +3,6 @@
 
 @section('content')
     <div class="filter-options">
-
         <div class="blog-list-archive is-on">
             <span>Filter by date</span>
             <div class="stay" style="display: none;">
@@ -1226,31 +1225,27 @@
                 </li>
 
             </div>
-
         </div>
-
         <div class="cat-list-archive is-on">
             <span>Filter by brand</span>
             <div class="stay" style="display: none;">
                 <ul>
+                    @foreach($brands as $brand)
+                        <li><a href="{{ asset($brand->url }}">{{ $brand->name }}</a></li>
+                    @endforeach
 
-                    <li><a href="https://www.musgravegroup.com/news/brands/awards/">Awards</a></li>
-                    <li><a href="https://www.musgravegroup.com/news/brands/centra/">Centra</a></li>
-                    <li><a href="https://www.musgravegroup.com/news/brands/daybreak/">Daybreak</a></li>
-                    <li><a href="https://www.musgravegroup.com/news/brands/donnybrook-fair/">Donnybrook Fair</a></li>
-                    <li><a href="https://www.musgravegroup.com/news/brands/frank-and-honest/">Frank and Honest</a></li>
-                    <li><a href="https://www.musgravegroup.com/news/brands/la-rousse-foods/">La Rousse Foods</a></li>
-                    <li><a href="https://www.musgravegroup.com/news/brands/mace/">Mace</a></li>
-                    <li><a href="https://www.musgravegroup.com/news/brands/marketplace/">MarketPlace</a></li>
-                    <li><a href="https://www.musgravegroup.com/news/brands/supervalu/">SuperValu</a></li>
-
-
+{{--                    <li><a href="https://www.musgravegroup.com/news/brands/awards/">Awards</a></li>--}}
+{{--                    <li><a href="https://www.musgravegroup.com/news/brands/centra/">Centra</a></li>--}}
+{{--                    <li><a href="https://www.musgravegroup.com/news/brands/daybreak/">Daybreak</a></li>--}}
+{{--                    <li><a href="https://www.musgravegroup.com/news/brands/donnybrook-fair/">Donnybrook Fair</a></li>--}}
+{{--                    <li><a href="https://www.musgravegroup.com/news/brands/frank-and-honest/">Frank and Honest</a></li>--}}
+{{--                    <li><a href="https://www.musgravegroup.com/news/brands/la-rousse-foods/">La Rousse Foods</a></li>--}}
+{{--                    <li><a href="https://www.musgravegroup.com/news/brands/mace/">Mace</a></li>--}}
+{{--                    <li><a href="https://www.musgravegroup.com/news/brands/marketplace/">MarketPlace</a></li>--}}
+{{--                    <li><a href="https://www.musgravegroup.com/news/brands/supervalu/">SuperValu</a></li>--}}
                 </ul>
-
             </div>
-
         </div>
-
     </div> <!-- filter options -->
 
     <script type="text/javascript">
@@ -1301,12 +1296,7 @@
         });
 
     </script>
-
-
-
-
     <div class="container filter-overlay">
-
         <div class="filtered-posts">
             @foreach($news as $item)
                 <div class="cat-block centra-color ">
