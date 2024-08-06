@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ProfileUpdateRequest;
 use App\Models\Brand;
 use App\Models\News;
+use App\Models\NewsSustainability;
+use App\Traits\NewsDate;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,6 +16,7 @@ use Illuminate\View\View;
 
 class NewsController extends Controller
 {
+    use NewsDate;
     public function index()
     {
         $news = Cache::remember('news_page_data', now()->addHours(1), function(){
@@ -25,6 +28,22 @@ class NewsController extends Controller
         return view('musgravegroup.pages.news.news', compact('news', 'brands'));
     }
 
+    public function sustainability ()
+    {
+        return view('musgravegroup.pages.news.sustainability');
+    }
+    public function sustainabilityShow($url)
+    {
+        $news = NewsSustainability::whereHas('content', function($query) {
+            $query->where('is_standard', 0);
+        })->where('url', $url)->first();
+        if ($news) {
+            $news = $this->addFormattedDate($news);
+            return view('musgravegroup.pages.sustainability.single', compact('news'));
+        }
+
+//        return redirect()->route('page.index');
+    }
     public function musgrave()
     {
         return view('musgravegroup.pages.news.musgrave');
