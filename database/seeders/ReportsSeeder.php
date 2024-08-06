@@ -11,7 +11,7 @@ class ReportsSeeder extends Seeder
     public function run()
     {
        $file = File::create([
-           'path' => '.pdf',
+           'path' => 'test.pdf',
        ]);
 
        Report::create([

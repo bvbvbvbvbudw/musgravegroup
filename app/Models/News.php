@@ -9,7 +9,7 @@ class News extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'url', 'category', 'small_description', 'is_popular', 'media_id'
+        'title', 'url', 'category', 'small_description', 'is_popular', 'media_id', 'brand_id'
     ];
 
     public function media()
@@ -25,5 +25,10 @@ class News extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class);
     }
 }
