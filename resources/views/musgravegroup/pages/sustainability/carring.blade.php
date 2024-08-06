@@ -7,7 +7,6 @@
         </div>
     </section>
 
-    `
     <article id="post-14965" class="post-14965 page type-page status-publish hentry">
         <div class="container">
             <div class="sustainability-text-block" data-aos="fade-up">
@@ -57,10 +56,6 @@
 
         </div><!-- container -->
     </article><!-- #post-14965 -->
-
-
-
-
 
     <div class="container">
         <div class="slide-nav" data-aos="fade-in">

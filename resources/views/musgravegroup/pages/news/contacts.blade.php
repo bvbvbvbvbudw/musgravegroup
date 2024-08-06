@@ -1,7 +1,7 @@
 @extends('musgravegroup.base')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-presscontacts page-template-page-templatespage-presscontacts-php page page-id-9726 wp-custom-logo')
 @section('content')
-    <section class="blog-hero lazyload" style="background-image:url('{{asset('img/bg-contact.webp')}}')">
+    <section class="blog-hero lazyload" style="background-image:url('{{asset('img/bg-contact.webp ')}}')">
         <div class="text">
             <h1>Press Contacts</h1>
         </div>
@@ -14,15 +14,9 @@
                     TN99</p>
                 <p style="text-align: center">Email: <a href="mailto:group@musgrave.ie">group@musgrave.ie</a> • Tel:
                     +353 (0) 21 4522100</p>
-
                 <div class="two-column-block">
-
                 </div>
-
-
             </div>
-
-
             <h2>Press Contacts</h2>
 
             <ul class="accordion">

@@ -1,8 +1,5 @@
 @php
-    use Carbon\Carbon;
-
     $news = $news->map(function ($item) {
-        $item->formatted_date = Carbon::parse($item->created_at)->format('jS F Y');
         $item->image_url = asset($item->media->path);
         return $item;
     });
