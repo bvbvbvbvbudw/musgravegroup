@@ -24,4 +24,9 @@ class Brand extends Model
     {
         return $this->belongsTo(Media::class, 'media_bg_id');
     }
+
+    public function news()
+    {
+        return $this->belongsTo(News::class);
+    }
 }
