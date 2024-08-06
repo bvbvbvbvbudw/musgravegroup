@@ -9,7 +9,9 @@ class CreateNewsContentTable extends Migration
     {
         Schema::create('news_contents', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('news_id')->constrained()->onDelete('cascade');
+            $table->foreignId('news_id')->nullable()->constrained('news')->onDelete('cascade');
+            $table->foreignId('news_sustainability_id')->nullable()->constrained('news_sustainabilities')->onDelete('cascade');
+            $table->boolean('is_standard')->nullable()->default(true);
             $table->text('content');
             $table->timestamps();
         });
@@ -17,6 +19,6 @@ class CreateNewsContentTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('news_content');
+        Schema::dropIfExists('news_contents');
     }
 }
