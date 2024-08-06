@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\View\Components\LatestNewsComponent;
 use App\View\Components\NewsComponent;
 use App\View\Components\SliderComponent;
 use Illuminate\Support\Facades\Blade;
@@ -24,5 +25,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Blade::component('news', NewsComponent::class);
         Blade::component('slider', SliderComponent::class);
+        Blade::component('latest-news', LatestNewsComponent::class);
     }
 }
