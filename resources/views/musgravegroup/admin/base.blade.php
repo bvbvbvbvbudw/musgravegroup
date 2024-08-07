@@ -3,10 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Admin Dashboard')</title>
     @vite('resources/css/app.css')
+    <style>
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .dark-mode {
+            background-color: #1a202c;
+            color: #a0aec0;
+        }
+
+        .dark-mode .bg-white {
+            background-color: #2d3748 !important;
+        }
+
+        .dark-mode .text-gray-700 {
+            color: #a0aec0 !important;
+        }
+
+        .dark-mode .text-gray-800 {
+            color: #cbd5e0 !important;
+        }
+
+        .dark-mode .bg-gray-100 {
+            background-color: #4a5568 !important;
+        }
+
+        .dark-mode .bg-gray-200 {
+            background-color: #718096 !important;
+        }
+
+        .dark-mode .bg-gray-300 {
+            background-color: #a0aec0 !important;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 <header class="bg-white shadow">
@@ -14,7 +89,11 @@
         <div class="text-lg font-semibold">
             <a href="{{ route('dashboard') }}">Admin Dashboard</a>
         </div>
-        <div>
+        <div class="flex items-center">
+            <label class="toggle-switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider"></span>
+            </label>
             <x-dropdown align="right" width="48">
                 <x-slot name="trigger">
                     <button class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 focus:outline-none transition duration-150 ease-in-out">
@@ -51,10 +130,13 @@
             <nav>
                 <ul>
                     <li class="mb-4">
-                        <a href="{{ route('admin.news.index') }}" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Новости</a>
+                        <a href="{{ route('admin.news.index') }}" class="block p-4 bg-white rounded shadow hover:bg-gray-100">News</a>
                         <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Создать</a>
+                                <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create musgrave news</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create sustainability news</a>
                             </li>
                             <li>
                                 <a href="#" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Другое действие</a>
@@ -62,8 +144,17 @@
                         </ul>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Другой раздел</a>
+                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Reports</a>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create site report</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create report</a>
+                            </li>
+                        </ul>
                     </li>
+                    <!-- TODO: make another crud operations. -->
                 </ul>
             </nav>
         </aside>
@@ -75,5 +166,29 @@
         </main>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const themeSwitch = document.getElementById('theme-switch');
+        const body = document.body;
+
+        // Check localStorage for theme preference
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            themeSwitch.checked = true;
+        }
+
+        themeSwitch.addEventListener('change', function () {
+            if (themeSwitch.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

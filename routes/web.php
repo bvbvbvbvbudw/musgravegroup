@@ -43,6 +43,7 @@ Route::get('/careers/working-for-musgrave', [CareerController::class, 'working']
 Route::get('/careers/sectors', [CareerController::class, 'sectors'])->name('page.careers.sectors');
 Route::get('/careers/current-vacancies', [CareerController::class, 'current'])->name('page.careers.current');
 Route::get('/careers/vacancy/{url}', [CareerController::class, 'show'])->name('page.careers.vacancies.show');
+Route::get('/careers/vacancy/{id}/apply', [CareerController::class, 'apply'])->name('page.careers.vacancies.apply');
 
 Route::get('/news', [NewsController::class, 'index'])->name('page.news');
 Route::get('/news/sustainability', [NewsController::class, 'sustainability'])->name('page.news.sus');
@@ -57,7 +58,7 @@ Route::get('/contact', [ContactController::class, 'index'])->name('page.contact'
 // Admin
 Route::get('/admin', [AdminNewsController::class, 'index'])->name('admin.news.index');
 Route::get('/admin/news/create', [AdminNewsController::class, 'create'])->name('admin.news.create');
-Route::get('/admin/news/store', [AdminNewsController::class, 'store'])->name('admin.news.store');
+Route::post('/admin/news/store', [AdminNewsController::class, 'store'])->name('admin.news.store');
 
 
 

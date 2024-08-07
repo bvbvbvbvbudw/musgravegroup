@@ -31,7 +31,7 @@
 
                 <br><br>
 
-                <a class="button" target="_blank" href="https://www.musgravecareers.com/amr/applyForm.php?requirementId=15539">Apply Now</a>
+                <a class="button" target="_blank" href="{{ route('page.careers.vacancies.apply', $vacancy->id) }}">Apply Now</a>
 
 
                 <div class="related-content"><div class="related-column aos-init" data-aos="fade-up" data-aos-once="true"><div class="background-zoom lazyload" style="background-image:inherit;" data-bg-image="url(https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/the-green-kitchen.jpg?lossy=0&amp;strip=1&amp;webp=1)"></div><a href="https://www.musgravegroup.com/careers/current-vacancies/"></a><h2><a href="https://www.musgravegroup.com/careers/current-vacancies/">All Jobs</a></h2></div><div class="related-column aos-init" data-aos="fade-up" data-aos-once="true"><div class="background-zoom lazyload" style="background-image:inherit;" data-bg-image="url(https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-brands-1.jpg?lossy=0&amp;strip=1&amp;webp=1)"></div><a href="https://www.musgravegroup.com/brands/"></a><h2><a href="https://www.musgravegroup.com/brands/">Our brands</a></h2></div><div class="related-column aos-init" data-aos="fade-up" data-aos-once="true"><div class="background-zoom lazyload" style="background-image:inherit;" data-bg-image="url(https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/food-innovation.jpg?lossy=0&amp;strip=1&amp;webp=1)"></div><a href="https://www.musgravegroup.com/news-blogs/"></a><h2><a href="https://www.musgravegroup.com/news-blogs/">Latest news</a></h2></div></div>

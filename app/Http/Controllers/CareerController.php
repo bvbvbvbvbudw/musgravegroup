@@ -25,6 +25,10 @@ class CareerController extends Controller
         $vacancy = Vacancy::where('url', $url)->first();
         if($vacancy) return view('musgravegroup.pages.careers.single', compact('vacancy'));
     }
+    public function apply ($id)
+    {
+        return view('musgravegroup.pages.careers.apply', compact('id'));
+    }
 
     public function working()
     {
