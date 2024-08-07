@@ -42,6 +42,7 @@ Route::get('/careers', [CareerController::class, 'index'])->name('page.careers')
 Route::get('/careers/working-for-musgrave', [CareerController::class, 'working'])->name('page.careers.working');
 Route::get('/careers/sectors', [CareerController::class, 'sectors'])->name('page.careers.sectors');
 Route::get('/careers/current-vacancies', [CareerController::class, 'current'])->name('page.careers.current');
+Route::get('/careers/vacancy/{url}', [CareerController::class, 'show'])->name('page.careers.vacancies.show');
 
 Route::get('/news', [NewsController::class, 'index'])->name('page.news');
 Route::get('/news/sustainability', [NewsController::class, 'sustainability'])->name('page.news.sus');
