@@ -58,6 +58,10 @@ Route::get('/contact', [ContactController::class, 'index'])->name('page.contact'
 // Admin
 Route::get('/admin', [AdminNewsController::class, 'index'])->name('admin.news.index');
 Route::get('/admin/news/create', [AdminNewsController::class, 'create'])->name('admin.news.create');
+Route::get('/admin/news', [AdminNewsController::class, 'index'])->name('admin.news.index');
+Route::get('/admin/news/edit/{id}', [AdminNewsController::class, 'edit'])->name('admin.news.edit');
+Route::put('/admin/news/edit/{id}/update', [AdminNewsController::class, 'update'])->name('admin.news.update');
+Route::delete('/admin/news/destroy/{id}', [AdminNewsController::class, 'destroy'])->name('admin.news.destroy');
 Route::post('/admin/news/store', [AdminNewsController::class, 'store'])->name('admin.news.store');
 
 
@@ -74,6 +78,6 @@ Route::middleware('auth')->group(function () {
 
 Route::get('news/{url}', [NewsController::class, 'show'])->name('page.news.show');
 Route::get('podcasts/{url}', [AboutController::class, 'showPodcast'])->name('page.about.podcasts.show');
-// TODO: make dymanic routes
+// TODO: make dynamic routes
 
 require __DIR__.'/auth.php';

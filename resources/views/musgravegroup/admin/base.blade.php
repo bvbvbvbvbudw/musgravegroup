@@ -136,6 +136,9 @@
                                 <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create musgrave news</a>
                             </li>
                             <li>
+                                <a href="{{ route('admin.news.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show musgrave news</a>
+                            </li>
+                            <li>
                                 <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create sustainability news</a>
                             </li>
                             <li>

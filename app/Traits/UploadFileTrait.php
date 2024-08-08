@@ -31,7 +31,9 @@ trait UploadFileTrait
         // Check if the file is an image
         if (in_array($extension, ['jpg', 'jpeg', 'png'])) {
             $this->storeImage($file, $filePath, $compress);
-            return Media::create(['path' => $filePath]);
+            $path = str_replace('public', 'storage', $filePath);
+            if ($compress) $path = str_replace(['.jpg', '.png', '.jpeg'], '.webp', $path);
+            return Media::create(['path' => $path]);
         } elseif ($extension === 'pdf') {
             // Store PDF file
             $file->storeAs($directory, $fileName);
@@ -50,30 +52,37 @@ trait UploadFileTrait
      */
     private function storeImage(UploadedFile $file, string $filePath, bool $compress)
     {
-        $image = null;
+        // Get the file extension and MIME type
         $extension = pathinfo($filePath, PATHINFO_EXTENSION);
+        $mimeType = $file->getMimeType();
 
-        switch ($extension) {
-            case 'jpeg':
-            case 'jpg':
+        // Create an image resource based on the MIME type
+        $image = null;
+        switch ($mimeType) {
+            case 'image/jpeg':
                 $image = imagecreatefromjpeg($file->getPathname());
                 break;
-            case 'png':
+            case 'image/png':
                 $image = imagecreatefrompng($file->getPathname());
                 break;
+            default:
+                throw new \Exception('Unsupported image type');
         }
 
+        // Handle compression and conversion to WebP
         if ($compress) {
             $filePath = preg_replace('/\.[^.]+$/', '.webp', $filePath);
             imagewebp($image, storage_path('app/' . $filePath), 80);
         } else {
-            if ($extension == 'jpeg' || $extension == 'jpg') {
+            if ($mimeType === 'image/jpeg') {
                 imagejpeg($image, storage_path('app/' . $filePath), 80);
-            } elseif ($extension == 'png') {
+            } elseif ($mimeType === 'image/png') {
                 imagepng($image, storage_path('app/' . $filePath), 8);
             }
         }
 
+        // Free up memory
         imagedestroy($image);
     }
+
 }

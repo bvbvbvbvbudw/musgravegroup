@@ -16,7 +16,7 @@ class StoreNewsRequest extends FormRequest
         return [
             'title' => 'required|string|max:255',
             'small_description' => 'nullable|string',
-            'is_popular' => 'boolean',
+            'is_popular' => 'nullable',
 //            'media_id' => 'required|exists:media,id',
             'brand_id' => 'nullable|exists:brands,id',
             'is_convert' => 'nullable',
