@@ -39,6 +39,12 @@ Route::get('/sustainability/creating-vibrant-communities', [SustainabilityContro
 Route::get('/sustainability/sourcing-for-good', [SustainabilityController::class, 'source'])->name('page.sustainability.source');
 
 Route::get('/careers', [CareerController::class, 'index'])->name('page.careers');
+Route::get('/careers/supply-chain', [CareerController::class, 'supply'])->name('page.careers.supply');
+Route::get('/careers/technology', [CareerController::class, 'technology'])->name('page.careers.technology');
+Route::get('/careers/sales-ops', [CareerController::class, 'sales'])->name('page.careers.sales');
+Route::get('/careers/commercial', [CareerController::class, 'commercial'])->name('page.careers.commercial');
+Route::get('/careers/finance', [CareerController::class, 'finance'])->name('page.careers.finance');
+Route::get('/careers/graduates', [CareerController::class, 'graduates'])->name('page.careers.graduates');
 Route::get('/careers/working-for-musgrave', [CareerController::class, 'working'])->name('page.careers.working');
 Route::get('/careers/sectors', [CareerController::class, 'sectors'])->name('page.careers.sectors');
 Route::get('/careers/current-vacancies', [CareerController::class, 'current'])->name('page.careers.current');

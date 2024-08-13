@@ -2,19 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProfileUpdateRequest;
 use App\Models\Vacancy;
 use App\Traits\NewsDate;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Redirect;
-use Illuminate\View\View;
 
 class CareerController extends Controller
 {
     use NewsDate;
+
     public function index()
     {
         return view('musgravegroup.pages.careers.careers');
@@ -23,11 +18,37 @@ class CareerController extends Controller
     public function show($url)
     {
         $vacancy = Vacancy::where('url', $url)->first();
-        if($vacancy) return view('musgravegroup.pages.careers.single', compact('vacancy'));
+        if ($vacancy) return view('musgravegroup.pages.careers.single', compact('vacancy'));
     }
-    public function apply ($id)
+
+    public function apply($id)
     {
         return view('musgravegroup.pages.careers.apply', compact('id'));
+    }
+
+    public function supply()
+    {
+        return view('musgravegroup.pages.careers.sectors.supply-chain');
+    }
+    public function sales()
+    {
+        return view('musgravegroup.pages.careers.sectors.sales');
+    }
+    public function technology()
+    {
+        return view('musgravegroup.pages.careers.sectors.technology');
+    }
+    public function commercial()
+    {
+        return view('musgravegroup.pages.careers.sectors.comm');
+    }
+    public function finance()
+    {
+        return view('musgravegroup.pages.careers.sectors.finance');
+    }
+    public function graduates()
+    {
+        return view('musgravegroup.pages.careers.sectors.gradu');
     }
 
     public function working()
@@ -39,9 +60,10 @@ class CareerController extends Controller
     {
         return view('musgravegroup.pages.careers.sectors');
     }
+
     public function current()
     {
-        $vacancies = Cache::remember("vacancies_data_page", now()->addHour(), function(){
+        $vacancies = Cache::remember("vacancies_data_page", now()->addHour(), function () {
             return Vacancy::all();
         });
         $vacancies = $this->addFormattedDate($vacancies);
