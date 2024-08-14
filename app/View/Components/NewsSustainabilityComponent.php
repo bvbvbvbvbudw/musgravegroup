@@ -2,9 +2,9 @@
 
 namespace App\View\Components;
 
+use App\Models\NewsSustainability;
 use App\Traits\NewsDate;
 use Illuminate\View\Component;
-use App\Models\News;
 use Illuminate\Support\Facades\Cache;
 
 class NewsSustainabilityComponent extends Component
@@ -15,7 +15,7 @@ class NewsSustainabilityComponent extends Component
     public function __construct()
     {
         $this->news = Cache::remember('news_sustainability_component_data', now()->addMinutes(10), function () {
-            return News::with(['media', 'content'])->latest()->get();
+            return NewsSustainability::with(['media', 'content'])->latest()->get();
         });
         $this->news = $this->addFormattedDate($this->news);
     }

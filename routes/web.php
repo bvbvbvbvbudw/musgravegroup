@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Admin\AdminNewsController;
+use App\Http\Controllers\Admin\AdminNewsSustainability;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ContactController;
@@ -71,6 +72,12 @@ Route::delete('/admin/news/destroy/{id}', [AdminNewsController::class, 'destroy'
 Route::post('/admin/news/store', [AdminNewsController::class, 'store'])->name('admin.news.store');
 
 
+Route::get('/admin/news/sustainability', [AdminNewsSustainability::class, 'index'])->name('admin.news.sustainability.index');
+Route::get('/admin/news/sustainability/create', [AdminNewsSustainability::class, 'create'])->name('admin.news.sustainability.create');
+Route::post('/admin/news/sustainability/store', [AdminNewsSustainability::class, 'store'])->name('admin.news.sustainability.store');
+Route::get('/admin/news/sustainability/edit/{id}', [AdminNewsSustainability::class, 'edit'])->name('admin.news.sustainability.edit');
+Route::put('/admin/news/sustainability/edit/{id}/update', [AdminNewsSustainability::class, 'update'])->name('admin.news.sustainability.update');
+Route::delete('/admin/news/sustainability/destroy/{id}', [AdminNewsSustainability::class, 'destroy'])->name('admin.news.sustainability.destroy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

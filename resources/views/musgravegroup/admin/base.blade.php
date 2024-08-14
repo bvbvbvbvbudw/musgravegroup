@@ -139,10 +139,10 @@
                                 <a href="{{ route('admin.news.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show musgrave news</a>
                             </li>
                             <li>
-                                <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create sustainability news</a>
+                                <a href="{{ route('admin.news.sustainability.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create sustainability news</a>
                             </li>
                             <li>
-                                <a href="#" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Другое действие</a>
+                                <a href="{{ route('admin.news.sustainability.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show musgrave news</a>
                             </li>
                         </ul>
                     </li>
