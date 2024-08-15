@@ -64,7 +64,7 @@ class CareerController extends Controller
     public function current()
     {
         $vacancies = Cache::remember("vacancies_data_page", now()->addHour(), function () {
-            return Vacancy::all();
+            return Vacancy::where('is_closed', 0);
         });
         $vacancies = $this->addFormattedDate($vacancies);
         return view('musgravegroup.pages.careers.current', compact('vacancies'));
