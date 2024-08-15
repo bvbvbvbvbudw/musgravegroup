@@ -87,7 +87,7 @@
 <header class="bg-white shadow">
     <div class="container mx-auto p-6 flex justify-between items-center">
         <div class="text-lg font-semibold">
-            <a href="{{ route('dashboard') }}">Admin Dashboard</a>
+            <a href="{{ route('page.index') }}" target="_blank">Admin Dashboard</a>
         </div>
         <div class="flex items-center">
             <label class="toggle-switch">
