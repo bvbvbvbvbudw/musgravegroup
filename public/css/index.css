@@ -2115,45 +2115,46 @@ big {
 
 @font-face {
     font-family: playfair_dispblack;
-    src: url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-black-webfont.woff2') format('woff2'),url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-black-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal
+    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhNrV.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
     font-family: playfair_dispblackit;
-    src: url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-blackitalic-webfont.woff2') format('woff2'),url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-blackitalic-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal
+    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFkD-vYSZviVYUb_rj3ij__anPXDTzyzttCjNVpNQ.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
 }
 
 @font-face {
     font-family: playfair_dispbold;
-    src: url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-bold-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal
+    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTzohdrV.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
     font-family: playfair_dispboldit;
-    src: url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-bolditalic-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal
+    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFkD-vYSZviVYUb_rj3ij__anPXDTzyKtpCjNVpNQ.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
 }
 
 @font-face {
     font-family: playfair_dispit;
-    src: url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-italic-webfont.woff') format('woff');
+    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFlD-vYSZviVYUb_rj3ij__anPXDTzy3ttcjA.woff2') format('woff2');
     font-weight: 400;
-    font-style: normal
+    font-style: italic;
 }
 
 @font-face {
     font-family: playfair_dispreg;
-    src: url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),url('https://www.musgravegroup.com/wp-content/themes/musgrave/fonts/playfairdisplay-regular-webfont.woff') format('woff');
+    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTzqhdrV.woff2') format('woff2');
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
+
 
 html {
     -webkit-box-sizing: border-box;

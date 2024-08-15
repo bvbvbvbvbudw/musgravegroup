@@ -15,6 +15,11 @@ class CareerController extends Controller
         return view('musgravegroup.pages.careers.careers');
     }
 
+    public function alerts()
+    {
+        return view('musgravegroup.pages.emailAlerts');
+    }
+
     public function show($url)
     {
         $vacancy = Vacancy::where('url', $url)->first();
@@ -30,22 +35,27 @@ class CareerController extends Controller
     {
         return view('musgravegroup.pages.careers.sectors.supply-chain');
     }
+
     public function sales()
     {
         return view('musgravegroup.pages.careers.sectors.sales');
     }
+
     public function technology()
     {
         return view('musgravegroup.pages.careers.sectors.technology');
     }
+
     public function commercial()
     {
         return view('musgravegroup.pages.careers.sectors.comm');
     }
+
     public function finance()
     {
         return view('musgravegroup.pages.careers.sectors.finance');
     }
+
     public function graduates()
     {
         return view('musgravegroup.pages.careers.sectors.gradu');
@@ -64,9 +74,11 @@ class CareerController extends Controller
     public function current()
     {
         $vacancies = Cache::remember("vacancies_data_page", now()->addHour(), function () {
-            return Vacancy::where('is_closed', 0);
+            return Vacancy::where('is_closed', 0)->get();
         });
-        $vacancies = $this->addFormattedDate($vacancies);
-        return view('musgravegroup.pages.careers.current', compact('vacancies'));
+        if ($vacancies) {
+            $vacancies = $this->addFormattedDate($vacancies);
+            return view('musgravegroup.pages.careers.current', compact('vacancies'));
+        }
     }
 }

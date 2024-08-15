@@ -20,7 +20,7 @@
                             </div>
                             <a class="feat-img" href="{{ route('page.news.show', $popularNews->url) }}">
                                 <span class="the-date">{{ $popularNews->formatted_date }}</span>
-                                <div class="image lazyload" style="background-image:url('{{ $popularNews->image_url }}')"></div>
+                                <div class="image lazyload" style="background-image:url('{{ $popularNews->image_url }}'); background-image:url('{{ asset('default.png') }}');"></div>
                             </a>
                             <div class="text-block">
                                 <div class="post-meta">
@@ -49,13 +49,13 @@
                         <a href="{{ route('page.news.show', $item->url) }}">
                             <article id="post-{{ $item->id }}" class="category-listing post-{{ $item->id }} post type-post status-publish format-standard has-post-thumbnail hentry category-centra tag-run-together">
                                 <div class="img">
-                                    <img width="300" height="200" src="{{ $item->image_url }}" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" fetchpriority="high" sizes="(max-width: 300px) 100vw, 300px" />
+                                    <img width="300" height="200" src="{{ $item->image_url }}" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" fetchpriority="high" sizes="(max-width: 300px) 100vw, 300px" onerror="this.onerror=null; this.src='{{ asset('default.png') }}';" />
                                 </div>
                                 <div class="text-block">
                                     <span>{{ $item->category }}</span>
                                     <h3 class="entry-title">
                                         {{ $item->title }}
-                                        <img data-src="{{ asset('path/to/icon_goto.png') }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" alt="">
+{{--                                        <img data-src="{{ asset('path/to/icon_goto.png') }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" alt="">--}}
                                     </h3>
                                 </div>
                             </article>

@@ -40,6 +40,7 @@ Route::get('/sustainability/creating-vibrant-communities', [SustainabilityContro
 Route::get('/sustainability/sourcing-for-good', [SustainabilityController::class, 'source'])->name('page.sustainability.source');
 
 Route::get('/careers', [CareerController::class, 'index'])->name('page.careers');
+Route::get('/careers/job-alerts', [CareerController::class, 'alerts'])->name('page.careers.alerts');
 Route::get('/careers/supply-chain', [CareerController::class, 'supply'])->name('page.careers.supply');
 Route::get('/careers/technology', [CareerController::class, 'technology'])->name('page.careers.technology');
 Route::get('/careers/sales-ops', [CareerController::class, 'sales'])->name('page.careers.sales');

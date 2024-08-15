@@ -2045,8 +2045,9 @@ template {
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/avenir-roman.ttf');
-    src: url('../fonts/avenir-roman.ttf?#iefix') format('embedded-opentype'), url('../fonts/Avenir-Roman.woff2') format('woff2'), url('../fonts/Avenir-Roman.woff') format('woff'), url('../fonts/avenir-roman.ttf') format('truetype');
+    src: url('../../fonts/Avenir-Roman.eot');
+    src: url('../../fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Avenir-Roman.woff2') format('woff2'), url('../../fonts/Avenir-Roman.woff') format('woff'), url('../../fonts/Avenir-Roman.ttf') format('truetype');
     font-weight: 400;
     font-style: normal
 }
@@ -2113,47 +2114,46 @@ big {
 }
 
 @font-face {
-    font-family: playfair_dispblack;
-    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhNrV.woff2') format('woff2');
+    font-family: 'Playfair Display Black';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap') format('woff2');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: playfair_dispblackit;
-    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFkD-vYSZviVYUb_rj3ij__anPXDTzyzttCjNVpNQ.woff2') format('woff2');
+    font-family: 'Playfair Display Black Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900;italic&display=swap') format('woff2');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
-    font-family: playfair_dispbold;
-    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTzohdrV.woff2') format('woff2');
+    font-family: 'Playfair Display Bold';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: playfair_dispboldit;
-    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFkD-vYSZviVYUb_rj3ij__anPXDTzyKtpCjNVpNQ.woff2') format('woff2');
+    font-family: 'Playfair Display Bold Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;italic&display=swap') format('woff2');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
-    font-family: playfair_dispit;
-    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFlD-vYSZviVYUb_rj3ij__anPXDTzy3ttcjA.woff2') format('woff2');
+    font-family: 'Playfair Display Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;italic&display=swap') format('woff2');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
-    font-family: playfair_dispreg;
-    src: url('https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTzqhdrV.woff2') format('woff2');
+    font-family: 'Playfair Display Regular';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
-
 
 html {
     -webkit-box-sizing: border-box;
