@@ -4,7 +4,20 @@
 
 @section('content')
     <h1 class="text-2xl font-semibold mb-6">{{ $title }}</h1>
-
+    @if (session('status'))
+        <div class="bg-green-500 text-white p-4 rounded mb-4">
+            {{ session('status') }}
+        </div>
+    @endif
+    @if ($errors->any())
+        <div class="bg-red-500 text-white p-4 rounded mb-4">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <form action="{{ $route }}" method="POST" enctype="multipart/form-data">
         @csrf
         @if (isset($model))

@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\AdminNewsSustainability;
+use App\Http\Controllers\Admin\AdminVacancyController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ContactController;
@@ -79,6 +80,13 @@ Route::post('/admin/news/sustainability/store', [AdminNewsSustainability::class,
 Route::get('/admin/news/sustainability/edit/{id}', [AdminNewsSustainability::class, 'edit'])->name('admin.news.sustainability.edit');
 Route::put('/admin/news/sustainability/edit/{id}/update', [AdminNewsSustainability::class, 'update'])->name('admin.news.sustainability.update');
 Route::delete('/admin/news/sustainability/destroy/{id}', [AdminNewsSustainability::class, 'destroy'])->name('admin.news.sustainability.destroy');
+
+Route::get('/admin/vacancy', [AdminVacancyController::class, 'index'])->name('admin.vacancy.index');
+Route::get('/admin/vacancy/create', [AdminVacancyController::class, 'create'])->name('admin.vacancy.create');
+Route::post('/admin/vacancy/store', [AdminVacancyController::class, 'store'])->name('admin.vacancy.store');
+Route::get('/admin/vacancy/edit/{id}', [AdminVacancyController::class, 'edit'])->name('admin.vacancy.edit');
+Route::put('/admin/vacancy/edit/{id}/update', [AdminVacancyController::class, 'update'])->name('admin.vacancy.update');
+Route::delete('/admin/vacancy/destroy/{id}', [AdminVacancyController::class, 'destroy'])->name('admin.vacancy.destroy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

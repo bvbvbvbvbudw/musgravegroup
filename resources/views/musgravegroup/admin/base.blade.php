@@ -157,6 +157,17 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="mb-4">
+                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Vacancies</a>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.vacancy.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create vacancy</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.vacancy.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show vacancies</a>
+                            </li>
+                        </ul>
+                    </li>
                     <!-- TODO: make another crud operations. -->
                 </ul>
             </nav>
