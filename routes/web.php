@@ -56,6 +56,12 @@ Route::get('/careers/vacancy/{url}', [CareerController::class, 'show'])->name('p
 Route::get('/careers/vacancy/{id}/apply', [CareerController::class, 'apply'])->name('page.careers.vacancies.apply');
 
 Route::get('/news', [NewsController::class, 'index'])->name('page.news');
+Route::get('/news/brand/{brand}', [NewsController::class, 'filterByBrand'])->name('page.news.filterByBrand');
+Route::get('/news/{year}/{month}', [NewsController::class, 'filterByDate'])
+    ->where(['year' => '[0-9]{4}', 'month' => '[0-9]{2}'])
+    ->name('page.news.filterByDate');
+
+
 Route::get('/news/sustainability', [NewsController::class, 'sustainability'])->name('page.news.sus');
 Route::get('/news/sustainability/{url}', [NewsController::class, 'sustainabilityShow'])->name('page.news.sus.show');
 Route::get('/musgrave-news', [NewsController::class, 'musgrave'])->name('page.news.musgrave');
