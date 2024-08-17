@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->foreignId('file_id')->constrained()->onDelete('cascade');
             $table->foreignId('media_id')->constrained()->onDelete('cascade');
-            $table->string('title');
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

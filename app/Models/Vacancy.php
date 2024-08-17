@@ -18,7 +18,7 @@ class Vacancy extends Model
         'end_date',
         'is_closed',
         'category_id',
-        'content_id'
+        'content_id', 'status'
     ];
 
     public function content()

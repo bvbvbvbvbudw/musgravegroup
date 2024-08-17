@@ -64,34 +64,12 @@ Route::get('/press-contacts', [NewsController::class, 'contacts'])->name('page.n
 
 Route::get('/contact', [ContactController::class, 'index'])->name('page.contact');
 
-
-// Admin
-Route::get('/admin', [AdminNewsController::class, 'index'])->name('admin.news.index');
-Route::get('/admin/news/create', [AdminNewsController::class, 'create'])->name('admin.news.create');
-Route::get('/admin/news', [AdminNewsController::class, 'index'])->name('admin.news.index');
-Route::get('/admin/news/edit/{id}', [AdminNewsController::class, 'edit'])->name('admin.news.edit');
-Route::put('/admin/news/edit/{id}/update', [AdminNewsController::class, 'update'])->name('admin.news.update');
-Route::delete('/admin/news/destroy/{id}', [AdminNewsController::class, 'destroy'])->name('admin.news.destroy');
-Route::post('/admin/news/store', [AdminNewsController::class, 'store'])->name('admin.news.store');
-
-
-Route::get('/admin/news/sustainability', [AdminNewsSustainability::class, 'index'])->name('admin.news.sustainability.index');
-Route::get('/admin/news/sustainability/create', [AdminNewsSustainability::class, 'create'])->name('admin.news.sustainability.create');
-Route::post('/admin/news/sustainability/store', [AdminNewsSustainability::class, 'store'])->name('admin.news.sustainability.store');
-Route::get('/admin/news/sustainability/edit/{id}', [AdminNewsSustainability::class, 'edit'])->name('admin.news.sustainability.edit');
-Route::put('/admin/news/sustainability/edit/{id}/update', [AdminNewsSustainability::class, 'update'])->name('admin.news.sustainability.update');
-Route::delete('/admin/news/sustainability/destroy/{id}', [AdminNewsSustainability::class, 'destroy'])->name('admin.news.sustainability.destroy');
-
-Route::get('/admin/vacancy', [AdminVacancyController::class, 'index'])->name('admin.vacancy.index');
-Route::get('/admin/vacancy/create', [AdminVacancyController::class, 'create'])->name('admin.vacancy.create');
-Route::post('/admin/vacancy/store', [AdminVacancyController::class, 'store'])->name('admin.vacancy.store');
-Route::get('/admin/vacancy/edit/{id}', [AdminVacancyController::class, 'edit'])->name('admin.vacancy.edit');
-Route::put('/admin/vacancy/edit/{id}/update', [AdminVacancyController::class, 'update'])->name('admin.vacancy.update');
-Route::delete('/admin/vacancy/destroy/{id}', [AdminVacancyController::class, 'destroy'])->name('admin.vacancy.destroy');
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::group([
+    'prefix' => 'dashboard',
+    'middleware' => 'auth',
+], function() {
+    require base_path('routes/admin.php');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

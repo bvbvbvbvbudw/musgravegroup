@@ -12,7 +12,7 @@ class Brand extends Model
         'small_description',
         'url',
         'media_logo_id',
-        'media_bg_id'
+        'media_bg_id', 'status'
     ];
 
     public function logo()

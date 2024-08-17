@@ -22,6 +22,7 @@ return new class extends Migration
             $table->foreignId('category_id')->constrained('vacancy_categories')->onDelete('restrict');
             $table->foreignId('location_id')->constrained('vacancy_locations')->onDelete('restrict');
             $table->foreignId('content_id')->constrained('vacancies_content')->onDelete('cascade');
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

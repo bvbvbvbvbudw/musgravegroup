@@ -9,7 +9,7 @@ class News extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'url', 'category', 'small_description', 'is_popular', 'media_id', 'brand_id'
+        'title', 'url', 'category', 'small_description', 'is_popular', 'media_id', 'brand_id', 'status'
     ];
 
     public function media()

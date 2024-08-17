@@ -17,6 +17,7 @@ class CreatePodcastsTable extends Migration
             $table->text('small_description');
             $table->text('content');
             $table->foreignId('media_id')->constrained()->onDelete('cascade');
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

@@ -7,12 +7,13 @@ use App\Models\Brand;
 use App\Models\News;
 use App\Models\NewsContent;
 use App\Models\NewsSustainability;
+use App\Traits\HandlesStatus;
 use App\Traits\UploadFileTrait;
 use Illuminate\Support\Facades\Storage;
 
 class AdminNewsController extends Controller
 {
-    use UploadFileTrait;
+    use UploadFileTrait, HandlesStatus;
 
     protected function getFields(): array
     {
@@ -57,7 +58,7 @@ class AdminNewsController extends Controller
         $data['url'] = \Str::slug($request->title);
 
         $news = News::create($data);
-
+        $this->handleStatus($news);
         if ($data['is_popular']) {
             $old = News::where('is_popular', 1)->where('id', '<>', $news->id)->first();
             if ($old) {
@@ -79,12 +80,12 @@ class AdminNewsController extends Controller
 
     public function edit($id)
     {
-        $item = News::find($id);
-        if ($item) {
+        $model = News::find($id);
+        if ($model) {
             $title = "Edit news";
             $fields = $this->getFields();
             $route = route('admin.news.update', $id);
-            return view('musgravegroup.admin.pages.form', compact('fields', 'title', 'route', 'item'));
+            return view('musgravegroup.admin.pages.form', compact('fields', 'title', 'route', 'model'));
         } else {
             return redirect()->back()->with(['status' => 'Not found']);
         }
@@ -105,7 +106,7 @@ class AdminNewsController extends Controller
         $data['is_popular'] = $request->boolean('is_popular');
         $data['url'] = \Str::slug($request->title);
         $news->update($data);
-
+        $this->handleStatus($news);
         if ($data['is_popular']) {
             $old = News::where('is_popular', 1)->where('id', '<>', $news->id)->first();
             if ($old) {

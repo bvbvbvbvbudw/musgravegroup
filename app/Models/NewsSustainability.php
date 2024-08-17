@@ -10,7 +10,7 @@ class NewsSustainability extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'url', 'category_id', 'small_description', 'media_id'
+        'title', 'url', 'category_id', 'small_description', 'media_id', 'status'
     ];
 
     public function media()

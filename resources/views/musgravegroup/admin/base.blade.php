@@ -97,7 +97,7 @@
             <x-dropdown align="right" width="48">
                 <x-slot name="trigger">
                     <button class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 focus:outline-none transition duration-150 ease-in-out">
-                        <div>{{ Auth::user()->name ?? 'Test' }}</div>
+                        <div>{{ Auth::user()->name }}</div>
                         <div class="ml-1">
                             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -168,7 +168,50 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- TODO: make another crud operations. -->
+
+                    <li class="mb-4">
+                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Podcasts</a>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.podcasts.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show podcasts</a>
+                            </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.podcasts.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create podcast</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mb-4">
+                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Users</a>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.users.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Manage users</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    @if(Auth::user()->isAdmin())
+                        <li class="mb-4">
+                            <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Manage admin</a>
+                            <ul class="pl-4 mt-2">
+                                <li>
+                                    <a href="{{ route('admin.manage.list', ['model' => 'news']) }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">News</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('admin.manage.list', ['model' => 'vacancy']) }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Vacancies</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('admin.manage.list', ['model' => 'podcast']) }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Podcasts</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('admin.manage.list', ['model' => 'newsSustainability']) }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">New sus</a>
+                                </li>
+                            </ul>
+                        </li>
+                    @endif
+
                 </ul>
             </nav>
         </aside>

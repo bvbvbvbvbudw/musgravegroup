@@ -15,6 +15,7 @@ class CreateNewsSustainabilityTable extends Migration
             $table->foreignId('category_id')->nullable()->constrained('categories')->onDelete('restrict');
             $table->text('small_description');
             $table->foreignId('media_id')->constrained()->onDelete('cascade');
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

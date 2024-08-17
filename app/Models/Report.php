@@ -10,9 +10,10 @@ class Report extends Model
     use HasFactory;
 
     protected $fillable = [
+        'title',
         'file_id',
         'media_id',
-        'title'
+        'status'
     ];
 
     public function media()

@@ -16,6 +16,7 @@ class CreateBrandsTable extends Migration
             $table->foreignId('media_logo_id')->constrained('media')->onDelete('cascade');
             $table->foreignId('media_bg_id')->constrained('media')->onDelete('cascade');
             $table->unsignedBigInteger('news_id')->nullable();
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

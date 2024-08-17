@@ -9,7 +9,15 @@ class Podcast extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'url', 'spotify', 'apple', 'buzz', 'content', 'small_description', 'media_id'
+        'title',
+        'url',
+        'spotify',
+        'apple',
+        'buzz',
+        'content',
+        'small_description',
+        'media_id',
+        'status'
     ];
     public function media()
     {

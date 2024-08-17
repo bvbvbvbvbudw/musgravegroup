@@ -9,12 +9,13 @@ use App\Models\Vacancy;
 use App\Models\VacancyCategory;
 use App\Models\VacancyContent;
 use App\Models\VacancyLocation;
+use App\Traits\HandlesStatus;
 use App\Traits\UploadFileTrait;
 use Illuminate\Support\Facades\Storage;
 
 class AdminVacancyController extends Controller
 {
-    use UploadFileTrait;
+    use UploadFileTrait, HandlesStatus;
 
     protected function getFields(): array
     {
@@ -65,6 +66,7 @@ class AdminVacancyController extends Controller
         $data['end_date'] = now()->addMonth();
         $data['content_id'] = $content->id;
         $vacancy = Vacancy::create($data);
+        $this->handleStatus($vacancy);
         event(new VacancyCreated($vacancy));
         return redirect()->back()->with('status', 'Success');
     }
@@ -92,6 +94,7 @@ class AdminVacancyController extends Controller
         $data['end_date'] = now()->addMonth();
         $data['is_closed'] = 0;
         $vacancy->update($data);
+        $this->handleStatus($vacancy);
         if ($vacancy->content) {
             $vacancy->content->update(['content' => $data['content']]);
         } else {

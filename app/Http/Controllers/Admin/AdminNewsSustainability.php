@@ -7,12 +7,13 @@ use App\Models\Brand;
 use App\Models\News;
 use App\Models\NewsContent;
 use App\Models\NewsSustainability;
+use App\Traits\HandlesStatus;
 use App\Traits\UploadFileTrait;
 use Illuminate\Support\Facades\Storage;
 
 class AdminNewsSustainability extends Controller
 {
-    use UploadFileTrait;
+    use UploadFileTrait, HandlesStatus;
 
     protected function getFields(): array
     {
@@ -55,6 +56,7 @@ class AdminNewsSustainability extends Controller
         $data['url'] = \Str::slug($request->title);
 
         $news = NewsSustainability::create($data);
+        $this->handleStatus($news);
 
         NewsContent::create([
             'content' => $data['content'],
@@ -93,6 +95,7 @@ class AdminNewsSustainability extends Controller
         }
         $data['url'] = \Str::slug($request->title);
         $news->update($data);
+        $this->handleStatus($news);
         $content = NewsContent::updateOrCreate(
             ['news_id' => $news->id],
             ['content' => $data['content'], 'is_standard' => false]

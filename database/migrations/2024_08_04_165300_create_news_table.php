@@ -16,6 +16,7 @@ class CreateNewsTable extends Migration
             $table->boolean('is_popular')->default(false);
             $table->foreignId('media_id')->constrained()->onDelete('cascade');
             $table->unsignedBigInteger('brand_id')->nullable();
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }
