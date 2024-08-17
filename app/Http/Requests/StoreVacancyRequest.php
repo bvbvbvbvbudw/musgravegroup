@@ -8,7 +8,6 @@ class StoreVacancyRequest extends FormRequest
 {
     public function authorize()
     {
-        // Определяем, имеет ли пользователь право отправлять этот запрос
         return true;
     }
 
@@ -17,9 +16,9 @@ class StoreVacancyRequest extends FormRequest
         return [
             'title' => 'required|string|max:255',
             'type' => 'required|string|max:255',
-            'location' => 'nullable|string|max:255',
+            'location_id' => 'nullable',
             'contract_type' => 'required|string|max:255',
-//            'end_date' => 'required|date|after:today',
+            'category_id' => 'required',
             'content' => 'required|string',
         ];
     }
@@ -35,8 +34,8 @@ class StoreVacancyRequest extends FormRequest
             'type.string' => 'The type must be a string.',
             'type.max' => 'The type may not be greater than 255 characters.',
 
-            'location.string' => 'The location must be a string.',
-            'location.max' => 'The location may not be greater than 255 characters.',
+            'category_id.required' => 'The category field is required.',
+            'category_id.int' => 'The category must be a valid integer.',
 
             'contract_type.required' => 'The contract type field is required.',
             'contract_type.string' => 'The contract type must be a string.',

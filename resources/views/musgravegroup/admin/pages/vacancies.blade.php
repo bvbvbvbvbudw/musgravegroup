@@ -14,12 +14,17 @@
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Location:</h2>
-                    <p>{{ $vacancy->location ?? 'none' }}</p>
+                    <p>{{ $vacancy->location->location ?? 'none' }}</p>
+                </div>
+
+                <div class="mb-4">
+                    <h2 class="text-xl font-semibold">Category:</h2>
+                    <p>{{ $vacancy->category->category ?? 'none' }}</p>
                 </div>
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Contract type:</h2>
-                    <p>{{ $vacancy->content->content ?? 'No contrcat available' }}</p>
+                    <p>{{ $vacancy->content->content ?? 'No contract available' }}</p>
                 </div>
 
                 <div class="mb-4">

@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Events\VacancyCreated;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreVacancyRequest;
 use App\Models\Vacancy;
+use App\Models\VacancyCategory;
 use App\Models\VacancyContent;
+use App\Models\VacancyLocation;
 use App\Traits\UploadFileTrait;
 use Illuminate\Support\Facades\Storage;
 
@@ -18,8 +21,21 @@ class AdminVacancyController extends Controller
         return [
             ['name' => 'title', 'label' => 'Title', 'type' => 'text', 'required' => true],
             ['name' => 'type', 'label' => 'Type', 'type' => 'text', 'required' => true],
-            ['name' => 'location', 'label' => 'Location', 'type' => 'text', 'required' => false],
             ['name' => 'contract_type', 'label' => 'Contract type', 'type' => 'text', 'required' => false],
+            [
+                'name' => 'category_id',
+                'label' => 'Select category',
+                'type' => 'select',
+                'required' => true,
+                'options' => VacancyCategory::pluck('category', 'id')->toArray()
+            ],
+            [
+                'name' => 'location_id',
+                'label' => 'Select location',
+                'type' => 'select',
+                'required' => false,
+                'options' => VacancyLocation::pluck('location', 'id')->toArray()
+            ],
             ['name' => 'content', 'label' => 'Content', 'type' => 'textarea', 'required' => true],
         ];
     }
@@ -40,9 +56,7 @@ class AdminVacancyController extends Controller
 
     public function store(StoreVacancyRequest $request)
     {
-        \Log::info($request);
         $data = $request->validated();
-        \Log::info($data);
         $data['url'] = \Str::slug($data['title']);
         $content = VacancyContent::create([
             'content' => $data['content'],
@@ -51,6 +65,7 @@ class AdminVacancyController extends Controller
         $data['end_date'] = now()->addMonth();
         $data['content_id'] = $content->id;
         $vacancy = Vacancy::create($data);
+        event(new VacancyCreated($vacancy));
         return redirect()->back()->with('status', 'Success');
     }
 

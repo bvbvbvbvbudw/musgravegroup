@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\UserSender;
 use App\Models\Vacancy;
+use App\Models\VacancyCategory;
+use App\Models\VacancyLocation;
 use App\Traits\NewsDate;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 
 class CareerController extends Controller
 {
@@ -17,8 +22,40 @@ class CareerController extends Controller
 
     public function alerts()
     {
-        return view('musgravegroup.pages.emailAlerts');
+        $categories = VacancyCategory::all();
+        $locations = VacancyLocation::all();
+        return view('musgravegroup.pages.emailAlerts', compact('categories', 'locations'));
     }
+
+    public function send(Request $request)
+    {
+//        $validatedData = $request->validate([
+//            'title' => 'required|string',
+//            'firstName' => 'required|string',
+//            'secondName' => 'required|string',
+//            'mobileTelephone' => 'required|string',
+//            'applicantEmail' => 'required|email',
+//            'criteria1' => 'array',
+//            'criteria1.*' => 'integer',
+//            'criteria2' => 'array',
+//            'criteria2.*' => 'integer',
+//        ]);
+        $validatedData = $request->all();
+        $preferredCategories = array_map('intval', $validatedData['criteria1']);
+        $preferredLocations = array_map('intval', $validatedData['criteria2']);
+        UserSender::create([
+            'title' => $validatedData['title'],
+            'forenames' => $validatedData['firstName'],
+            'surname' => $validatedData['secondName'],
+            'telephone' => $validatedData['mobileTelephone'],
+            'email' => $validatedData['applicantEmail'],
+            'preferred_categories' => $preferredCategories,
+            'preferred_locations' => $preferredLocations,
+        ]);
+        Log::info('User saved successfully');
+        return redirect()->back()->with('status', 'Email alerts saved successfully.');
+    }
+
 
     public function show($url)
     {

@@ -14,7 +14,6 @@ class VacanciesSeeder extends Seeder
 {
     public function run()
     {
-
         $content1 = VacancyContent::create([
             'content' => 'Tkfksf gjfkgjfklgjdflk gjfk gjdlkj gf djgkd'
         ]);
@@ -26,17 +25,19 @@ class VacanciesSeeder extends Seeder
             'url' => 'test1',
             'type' => '',
             'title' => 'PHP LARAVEL',
-            'location' => 'Remote',
+            'location_id' => 1,
             'contract_type' => "Contract",
             'end_date' => now()->addDays(1),
+            'category_id' => 1,
             'content_id' => $content1 -> id,
         ]);
         $vacancy2 = Vacancy::create([
             'url' => 'test2',
             'type' => 'IT',
             'title' => ' fjdsf jfkdsjfks',
-            'location' => 'Lublin',
+            'location_id' => 2,
             'contract_type' => "Free",
+            'category_id' => 2,
             'end_date' => now()->addDays(1),
             'content_id' => $content2 -> id,
         ]);

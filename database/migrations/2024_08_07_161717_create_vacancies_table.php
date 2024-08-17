@@ -16,10 +16,11 @@ return new class extends Migration
             $table->text('url');
             $table->text('title');
             $table->text('type')->nullable();
-            $table->text('location')->nullable();
             $table->text('contract_type');
             $table->date('end_date');
             $table->boolean('is_closed')->default(false);
+            $table->foreignId('category_id')->constrained('vacancy_categories')->onDelete('restrict');
+            $table->foreignId('location_id')->constrained('vacancy_locations')->onDelete('restrict');
             $table->foreignId('content_id')->constrained('vacancies_content')->onDelete('cascade');
             $table->timestamps();
         });

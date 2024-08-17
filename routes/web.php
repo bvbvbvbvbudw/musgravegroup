@@ -42,6 +42,7 @@ Route::get('/sustainability/sourcing-for-good', [SustainabilityController::class
 
 Route::get('/careers', [CareerController::class, 'index'])->name('page.careers');
 Route::get('/careers/job-alerts', [CareerController::class, 'alerts'])->name('page.careers.alerts');
+Route::post('/careers/job-alerts/send', [CareerController::class, 'send'])->name('page.careers.alerts.send');
 Route::get('/careers/supply-chain', [CareerController::class, 'supply'])->name('page.careers.supply');
 Route::get('/careers/technology', [CareerController::class, 'technology'])->name('page.careers.technology');
 Route::get('/careers/sales-ops', [CareerController::class, 'sales'])->name('page.careers.sales');
