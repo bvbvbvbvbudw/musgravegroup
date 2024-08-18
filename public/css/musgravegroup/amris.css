@@ -1,0 +1,1788 @@
+.dateMM, .dateDD
+{
+    width:	60px!important;
+}
+
+
+.entry-header
+{
+    display: none;
+}
+
+/************************************************************/
+/** FROM AMRIS.CSS **/
+/************************************************************/
+
+a {
+
+
+}
+
+a.hover {
+    text-decoration: underline;
+
+}
+
+A.navPink
+{
+
+}
+
+A.navBlue
+{
+    color: #323470;
+}
+
+
+.cvText
+{
+    color: #CAD206;
+    font-weight: bold;
+}
+
+.inputButton
+{
+    background: -moz-linear-gradient(center top , #CAD206 0%, #23254f 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 		1px solid #23254f;
+    border-radius: 	3px 3px 3px 3px;
+    cursor: 		pointer;
+    padding: 		3px;
+    width: 		auto;
+    font-weight:	bold;
+}
+
+
+.pcenter
+{
+    text-align:	center;
+}
+
+.pcenterBold
+{
+    text-align:	center;
+    font-weight: 	bold;
+
+}
+
+.errorRed
+{
+    color: 		red;
+
+}
+
+/************************************************************/
+/* end							    */
+/************************************************************/
+
+#map
+{
+    width:		100%;
+    height:		300px;
+    border:		1px solid #000;
+
+}
+
+BODY
+{
+
+}
+
+
+h1
+{
+
+}
+
+#intcorpLogoContainer
+{
+    margin-top:	10px;
+    height:		50px;
+    clear:		left;
+}
+
+A.intcorpLink
+{
+    float:	right;
+}
+
+.tableFooterRow
+{
+
+}
+
+.tableTD
+{
+    HEIGHT: 3px
+
+}
+
+.hiddenLabel
+{
+    visibility: hidden;
+}
+
+/************************************************************/
+/** error div bits **/
+
+.errorDiv
+{
+    font-weight: 	bold;
+    margin-top:	0.8em;
+    line-height: 21px;
+
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.errorDiv P
+{
+    font-weight: 	bold;
+    color: 		#E07E3C;
+}
+
+/************************************************************/
+/** form div bits **/
+
+.formDivTable
+{
+
+    #float: 		left;
+    position: 	relative;
+
+
+    width:	100%;
+}
+
+
+.formDivTable div
+{
+    #float: left;
+    position: 	relative;
+
+}
+
+.formDivTable table
+{
+
+    margin-top:	20px;
+    text-valign:	top;
+    text-align: 	left;
+    #width:		60em;
+
+
+
+
+    border-right:		1px solid #ADAEAF;
+    border-bottom:		1px solid #ADAEAF;
+    border-top:		1px solid #ADAEAF;
+}
+
+.oneHundredTd
+{
+    vertical-align: top;
+
+
+}
+
+.formDivTable th
+{
+    vertical-align: top;
+
+    font-weight:	bold;
+
+
+    border-left:	1px solid #ADAEAF;
+
+    padding:	5px;
+}
+
+.assesstable th
+{
+
+}
+
+.formDivTable td
+{
+    vertical-align: top;
+
+    border-left:	1px solid #ADAEAF;
+    border-top:	1px solid #ADAEAF;
+
+    padding:	5px;
+
+
+}
+
+
+.formDiv
+{
+    position: 	relative;
+
+    border:		0x solid black;
+}
+
+.formDiv h3
+{
+    font-weight:	bold;
+
+
+    border:		0x solid black;
+    /*border-bottom: 	#000 1px solid;*/
+}
+
+.formDiv h4
+{
+
+
+    border:		0x solid black;
+    border-bottom: 	#9ea900 0px solid;
+}
+
+
+.formDivTable input
+{
+    float:		top;
+    width: 		150px;
+
+
+}
+
+.formDivTable .inputLong
+{
+    float:		top;
+    width: 		70%;
+
+
+}
+
+.formDivTable textarea
+{
+    float:		top;
+    width: 		150px;
+    height:		100px;
+
+
+}
+
+.formDivTable select
+{
+    margin-top: 	0.2em;
+    /*margin-bottom: 	0.2em;*/
+
+
+}
+
+
+.formDivTable checkbox
+{
+    vertical-align: top;
+    horizontal-align: center;
+}
+
+
+.formDiv fieldset
+{
+    width: 		100%;
+
+    margin-top:	10px;
+    padding: 	10px;
+
+    margin-left: 	auto;
+    margin-right: 	auto;
+}
+
+.formDivTable fieldset
+{
+
+
+    border: 	1px solid #D0D0D0;
+
+
+
+    width: 		100%;
+
+}
+
+/****************************************************/
+
+.formDivTable2
+{
+
+    float: 		left;
+
+
+}
+
+
+.formDivTable2 div
+{
+    float: left;
+}
+
+.formDivTable2 table
+{
+
+    text-valign:	top;
+    text-align: 	left;
+    #width:		60em;
+
+
+
+
+    border-right:		1px solid #ADAEAF;
+    border-bottom:		1px solid #ADAEAF;
+    border-top:		1px solid #ADAEAF;
+
+}
+
+
+.formDivTable2 th
+{
+    vertical-align: middle;
+    color:		black;
+
+    font-weight:	bold;
+
+
+    border-left:	1px solid #ADAEAF;
+
+
+    background-color: #ffffff;
+}
+
+.formDivTable2 td
+{
+    vertical-align: middle;
+
+
+    border-left:	1px solid #ADAEAF;
+    border-top:	1px solid #ADAEAF;
+
+    padding: 	5px 5px;
+}
+
+.formDivTable2 input
+{
+    float:		top;
+    width: 		150px;
+
+
+}
+
+.formDivTable2 .inputLong
+{
+    float:		top;
+    width: 		70%;
+
+
+}
+
+.formDivTable2 textarea
+{
+    float:		top;
+    width: 		150px;
+    height:		100px;
+
+
+}
+
+.formDivTable2 select
+{
+    margin-top: 	0.2em;
+    /*margin-bottom: 	0.2em;*/
+
+
+}
+
+
+.formDivTable2 checkbox
+{
+    vertical-align: top;
+    horizontal-align: center;
+}
+
+.formDivTable2 radio
+{
+    vertical-align: top;
+    horizontal-align: center;
+}
+
+
+
+.formDivTable2 fieldset
+{
+
+
+    border: 	0px solid #D0D0D0;
+
+
+
+}
+
+/****************************************************/
+
+P.grey
+{
+    color: #000!important;
+}
+
+P.center
+{
+    text-align: center;
+}
+
+.formDiv legend, .formDivTable legend .formDivTable2 legend
+{
+    color:		#ADAEAF
+    font-weight:	bold;
+    align: 		middle;
+
+    width: 		60%;
+    margin-left:	auto;
+    margin-right:	auto;
+
+    color: 		#E07E3C;
+    text-transform:	uppercase;
+    font-size:	14px;
+    font-weight:	bold;
+
+}
+
+
+.formDiv div, .submitDiv div
+{
+    display: 	block;
+    /**	float: 		left;	**/
+    width:		60%;
+    margin-left: 	auto;
+    margin-right: 	auto;
+}
+
+.formDiv label
+{
+    width: 		100%;
+
+    text-align: 	left;
+    display: 	inline;
+    margin-top: 	0.5em;
+    margin-left: 	0.0em;
+    margin-bottom: 	0.2em;
+
+
+    float: 		left;
+
+    height:		auto;
+
+    font-weight:	bold;
+
+    color:		#666;
+}
+
+SPAN.spanMLeft
+{
+    text-align: 	left;
+    display: 	inline;
+    margin-top: 	0.2em;
+    margin-left: 	29%;
+    margin-bottom: 	12px;
+
+    float: 		left;
+
+    height:		auto;
+
+}
+
+.formDiv submit
+{
+    color:		#000;
+    border: 	1px solid #D0D0D0;
+    width: 		200px;
+
+    height:		1.8em;
+
+    font-weight: 	bold;
+    display: 	inline;
+
+}
+
+
+.formDiv .labelBold
+{
+    font-weight:	bold;
+    width: 		100px;
+
+    text-align: 	left;
+    display: 	inline;
+    margin-top: 	0.2em;
+    margin-left: 	0.4em;
+    float: 		left;
+
+
+
+}
+
+.formDiv P
+{
+    margin-top:	0.5em;
+    /**color: #3B3A3A;	**/
+    color: #666;
+    font-weight: normal;
+    line-height: 19px;
+
+    #width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formDiv input
+{
+    border: 1px solid #CCC!important;
+
+    float:		top;
+
+    #margin-top: 	0.5em;
+    width: 		100%;
+
+    padding:	5px;
+}
+
+.inputCheckbox
+{
+
+    float:		top;
+    /*	margin-left: 	0.3em;*/
+    margin-top: 	0.0em;
+    margin-bottom: 	0.0em;
+
+}
+
+.inputRadio
+{
+
+    float:		top;
+    margin-left: 	0.3em;
+    margin-top: 	0.0em;
+    margin-bottom: 	0.0em;
+
+}
+
+.formDiv .shortRadio
+{
+    width:		15px;
+    border:		0px solid black;
+
+    margin-bottom: 	12px;
+
+
+}
+
+.formDiv textarea
+{
+
+    margin-top: 	0.2em;
+    margin-bottom: 	12px;
+
+    width: 		100%;
+    height:		100px;
+
+    padding:	5px;
+    border: 1px solid #CCC!important;
+}
+
+TEXTAREA.textareaWide
+{
+    width:		100%;
+    height:		100px;
+    margin-left: 	0;
+    padding:	5px;
+}
+
+
+.formDiv select
+{
+    width: 		100%;
+    height: 	32px;
+    border-radius: 7px;
+    font-size: 	12px;
+    padding: 	7px 10px;
+    color: 		#303030;
+    border: 1px solid #4e4e4e!important;
+}
+
+.formDiv select[multiple]
+{
+    height: 	auto!important;
+}
+
+/** ------ **/
+.formDiv .submitter label
+{
+    visibility: hidden;
+}
+
+.submitterLabel
+{
+    visibility: hidden;
+
+}
+
+.formDiv .submitter input
+{
+    background: #E07E3C none repeat scroll 0 0;
+    border: 2px solid #e2e2e2;
+    border-radius: 10px;
+    width:	200px;
+    height:	40px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline;
+    /**    float: left;	**/
+    font: bold 1.1em/1em arial,helvetica,geneva,sans-serif;
+    margin-top: 6px;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.formP
+{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.submitterInput
+{
+    background: #E07E3C none repeat scroll 0 0;
+    /**	border: 2px solid #e2e2e2;	**/
+    border-radius: 10px;
+    width: 300px;
+
+    height: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline;
+    font: bold 1.1em/1em arial,helvetica,geneva,sans-serif;
+    margin-top: 6px;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.submitterInput[value='Save and return later']
+{
+    background: #CAD206 none repeat scroll 0 0;
+    border: 2px solid #e2e2e2;
+}
+
+
+.submitterInput:focus
+{
+    background: #505050;
+
+}
+
+.formDiv .submitter a
+{
+
+}
+
+
+/************************************************************/
+/** submit div bits */
+.submitDivTable
+{
+    float: left;
+
+}
+
+
+.submitDiv
+{
+    float: 	left;
+
+}
+
+.submitDivTable table
+{
+    text-valign: 	top;
+    text-align: 	left;
+
+}
+
+.submitDivTable td
+{
+    vertical-align: top;
+
+
+}
+
+.submitDivTable th
+{
+    vertical-align: top;
+
+    font-weight:	normal;
+    background-color: #D0D0D0;
+
+}
+
+.submitDivTable input
+{
+    float:		top;
+    width: 		150px;
+
+
+}
+
+.submitDivTable textarea
+{
+    float:		top;
+    width: 		150px;
+    height:		100px;
+
+
+}
+
+.submitDivTable select
+{
+    margin-top: 	0.2em;
+    /*margin-bottom: 	0.2em;*/
+
+
+}
+
+.submitDiv fieldset
+{
+    width: 		100%;
+    margin-top: 	10px;
+    padding: 	10px;
+    border: 	0;
+    text-align:	center;
+}
+
+.submitDivTable fieldset
+{
+    border: 0px solid #000000;
+
+
+}
+
+.submitDiv legend, .submitDivTable legend
+{
+    color: #000000;
+
+    padding: 12px 16px
+
+    font-weight:bold;
+
+}
+
+
+
+.submitDiv label
+{
+    width: 		100%;
+    height:		20px;
+    float: 		left;
+    text-align: 	left;
+    display: 	inline;
+    margin-top: 	0.2em;
+    margin-left: 	0.4em;
+}
+
+
+
+.submitDiv .labelBold
+{
+    font-weight:	bold;
+    width: 		100%;
+    height:		20px;
+    float: 		left;
+    text-align: 	left;
+    display: 	block;
+    margin-top: 	0.2em;
+    margin-left: 	0.4em;
+
+
+}
+
+.submitDiv input
+{
+
+}
+
+.submitDiv textarea
+{
+    margin-top: 	0.2em;
+    /*margin-bottom: 	0.2em;*/
+
+    width: 		200px;
+    height:		150px;
+
+}
+
+.largeTextarea
+{
+    margin-top: 	0.2em;
+    /*margin-bottom: 	0.2em;*/
+
+    width: 		400px;
+    height:		150px;
+
+}
+
+.submitDiv select
+{
+    margin-top: 	0.2em;
+    /*margin-bottom: 	0.2em;*/
+
+    width: 		200px;
+
+}
+
+/** ------ **/
+.submitDiv .submitter label
+{
+    visibility: hidden;
+}
+
+.submitDiv .submitter input
+{
+
+
+    border: 1px solid #E07E3C;
+    width: 	150px;
+
+    /**
+    color: white;
+    */
+}
+
+.submitDiv .submitter a
+{
+}
+
+
+/************************************************************/
+
+/** ------ **/
+.submitter label
+{
+    visibility: hidden;
+}
+
+.submitter input
+{
+
+
+    border: 1px solid #E07E3C;
+    width: 	150px;
+
+    /**
+    color: white;
+    */
+}
+
+.submitter a
+{
+
+
+}
+
+/** single line stuff **/
+.formDiv .singleLineLabel
+{
+
+    width: 		450px;
+    height:		20px;
+    float: 		left;
+    text-align: 	left;
+    display: 	block;
+    margin-top: 	0.2em;
+
+}
+
+.formDiv .singleLineTextarea
+{
+    margin-top: 	0.2em;
+    /*margin-bottom: 	0.2em;*/
+
+    width: 		433px;
+    height:		130px;
+
+}
+/** end form div bits **/
+
+
+/************************************************************/
+/** search display bits **/
+.searchDisplay
+{
+    width: 		550px;
+
+}
+
+.searchDisplayVacancy label
+{
+    width: 		150px;
+    float: 		left;
+    text-align: 	left;
+    display: 	block;
+    font-weight:	bold;
+
+}
+
+.searchDisplayVacancy div
+{
+    width: 		400px;
+    float: 		left;
+    text-align: 	left;
+    display: 	block;
+
+}
+
+.searchDisplaySpace
+{
+    float: left;
+
+}
+/** end search display bits **/
+
+
+/************************************************************/
+/** search display bits **/
+.vacancyDisplay label
+{
+    width: 		150px;
+    float: 		left;
+    text-align: 	right;
+    display: 	block;
+    font-weight:	bold;
+
+}
+
+.vacancyDisplay div
+{
+    width: 		100%;
+    float: 		left;
+    text-align: 	left;
+    display: 	block;
+
+}
+
+.vacancyDisplayMain
+{
+    width: 		550px;
+
+}
+
+.vacancyDisplay input
+{
+
+    color: black;
+    border: 0px solid #D0D0D0;
+    width: 	150px;
+    height:	18px;
+    font-weight:bold;
+
+    /**
+    border: 1px solid #E07E3C;
+    width: 	200px;
+    color: white;
+    */
+}
+
+.searchDisplaySpace
+{
+    float: left;
+}
+/** end search display bits **/
+
+
+.labelHidden
+{
+    visibility: 	hidden;
+
+}
+
+
+.textFieldSmall
+{
+
+    color: 		#6184AF;
+    font-style:	normal;
+    font-weight:	normal;
+
+
+}
+
+.viewLabel
+{
+    font-weight:	bold;
+    width:		auto!important;
+    color: 		#666;
+    text-transform:	uppercase;
+    padding:	5px;
+    display:	inline!important;
+    word-break: break-all;
+}
+
+.viewData
+{
+    width:		auto!important;
+    text-transform:	uppercase;
+    padding:	5px;
+    display:	inline!important;
+    word-break: break-all;
+}
+
+.viewHolder
+{
+    width: 		33%!important;
+    float:		left!important;
+    display:	inline!important;
+}
+
+.viewLabelWide
+{
+    color:		#666;
+
+    font-weight:	bold;
+    width:		550px!important;
+    color: 		#4d5763;
+    padding:	5px;
+}
+
+.viewDataFD
+{
+    width:		100%!important;
+
+
+    -webkit-font-smoothing:antialiased;
+    color: rgb(51, 51, 51);
+    display: block;
+
+
+    line-height: 21px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-top: 10px;
+
+}
+
+.viewDataFD li
+{
+    color: #666;
+    display: list-item;
+
+
+    line-height: 21px;
+    list-style-type: disc;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    text-align: left;
+
+
+}
+
+TABLE.searchResultsJS TH
+{
+    border-bottom: 	1px solid #F3F3F3;
+    background:	#F3F3F3;
+    color:		#4d5763;
+    padding:	5px;
+
+    text-align:	left;
+    font-weight:	bold;
+}
+
+.SRlabel
+{
+    margin-top:	5px;
+    width: 		100%;
+    float:		left;
+    clear:		all;
+    text-align:	left;
+    color:		#666;
+    font-weight:	bold;
+    text-transform: uppercase;
+}
+
+TABLE.searchResultsJS TD
+{
+    border-bottom: 	1px solid #F3F3F3;
+    padding:	5px;
+}
+
+TABLE.searchResultsJS
+{
+    width: 100%;
+}
+
+TABLE.searchResultsMain
+{
+    width: 100%;
+    font-weight: bold;
+    border: 0px!important;
+}
+
+TABLE.searchResultsMain TH
+{
+    border-left: 	0px!important;
+    border-top: 	0px!important;
+
+    border-bottom: 	1px solid #CCC;
+    background:	#FFF;
+    color:		#E07E3C;
+    padding:	5px;
+
+    text-align:	left;
+    font-weight:	bold;
+    text-transform: uppercase;
+}
+
+
+TABLE.searchResultsMain TD
+{
+    border-left: 	0px!important;
+    border-top: 	0px!important;
+    border-bottom: 	1px solid #CCC;
+    padding:	5px;
+    color: 		#666;
+}
+
+A.viewLink
+{
+    background: #E07E3C;
+    color: #fff!important;
+    border: 0;
+    border: 1px solid #E07E3C;
+    padding: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+
+
+.searchResultsMain a
+{
+
+}
+
+.searchResultsMain a:hover {
+    text-decoration: underline;
+
+}
+
+
+INPUT.radio:not(old), INPUT[type=radio]:not(old)
+{
+    width:	20px;
+    margin-left: 0px!important;
+    visibility: hidden;
+    position: absolute;
+}
+
+INPUT.radio:not(old) + LABEL, INPUT[type=radio]:not(old) + LABEL
+{
+    display: 	inline-block;
+    line-height: 	24px;
+}
+
+INPUT.radio:not(old) + LABEL SPAN.outer, INPUT[type=radio]:not(old) + LABEL SPAN.outer
+{
+    color: 		#fff;
+    font-weight: bold;
+    border: 2px solid #CAD206;
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    float:left;
+    margin-top: -5px;
+    line-height: 28px;
+    margin-right: 10px;
+}
+
+INPUT.radio:not(old) + LABEL SPAN.inner, INPUT[type=radio]:not(old) + LABEL SPAN.inner
+{
+    color: 		#fff;
+    font-weight: 	bold;
+    border: 	2px solid #fff;
+    background: 	#fff;
+    border-radius: 	50%;
+    width: 		21px;
+    height: 	20px;
+    text-align: 	center;
+    float:		left;
+    margin-top: 	3px;
+    margin-left: 	3px;
+    line-height: 	28px;
+}
+
+INPUT.radio:not(old):checked + LABEL SPAN.inner, INPUT[type=radio]:not(old):checked + LABEL SPAN.inner
+{
+    color: 		#CAD206;
+    border: 	2px solid #CAD206;
+    background: 	#CAD206;
+}
+
+LABEL.radioLabel
+{
+    width: auto!important;
+    margin-right: 10px;
+}
+
+DIV.radioDiv
+{
+    margin-top: 0.2em;
+
+}
+
+INPUT:focus, SELECT:focus, FILE:focus, TEXTAREA:focus
+{
+    background: #dad9ee;
+}
+
+.formDiv TABLE
+{
+    width: 60%!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.formDiv TH, .formDiv TD
+{
+    color: #E07E3C;
+}
+
+.formDiv TH
+{
+    text-align: center;
+}
+
+.errorLabelDiv
+{
+    clear: 	left;
+    color: 	#E07E3C!important;
+    display: 	none;
+
+    height: 	auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    width: 	100% !important;
+}
+
+LABEL.labelWide
+{
+    width: 100%;
+    clear:	both;
+}
+
+LABEL.labelNone
+{
+    display:	none;
+}
+
+.noBorPad FIELDSET
+{
+    border: 0px;
+    padding-left: 0px;
+}
+
+#helpframe
+{
+    display:none;
+}
+
+INPUT.checkbox
+{
+    width: 20px;
+    margin-top: 0.8em;
+}
+
+SPAN.requirementLabel
+{
+    width:	70%;
+    float:	left;
+
+
+}
+
+SPAN.requirementDisplay
+{
+
+
+    float:	left;
+}
+
+
+
+
+
+.copyright li
+{
+
+}
+
+
+#innerContainer
+{
+    float:	left;
+    display:block;
+    width: 728px!important;
+}
+
+
+
+.formDiv textarea
+{
+    float:left;
+}
+
+
+/** PAGE STYLES **/
+DIV#index, DIV#login, DIV#forgottenpassword, DIV#forgottenpassword, DIV#forgottenpasswordsend, DIV#forgottenpasswordsend
+{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+
+DIV#login A, DIV#index A
+{
+    color: #404040;
+    text-decoration: underline;
+}
+
+DIV#index H1.title, DIV#login H1.title, DIV#forgottenpassword H1.title, DIV#forgottenpassword H1.title, DIV#forgottenpasswordsend H1.title, DIV#forgottenpasswordsend H1.title
+,DIV#index H2.title, DIV#login H2.title, DIV#forgottenpassword H2.title, DIV#forgottenpassword H2.title, DIV#forgottenpasswordsend H2.title, DIV#forgottenpasswordsend H2.title
+{
+    display: none;
+}
+
+DIV#index FIELDSET, DIV#login FIELDSET, DIV#forgottenpassword FIELDSET, DIV#forgottenpassword FIELDSET, DIV#forgottenpasswordsend FIELDSET, DIV#forgottenpasswordsend FIELDSET
+{
+    border: 0px;
+    padding: 0px;
+}
+
+DIV.submitleft, DIV.submitright
+{
+    width: 50%;
+    display:inline;
+}
+
+DIV.submitleft LABEL.submitterLabel, DIV.submitright LABEL.submitterLabel
+{
+    display: none;
+}
+
+
+
+DIV#applyform .formDiv P, DIV#emailalerts .formDiv P
+{
+    text-align: left;
+    width: 100%!important;
+}
+
+DIV#applyform .submitDiv P, DIV#emailalerts .submitDiv P
+{
+    text-align: center;
+}
+
+
+DIV#vacancyview A, DIV#applyform A
+{
+    color: #666;
+    color: #000;
+}
+
+
+DIV#vacancyview .formDiv div, DIV#vacancyview .submitDiv div, DIV#vacancyview .title
+{
+    width: 100%;
+}
+
+#headerLinkDiv
+{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+#headerLinkDiv A
+{
+    color: #E07E3C!important;
+}
+
+
+P.submitter
+{
+    width: 100%;
+    text-align: center;
+}
+
+SPAN.spanMLeft
+{
+    width: 100%;
+}
+
+DIV#vacancyview SPAN.spanMLeft
+{
+    margin-left: 0px;
+}
+
+DIV#applyform DIV.submitter
+{
+    margin-left: 29%;
+}
+
+.searchResultsMain TH.title
+{
+    width: 45%;
+}
+
+.searchResultsMain TH.sector
+{
+    width: 25%
+}
+
+.searchResultsMain TH.location
+{
+    width: 25%
+}
+
+.searchResultsMain TH.view
+{
+    width: 5%
+}
+
+.pages
+{
+    float: right;
+}
+
+.pageleft, .pageright, .page-numbers
+{
+    margin-right: 0px;
+}
+
+.results-from
+{
+    float: left;
+}
+
+
+DIV.submitDiv
+{
+    width: 100%;
+}
+
+div .submit {
+    background: #666 none repeat scroll 0 0;
+    border: 2px solid #e2e2e2;
+    border-radius: 9px;
+    clear: left;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: bold 1.1em/1em arial,helvetica,geneva,sans-serif;
+    margin-top: 6px;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.careerstable
+{
+    width: 100%;
+    border: 0px!important;
+}
+
+.careerstable TD, .careerstable TH
+{
+    border: 0px!important;
+    border-top: 0px!important;
+    border-bottom: 0px!important;
+
+    border-bottom: 1px solid #ccc!important;
+}
+
+.careerstable TH.ref
+{
+    width: 10%;
+}
+
+.careerstable TH.title
+{
+    width: 40%;
+}
+
+.careerstable TH.created
+{
+    width: 30%;
+}
+
+.careerstable TH.status
+{
+    width: 15%;
+}
+
+.job-search-number
+{
+    padding-bottom: 20px;
+}
+
+.pagecenterDivOuter
+{
+    background: #f3f3f3;
+    height: 50px;
+    padding: 15px;
+}
+
+.pagecenterDivOuter .results-from
+{
+    color: #666;
+}
+
+A.pageleft, A.pageright, A.pageleft:hover, A.pageright:hover, A.pagecenter, A.pagecenter:hover
+{
+    color:		#fff;
+    font-weight: 	bold;
+    border: 	2px solid #ffffff;
+    background: 	#E07E3C;
+    border-radius: 	50%;
+    width: 		30px;
+    height:		30px;
+    text-align: 	center;
+    float:		right;
+    margin-top:	-4px;
+    line-height:	26px;
+}
+
+A.pagecenter, A.pagecenter:hover
+{
+    float:right;
+}
+
+A.pagecenter.selected
+{
+    background: #E07E3C;
+}
+
+H1.title, H2.title, H3.title
+{
+    text-align: 	center;
+    color: 		#E07E3C;
+    text-transform:	uppercase;
+    font-weight:	bold;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+H1.subtitle, H2.subtitle, H3.subtitle
+{
+    text-align: 	left;
+    color: 		#E07E3C;
+    text-transform:	uppercase;
+    font-weight:	bold;
+}
+
+SELECT[name^="year_"]
+{
+    width: 80px!important;
+}
+
+SELECT[name^="month_"]
+{
+    width: 60px!important;
+}
+
+.mobile
+{
+    display: none;
+}
+
+#careersSearchBar
+{
+    margin: 10px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+    z-index: 1000;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    position: relative;
+    padding: 25px;
+    height: 100%;
+    color: white;
+}
+
+.searchForm INPUT, .searchForm SELECT
+{
+    width: 90%;
+}
+
+.searchForm INPUT[type='button']
+{
+    background: #E07E3C;
+    color: #fff!important;
+    border: 0;
+    border: 1px solid #E07E3C;
+    padding: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.searchForm DIV
+{
+    width: 20%!important;
+    display:inline!important;
+    float:left;
+}
+
+.searchForm
+{
+    background: #f3f3f3;
+}
+
+input[type="text"], input[type="password"], textarea, input[type="number"], input[type="tel"], input[type="email"]
+{
+    border: 1px solid #4e4e4e!important;
+    border-radius: 7px;
+    font-size: 12px;
+    padding: 7px 10px;
+    color: #303030;
+    padding: 10px!important;
+    height: 32px;
+}
+
+@media (max-width: 1000px){
+
+    .searchForm DIV
+    {
+        width: 50%!important;
+        display: inline!important;
+        float: left;
+    }
+
+    .formDiv div, .submitDiv div
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .formDiv div, .submitDiv div
+    {
+        width: 100%;
+    }
+    .fullWidthBox {
+        padding: 0px !important;
+    }
+    .searchForm DIV
+    {
+        width: 100%!important;
+        display: inline!important;
+        float: left;
+    }
+
+    #map
+    {
+        display:none;
+    }
+
+    .formDiv label, .formDiv P
+    {
+        width: 100%;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"], textarea, .textareaWide, .formDiv select, .formDiv label {
+        width: 100% !important;
+    }
+
+    .dateDD,.dateMM,.dateYYYY
+    {
+        float:left!important;
+        margin-left:0px!important;
+    }
+
+
+    .responsiveHide {
+        display: none !important;
+    }
+
+    .responsiveShow {
+        display: block !important;
+    }
+
+    SPAN.spanMLeft
+    {
+        margin-left: 0px !important;
+    }
+
+
+    /*#mandmarker_userfile, #mandmarker_cv, #mandmarker_coverLetter
+    {
+        display:none;
+    }*/
+
+    .formDiv div
+    {
+        width: 100%;
+    }
+
+    TR.mobile
+    {
+        display: table-row !important;
+    }
+
+    .desktop
+    {
+        display: none;
+    }
+
+    .viewHolder
+    {
+        width: 100%!important;
+    }
+
+    .formDiv div, .submitDiv div
+    {
+        width: 100%!important;
+    }
+
+    .formDiv TABLE, .formDiv legend, .formDivTable legend .formDivTable2 legend
+    {
+        width: 100%;
+    }
+}

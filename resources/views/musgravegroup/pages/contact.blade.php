@@ -38,18 +38,18 @@
 
 
                         <div class="column">
-                            <a href="../wp-content/uploads/2022/02/Musgrave-press-pack-2022.zip"><img
+                            <a href="{{ asset('zips/Musgrave-press-pack-2022.zip') }}"><img
                                     style="display:block;"
                                     data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/09/Download-the-Musgrave-Group-press-pack-1.jpg?lossy=0&strip=1&webp=1"
                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                                     class="lazyload"><noscript><img style="display:block;"
                                                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/09/Download-the-Musgrave-Group-press-pack-1.jpg?lossy=0&amp;strip=1&amp;webp=1"></noscript></a>
                             <h4><a
-                                    href="../wp-content/uploads/2022/02/Musgrave-press-pack-2022.zip">Download</a>
+                                    href="{{ asset('zips/Musgrave-press-pack-2022.zip') }}">Download</a>
                             </h4>
 
                             <p class="video-download-text"><a
-                                    href="../wp-content/uploads/2022/02/Musgrave-press-pack-2022.zip">Musgrave
+                                    href="{{ asset('zips/Musgrave-press-pack-2022.zip') }}">Musgrave
                                     Press pack</a></p>
 
                         </div>

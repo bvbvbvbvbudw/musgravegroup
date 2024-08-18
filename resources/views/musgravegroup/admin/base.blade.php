@@ -232,6 +232,22 @@
                     </li>
 
                     <li class="mb-4">
+                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Forms</a>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.users.applied') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show users applieds to work</a>
+                            </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.users.form') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show users company form</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mb-4">
                         <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Users</a>
                         <ul class="pl-4 mt-2">
                             <li>

@@ -71,15 +71,15 @@
                     <div class="related-column" data-aos="fade-up" data-aos-once="true">
                         <div class="background-zoom lazyload"
                              style="background-image:url('{{asset('img/brands/sub-brands.webp')}}');"></div>
-                        <a href="../mood-ice-cream/index.html"><h2>Moo'd Ice Cream</h2></a></div>
+                        <a href="{{ route('page.mood') }}"><h2>Moo'd Ice Cream</h2></a></div>
                     <div class="related-column" data-aos="fade-up" data-aos-once="true">
                         <div class="background-zoom lazyload"
                              style="background-image:url('{{asset('img/brands/caramico_v2.webp')}}');"></div>
-                        <a href="../caramico-pizza/index.html"><h2>Caramico Pizza</h2></a></div>
+                        <a href="{{ route('page.pizza') }}"><h2>Caramico Pizza</h2></a></div>
                     <div class="related-column" data-aos="fade-up" data-aos-once="true">
                         <div class="background-zoom lazyload"
                              style="background-image:url('{{asset('img/brands/the-green-kitchen.webp')}}');"></div>
-                        <a href="../the-green-kitchen/index.html"><h2>The Green Kitchen</h2></a></div>
+                        <a href="{{ route('page.pizza') }}"><h2>The Green Kitchen</h2></a></div>
                 </div>
             </section>
         </div>

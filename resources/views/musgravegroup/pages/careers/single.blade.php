@@ -45,7 +45,7 @@
             <h2>Summary</h2>
             <h4>Job ref: <span>{{ $vacancy->id }}</span></h4>
             <h4>Job Type: <span>{{ $vacancy->type }}</span></h4>
-            <h4>Location: <span>{{ $vacancy -> location }}</span></h4>
+            <h4>Location: <span>{{ $vacancy -> location -> location }}</span></h4>
             <h4>Contract type: <span>{{ $vacancy->contract_type }}</span></h4>
             <h4> Closing Date: <span>{{ $vacancy->end_date }}</span></h4>
             <br>

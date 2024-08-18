@@ -25,6 +25,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class, 'index'])->name('page.index');
+Route::get('/local-and-irish', [IndexController::class, 'local'])->name('page.local');
+Route::get('/mood-ice-cream', [IndexController::class, 'mood'])->name('page.mood');
+Route::get('/caramico-pizza', [IndexController::class, 'pizza'])->name('page.pizza');
+Route::get('/the-green-kitchen', [IndexController::class, 'kitchen'])->name('page.kitchen');
 
 Route::get('/about-us', [AboutController::class, 'index'])->name('page.about');
 Route::get('/about-us/out-retail-partners', [AboutController::class, 'partners'])->name('page.about.partners');
@@ -36,11 +40,15 @@ Route::get('/podcasts', [AboutController::class, 'podcasts'])->name('page.about.
 Route::get('/brands', [BrandController::class, 'index'])->name('page.brand');
 
 Route::get('/sustainability', [SustainabilityController::class, 'index'])->name('page.sustainability');
-Route::get('/sustainability/caring-for-the-planet', [SustainabilityController::class, 'carring'])->name('page.sustainability.carring');
+Route::get('/sustainability/caring-for-the-planet', [SustainabilityController::class, 'carring'])->name('page.sustainability.caring');
 Route::get('/sustainability/creating-vibrant-communities', [SustainabilityController::class, 'vibrant'])->name('page.sustainability.vibrant');
 Route::get('/sustainability/sourcing-for-good', [SustainabilityController::class, 'source'])->name('page.sustainability.source');
 
 Route::get('/careers', [CareerController::class, 'index'])->name('page.careers');
+
+Route::get('/careers/form', [CareerController::class, 'forCompany'])->name('page.careers.form');
+Route::post('/careers/form/send', [CareerController::class, 'forCompanySend'])->name('page.careers.form.send');
+
 Route::get('/careers/job-alerts', [CareerController::class, 'alerts'])->name('page.careers.alerts');
 Route::post('/careers/job-alerts/send', [CareerController::class, 'send'])->name('page.careers.alerts.send');
 Route::get('/careers/supply-chain', [CareerController::class, 'supply'])->name('page.careers.supply');
@@ -54,6 +62,7 @@ Route::get('/careers/sectors', [CareerController::class, 'sectors'])->name('page
 Route::get('/careers/current-vacancies', [CareerController::class, 'current'])->name('page.careers.current');
 Route::get('/careers/vacancy/{url}', [CareerController::class, 'show'])->name('page.careers.vacancies.show');
 Route::get('/careers/vacancy/{id}/apply', [CareerController::class, 'apply'])->name('page.careers.vacancies.apply');
+Route::post('/careers/vacancy/{id}/apply/send', [CareerController::class, 'applySend'])->name('page.careers.vacancies.apply.send');
 
 Route::get('/news', [NewsController::class, 'index'])->name('page.news');
 Route::get('/news/brand/{brand}', [NewsController::class, 'filterByBrand'])->name('page.news.filterByBrand');
@@ -61,9 +70,8 @@ Route::get('/news/{year}/{month}', [NewsController::class, 'filterByDate'])
     ->where(['year' => '[0-9]{4}', 'month' => '[0-9]{2}'])
     ->name('page.news.filterByDate');
 
-
 Route::get('/news/sustainability', [NewsController::class, 'sustainability'])->name('page.news.sus');
-Route::get('/news/sustainability/{url}', [NewsController::class, 'sustainabilityShow'])->name('page.news.sus.show');
+Route::get('/sustainability/{url}', [NewsController::class, 'sustainabilityShow'])->name('page.news.sus.show');
 Route::get('/musgrave-news', [NewsController::class, 'index'])->name('page.news.musgrave');
 Route::get('/press-pack', [NewsController::class, 'press'])->name('page.news.press');
 Route::get('/press-contacts', [NewsController::class, 'contacts'])->name('page.news.contacts');

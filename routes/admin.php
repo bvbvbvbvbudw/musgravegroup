@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AdminNewsSustainability;
 use App\Http\Controllers\Admin\AdminPodcastController;
 use App\Http\Controllers\Admin\AdminReviewController;
 use App\Http\Controllers\Admin\AdminUserController;
+use App\Http\Controllers\Admin\AdminUsersAppliedController;
 use App\Http\Controllers\Admin\AdminVacancyController;
 use Illuminate\Support\Facades\Route;
 
@@ -63,3 +64,6 @@ Route::get('/manage/{model}', [AdminReviewController::class, 'list'])->name('adm
 Route::get('/manage/{model}/{id}', [AdminReviewController::class, 'index'])->name('admin.manage.index');
 Route::post('/manage/{model}/{id}/approve', [AdminReviewController::class, 'approve'])->name('admin.manage.approve');
 Route::post('/manage/{model}/{id}/reject', [AdminReviewController::class, 'reject'])->name('admin.manage.reject');
+
+Route::get('user-applied', [AdminUsersAppliedController::class, 'index'])->name('admin.users.applied');
+Route::get('company-form', [AdminUsersAppliedController::class, 'form'])->name('admin.users.form');

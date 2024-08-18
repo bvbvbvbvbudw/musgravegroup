@@ -6,19 +6,16 @@
     </div>
 
     <div class="new-posts-grid">
-        {{--        @foreach($news as $item)--}}
-        {{--            <a href="{{ route('page.news.sus.show', $item->url) }}" class="block lazyload"--}}
-        {{--               style="background-image:url({{ asset($item->media->path) }})">--}}
-        {{--                <div class="text">--}}
-        {{--                    <span>{{ $item->formatted_date }}</span>--}}
-        {{--                    <h4>{{ $item->title }}</h4>--}}
-        {{--                </div>--}}
-        {{--            </a>--}}
-        {{--        @endforeach--}}
+
     </div>
 
     <a id="loadMoreNews" class="button" style="cursor: pointer;">More sustainability posts</a>
 </div>
+<script>
+    const routes = {
+        newsSustainabilityShow: "{{ route('page.news.sus.show', ['url' => '__URL__']) }}",
+    };
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         let currentPage = 1;
@@ -33,7 +30,6 @@
                 fetchNews(currentPage);
             }
         });
-
         function fetchNews(page) {
             fetch(`/api/news-sustainability?page=${page}`)
                 .then(response => response.json())
@@ -41,20 +37,27 @@
                     totalPages = data.last_page;
                     data.data.forEach(newsItem => {
                         const newsElement = document.createElement('a');
-                        newsElement.setAttribute('href', `${location}/news/sustainability/${newsItem.url}`);
+                        const newsUrl = routes.newsSustainabilityShow.replace('__URL__', encodeURIComponent(newsItem.url));
+                        newsElement.setAttribute('href', newsUrl);
+
                         newsElement.classList.add('block', 'lazyload');
                         newsElement.style.backgroundImage = `url('${location}/${encodeURI(newsItem.media.path)}')`;
+
                         const textDiv = document.createElement('div');
                         textDiv.classList.add('text');
+
                         const dateSpan = document.createElement('span');
                         dateSpan.textContent = newsItem.formatted_date;
                         textDiv.appendChild(dateSpan);
+
                         const titleH4 = document.createElement('h4');
                         titleH4.textContent = newsItem.title;
                         textDiv.appendChild(titleH4);
+
                         newsElement.appendChild(textDiv);
                         newsGrid.appendChild(newsElement);
                     });
+
                     if (currentPage >= totalPages) {
                         loadMoreButton.style.display = 'none';
                     }

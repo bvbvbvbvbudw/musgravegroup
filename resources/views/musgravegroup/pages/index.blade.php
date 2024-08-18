@@ -334,14 +334,16 @@
                     </div>
                 </div>
             </div>
-        </div><!-- container -->
+        </div>
         <x-news/>
         <section class="brands-block">
             <div class="container">
-                <h3 class="entry-title" data-aos="fade-in" data-aos-delay="150">We own 15 retail and
-                    wholesale brands</h3>
-                <p class="sub" data-aos="fade-in" data-aos-delay="150">Discover more about our
-                    market-leading brands by selecting a brand below</p>
+                <h3 class="entry-title" data-aos="fade-in" data-aos-delay="150">
+                    We own 15 retail and wholesale brands
+                </h3>
+                <p class="sub" data-aos="fade-in" data-aos-delay="150">
+                    Discover more about our market-leading brands by selecting a brand below
+                </p>
 
                 <div class="brands-thumbs">
                     <ul>
@@ -374,8 +376,9 @@
                                 <div class="brand-text">
                                     <h4>{{ $brand -> title }}</h4>
                                     <p>{!! $brand -> small_description !!}</p>
-                                    <a class="button" target="_blank" href="{{ $brand -> url }}">Find out
-                                        more</a>
+                                    <a class="button" target="_blank" href="{{ $brand -> url }}">
+                                        Find out more
+                                    </a>
                                 </div>
                                 @if($brand->news)
                                     <div class="brand-article">

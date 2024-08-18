@@ -3,19 +3,13 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-
     <style>
         #onetrust-banner-sdk {
             display: none;
         }
     </style>
-{{--        <link rel="stylesheet" href="{{ asset('main.css') }}">--}}
-{{--        <link rel="stylesheet" href="{{ asset('annual.css') }}">--}}
-{{--        <link rel="stylesheet" href="{{ asset('dod.css') }}">--}}
-{{--        <link rel="stylesheet" href="{{ asset('index.css') }}">--}}
+
     <script src="{{ asset('js/autoBlock.js') }}"></script>
-{{--    <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8"--}}
-{{--            data-domain-script="f8cb599b-1d94-420a-987e-57e7cbe63041"></script>--}}
     <script type="text/javascript">
         function OptanonWrapper() {
         }
@@ -28,7 +22,6 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <title>@yield('title', "MusGraveGroup")</title>
-{{--    <link rel="canonical" href="index.html"/>--}}
     @yield('meta')
     @yield('head')
     @yield('style')
@@ -53,10 +46,7 @@
     <link rel='dns-prefetch' href='http://hb.wpmucdn.com/'/>
     <link rel='dns-prefetch' href='http://b2833840.smushcdn.com/'/>
     <link href='http://hb.wpmucdn.com/' rel='preconnect'/>
-{{--    <link rel="alternate" type="application/rss+xml" title="Musgrave Group &raquo; Feed" href="../feed/index.html"/>--}}
-    <link rel="alternate" type="application/rss+xml" title="Musgrave Group &raquo; Comments Feed"
-          href="../comments/feed/index.html"/>
-
+    <link rel="alternate" type="application/rss+xml" title="Musgrave Group &raquo; Comments Feed" href="../comments/feed/index.html"/>
     <style id='classic-theme-styles-inline-css' type='text/css'>
         /*! This file is auto-generated */
         .wp-block-button__link {
@@ -397,47 +387,14 @@
             line-height: 1.6;
         }
     </style>
-
-{{--    stylesss--}}
-{{--        <link rel='stylesheet' id='la-icon-maneger-style-css' href='../wp-content/uploads/la_icon_sets/style.min.css'--}}
-{{--              type='text/css' media='all'/>--}}
-{{--        <link rel='stylesheet' id='wp-block-library-css'--}}
-{{--              href='https://hb.wpmucdn.com/www.musgravegroup.com/8c3b9cc6-f610-4faf-83f6-ce8223c634e4.css' type='text/css'--}}
-{{--              media='all'/>--}}
     <link rel="stylesheet" id="wp-block-library-css" media="all" href="{{ asset('css/musgravegroup/first.css') }}">
     <link rel="stylesheet" id="wphb-1-css" media="all" href="{{ asset('css/musgravegroup/second.css') }}">
     <link rel="stylesheet" id="slick-css-css" media="all" type="text/css" href="{{ asset('css/musgravegroup/slick.css') }}">
     <link rel="stylesheet" id="slick-theme-css-css" media="1" type="text/css" href="{{ asset('css/musgravegroup/third.css') }}">
     <link rel="stylesheet" id="wphb-2-css" media="1" type="text/css" href="{{ asset('css/musgravegroup/fourth.css') }}">
-
-{{--    <link rel='stylesheet' id='wphb-1-css'--}}
-{{--          href='https://hb.wpmucdn.com/www.musgravegroup.com/05c90f17-f0ee-4c79-947a-187fe48e2d6b.css' type='text/css'--}}
-{{--          media='all'/>--}}
-{{--    <link rel='stylesheet' id='slick-css-css' href='http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css'--}}
-{{--          type='text/css' media='all'/>--}}
-{{--    <link rel='stylesheet' id='slick-theme-css-css'--}}
-{{--          href='https://hb.wpmucdn.com/www.musgravegroup.com/f85285ca-6ad7-43e4-9ab7-0b28d874437c.css' type='text/css'--}}
-{{--          media='1'/>--}}
-{{--    <link rel='stylesheet' id='wphb-2-css'--}}
-{{--          href='https://hb.wpmucdn.com/www.musgravegroup.com/cdfc4e82-2757-4e87-b86a-5f190699ed0f.css' type='text/css'--}}
-{{--          media='all'/>--}}
-    <script type="text/javascript"
-            src="{{ asset('js/musgravegroup/first.js') }}"
-            id="wphb-3-js"></script>
-    <script type="text/javascript"
-            src="{{ asset('js/musgravegroup/second.js') }}"
-            id="wphb-4-js"></script>
-
-{{--    end styless--}}
-{{--    <link rel="https://api.w.org/" href="../wp-json/index.html"/>--}}
-{{--    <link rel="alternate" type="application/json" href="../wp-json/wp/v2/pages/19.json"/>--}}
-{{--    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd"/>--}}
+    <script type="text/javascript" src="{{ asset('js/musgravegroup/first.js') }}" id="wphb-3-js"></script>
+    <script type="text/javascript" src="{{ asset('js/musgravegroup/second.js') }}" id="wphb-4-js"></script>
     <meta name="generator" content="WordPress 6.5.5"/>
-{{--    <link rel='shortlink' href='../index5831.html?p=19'/>--}}
-{{--    <link rel="alternate" type="application/json+oembed"--}}
-{{--          href="../wp-json/oembed/1.0/embed7289.json?url=https%3A%2F%2Fwww.musgravegroup.com%2Fabout-us%2F"/>--}}
-{{--    <link rel="alternate" type="text/xml+oembed"--}}
-{{--          href="../wp-json/oembed/1.0/embedd84b?url=https%3A%2F%2Fwww.musgravegroup.com%2Fabout-us%2F&amp;format=xml"/>--}}
     <style type="text/css">
         .ctl-bullets-container {
             display: block;
@@ -638,7 +595,7 @@
                         <ul class="sub-menu" style="background: #a9c23f!important;">
                             <li id="menu-item-14987"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14987 menu-item-caring-for-the-planet">
-                                <a href="{{ route('page.sustainability.carring') }}">Caring for the planet</a>
+                                <a href="{{ route('page.sustainability.caring') }}">Caring for the planet</a>
                             </li>
                             <li id="menu-item-14988"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14988 menu-item-creating-vibrant-communities">

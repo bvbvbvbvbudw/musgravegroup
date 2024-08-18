@@ -20,4 +20,24 @@ class IndexController extends Controller
         });
         return view('musgravegroup.pages.index', compact('brands'));
     }
+
+    public function local()
+    {
+        return view('musgravegroup.pages.irish');
+    }
+
+    public function mood()
+    {
+        return view('musgravegroup.pages.mood');
+    }
+
+    public function pizza()
+    {
+        return view('musgravegroup.pages.pizza');
+    }
+
+    public function kitchen()
+    {
+        return view('musgravegroup.pages.kitchen');
+    }
 }

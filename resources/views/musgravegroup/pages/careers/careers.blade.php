@@ -25,7 +25,6 @@
                     below.</p>
                 <a class="button" href="{{ route('page.careers.current') }}">Current Vacancies</a>
             </div>
-
             <div class="container">
                 <div class="slide-nav" data-aos="fade-in">
                     <div class="nav-item">
@@ -128,6 +127,9 @@
                 </section>
             </div>
             @include('musgravegroup.pages.careers.sectors.components.sectors')
+            <hr>
+            <a class="button" href="{{ route('page.careers.form') }}">For company</a>
+
         </div>
     </article>
     <x-news/>

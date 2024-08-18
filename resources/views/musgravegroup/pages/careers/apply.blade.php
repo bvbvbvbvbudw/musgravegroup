@@ -3,25 +3,21 @@
 @section('title', '')
 @section('meta')
 @endsection
+@section('style')
+    <link href="{{ asset('css/musgravegroup/amris.css') }}" rel="stylesheet">
+@endsection
+
 @section('body-classes', 'vacancies-template-default application-form-template single single-vacancies wp-custom-logo')
 @section('content')
     <article id="post-9205"
              class="post-9205 vacancies type-vacancies status-publish hentry category-careers sector-retail-sales">
         <div class="colour-block"></div>
         <header class="entry-header">
-            <div class="login-register">
-                <p>
-                    <a style="margin-top: 20px;" href="/amr/login.php">Login</a>
-                </p>
-
-            </div>
             <div class="container" style="margin-top: 60px;">
                 <h1>Application form</h1>
             </div>
-        </header><!-- .entry-header -->
-
+        </header>
         <div class="entry-content container" data-aos="fade-up" data-aos-once="true">
-
             <p></p>
             <div id="applyform">
                 <style>
@@ -32,104 +28,55 @@
                     #menu-champions li.whitebg a:hover {
                         color: #666;
                     }
-
-
                 </style>
-                <div id="nav_menu-4" class="et_pb_widget widget_nav_menu" style="width: 100%;">
-                    <div class="menu-champions-container">
-                        <ul id="menu-champions" class="menu">
-
-                            <li id="menu-item-111216"
-                                class="whitebg menu-item menu-item-type-post_type menu-item-object-page page_item page-item-210 menu-item-216">
-                                <a href="vacancySearch.php">Search</a></li>
-                            <li id="menu-item-1112945"
-                                class="whitebg menu-item menu-item-type-post_type menu-item-object-page menu-item-2945 ">
-                                <a href="emailAlerts.php">Job Alerts</a></li>
-
-                            <li id="menu-item-1112876"
-                                class="whitebg menu-item menu-item-type-post_type menu-item-object-page menu-item-2876 loggedOut">
-                                <a href="login.php">Login</a></li>
-                            <li id="menu-item-1112878"
-                                class="whitebg menu-item menu-item-type-post_type menu-item-object-page menu-item-2876 loggedIn">
-                                <a href="index.php">Candidate Centre</a></li>
-                            <li id="menu-item-1112880"
-                                class="whitebg menu-item menu-item-type-post_type menu-item-object-page menu-item-2876 loggedIn">
-                                <a href="index.php?logout=1">Logout</a></li>
-                        </ul>
-                    </div>
-                </div>
                 <br clear="all">
                 <div id="mainContainer">
                     <div id="application_innerContainer">
-                        <link href="/css/jquery.datePicker.css" rel="stylesheet" type="text/css" media="screen">
-                        <script src="js/jquery-latest.min.js" type="text/javascript"></script>
-                        <script type="text/javascript" src="js/jquery.corner.js"></script>
-                        <script src="js/validation.js" type="text/javascript"></script>
-                        <script type="text/javascript" src="js/jquery.datePicker.js"></script>
-                        <script type="text/javascript" src="js/date.js"></script>
-                        <script type="text/javascript" src="js/searchForm.js"></script>
-                        <script src="/js/iframeResizePipe.js" type="text/javascript"></script>
-                        <script src="/js/jquery-collapsible-fieldset.js" type="text/javascript"></script>
-                        <script src="/js/postcodeLookup.js" type="text/javascript"></script>
-                        <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-                        <link rel="stylesheet" href="/css/jquery.ui.theme.css" type="text/css">
-                        <form action="applyForm.php?rand=0.677729001723053201" name="applyForm" id="applyForm"
-                              method="post" enctype="multipart/form-data" autocomplete="off">
-                            <input type="hidden" name="post" value="1"><input type="hidden" name="siteURL" id="siteURL"
-                                                                              value="[site url]"><input type="hidden"
-                                                                                                        id="xmlWizardDefinition"
-                                                                                                        name="xmlWizardDefinition"
-                                                                                                        value="#xmlWizardDefinition#"><input
-                                type="hidden" name="jId" value="#jId#"><input type="hidden" name="deCacher"
-                                                                              value="1998463771"><input type="hidden"
-                                                                                                        name="postcodeLookupToken"
-                                                                                                        id="postcodeLookupToken"
-                                                                                                        value="#postcodeLookupToken#"><input
-                                type="hidden" id="applicantId_encode" name="applicantId_encode" value=""><input
-                                type="hidden" name="requirementId_encode" value="MTU1Mzk="><input type="hidden"
-                                                                                                  name="pageLink"
-                                                                                                  id="pageLink"
-                                                                                                  value="applyForm.php?fromGet=1&amp;pageId=1&amp;applicantId_encode=&amp;requirementId_encode=MTU1Mzk=&amp;xwd=#xwd#"><input
-                                type="hidden" name="pageId" value="1"><input type="hidden" id="formAction"
-                                                                             name="formAction" value=""><input
-                                type="hidden" name="xwd" value="#xwd#">
+                        <form action="{{ route('page.careers.vacancies.apply.send', $id) }}" name="applyForm" id="applyForm" method="post" enctype="multipart/form-data" autocomplete="off">
+                            @csrf
                             <div class="formDiv" style="">
-                                <div><p class="formDiv">
+                                <div>
+                                    <p class="formDiv">
                                         Thank you for choosing Musgrave as a place you'd like to work! We are aiming to
                                         be the best in everything
                                         we do: delivering for our retailers and food service partners, and we are
                                         tenacious in our pursuit of our
                                         business goals. Our people are the strongest part of our business - and vital to
                                         our continued success!
-                                    </p></div>
+                                    </p>
+                                </div>
                             </div>
                             <div class="formDiv" style="">
-                                <div><p class="formDiv">
+                                <div>
+                                    <p class="formDiv">
                                         Your application will only take a few minutes to complete - we understand your
                                         time is valuable and once
                                         we receive your details we will contact you as soon as we can. Best of luck!
-                                    </p></div>
+                                    </p>
+                                </div>
                             </div>
                             <div class="formDiv" style="">
-                                <div><p class="formDiv">
+                                <div>
+                                    <p class="formDiv">
                                     </p>
                                     <h3>Personal Details</h3>
-                                    <p></p></div>
+                                    <p></p>
+                                </div>
                             </div>
                             <div class="formDiv" style="">
-                                <div><p class="formDiv">
+                                <div>
+                                    <p class="formDiv">
                                     </p>
                                     <p>Fields marked with <span class="errorRed">*</span> must be completed.</p>
-                                    <p></p></div>
+                                    <p></p>
+                                </div>
                             </div>
                             <br clear="all">
                             <div id="" class="sectionDiv formDiv" style="" sectiondiv="1">
                                 <fieldset class="" name="idp902992" id="">
                                     <div style="clear:both;" id="divtitle">
-                                        <label style="" for="title">Title<span id="mandmarker_title" class="errorRed">
-				*
-			</span></label><select name="title" id="title" class="" style=""
-                                   onchange="doValidation(this, this.value, '', 'Title is required');">
+                                        <label style="" for="title">Title<span id="mandmarker_title" class="errorRed">*</span></label>
+                                        <select name="title" id="title" class="" style="" onchange="doValidation(this, this.value, '', 'Title is required');">
                                             <option value="Mr">Mr</option>
                                             <option value="Mrs">Mrs</option>
                                             <option value="Ms">Ms</option>
@@ -137,92 +84,73 @@
                                             <option value="Dr">Dr</option>
                                         </select>
                                         <div id="titleErrorLabel" class="errorLabelDiv" style="display:none;"></div>
-                                        <div id="titleErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="titleErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divfirstName">
-                                        <label style="" for="firstName">First Name<span id="mandmarker_firstName"
-                                                                                        class="errorRed">
-				*
-			</span></label><input type="text" name="firstName" id="firstName" class="" style="" value="" placeholder=""
-                                  onblur="doValidation(this, this.value, '', 'First Name is required');">
+                                        <label style="" for="firstName">
+                                            First Name
+                                            <span id="mandmarker_firstName" class="errorRed">*
+                                        </span>
+                                        </label>
+                                        <input type="text" name="firstName" id="firstName" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'First Name is required');">
                                         <div id="firstNameErrorLabel" class="errorLabelDiv" style="display:none;"></div>
-                                        <div id="firstNameErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="firstNameErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divsecondName">
-                                        <label style="" for="secondName">Surname<span id="mandmarker_secondName"
-                                                                                      class="errorRed">
-				*
-			</span></label><input type="text" name="secondName" id="secondName" class="" style="" value=""
-                                  placeholder="" onblur="doValidation(this, this.value, '', 'Surname is required');">
-                                        <div id="secondNameErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="secondNameErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <label style="" for="secondName">
+                                            Surname<span id="mandmarker_secondName" class="errorRed">*</span>
+                                        </label>
+                                        <input type="text" name="secondName" id="secondName" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Surname is required');">
+                                        <div id="secondNameErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="secondNameErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                 </fieldset>
                             </div>
                             <div id="" class="sectionDiv formDiv" style="" sectiondiv="1">
                                 <fieldset class="" name="idp912848" id="">
                                     <div style="clear:both;" id="divaddress1">
-                                        <label style="" for="address1">Address Line 1<span id="mandmarker_address1"
-                                                                                           class="errorRed">
-				*
-			</span></label><input type="text" name="address1" id="address1" class="" style="" value="" placeholder=""
-                                  onblur="doValidation(this, this.value, '', 'Address Line 1 is required');">
+                                        <label style="" for="address1">Address Line 1<span id="mandmarker_address1" class="errorRed">*</span>
+                                        </label>
+                                        <input type="text" name="address1" id="address1" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Address Line 1 is required');">
                                         <div id="address1ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
-                                        <div id="address1ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="address1ErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divaddress2">
-                                        <label style="" for="address2">Address Line 2<span id="mandmarker_address2"
-                                                                                           class="errorRed">
-				*
-			</span></label><input type="text" name="address2" id="address2" class="" style="" value="" placeholder=""
-                                  onblur="doValidation(this, this.value, '', 'Address Line 2 is required');">
+                                        <label style="" for="address2">Address Line 2<span id="mandmarker_address2" class="errorRed">*</span>
+                                        </label>
+                                        <input type="text" name="address2" id="address2" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Address Line 2 is required');">
                                         <div id="address2ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
-                                        <div id="address2ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="address2ErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divaddress3">
-                                        <label style="" for="address3">Town</label><input type="text" name="address3"
-                                                                                          id="address3" class=""
-                                                                                          style="" value=""
-                                                                                          placeholder="">
+                                        <label style="" for="address3">Town</label>
+                                        <input type="text" name="address3" id="address3" class="" style="" value="" placeholder="">
                                         <div id="address3ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
-                                        <div id="address3ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="address3ErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divlocation">
-                                        <label style="" for="location">County</label><input type="text" name="location"
-                                                                                            id="location" class=""
-                                                                                            style="" value=""
-                                                                                            placeholder="">
+                                        <label style="" for="location">County</label>
+                                        <input type="text" name="location" id="location" class="" style="" value="" placeholder="">
                                         <div id="locationErrorLabel" class="errorLabelDiv" style="display:none;"></div>
-                                        <div id="locationErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="locationErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divpostcode">
-                                        <label style="" for="postcode">Postcode</label><input type="text"
-                                                                                              name="postcode"
-                                                                                              id="postcode" class=""
-                                                                                              style="" value=""
-                                                                                              placeholder="">
+                                        <label style="" for="postcode">Postcode</label>
+                                        <input type="text" name="postcode" id="postcode" class="" style="" value="" placeholder="">
                                         <div id="postcodeErrorLabel" class="errorLabelDiv" style="display:none;"></div>
-                                        <div id="postcodeErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="postcodeErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                 </fieldset>
                             </div>
                             <div id="" class="sectionDiv formDiv" style="" sectiondiv="1">
                                 <fieldset class="" name="idp922320" id="">
                                     <div style="clear:both;" id="divformData[500]">
-                                        <label style="" for="formData[500]">International dial code of your mobile
-                                            telephone<span id="mandmarker_formData[500]" class="errorRed">
-				*
-			</span></label><select name="formData[500]" id="formData[500]" class="" style=""
-                                   onchange="doValidation(this, this.value, '', 'International dial code of your mobile telephone is required');">
+                                        <label style="" for="formData[500]">
+                                            International dial code of your mobile
+                                            telephone
+                                            <span id="mandmarker_formData[500]" class="errorRed">*</span>
+                                        </label>
+                                        <select name="formData[500]" id="formData[500]" class="" style="" onchange="doValidation(this, this.value, '', 'International dial code of your mobile telephone is required');">
                                             <option selected="" value="">Please select</option>
                                             <option value="353">Ireland (+353)</option>
                                             <option value="44">U.K (+44)</option>
@@ -441,192 +369,138 @@
                                             <option value="260">Zambia (+260)</option>
                                             <option value="263">Zimbabwe (+263)</option>
                                         </select>
-                                        <div id="formData[500]ErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="formData[500]ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="formData[500]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="formData[500]ErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divmobileTelephone">
-                                        <label style="" for="mobileTelephone">Mobile Telephone<span
-                                                id="mandmarker_mobileTelephone" class="errorRed">
-				*
-			</span></label><input type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value=""
-                                  placeholder=""
-                                  onblur="doValidation(this, this.value, '', 'Mobile Telephone is required');">
-                                        <div id="mobileTelephoneErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="mobileTelephoneErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <label style="" for="mobileTelephone">Mobile Telephone
+                                            <span id="mandmarker_mobileTelephone" class="errorRed">*</span>
+                                        </label>
+                                        <input type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Mobile Telephone is required');">
+                                        <div id="mobileTelephoneErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="mobileTelephoneErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
-                                    <div style="clear:both;" id="div"><p class="formDiv">
-
-                                        </p>
+                                    <div style="clear:both;" id="div">
+                                        <p class="formDiv"></p>
                                         <p>Your email address should be used as your user name when logging into your
                                             account.We will use your email address to update you on the progress of your
                                             application so please ensure that it is correct.</p>
-
-                                        <p></p></div>
+                                        <p></p>
+                                    </div>
                                     <div style="clear:both;" id="divapplicantEmail">
-                                        <label style="" for="applicantEmail">Email<span id="mandmarker_applicantEmail"
-                                                                                        class="errorRed">
-				*
-			</span></label><input type="text" name="applicantEmail" id="applicantEmail" class="" style="" value=""
-                                  placeholder=""
-                                  onblur="doValidation(this, this.value, 'SameAs('emailConfirm');ValidEmail();CheckEmailNotUsed();', 'Please ensure you use a valid email address and fill in both the email and confirm email fields');">
-                                        <div id="applicantEmailErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="applicantEmailErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <label style="" for="applicantEmail">
+                                            Email<span id="mandmarker_applicantEmail" class="errorRed">*</span>
+                                        </label>
+                                        <input type="text" name="applicantEmail" id="applicantEmail" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, 'SameAs('emailConfirm');ValidEmail();CheckEmailNotUsed();', 'Please ensure you use a valid email address and fill in both the email and confirm email fields');">
+                                        <div id="applicantEmailErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="applicantEmailErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divemailConfirm">
-                                        <label style="" for="emailConfirm">Confirm email<span
-                                                id="mandmarker_emailConfirm" class="errorRed">
-				*
-			</span></label><input type="text" name="emailConfirm" id="emailConfirm" class="" style="" value=""
-                                  placeholder=""
-                                  onblur="doValidation(this, this.value, '', 'Confirm email is required');">
-                                        <div id="emailConfirmErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="emailConfirmErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                    </div>
-                                    <div style="clear:both;" id="div"><p class="formDiv">
-                                        </p>
-                                        <p>Any password you choose must be at least 6 characters long and contain both
-                                            upper and lower case characters with at least 1 number.</p>
-
-                                        <p></p></div>
-                                    <div style="clear:both;" id="divpassword">
-                                        <label style="" for="password">Password<span id="mandmarker_password"
-                                                                                     class="errorRed">
-				*
-			</span></label><input type="password" name="password" id="password" class="" style="" value=""
-                                  placeholder=""
-                                  onblur="doValidation(this, this.value, 'SameAs('passwordConfirm');ValidPassword();', 'Please ensure your password is at least six characters long and contain both upper and lower case characters with at least 1 number, fill in both the password and password confirm fields');">
-                                        <div id="passwordErrorLabel" class="errorLabelDiv" style="display:none;"></div>
-                                        <div id="passwordErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                    </div>
-                                    <div style="clear:both;" id="divpasswordConfirm">
-                                        <label style="" for="passwordConfirm">Confirm password<span
-                                                id="mandmarker_passwordConfirm" class="errorRed">
-				*
-			</span></label><input type="password" name="passwordConfirm" id="passwordConfirm" class="" style="" value=""
-                                  placeholder=""
-                                  onblur="doValidation(this, this.value, '', 'Confirm password is required');">
-                                        <div id="passwordConfirmErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="passwordConfirmErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <label style="" for="emailConfirm">Confirm email
+                                            <span id="mandmarker_emailConfirm" class="errorRed">*</span>
+                                        </label>
+                                        <input type="text" name="emailConfirm" id="emailConfirm" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Confirm email is required');">
+                                        <div id="emailConfirmErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="emailConfirmErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                 </fieldset>
                             </div>
                             <div id="" class="sectionDiv formDiv" style="" sectiondiv="1">
                                 <fieldset class="" name="idp2026528" id="">
                                     <div style="clear:both;" id="divformData[33]">
-                                        <label style="" for="formData[33]">Are you over 16?<span
-                                                id="mandmarker_formData[33]" class="errorRed">
-				*
-			</span></label>
+                                        <label style="" for="formData[33]">
+                                            Are you over 16?
+                                            <span id="mandmarker_formData[33]" class="errorRed">*</span>
+                                        </label>
                                         <div style="width:auto;" class="radioDiv">
-                                            <input type="radio" name="formData[33]" class="radio"
-                                                   style="margin-left:3.5em;margin-right:0.5em;display:inline;"
-                                                   value="Yes" alt="Are you over 16? - Yes" id="formData[33]_Yes"><label
-                                                for="formData[33]_Yes" class=" radioLabel"><span class="outer"><span
-                                                        class="inner"></span></span><span
-                                                    class="radio_display_text">Yes</span></label><input type="radio"
-                                                                                                        name="formData[33]"
-                                                                                                        class="radio"
-                                                                                                        style="margin-left:3.5em;margin-right:0.5em;display:inline;"
-                                                                                                        value="No"
-                                                                                                        alt="Are you over 16? - No"
-                                                                                                        id="formData[33]_No"><label
-                                                for="formData[33]_No" class=" radioLabel"><span class="outer"><span
-                                                        class="inner"></span></span><span
-                                                    class="radio_display_text">No</span></label>
+                                            <input type="radio" name="formData[33]" class="radio" style="margin-left:3.5em;margin-right:0.5em;display:inline;" value="Yes" alt="Are you over 16? - Yes" id="formData[33]_Yes">
+                                            <label for="formData[33]_Yes" class=" radioLabel">
+                                                <span class="outer">
+                                                    <span class="inner"></span>
+                                                </span>
+                                                <span class="radio_display_text">Yes</span>
+                                            </label>
+                                            <input type="radio" name="formData[33]" class="radio" style="margin-left:3.5em;margin-right:0.5em;display:inline;" value="No" alt="Are you over 16? - No" id="formData[33]_No"><label
+                                                for="formData[33]_No" class=" radioLabel">
+                                                <span class="outer">
+                                                    <span class="inner"></span>
+                                                </span>
+                                                <span class="radio_display_text">No</span>
+                                            </label>
                                         </div>
-                                        <div id="formData[33]ErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="formData[33]ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="formData[33]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="formData[33]ErrorLabelInline" class="errorLabelDiv" style="display:none;">
+                                        </div>
                                     </div>
                                     <div style="clear:both;" id="divformData[23]">
-                                        <label style="" for="formData[23]">Are you eligible to work in the EU?<span
-                                                id="mandmarker_formData[23]" class="errorRed">
-				*
-			</span></label>
+                                        <label style="" for="formData[23]">Are you eligible to work in the EU?
+                                            <span id="mandmarker_formData[23]" class="errorRed">*</span>
+                                        </label>
                                         <div style="width:auto;" class="radioDiv">
                                             <input type="radio" name="formData[23]" class="radio"
-                                                   style="margin-left:3.5em;margin-right:0.5em;display:inline;"
-                                                   value="Yes" alt="Are you eligible to work in the EU? - Yes"
-                                                   id="formData[23]_Yes"><label for="formData[23]_Yes"
-                                                                                class=" radioLabel"><span class="outer"><span
-                                                        class="inner"></span></span><span
-                                                    class="radio_display_text">Yes</span></label><input type="radio"
-                                                                                                        name="formData[23]"
-                                                                                                        class="radio"
-                                                                                                        style="margin-left:3.5em;margin-right:0.5em;display:inline;"
-                                                                                                        value="No"
-                                                                                                        alt="Are you eligible to work in the EU? - No"
-                                                                                                        id="formData[23]_No"><label
-                                                for="formData[23]_No" class=" radioLabel"><span class="outer"><span
-                                                        class="inner"></span></span><span
-                                                    class="radio_display_text">No</span></label>
+                                                   style="margin-left:3.5em;margin-right:0.5em;display:inline;" value="Yes"
+                                                   alt="Are you eligible to work in the EU? - Yes" id="formData[23]_Yes">
+                                            <label for="formData[23]_Yes" class=" radioLabel">
+                                                <span class="outer"><span class="inner"></span></span>
+                                                <span class="radio_display_text">Yes</span>
+                                            </label>
+                                            <input type="radio" name="formData[23]" class="radio" style="margin-left:3.5em;margin-right:0.5em;display:inline;" value="No" alt="Are you eligible to work in the EU? - No" id="formData[23]_No">
+                                            <label for="formData[23]_No" class=" radioLabel">
+                                                <span class="outer">
+                                                    <span class="inner"></span></span>
+                                                <span class="radio_display_text">No</span>
+                                            </label>
                                         </div>
-                                        <div id="formData[23]ErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="formData[23]ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="formData[23]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="formData[23]ErrorLabelInline" class="errorLabelDiv" style="display:none;">
+                                        </div>
                                     </div>
                                     <div style="clear:both;" id="divformData[7495]">
-                                        <label style="" for="formData[7495]">If yes, please provide
-                                            details</label><input type="text" name="formData[7495]" id="formData[7495]"
-                                                                  class="" style="" value="" placeholder="">
-                                        <div id="formData[7495]ErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="formData[7495]ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <label style="" for="formData[7495]">
+                                            If yes, please provide details
+                                        </label>
+                                        <input type="text" name="formData[7495]" id="formData[7495]" class="" style="" value="" placeholder="">
+                                        <div id="formData[7495]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="formData[7495]ErrorLabelInline" class="errorLabelDiv" style="display:none;">
+
+                                        </div>
                                     </div>
                                     <div style="clear:both;" id="divformData[30]">
                                         <label style="" for="formData[30]">Do you have any criminal convictions?</label>
                                         <div style="width:auto;" class="radioDiv">
                                             <input type="radio" name="formData[30]" class="radio"
-                                                   style="margin-left:3.5em;margin-right:0.5em;display:inline;"
-                                                   value="Yes" alt="Do you have any criminal convictions? - Yes"
+                                                   style="margin-left:3.5em;margin-right:0.5em;display:inline;" value="Yes"
+                                                   alt="Do you have any criminal convictions? - Yes"
                                                    id="formData[30]_Yes"><label for="formData[30]_Yes"
                                                                                 class=" radioLabel"><span class="outer"><span
                                                         class="inner"></span></span><span
-                                                    class="radio_display_text">Yes</span></label><input type="radio"
-                                                                                                        name="formData[30]"
-                                                                                                        class="radio"
-                                                                                                        style="margin-left:3.5em;margin-right:0.5em;display:inline;"
-                                                                                                        value="No"
-                                                                                                        alt="Do you have any criminal convictions? - No"
-                                                                                                        id="formData[30]_No"><label
-                                                for="formData[30]_No" class=" radioLabel"><span class="outer"><span
-                                                        class="inner"></span></span><span
-                                                    class="radio_display_text">No</span></label>
+                                                    class="radio_display_text">Yes</span>
+                                            </label>
+                                            <input type="radio" name="formData[30]" class="radio" style="margin-left:3.5em;margin-right:0.5em;display:inline;" value="No" alt="Do you have any criminal convictions? - No" id="formData[30]_No">
+                                            <label for="formData[30]_No" class=" radioLabel">
+                                                <span class="outer">
+                                                    <span class="inner"></span>
+                                                </span>
+                                                <span class="radio_display_text">No</span>
+                                            </label>
                                         </div>
-                                        <div id="formData[30]ErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="formData[30]ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="formData[30]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="formData[30]ErrorLabelInline" class="errorLabelDiv" style="display:none;">
+                                        </div>
                                     </div>
                                     <div style="clear:both;" id="divformData[79]">
                                         <label style="" for="formData[79]">If yes, please provide details</label><input
                                             type="text" name="formData[79]" id="formData[79]" class="" style="" value=""
                                             placeholder="">
-                                        <div id="formData[79]ErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="formData[79]ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="formData[79]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="formData[79]ErrorLabelInline" class="errorLabelDiv" style="display:none;">
+                                        </div>
                                     </div>
                                     <div style="clear:both;" id="divformData[111]">
-                                        <label style="" for="formData[111]">Where did you see this role advertised?<span
-                                                id="mandmarker_formData[111]" class="errorRed">
-				*
-			</span></label><select name="formData[111]" id="formData[111]" class="" style=""
-                                   onchange="doValidation(this, this.value, '', 'Where did you see this role advertised? is required');">
+                                        <label style="" for="formData[111]">Where did you see this role advertised?
+                                            <span id="mandmarker_formData[111]" class="errorRed">*</span>
+                                        </label>
+                                        <select name="formData[111]" id="formData[111]" class="" style="" onchange="doValidation(this, this.value, '', 'Where did you see this role advertised? is required');">
                                             <option value="">-- Please select --</option>
                                             <option value="Musgrave Website">Musgrave Website</option>
                                             <option value="IrishJobs.ie">IrishJobs.ie</option>
@@ -642,10 +516,8 @@
                                             <option value="Spotify">Spotify</option>
                                             <option value="Other">Other</option>
                                         </select>
-                                        <div id="formData[111]ErrorLabel" class="errorLabelDiv"
-                                             style="display:none;"></div>
-                                        <div id="formData[111]ErrorLabelInline" class="errorLabelDiv"
-                                             style="display:none;"></div>
+                                        <div id="formData[111]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
+                                        <div id="formData[111]ErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                 </fieldset>
                             </div>
@@ -658,59 +530,48 @@
                             <div id="" class="sectionDiv submitDiv" style="" sectiondiv="1">
                                 <fieldset class="" name="idp2057328" id="">
                                     <div class="submitleft" style="clear:both;" id="divformAction">
-                                        <label class="labelHidden" style="" for="formAction">Save and
-                                            continue</label><input type="submit" name="formAction" id="formAction"
-                                                                   class="submitterInput" style=""
-                                                                   value="Save and continue">
+                                        <label class="labelHidden" style="" for="formAction">
+                                            Save and continue
+                                        </label>
+                                        <input type="submit" name="formAction" id="formAction" class="submitterInput" style="" value="Save and continue">
                                     </div>
-                                    <div class="submitright" style="clear:both;" id="divformAction">
-                                        <label class="labelHidden" style="" for="formAction">Save and return
-                                            later</label><input type="submit" name="formAction" id="formAction"
-                                                                class="submitterInput" style=""
-                                                                value="Save and return later">
-                                    </div>
+{{--                                    <div class="submitright" style="clear:both;" id="divformAction">--}}
+{{--                                        <label class="labelHidden" style="" for="formAction">--}}
+{{--                                            Save and return later--}}
+{{--                                        </label>--}}
+{{--                                        <input type="submit" name="formAction" id="formAction" class="submitterInput" style="" value="Save and return later">--}}
+{{--                                    </div>--}}
                                 </fieldset>
                             </div>
-                            <script language="javascript">
-
-                                /*
-                                if (typeof jQuery !== 'undefined')
-                                    $("fieldset.collapsible").collapsible();
-                                */
-
-                            </script>
                         </form>
-                        <script language="javascript"></script>
                         <br clear="all">
                     </div>
                 </div>
-                <!----></div>
-            <div style="float:right;margin-top:20px !important;">
-                <a target="_blank" style="border-bottom:0px; !important" href="https://www.amris.com">
-                    <img alt="Visit Amris" src="https://www.amrislive.com/images/powered_by_amris.png" height="67px"
-                         width="120px">
-                </a>
             </div>
             <p></p>
-
             <div class="related-content">
                 <div class="related-column" data-aos="fade-up" data-aos-once="true">
                     <div class="background-zoom"
-                         style="background-image: url(https://www.musgravegroup.com/wp-content/uploads/2019/08/the-green-kitchen.jpg);"></div>
-                    <a href="https://www.musgravegroup.com/careers/current-vacancies/"></a>
-                    <h2><a href="https://www.musgravegroup.com/careers/current-vacancies/">All Jobs</a></h2></div>
+                         style="background-image: url(https://www.musgravegroup.com/wp-content/uploads/2019/08/the-green-kitchen.jpg);">
+                    </div>
+                    <a href="{{ route('page.careers.current') }}"></a>
+                    <h2><a href="{{ route('page.careers.current') }}">All Jobs</a></h2>
+                </div>
                 <div class="related-column" data-aos="fade-up" data-aos-once="true">
                     <div class="background-zoom"
-                         style="background-image: url(https://www.musgravegroup.com/wp-content/uploads/2019/08/our-brands-1.jpg);"></div>
-                    <a href="https://www.musgravegroup.com/brands/"></a>
-                    <h2><a href="https://www.musgravegroup.com/brands/">Our brands</a></h2></div>
+                         style="background-image: url(https://www.musgravegroup.com/wp-content/uploads/2019/08/our-brands-1.jpg);">
+                    </div>
+                    <a href="{{ route('page.brand') }}"></a>
+                    <h2><a href="{{ route('page.brand') }}">Our brands</a></h2>
+                </div>
                 <div class="related-column" data-aos="fade-up" data-aos-once="true">
                     <div class="background-zoom"
-                         style="background-image: url(https://www.musgravegroup.com/wp-content/uploads/2019/08/food-innovation.jpg);"></div>
-                    <a href="https://www.musgravegroup.com/news-blogs/"></a>
-                    <h2><a href="https://www.musgravegroup.com/news-blogs/">Latest news</a></h2></div>
+                         style="background-image: url(https://www.musgravegroup.com/wp-content/uploads/2019/08/food-innovation.jpg);">
+                    </div>
+                    <a href="{{ route('page.news') }}"></a>
+                    <h2><a href="{{ route('page.news') }}">Latest news</a></h2>
+                </div>
             </div>
-
-        </div><!-- .entry-content -->
-    </article><!-- #post-9205 -->
+        </div>
+    </article>
 @endsection
