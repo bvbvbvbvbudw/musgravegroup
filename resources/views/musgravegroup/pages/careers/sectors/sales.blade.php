@@ -10,8 +10,6 @@
             </div>
         </section>
 
-
-
         <article id="post-7222" class="post-7222 careers type-careers status-publish hentry">
             <div class="container">
                 <div class="careers-text-block" data-aos="fade-up" data-aos-once="true">
@@ -28,7 +26,6 @@
                         fresh food departments, deliver training and support new or revamped stores to drive
                         sales and profitability in fresh food.</p>
                 </div>
-
                 <div class="container">
                     <div class="slide-nav" data-aos="fade-in">
                         <div class="nav-item">
@@ -40,10 +37,7 @@
                                 Latest news </div>
                         </div>
                     </div>
-
-
                     <section class="slider-text-nav" data-aos="fade-up">
-
                         <div class="slide-box">
                             <div class="text">
                                 <h2>A role in retail</h2>
@@ -53,26 +47,20 @@
                                     development initiatives that give colleagues a route to progress from a
                                     sales assistant to a managerial position. In this video he shares why
                                     Musgrave is a unique place to work.</p>
-                                <p><span class="wistia_embed wistia_async_tuz8w58ita popover=true popoverAnimateThumbnail=true popoverContent=link"
-                                         style="position: relative"><a class="button" href="#">Watch
-														Video</a></span></p>
-
-
+                                <p>
+                                    <span class="wistia_embed wistia_async_tuz8w58ita popover=true popoverAnimateThumbnail=true popoverContent=link" style="position: relative">
+                                        <a class="button" href="#">
+                                            Watch Video</a>
+                                    </span>
+                                </p>
                             </div>
-
                             <div class="image">
-
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Kieran-Flynne.png?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Kieran-Flynne.png?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
-
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Kieran-Flynne.png?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" />
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Kieran-Flynne.png?lossy=0&amp;strip=1&amp;webp=1" alt="" />
+                                </noscript>
                             </div>
                         </div>
-
-
                         <div class="slide-box">
                             <div class="text">
                                 <h2>Frank and Honest launches first stand-alone café</h2>
@@ -83,29 +71,21 @@
                                     coffee across the island of Ireland. This summer we opened the first
                                     Frank And Honest Gourmet Coffee Company stand-alone café, located on
                                     Navan Road, Dunboyne, Co.Meath.</p>
-
-                                <a class="button"
-                                   href="../../frank-and-honest-opens-first-stand-alone-cafe/index.html">READ
-                                    MORE</a>
+{{--                                <a class="button"--}}
+{{--                                   href="../../frank-and-honest-opens-first-stand-alone-cafe/index.html">READ--}}
+{{--                                    MORE</a>--}}
                             </div>
-
                             <div class="image">
-
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/frank-and-honest.jpg?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/frank-and-honest.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
-
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/frank-and-honest.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" />
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/frank-and-honest.jpg?lossy=0&amp;strip=1&amp;webp=1" alt="" />
+                                </noscript>
                             </div>
                         </div>
-
-
                     </section>
                 </div>
                 @include('musgravegroup.pages.careers.sectors.components.sectors')
-            </div><!-- container -->
-        </article><!-- #post-7222 -->
+            </div>
+        </article>
         <x-news/>
 @endsection

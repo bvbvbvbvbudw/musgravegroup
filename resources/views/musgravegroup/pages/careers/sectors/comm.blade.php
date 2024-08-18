@@ -56,24 +56,21 @@
                                     floor, from setting the price to seeing it fly off the shelves. In this
                                     video he gives an insight into the trading role and how our people in
                                     Musgrave work as a team.</p>
-                                <p><span
-                                        class="wistia_embed wistia_async_so5vvo5v6q popover=true popoverAnimateThumbnail=true popoverContent=link"
-                                        style="position: relative"><a class="button" href="#">Watch
-														Video</a></span></p>
-
-
+                                <p>
+                                    <span class="wistia_embed wistia_async_so5vvo5v6q popover=true popoverAnimateThumbnail=true popoverContent=link"
+                                        style="position: relative">
+                                        <a class="button" href="#">
+                                            Watch Video
+                                        </a>
+                                    </span>
+                                </p>
                             </div>
 
                             <div class="image">
-
-                                <img
-                                    data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Paddy-Curran.png?lossy=0&strip=1&webp=1"
-                                    alt=""
-                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                    class="lazyload"/>
-                                <noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Paddy-Curran.png?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt=""/></noscript>
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Paddy-Curran.png?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Paddy-Curran.png?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                                </noscript>
 
                             </div>
                         </div>
@@ -90,26 +87,20 @@
                                     household essentials and supports them in thinking green with their
                                     shopping choices.</p>
 
-                                <a class="button"
-                                   href="../../supervalu-offering-customers-greener-choices-as-they-trial-irelands-largest-supermarket-eco-range/index.html">READ
-                                    MORE</a>
+{{--                                <a class="button"--}}
+{{--                                   href="../../supervalu-offering-customers-greener-choices-as-they-trial-irelands-largest-supermarket-eco-range/index.html">READ--}}
+{{--                                    MORE--}}
+{{--                                </a>--}}
                             </div>
 
                             <div class="image">
 
-                                <img
-                                    data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supervalu-eco-range.jpg?lossy=0&strip=1&webp=1"
-                                    alt=""
-                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                    class="lazyload"/>
-                                <noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supervalu-eco-range.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt=""/></noscript>
-
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supervalu-eco-range.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supervalu-eco-range.jpg?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                                </noscript>
                             </div>
                         </div>
-
-
                     </section>
                 </div>
                 @include('musgravegroup.pages.careers.sectors.components.sectors')

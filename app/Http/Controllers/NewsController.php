@@ -89,13 +89,14 @@ class NewsController extends Controller
     {
         $news = NewsSustainability::whereHas('content', function ($query) {
             $query->where('is_standard', 0);
-        })->where('url', $url)->first();
+        })->where('url', $url)->where('status', 'approved')->first();
+        $newsSus = NewsSustainability::where('status', 'approved')->get();
         if ($news) {
             $news = $this->addFormattedDate($news);
-            return view('musgravegroup.pages.sustainability.single', compact('news'));
+            return view('musgravegroup.pages.sustainability.single', compact('news', 'newsSus'));
         }
 
-//        return redirect()->route('page.index');
+        return redirect()->route('page.index');
     }
 
     public function musgrave()

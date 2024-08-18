@@ -68,10 +68,8 @@
                     </ul>
                 </li>
             </ul>
-
-
-        </div><!-- container -->
-    </article><!-- #post-9726 -->
+        </div>
+    </article>
     <x-news/>
     <script>
         $('.toggle').click(function (e) {

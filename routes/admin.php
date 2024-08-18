@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminCategoryController;
+use App\Http\Controllers\Admin\AdminLocationController;
 use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\AdminNewsSustainability;
 use App\Http\Controllers\Admin\AdminPodcastController;
@@ -30,6 +32,20 @@ Route::post('/vacancy/store', [AdminVacancyController::class, 'store'])->name('a
 Route::get('/vacancy/edit/{id}', [AdminVacancyController::class, 'edit'])->name('admin.vacancy.edit');
 Route::put('/vacancy/edit/{id}/update', [AdminVacancyController::class, 'update'])->name('admin.vacancy.update');
 Route::delete('/vacancy/destroy/{id}', [AdminVacancyController::class, 'destroy'])->name('admin.vacancy.destroy');
+
+Route::get('/vacancy/category', [AdminCategoryController::class, 'index'])->name('admin.vacancy.category.index');
+Route::get('/vacancy/category/create', [AdminCategoryController::class, 'create'])->name('admin.vacancy.category.create');
+Route::post('/vacancy/category/store', [AdminCategoryController::class, 'store'])->name('admin.vacancy.category.store');
+Route::get('/vacancy/category/edit/{id}', [AdminCategoryController::class, 'edit'])->name('admin.vacancy.category.edit');
+Route::put('/vacancy/category/edit/{id}/update', [AdminCategoryController::class, 'update'])->name('admin.vacancy.category.update');
+Route::delete('/vacancy/category/destroy/{id}', [AdminCategoryController::class, 'destroy'])->name('admin.vacancy.category.destroy');
+
+Route::get('/vacancy/location', [AdminLocationController::class, 'index'])->name('admin.vacancy.location.index');
+Route::get('/vacancy/location/create', [AdminLocationController::class, 'create'])->name('admin.vacancy.location.create');
+Route::post('/vacancy/location/store', [AdminLocationController::class, 'store'])->name('admin.vacancy.location.store');
+Route::get('/vacancy/location/edit/{id}', [AdminLocationController::class, 'edit'])->name('admin.vacancy.location.edit');
+Route::put('/vacancy/location/edit/{id}/update', [AdminLocationController::class, 'update'])->name('admin.vacancy.location.update');
+Route::delete('/vacancy/location/destroy/{id}', [AdminLocationController::class, 'destroy'])->name('admin.vacancy.location.destroy');
 
 Route::get('/podcasts', [AdminPodcastController::class, 'index'])->name('admin.podcasts.index');
 Route::get('/podcasts/create', [AdminPodcastController::class, 'create'])->name('admin.podcasts.create');

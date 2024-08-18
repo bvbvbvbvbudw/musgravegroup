@@ -8,7 +8,7 @@
                     <div class="text sustainability">
                         <h1>Growing good business - a podcast series by Musgrave</h1>
                         <p></p>
-                        <a href="podcasts/index.html">Listen now</a>
+                        <a href="{{ route('page.about.podcasts') }}">Listen now</a>
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                     <div class="text sustainability">
                         <h1>We are committed to being Net Zero carbon by 2040</h1>
                         <p></p>
-                        <a href="sustainability/index.html">Find out more</a>
+                        <a href="{{ route('page.sustainability') }}">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                     <div class="text food-leadership">
                         <h1>We own 15 leading food retail and wholesale brands</h1>
                         <p></p>
-                        <a href="brands/index.html">Read more</a>
+                        <a href="{{ route('page.brand') }}">Read more</a>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,6 @@
         <div class="values-container">
             <div class="container">
                 <div class="values">
-
                     <div class="values-col">
                         <div class="col-1-3">
                             <p>We are proud to be one of Europe’s leading family-owned businesses with a
@@ -80,7 +79,7 @@
                             <p>With a presence in communities around the country, Musgrave is committed to
                                 working with retail partners, suppliers and customers to make every
                                 community a sustainable community.</p>
-                            <a href="about-us/index.html" class="button">Find out more</a>
+                            <a href="{{ route('page.about') }}" class="button">Find out more</a>
                         </div>
                         <div class="col-2-3 lazyload" style="background-image:url('{{asset('img/Homepage-image.webp')}}')">
                         </div>
@@ -304,7 +303,7 @@
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/03/supporting-communities.png?lossy=0&amp;strip=1&amp;webp=1" /></noscript>
                             <div class="text-block" data-aos="fade-up">
                                 <h4>Our sustainability strategy</h4><a class="value-link"
-                                                                       href="sustainability/index.html">Find out more</a>
+                                                                       href="{{ route('page.sustainability') }}">Find out more</a>
                             </div>
                         </div>
                         <div class="cat-block"><img loading="lazy" class="homepage-block lazyload"
@@ -316,7 +315,7 @@
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/09/1-in-3.png?lossy=0&amp;strip=1&amp;webp=1" /></noscript>
                             <div class="text-block" data-aos="fade-up">
                                 <h4>Food leadership for more than 140 years</h4><a class="value-link"
-                                                                                   href="about-us/food-leadership/index.html">Find out more</a>
+                                                                                   href="{{ route('page.about.food') }}">Find out more</a>
                             </div>
                         </div>
                         <div class="cat-block"><img loading="lazy" class="homepage-block lazyload"
@@ -328,7 +327,7 @@
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/09/1450.png?lossy=0&amp;strip=1&amp;webp=1" /></noscript>
                             <div class="text-block" data-aos="fade-up">
                                 <h4>Supporting retailers and communities in Ireland and Spain</h4><a
-                                    class="value-link" href="about-us/our-retail-partners/index.html">Find
+                                    class="value-link" href="{{ route('page.about.partners') }}">Find
                                     out more</a>
                             </div>
                         </div>

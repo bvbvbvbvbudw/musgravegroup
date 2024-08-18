@@ -8,9 +8,6 @@
                 <h1>Supply Chain</h1>
             </div>
         </section>
-
-
-
         <article id="post-6867" class="post-6867 careers type-careers status-publish hentry">
             <div class="container">
                 <div class="careers-text-block" data-aos="fade-up" data-aos-once="true">
@@ -48,21 +45,21 @@
                                     heart of communities across Ireland. In this video he talks about his
                                     job and also how he is supported in his role with options for
                                     progression.</p>
-                                <p><span class="wistia_embed wistia_async_3biw9puhk6 popover=true popoverAnimateThumbnail=true popoverContent=link"
-                                         style="position: relative"><a class="button" href="#">Watch
-														Video</a></span></p>
-
-
+                                <p>
+                                    <span class="wistia_embed wistia_async_3biw9puhk6 popover=true popoverAnimateThumbnail=true popoverContent=link" style="position: relative">
+                                        <a class="button" href="#">
+                                            Watch Video
+                                        </a>
+                                    </span>
+                                </p>
                             </div>
 
                             <div class="image">
 
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Shane-Forde.png?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Shane-Forde.png?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Shane-Forde.png?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" />
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Shane-Forde.png?lossy=0&amp;strip=1&amp;webp=1" alt="" />
+                                </noscript>
 
                             </div>
                         </div>
@@ -77,28 +74,19 @@
                                     the growth of our business, our total annual fleet emissions have
                                     reduced by 5,550 tonnes since 2006. Musgrave has signed the BITCI Low
                                     Carbon Pledge to cut carbon emissions by 2030.</p>
-
-                                <a class="button" href="../../indexe0eb.html?page_id=60">Read more</a>
+{{--                                <a class="button" href="../../indexe0eb.html?page_id=60">Read more</a>--}}
                             </div>
-
                             <div class="image">
-
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/carbon.jpg?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/carbon.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
-
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/carbon.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" />
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/carbon.jpg?lossy=0&amp;strip=1&amp;webp=1" alt="" />
+                                </noscript>
                             </div>
                         </div>
-
-
                     </section>
                 </div>
                 @include('musgravegroup.pages.careers.sectors.components.sectors')
-
-            </div><!-- container -->
-        </article><!-- #post-6867 -->
+            </div>
+        </article>
     <x-news/>
 @endsection

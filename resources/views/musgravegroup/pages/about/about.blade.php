@@ -1,8 +1,6 @@
 @extends('musgravegroup.base')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-about page-template-page-templatespage-about-php page page-id-19 page-parent wp-custom-logo')
 @section('content')
-    <main id="main" class="site-main">
-
         <section class="blog-hero lazyload" style="background-image: url('{{asset('img/bg-about.webp')}}')">
             <div class="text">
                 <h1>About us</h1>
@@ -82,19 +80,23 @@
                     <div class="slide-nav" data-aos="fade-in">
                         <div class="nav-item">
                             <div>
-                                Family business </div>
+                                Family business
+                            </div>
                         </div>
                         <div class="nav-item">
                             <div>
-                                Our people </div>
+                                Our people
+                            </div>
                         </div>
                         <div class="nav-item">
                             <div>
-                                Our retail partners </div>
+                                Our retail partners
+                            </div>
                         </div>
                         <div class="nav-item">
                             <div>
-                                Community </div>
+                                Community
+                            </div>
                         </div>
                     </div>
 
@@ -112,22 +114,17 @@
                                         Business</strong> means creating a sustainable, profitable business
                                     that benefits not just our shareholders, but our people, our partners,
                                     local communities and the wider Irish economy.</p>
-
-                                <a class="button" href="our-history/index.html">Read more</a>
+{{--                                <a class="button" href="our-history/index.html">Read more</a>--}}
                             </div>
 
                             <div class="image">
-
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/family-business.jpg?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/family-business.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/family-business.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/family-business.jpg?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                                </noscript>
 
                             </div>
                         </div>
-
 
                         <div class="slide-box">
                             <div class="text">
@@ -139,22 +136,19 @@
                                     a business we are committed to helping our people grow and thrive and
                                     making Musgrave a happy and healthy place to work.</p>
 
-                                <a class="button" href="../careers/working-for-musgrave/index.html">Working
-                                    for Musgrave</a>
+                                <a class="button"
+                                   href="{{ route('page.careers.working') }}">
+                                    Working for Musgrave
+                                </a>
                             </div>
-
                             <div class="image">
-
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/01/musgrave-group-our-people.jpg?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/01/musgrave-group-our-people.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/01/musgrave-group-our-people.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/01/musgrave-group-our-people.jpg?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                                </noscript>
 
                             </div>
                         </div>
-
 
                         <div class="slide-box">
                             <div class="text">
@@ -164,18 +158,14 @@
                                     entrepreneurs. Our retail partners have deep local knowledge and a
                                     commitment to their local communities. They bring the magic dust to our
                                     brands, making each shopping experience unique.</p>
-
-                                <a class="button" href="our-retail-partners/index.html">Read more</a>
+                                <a class="button" href="{{ route('page.about.partners') }}">Read more</a>
                             </div>
 
                             <div class="image">
-
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/About-us-carousel-our-retail-partners.jpg?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/About-us-carousel-our-retail-partners.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/About-us-carousel-our-retail-partners.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/About-us-carousel-our-retail-partners.jpg?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                                </noscript>
 
                             </div>
                         </div>
@@ -192,27 +182,17 @@
                                     have donated millions to GAA clubs to support national sports and
                                     encourage active lifestyles, and SuperValu TidyTowns has been cementing
                                     community relations and improving local areas for over 25 years.</p>
-
-
                             </div>
-
                             <div class="image">
-
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/community.jpg?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/community.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
-
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/community.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/community.jpg?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                                </noscript>
                             </div>
                         </div>
-
-
                     </section>
                 </div>
-            </div><!-- container -->
-        </article><!-- #post-19 -->
+            </div>
+        </article>
         <x-news/>
-    </main><!-- #main -->
 @endsection

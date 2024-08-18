@@ -47,22 +47,19 @@
                                     is now an IT Operations Manager looking after a team of 27 people. In
                                     this video he explains how you can grow and thrive within your career in
                                     Musgrave.</p>
-                                <p><span class="wistia_embed wistia_async_gnqixmz7k3 popover=true popoverAnimateThumbnail=true popoverContent=link"
-                                         style="position: relative"><a class="button" href="#">Watch
-														Video</a></span></p>
-
-
+                                <p>
+                                    <span class="wistia_embed wistia_async_gnqixmz7k3 popover=true popoverAnimateThumbnail=true popoverContent=link" style="position: relative">
+                                        <a class="button" href="#">
+                                            Watch Video</a>
+                                    </span>
+                                </p>
                             </div>
 
                             <div class="image">
-
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Colin-Yelverton.png?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Colin-Yelverton.png?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
-
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Colin-Yelverton.png?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" />
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Colin-Yelverton.png?lossy=0&amp;strip=1&amp;webp=1" alt="" />
+                                </noscript>
                             </div>
                         </div>
 
@@ -76,23 +73,14 @@
                                     sales growth of 25% year on year. In conjunction with this, SuperValu
                                     Real Rewards, our online and in-store rewards scheme has over 1.2
                                     million users.</p>
-
-
                             </div>
-
                             <div class="image">
-
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supervalu.jpg?lossy=0&strip=1&webp=1"
-                                     alt=""
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supervalu.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="" /></noscript>
-
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supervalu.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" />
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supervalu.jpg?lossy=0&amp;strip=1&amp;webp=1" alt="" />
+                                </noscript>
                             </div>
                         </div>
-
-
                     </section>
                 </div>
                 @include('musgravegroup.pages.careers.sectors.components.sectors')

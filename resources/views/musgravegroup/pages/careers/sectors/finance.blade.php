@@ -11,7 +11,6 @@
             </div>
         </section>
 
-
         <article id="post-7224" class="post-7224 careers type-careers status-publish hentry">
             <div class="container">
                 <div class="careers-text-block" data-aos="fade-up" data-aos-once="true">
@@ -40,10 +39,7 @@
                             </div>
                         </div>
                     </div>
-
-
                     <section class="slider-text-nav" data-aos="fade-up">
-
                         <div class="slide-box">
                             <div class="text">
                                 <h2>A role in finance</h2>
@@ -52,28 +48,22 @@
                                     with training and mentoring she has progressed to a management position.
                                     In this video she shares more information about her role and why she
                                     enjoys working for Musgrave.</p>
-                                <p><span
-                                        class="wistia_embed wistia_async_1751yndo6k popover=true popoverAnimateThumbnail=true popoverContent=link"
-                                        style="position: relative"><a class="button" href="#">Watch
-														Video</a></span></p>
-
-
+                                <p>
+                                    <span
+                                        class="wistia_embed wistia_async_1751yndo6k popover=true popoverAnimateThumbnail=true popoverContent=link" style="position: relative"><a class="button" href="#">
+                                            Watch Video
+                                        </a>
+                                    </span>
+                                </p>
                             </div>
 
                             <div class="image">
-
-                                <img
-                                    data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Ann-Marie-O’Brien.png?lossy=0&strip=1&webp=1"
-                                    alt=""
-                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                    class="lazyload"/>
-                                <noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Ann-Marie-O’Brien.png?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt=""/></noscript>
-
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Ann-Marie-O’Brien.png?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Ann-Marie-O’Brien.png?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                                </noscript>
                             </div>
                         </div>
-
 
                         <div class="slide-box">
                             <div class="text">
@@ -83,26 +73,16 @@
                                     combined retail sales of €5.4 million, owing to strong performance by
                                     all the brands, as well as growth of new brands like Donnybrook Fair.
                                 </p>
-
-                                <a class="button" href="../../index3fe8.html?page_id=10180">READ
-                                    STATEMENT</a>
+{{--                                <a class="button" href="../../index3fe8.html?page_id=10180">READ--}}
+{{--                                    STATEMENT</a>--}}
                             </div>
-
                             <div class="image">
-
-                                <img
-                                    data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Musgrave-annual-statement-pdf.png?lossy=0&strip=1&webp=1"
-                                    alt=""
-                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                    class="lazyload"/>
-                                <noscript><img
-                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Musgrave-annual-statement-pdf.png?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt=""/></noscript>
-
+                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Musgrave-annual-statement-pdf.png?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                                <noscript>
+                                    <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/Musgrave-annual-statement-pdf.png?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                                </noscript>
                             </div>
                         </div>
-
-
                     </section>
                 </div>
                 @include('musgravegroup.pages.careers.sectors.components.sectors')

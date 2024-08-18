@@ -7,7 +7,35 @@
 @section('title', $podcast->title)
 @section('body-classes', 'post-template-default single single-post postid-22166 single-format-standard wp-custom-logo')
 @section('meta')
+    @php
+        $metaDescription = Str::limit(strip_tags($podcast->content), 100, '...');
+    @endphp
+
+    <meta name="description" content="{{ $metaDescription }}">
+    <meta name="keywords" content="{{ $podcast->meta_keywords ?? 'podcast, keywords, default' }}">
+    <meta name="author" content="{{ $podcast->author ?? 'Musgrave Group' }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ $podcast->title }}">
+    <meta property="og:description" content="{{ $metaDescription }}">
+    <meta property="og:image" content="{{ asset($podcast->media->path) }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="Musgrave Group">
+    <meta property="article:published_time" content="{{ $podcast->created_at }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $podcast->title }}">
+    <meta name="twitter:description" content="{{ $metaDescription }}">
+    <meta name="twitter:image" content="{{ asset($podcast->media->path) }}">
+    <meta name="twitter:site" content="@MusgraveGroup">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ url()->current() }}">
 @endsection
+
+
 
 @section('content')
     <article id="post-22166"
@@ -17,7 +45,7 @@
             <div class="container">
                 <h1>{{ $podcast -> title }}</h1>
             </div>
-        </header><!-- .entry-header -->
+        </header>
 
         <div class="entry-content container" data-aos="fade-up" style="display: flex; flex-wrap: wrap">
             <div style="width: 35%; float:none" class="podcast-image blog-img" data-aos="fade-in"
@@ -30,20 +58,18 @@
             </div>
             <div class="podcast-content" style="width:65%">
                 <div class="entry-meta" data-aos="fade-in" data-aos-delay="350">
-									<span class="posted-on">Posted on <a href="{{ route('page.index') }}" rel="bookmark"><time
-                                                class="entry-date published updated"
-                                                datetime="2024-03-07T14:00:17+00:00">{{ $podcast->formatted_date }}</time></a></span><span
-                        class="byline"> by <span
-                            class="author vcard"><a class="url fn n"
-                                                    href="../author/claire/index.html">Claire Marshall</a></span></span>
-                </div><!-- .entry-meta -->
+                    <span class="posted-on">Posted on <a href="{{ route('page.index') }}" rel="bookmark">
+                            <time class="entry-date published updated" datetime="2024-03-07T14:00:17+00:00">{{ $podcast->formatted_date }}
+                            </time>
+                        </a>
+                    </span>
+                </div>
 
                 <div data-aos="fade-in" data-aos-delay="350">
                     {!! $podcast->content !!}
                 </div>
 
                 <div class="podcast-links">
-
                     @if($podcast->spotify)
                         <a target="_blank"
                            href="{{ $podcast->spotify }}"
@@ -51,7 +77,6 @@
                            data-bg-image="url(https://www.buzzsprout.com/images/badges/listen-on-embed.svg)"
                            class="lazyload">Listen on Spotify</a>
                     @endif
-
                     @if($podcast->apple)
                         <a target="_blank"
                            href="{{ $podcast->apple }}"
@@ -59,7 +84,6 @@
                            data-bg-image="url(https://www.buzzsprout.com/images/badges/listen-on-embed.svg)"
                            class="lazyload">Listen on Apple Podcasts</a>
                     @endif
-
                     @if($podcast->buzz)
                         <a target="_blank"
                            href="{{ $podcast->buzz }}"
@@ -67,16 +91,13 @@
                            data-bg-image="url(https://www.musgravegroup.com/wp-content/themes/musgrave/img/buzzsprout.svg)"
                            class="lazyload">Listen on Buzzsprout</a>
                     @endif
-
-
                 </div>
-
                 <a style="margin: 1rem 0" href="{{ route('page.about.podcasts') }}" class="button">
                     View all podcasts
                 </a>
             </div>
         </div>
-    </article><!-- #post-22166 -->
+    </article>
 
     <style>
         .podcast-content ul {

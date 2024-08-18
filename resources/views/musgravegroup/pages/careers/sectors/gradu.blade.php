@@ -11,7 +11,6 @@
             </div>
         </section>
 
-
         <article id="post-7225" class="post-7225 careers type-careers status-publish hentry">
             <div class="container">
                 <div class="careers-text-block" data-aos="fade-up" data-aos-once="true">
@@ -24,10 +23,10 @@
                         select group join us every year, you won’t be just another face in the crowd. What
                         are you waiting for? Find out how to apply for the Musgrave Graduate Programme
                         today.</p>
-                    <a class="button" href="https://www.musgravegraduates.com/">Visit Graduate website</a>
+                    <a class="button" target="_blank" href="https://www.musgravegraduates.com/">Visit Graduate website</a>
                 </div>
                 @include('musgravegroup.pages.careers.sectors.components.sectors')
-            </div><!-- container -->
-        </article><!-- #post-7225 -->
+            </div>
+        </article>
         <x-news/>
 @endsection

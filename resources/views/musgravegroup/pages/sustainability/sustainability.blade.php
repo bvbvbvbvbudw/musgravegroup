@@ -7,7 +7,6 @@
         </div>
     </section>
 
-    `
     <article id="post-14935" class="post-14935 page type-page status-publish hentry">
         <div class="container">
             <div class="sustainability-text-block" data-aos="fade-up">
@@ -26,13 +25,8 @@
                     drive positive change by embracing renewable energy, responsible consumption and production, and a
                     greener future—for ourselves, our communities, and the planet.</p>
             </div>
-
-
         </div>
-
-
-        </div><!-- container -->
-    </article><!-- #post-14935 -->
+    </article>
 
     @include('musgravegroup.components.reports', $reports)
 
@@ -73,108 +67,7 @@
         </div>
 
 
-        <section class="slider-text-nav" data-aos="fade-up">
-
-            <div class="slide-box">
-                <div class="text">
-                    <h2>Caring for the planet</h2>
-                    <p><span class="NormalTextRun SCXW80194275 BCX0">Today our planet is facing a Climate Emergency, we need to radically reduce our impacts, and act with a sense of urgency if we are to </span><span
-                            class="NormalTextRun SCXW80194275 BCX0">kee</span><span
-                            class="NormalTextRun SCXW80194275 BCX0">p </span><span
-                            class="NormalTextRun SCXW80194275 BCX0">warming to 1.5°C above pre-industrial levels</span><span
-                            class="NormalTextRun SCXW80194275 BCX0">. At Musgrave we are committed to becoming net zero carbon by 2040.</span>
-                    </p>
-
-                    <a class="button" href="caring-for-the-planet/index.html">Read more</a>
-                </div>
-
-                <div class="image">
-
-                    <img
-                        data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Sustainability-vibrant-communities-carousel-caring-for-the-planet.jpg?lossy=0&strip=1&webp=1"
-                        alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        class="lazyload"/>
-                    <noscript><img
-                            src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Sustainability-vibrant-communities-carousel-caring-for-the-planet.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                            alt=""/></noscript>
-
-                </div>
-            </div>
-
-
-            <div class="slide-box">
-                <div class="text">
-                    <h2><span class="TextRun MacChromeBold SCXW240629542 BCX0" lang="EN-US" xml:lang="EN-US"
-                              data-contrast="auto"><span class="NormalTextRun SCXW240629542 BCX0">Creating vibrant communities </span></span><span
-                            class="EOP SCXW240629542 BCX0"
-                            data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span>
-                    </h2>
-                    <p><span class="TextRun SCXW256262784 BCX0" lang="EN-US" xml:lang="EN-US" data-contrast="auto"><span
-                                class="NormalTextRun SCXW256262784 BCX0">At Musgrave we are committed to creating vibrant, sustainable communities that leave a positive and lasting impact for generations to come. Through our brands, we can</span></span><span
-                            class="TextRun SCXW256262784 BCX0" lang="EN-IE" xml:lang="EN-IE" data-contrast="auto"><span
-                                class="NormalTextRun SCXW256262784 BCX0"> impact the communities in which we operate through a focus on social, </span><span
-                                class="NormalTextRun SCXW256262784 BCX0">economic</span><span
-                                class="NormalTextRun SCXW256262784 BCX0"> and environmental prosperity</span><span
-                                class="NormalTextRun SCXW256262784 BCX0">. </span><span
-                                class="NormalTextRun SCXW256262784 BCX0">We will continue our commitment to support local suppliers</span> <span
-                                class="NormalTextRun SCXW256262784 BCX0">and small independent producers through programmes like Food Academy. And we will promote and support </span><span
-                                class="NormalTextRun SCXW256262784 BCX0">shoppers</span><span
-                                class="NormalTextRun SCXW256262784 BCX0"> to adopt healthier and more sustainable diets. </span></span><span
-                            class="EOP SCXW256262784 BCX0"
-                            data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span>
-                    </p>
-
-                    <a class="button" href="creating-vibrant-communities/index.html">Read more</a>
-                </div>
-
-                <div class="image">
-
-                    <img
-                        data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2021/12/EDITSuperValu.TT_.Final_MG_4063-1.jpg?lossy=0&strip=1&webp=1"
-                        alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        class="lazyload"/>
-                    <noscript><img
-                            src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2021/12/EDITSuperValu.TT_.Final_MG_4063-1.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                            alt=""/></noscript>
-
-                </div>
-            </div>
-
-
-            <div class="slide-box">
-                <div class="text">
-                    <h2>Sourcing for good</h2>
-                    <p><span class="TextRun SCXW252849463 BCX0" lang="EN-US" xml:lang="EN-US" data-contrast="auto"><span
-                                class="NormalTextRun SCXW252849463 BCX0">We are committed to leading the Irish food industry through the challenges we collectively face, </span><span
-                                class="NormalTextRun SCXW252849463 BCX0">from climate change and plastic packaging to ethical trade. Working with thousands of suppliers, food producers and retailers across the island of Ireland gives us the unique opportunity to multiply our </span><span
-                                class="NormalTextRun SCXW252849463 BCX0">impact</span><span
-                                class="NormalTextRun SCXW252849463 BCX0"> by enabling wider change </span><span
-                                class="NormalTextRun SCXW252849463 BCX0">within</span> <span
-                                class="NormalTextRun SCXW252849463 BCX0">the </span><span
-                                class="NormalTextRun SCXW252849463 BCX0">industry</span><span
-                                class="NormalTextRun SCXW252849463 BCX0"> and beyond. </span></span><span
-                            class="EOP SCXW252849463 BCX0"
-                            data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span>
-                    </p>
-
-                    <a class="button" href="sourcing-for-good/index.html">Read more</a>
-                </div>
-
-                <div class="image">
-
-                    <img
-                        data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2022/06/SON3397-0340-1-scaled-e1654778446370.jpeg?lossy=0&strip=1&webp=1"
-                        alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        class="lazyload"/>
-                    <noscript><img
-                            src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2022/06/SON3397-0340-1-scaled-e1654778446370.jpeg?lossy=0&amp;strip=1&amp;webp=1"
-                            alt=""/></noscript>
-
-                </div>
-            </div>
-
-
-        </section>
+        @include('musgravegroup.pages.sustainability.components.slider')
     </div>
     <x-latest-news-sustainability/>
 @endsection

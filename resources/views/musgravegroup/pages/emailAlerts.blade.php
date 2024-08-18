@@ -12,7 +12,7 @@
             <div class="container" style="margin-top: 60px;">
                 <h1>Application form</h1>
             </div>
-        </header><!-- .entry-header -->
+        </header>
 
         <div class="entry-content container" data-aos="fade-up" data-aos-once="true">
 
@@ -30,34 +30,8 @@
                 <br clear="all">
                 <div id="mainContainer">
                     <div id="application_innerContainer">
-{{--                        <link href="/css/jquery.datePicker.css" rel="stylesheet" type="text/css" media="screen">--}}
-{{--                        <script src="js/jquery-latest.min.js" type="text/javascript"></script>--}}
-{{--                        <script type="text/javascript" src="js/jquery.corner.js"></script>--}}
-{{--                        <script src="js/validation.js" type="text/javascript"></script>--}}
-{{--                        <script type="text/javascript" src="js/jquery.datePicker.js"></script>--}}
-{{--                        <script type="text/javascript" src="js/date.js"></script>--}}
-{{--                        <script type="text/javascript" src="js/searchForm.js"></script>--}}
-{{--                        <script src="/js/iframeResizePipe.js" type="text/javascript"></script>--}}
-{{--                        <script src="/js/jquery-collapsible-fieldset.js" type="text/javascript"></script>--}}
-{{--                        <script src="/js/postcodeLookup.js" type="text/javascript"></script>--}}
-{{--                        <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>--}}
-{{--                        <link rel="stylesheet" href="/css/jquery.ui.theme.css" type="text/css">--}}
-
-
                         <form action="{{ route('page.careers.alerts.send') }}" name="applyForm" id="applyForm" method="post" enctype="multipart/form-data" autocomplete="off">
                             @csrf
-{{--                            <input type="hidden" name="post" value="1">--}}
-{{--                            <input type="hidden" name="siteURL" id="siteURL" value="[site url]">--}}
-{{--                            <input type="hidden" id="xmlWizardDefinition" name="xmlWizardDefinition" value="#xmlWizardDefinition#">--}}
-{{--                            <input type="hidden" name="jId" value="#jId#">--}}
-{{--                            <input type="hidden" name="deCacher" value="1947810145">--}}
-{{--                            <input type="hidden" name="postcodeLookupToken" id="postcodeLookupToken" value="#postcodeLookupToken#">--}}
-{{--                            <input type="hidden" id="applicantId_encode" name="applicantId_encode" value="">--}}
-{{--                            <input type="hidden" name="requirementId_encode" value="">--}}
-{{--                            <input type="hidden" name="pageLink" id="pageLink" value="applyForm.php?fromGet=1&amp;pageId=1&amp;applicantId_encode=&amp;requirementId_encode=&amp;xwd=#xwd#">--}}
-{{--                            <input type="hidden" name="pageId" value="1">--}}
-{{--                            <input type="hidden" id="formAction" name="formAction" value="">--}}
-{{--                            <input type="hidden" name="xwd" value="#xwd#">--}}
                             <div class="formDiv" style="">
                                 <div>
                                     <p class="formDiv"></p>
@@ -213,7 +187,6 @@
                     <h2><a href="https://www.musgravegroup.com/news-blogs/">Latest news</a></h2>
                 </div>
             </div>
-
-        </div><!-- .entry-content -->
-    </article><!-- #post-9205 -->
+        </div>
+    </article>
 @endsection

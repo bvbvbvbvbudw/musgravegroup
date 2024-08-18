@@ -12,7 +12,7 @@
                 <p style="text-align: center">Download our press pack for quick access to images available for
                     publication. Alternatively use our media contacts list to request specific, or print quality imagery
                     from our PR agencies.</p>
-
+todo:
                 <div class="two-column-block">
                     <div class="column">
                         <a href="../wp-content/uploads/2022/02/Musgrave-press-pack-2022.zip"><img
@@ -23,17 +23,11 @@
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/09/Download-the-Musgrave-Group-press-pack-1.jpg?lossy=0&amp;strip=1&amp;webp=1">
                             </noscript>
                         </a>
-
-
                     </div>
                 </div>
-
-
             </div>
-
-
-        </div><!-- container -->
-    </article><!-- #post-9740 -->
+        </div>
+    </article>
     <x-news/>
     <script>
         $('.toggle').click(function (e) {

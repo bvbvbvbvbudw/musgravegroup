@@ -27,7 +27,7 @@
             <div class="container">
                 <h1>{{ $news->title }}</h1>
             </div>
-        </header><!-- .entry-header -->
+        </header>
 
         <div class="entry-content container" data-aos="fade-up">
             <div class="blog-img" data-aos="fade-in" data-aos-delay="350">
@@ -40,7 +40,7 @@
                 <span class="byline"> by <span class="author vcard"><a
                             class="url fn n"
                             href="#">Musgrave</a></span></span>
-            </div><!-- .entry-meta -->
+            </div>
             <div data-aos="fade-in" data-aos-delay="350">
                 {!! $news->content->content !!}
                 <div class="ssba-classic-2 ssba ssbp-wrap aligncenter ssbp--theme-1">
@@ -104,8 +104,7 @@
                     </div>
                 </div>
             </div>
-        </div><!-- .entry-content -->
+        </div>
     </article>
-    {{--  slider news component tutaj  --}}
     <x-slider/>
 @endsection

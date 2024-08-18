@@ -96,11 +96,14 @@
             </label>
             <x-dropdown align="right" width="48">
                 <x-slot name="trigger">
-                    <button class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 focus:outline-none transition duration-150 ease-in-out">
+                    <button
+                        class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-500 focus:outline-none transition duration-150 ease-in-out">
                         <div>{{ Auth::user()->name }}</div>
                         <div class="ml-1">
                             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"/>
                             </svg>
                         </div>
                     </button>
@@ -123,26 +126,37 @@
         </div>
     </div>
 </header>
-
 <div class="container mx-auto mt-6">
-    <div class="flex">
+    <div class="flex" style="gap: 1%;">
         <aside class="w-1/4">
             <nav>
                 <ul>
                     <li class="mb-4">
-                        <a href="{{ route('admin.news.index') }}" class="block p-4 bg-white rounded shadow hover:bg-gray-100">News</a>
+                        <a href="{{ route('admin.news.index') }}"
+                           class="block p-4 bg-white rounded shadow hover:bg-gray-100">News</a>
                         <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create musgrave news</a>
+                                <a href="{{ route('admin.news.create') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create musgrave news</a>
                             </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.news.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show musgrave news</a>
+                                <a href="{{ route('admin.news.index') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show musgrave news</a>
                             </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.news.sustainability.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create sustainability news</a>
+                                <a href="{{ route('admin.news.sustainability.create') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create sustainability
+                                    news</a>
                             </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.news.sustainability.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show musgrave news</a>
+                                <a href="{{ route('admin.news.sustainability.index') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show musgrave news</a>
                             </li>
                         </ul>
                     </li>
@@ -150,10 +164,14 @@
                         <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Reports</a>
                         <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create site report</a>
+                                <a href="{{ route('admin.news.create') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create site report</a>
                             </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.news.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create report</a>
+                                <a href="{{ route('admin.news.create') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create report</a>
                             </li>
                         </ul>
                     </li>
@@ -161,10 +179,38 @@
                         <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Vacancies</a>
                         <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.vacancy.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create vacancy</a>
+                                <a href="{{ route('admin.vacancy.create') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create vacancy</a>
                             </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.vacancy.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show vacancies</a>
+                                <a href="{{ route('admin.vacancy.index') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show vacancies</a>
+                            </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.vacancy.category.index') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show all category</a>
+                            </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.vacancy.category.create') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create new category</a>
+                            </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.vacancy.location.index') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show all locations</a>
+                            </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.vacancy.location.create') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create new location</a>
                             </li>
                         </ul>
                     </li>
@@ -173,12 +219,14 @@
                         <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Podcasts</a>
                         <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.podcasts.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show podcasts</a>
+                                <a href="{{ route('admin.podcasts.index') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show podcasts</a>
                             </li>
                         </ul>
                         <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.podcasts.create') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create podcast</a>
+                                <a href="{{ route('admin.podcasts.create') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create podcast</a>
                             </li>
                         </ul>
                     </li>
@@ -187,7 +235,8 @@
                         <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Users</a>
                         <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.users.index') }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Manage users</a>
+                                <a href="{{ route('admin.users.index') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Manage users</a>
                             </li>
                         </ul>
                     </li>
@@ -197,16 +246,26 @@
                             <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Manage admin</a>
                             <ul class="pl-4 mt-2">
                                 <li>
-                                    <a href="{{ route('admin.manage.list', ['model' => 'news']) }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">News</a>
+                                    <a href="{{ route('admin.manage.list', ['model' => 'news']) }}"
+                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">News</a>
                                 </li>
+                            </ul>
+                            <ul class="pl-4 mt-2">
                                 <li>
-                                    <a href="{{ route('admin.manage.list', ['model' => 'vacancy']) }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Vacancies</a>
+                                    <a href="{{ route('admin.manage.list', ['model' => 'vacancy']) }}"
+                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Vacancies</a>
                                 </li>
+                            </ul>
+                            <ul class="pl-4 mt-2">
                                 <li>
-                                    <a href="{{ route('admin.manage.list', ['model' => 'podcast']) }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Podcasts</a>
+                                    <a href="{{ route('admin.manage.list', ['model' => 'podcast']) }}"
+                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Podcasts</a>
                                 </li>
+                            </ul>
+                            <ul class="pl-4 mt-2">
                                 <li>
-                                    <a href="{{ route('admin.manage.list', ['model' => 'newsSustainability']) }}" class="block p-2 bg-gray-200 rounded hover:bg-gray-300">New sus</a>
+                                    <a href="{{ route('admin.manage.list', ['model' => 'newsSustainability']) }}"
+                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">News Sustainability</a>
                                 </li>
                             </ul>
                         </li>
@@ -223,18 +282,14 @@
         </main>
     </div>
 </div>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const themeSwitch = document.getElementById('theme-switch');
         const body = document.body;
-
-        // Check localStorage for theme preference
         if (localStorage.getItem('theme') === 'dark') {
             body.classList.add('dark-mode');
             themeSwitch.checked = true;
         }
-
         themeSwitch.addEventListener('change', function () {
             if (themeSwitch.checked) {
                 body.classList.add('dark-mode');
@@ -246,6 +301,5 @@
         });
     });
 </script>
-
 </body>
 </html>

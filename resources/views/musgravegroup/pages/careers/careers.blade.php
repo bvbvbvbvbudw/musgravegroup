@@ -20,34 +20,6 @@
                     of local communities.</p>
                 <p>If you would like to join this team of exceptional people, find links to vacancies at SuperValu and
                     Centra in RoI below.</p>
-{{--                <div class="new-block-buttons" style="justify-content: space-around">--}}
-{{--                    <div class="item"><img decoding="async" class="alignnone size-full wp-image-48 lazyload"--}}
-{{--                                           data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/logo_supervalu-e1567002360746.png?lossy=0&strip=1&webp=1"--}}
-{{--                                           alt="" width="130" height="41"--}}
-{{--                                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="--}}
-{{--                                           style="--smush-placeholder-width: 130px; --smush-placeholder-aspect-ratio: 130/41;"/>--}}
-{{--                        <noscript><img decoding="async" class="alignnone size-full wp-image-48"--}}
-{{--                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/logo_supervalu-e1567002360746.png?lossy=0&amp;strip=1&amp;webp=1"--}}
-{{--                                       alt="" width="130" height="41"/></noscript>--}}
-{{--                        <br/>--}}
-{{--                        <a class="button" href="https://supervalu.ie/careers/" target="_blank" rel="noopener">Find--}}
-{{--                            SuperValu Vacancies</a></div>--}}
-{{--                    <div class="item"><img decoding="async" class="alignnone wp-image-22726 lazyload"--}}
-{{--                                           data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/06/Centra-Next-Gen-Logo-Teal-RGB_website-300x136.png?lossy=0&strip=1&webp=1"--}}
-{{--                                           alt="" width="99" height="45"--}}
-{{--                                           data-srcset="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/06/Centra-Next-Gen-Logo-Teal-RGB_website-300x136.png?lossy=0&amp;strip=1&amp;webp=1 300w, https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/06/Centra-Next-Gen-Logo-Teal-RGB_website.png?lossy=0&amp;strip=1&amp;webp=1 594w"--}}
-{{--                                           data-sizes="(max-width: 99px) 100vw, 99px"--}}
-{{--                                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="--}}
-{{--                                           style="--smush-placeholder-width: 99px; --smush-placeholder-aspect-ratio: 99/45;"/>--}}
-{{--                        <noscript><img decoding="async" class="alignnone wp-image-22726"--}}
-{{--                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/06/Centra-Next-Gen-Logo-Teal-RGB_website-300x136.png?lossy=0&amp;strip=1&amp;webp=1"--}}
-{{--                                       alt="" width="99" height="45"--}}
-{{--                                       srcset="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/06/Centra-Next-Gen-Logo-Teal-RGB_website-300x136.png?lossy=0&amp;strip=1&amp;webp=1 300w, https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/06/Centra-Next-Gen-Logo-Teal-RGB_website.png?lossy=0&amp;strip=1&amp;webp=1 594w"--}}
-{{--                                       sizes="(max-width: 99px) 100vw, 99px"/></noscript>--}}
-{{--                        <br/>--}}
-{{--                        <a class="button" href="https://centra.ie/careers/" target="_blank" rel="noopener">Find Centra--}}
-{{--                            Vacancies</a></div>--}}
-{{--                </div>--}}
                 <p>If you would like to find out more about vacancies in areas such as Finance, Supply Chain and other
                     teams in Musgrave, or with our SuperValu and Centra stores in Northern Ireland please use the link
                     below.</p>
@@ -77,10 +49,7 @@
                         </div>
                     </div>
                 </div>
-
-
                 <section class="slider-text-nav" data-aos="fade-up">
-
                     <div class="slide-box">
                         <div class="text">
                             <h2>Our people</h2>
@@ -90,27 +59,19 @@
                                 people management skills, others great customer service. They might bring talent in
                                 digital technology or creativity in marketing. They are diverse and unique, and they are
                                 all part of our family.</p>
-                            <p><span
-                                    class="wistia_embed wistia_async_w7xlgfzb18 popover=true popoverAnimateThumbnail=true popoverContent=link"
-                                    style="position: relative"><a class="button" href="#">Watch Video</a></span></p>
-
-
+                            <p>
+                                <span class="wistia_embed wistia_async_w7xlgfzb18 popover=true popoverAnimateThumbnail=true popoverContent=link" style="position: relative">
+                                    <a class="button" href="#">Watch Video</a>
+                                </span>
+                            </p>
                         </div>
-
                         <div class="image">
-
-                            <img
-                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-people.jpg?lossy=0&strip=1&webp=1"
-                                alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                class="lazyload"/>
-                            <noscript><img
-                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-people.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt=""/></noscript>
-
+                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-people.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                            <noscript>
+                                <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-people.jpg?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                            </noscript>
                         </div>
                     </div>
-
-
                     <div class="slide-box">
                         <div class="text">
                             <h2>Our brands</h2>
@@ -119,24 +80,15 @@
                                 Our brands are successful because as a business we never stand still. Innovation and
                                 creativity are key to our business. Our people are driving transformation in our retail
                                 and wholesale brands that will ensure they are market leaders in the future.</p>
-
                             <a class="button" href="{{ route('page.brand') }}">Read more</a>
                         </div>
-
                         <div class="image">
-
-                            <img
-                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2024/04/Musgrave-brands-square-with-text-label-April-2024_RGB.png?lossy=0&strip=1&webp=1"
-                                alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                class="lazyload"/>
-                            <noscript><img
-                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2024/04/Musgrave-brands-square-with-text-label-April-2024_RGB.png?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt=""/></noscript>
-
+                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2024/04/Musgrave-brands-square-with-text-label-April-2024_RGB.png?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                            <noscript>
+                                <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2024/04/Musgrave-brands-square-with-text-label-April-2024_RGB.png?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                            </noscript>
                         </div>
                     </div>
-
-
                     <div class="slide-box">
                         <div class="text">
                             <h2>Our vision</h2>
@@ -146,24 +98,14 @@
                                 future is a sustainable one, for our people, our shoppers and the wider population. Our
                                 sustainability strategy, inspires us to leave a positive and lasting legacy for future
                                 generations.</p>
-
-
                         </div>
-
                         <div class="image">
-
-                            <img
-                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-vision.jpg?lossy=0&strip=1&webp=1"
-                                alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                class="lazyload"/>
-                            <noscript><img
-                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-vision.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt=""/></noscript>
-
+                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-vision.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                            <noscript>
+                                <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-vision.jpg?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                            </noscript>
                         </div>
                     </div>
-
-
                     <div class="slide-box">
                         <div class="text">
                             <p>The fast-moving retail sector is an exciting place to be right now, leading the way in
@@ -176,16 +118,11 @@
 
                             <a class="button" href="{{ route('page.careers.current') }}">Current Vacancies </a>
                         </div>
-
                         <div class="image">
-
-                            <img
-                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-opportunities.jpg?lossy=0&strip=1&webp=1"
-                                alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                class="lazyload"/>
-                            <noscript><img
-                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-opportunities.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt=""/></noscript>
+                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-opportunities.jpg?lossy=0&strip=1&webp=1" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload"/>
+                            <noscript>
+                                <img src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/our-opportunities.jpg?lossy=0&amp;strip=1&amp;webp=1" alt=""/>
+                            </noscript>
                         </div>
                     </div>
                 </section>
@@ -193,6 +130,5 @@
             @include('musgravegroup.pages.careers.sectors.components.sectors')
         </div>
     </article>
-
     <x-news/>
 @endsection

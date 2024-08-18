@@ -36,7 +36,7 @@ Route::get('/podcasts', [AboutController::class, 'podcasts'])->name('page.about.
 Route::get('/brands', [BrandController::class, 'index'])->name('page.brand');
 
 Route::get('/sustainability', [SustainabilityController::class, 'index'])->name('page.sustainability');
-Route::get('/sustainability/carring-for-the-planet', [SustainabilityController::class, 'carring'])->name('page.sustainability.carring');
+Route::get('/sustainability/caring-for-the-planet', [SustainabilityController::class, 'carring'])->name('page.sustainability.carring');
 Route::get('/sustainability/creating-vibrant-communities', [SustainabilityController::class, 'vibrant'])->name('page.sustainability.vibrant');
 Route::get('/sustainability/sourcing-for-good', [SustainabilityController::class, 'source'])->name('page.sustainability.source');
 
@@ -64,7 +64,7 @@ Route::get('/news/{year}/{month}', [NewsController::class, 'filterByDate'])
 
 Route::get('/news/sustainability', [NewsController::class, 'sustainability'])->name('page.news.sus');
 Route::get('/news/sustainability/{url}', [NewsController::class, 'sustainabilityShow'])->name('page.news.sus.show');
-Route::get('/musgrave-news', [NewsController::class, 'musgrave'])->name('page.news.musgrave');
+Route::get('/musgrave-news', [NewsController::class, 'index'])->name('page.news.musgrave');
 Route::get('/press-pack', [NewsController::class, 'press'])->name('page.news.press');
 Route::get('/press-contacts', [NewsController::class, 'contacts'])->name('page.news.contacts');
 

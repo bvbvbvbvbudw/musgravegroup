@@ -1,8 +1,10 @@
 @extends('musgravegroup.base')
-@section('body-classes', 'page-template page-template-page-templates page-template-page-careers-template page-template-page-templatespage-careers-template-php page page-id-7799 page-child parent-pageid-68 wp-custom-logo')
+@section('body-classes', 'page-template page-template-page-templates page-template-page-careers-template
+page-template-page-templatespage-careers-template-php page page-id-7799 page-child parent-pageid-68 wp-custom-logo')
 @section('content')
 
-    <section class="blog-hero lazyload" style="background-image:url('{{asset('img/careers/2.webp')}}')" data-aos="fade-in" data-aos-once="true">
+    <section class="blog-hero lazyload" style="background-image:url('{{asset('img/careers/2.webp')}}')" data-aos="fade-in"
+             data-aos-once="true">
         <div class="text">
             <h1>Working for Musgrave</h1>
         </div>
@@ -62,22 +64,20 @@
                                 business, but one that makes a positive impact on the world around us. With retail
                                 partners and customers in the heart of towns and cities up and down the island of
                                 Ireland, supporting people and communities is in our DNA.</p>
-                            <p><span
-                                    class="wistia_embed wistia_async_jmscabbbzp popover=true popoverAnimateThumbnail=true popoverContent=link"
-                                    style="position: relative"><a class="button" href="#">Watch Video</a></span></p>
+                            <p><span class="wistia_embed wistia_async_jmscabbbzp popover=true popoverAnimateThumbnail=true popoverContent=link"
+                                     style="position: relative"><a class="button" href="#">Watch Video</a></span></p>
 
 
                         </div>
 
                         <div class="image">
 
-                            <img
-                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/culture.jpg?lossy=0&strip=1&webp=1"
-                                alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                class="lazyload"/>
+                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/culture.jpg?lossy=0&strip=1&webp=1"
+                                 alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 class="lazyload" />
                             <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/culture.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt=""/></noscript>
+                                    alt="" /></noscript>
 
                         </div>
                     </div>
@@ -93,20 +93,20 @@
                                 in which we live. We&#8217;re looking for personalities and people who bring drive and
                                 passion to everything they do.</p>
                             <p>Every one of us is unique and brings something new to the business. Why don’t you Bring
-                                <em>your</em> good?</p>
+                                <em>your</em> good?
+                            </p>
 
 
                         </div>
 
                         <div class="image">
 
-                            <img
-                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/diversity.jpg?lossy=0&strip=1&webp=1"
-                                alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                class="lazyload"/>
+                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/diversity.jpg?lossy=0&strip=1&webp=1"
+                                 alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 class="lazyload" />
                             <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/diversity.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt=""/></noscript>
+                                    alt="" /></noscript>
 
                         </div>
                     </div>
@@ -124,22 +124,20 @@
                                 their development and career needs through performance development conversations with
                                 their managers. We also provide functional and job specific training and development as
                                 needed.</p>
-                            <p><span
-                                    class="wistia_embed wistia_async_16uu4g1czp popover=true popoverAnimateThumbnail=true popoverContent=link"
-                                    style="position: relative"><a class="button" href="#">Watch Video</a></span></p>
+                            <p><span class="wistia_embed wistia_async_16uu4g1czp popover=true popoverAnimateThumbnail=true popoverContent=link"
+                                     style="position: relative"><a class="button" href="#">Watch Video</a></span></p>
 
 
                         </div>
 
                         <div class="image">
 
-                            <img
-                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/training.jpg?lossy=0&strip=1&webp=1"
-                                alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                class="lazyload"/>
+                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/training.jpg?lossy=0&strip=1&webp=1"
+                                 alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 class="lazyload" />
                             <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/08/training.jpg?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt=""/></noscript>
+                                    alt="" /></noscript>
 
                         </div>
                     </div>
@@ -161,13 +159,12 @@
 
                         <div class="image">
 
-                            <img
-                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/10/well-being-2020.png?lossy=0&strip=1&webp=1"
-                                alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                class="lazyload"/>
+                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/10/well-being-2020.png?lossy=0&strip=1&webp=1"
+                                 alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 class="lazyload" />
                             <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/10/well-being-2020.png?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt=""/></noscript>
+                                    alt="" /></noscript>
 
                         </div>
                     </div>
@@ -193,13 +190,12 @@
 
                         <div class="image">
 
-                            <img
-                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2022/08/working-for-musgrave.jpeg?lossy=0&strip=1&webp=1"
-                                alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                class="lazyload"/>
+                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2022/08/working-for-musgrave.jpeg?lossy=0&strip=1&webp=1"
+                                 alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 class="lazyload" />
                             <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2022/08/working-for-musgrave.jpeg?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt=""/></noscript>
+                                    alt="" /></noscript>
 
                         </div>
                     </div>
@@ -215,15 +211,15 @@
                         <img data-aos="fade-in" data-aos-once="true"
                              data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supply-chain-thumbnail.jpg?lossy=0&strip=1&webp=1"
                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                             class="lazyload"/>
+                             class="lazyload" />
                         <noscript><img data-aos="fade-in" data-aos-once="true"
-                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supply-chain-thumbnail.jpg?lossy=0&amp;strip=1&amp;webp=1"/>
+                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/supply-chain-thumbnail.jpg?lossy=0&amp;strip=1&amp;webp=1" />
                         </noscript>
                         <div class="text-block" data-aos="fade-up" data-aos-once="true">
                             <h4>Supply Chain</h4>
                             <p>Discover roles including warehouse operations and management, transport managers, drivers
                                 and reorder buyers.</p>
-                            <a class="button" href="../supply-chain/index.html">Find out more</a>
+                            <a class="button" href="{{ route('page.careers.supply') }}">Find out more</a>
                         </div>
                     </div>
 
@@ -232,15 +228,15 @@
                         <img data-aos="fade-in" data-aos-once="true"
                              data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/it-thumbnail.jpg?lossy=0&strip=1&webp=1"
                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                             class="lazyload"/>
+                             class="lazyload" />
                         <noscript><img data-aos="fade-in" data-aos-once="true"
-                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/it-thumbnail.jpg?lossy=0&amp;strip=1&amp;webp=1"/>
+                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/it-thumbnail.jpg?lossy=0&amp;strip=1&amp;webp=1" />
                         </noscript>
                         <div class="text-block" data-aos="fade-up" data-aos-once="true">
                             <h4>Technology Innovation &#038; Design</h4>
                             <p>Discover roles including IT operations, IT service delivery, innovation and consumer
                                 insight</p>
-                            <a class="button" href="../technology-innovation-and-design/index.html">Find out more</a>
+                            <a class="button" href="{{ route('page.careers.technology') }}">Find out more</a>
                         </div>
                     </div>
 
@@ -249,15 +245,15 @@
                         <img data-aos="fade-in" data-aos-once="true"
                              data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/retail-thumbnail.png?lossy=0&strip=1&webp=1"
                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                             class="lazyload"/>
+                             class="lazyload" />
                         <noscript><img data-aos="fade-in" data-aos-once="true"
-                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/retail-thumbnail.png?lossy=0&amp;strip=1&amp;webp=1"/>
+                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/retail-thumbnail.png?lossy=0&amp;strip=1&amp;webp=1" />
                         </noscript>
                         <div class="text-block" data-aos="fade-up" data-aos-once="true">
                             <h4>Sales &#038; Operations</h4>
                             <p>Discover roles including sales support, business development and MarketPlace
                                 operations</p>
-                            <a class="button" href="../sales-ops/index.html">Find out more</a>
+                            <a class="button" href="{{ route('page.careers.sales') }}">Find out more</a>
                         </div>
                     </div>
 
@@ -266,14 +262,14 @@
                         <img data-aos="fade-in" data-aos-once="true"
                              data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/commercial-thumbnail_v3.png?lossy=0&strip=1&webp=1"
                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                             class="lazyload"/>
+                             class="lazyload" />
                         <noscript><img data-aos="fade-in" data-aos-once="true"
-                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/commercial-thumbnail_v3.png?lossy=0&amp;strip=1&amp;webp=1"/>
+                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/commercial-thumbnail_v3.png?lossy=0&amp;strip=1&amp;webp=1" />
                         </noscript>
                         <div class="text-block" data-aos="fade-up" data-aos-once="true">
                             <h4>Commercial</h4>
                             <p>Discover roles in trading (buying), quality control, brand development and marketing</p>
-                            <a class="button" href="../commercial/index.html">Find out more</a>
+                            <a class="button" href="{{ route('page.careers.commercial') }}">Find out more</a>
                         </div>
                     </div>
 
@@ -282,15 +278,15 @@
                         <img data-aos="fade-in" data-aos-once="true"
                              data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/finance-thumbnail_v2.png?lossy=0&strip=1&webp=1"
                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                             class="lazyload"/>
+                             class="lazyload" />
                         <noscript><img data-aos="fade-in" data-aos-once="true"
-                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/finance-thumbnail_v2.png?lossy=0&amp;strip=1&amp;webp=1"/>
+                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/finance-thumbnail_v2.png?lossy=0&amp;strip=1&amp;webp=1" />
                         </noscript>
                         <div class="text-block" data-aos="fade-up" data-aos-once="true">
                             <h4>Finance</h4>
                             <p>Discover roles in financial control, financial analysis, retail finance support and
                                 business services.</p>
-                            <a class="button" href="../finance/index.html">Find out more</a>
+                            <a class="button" href="{{ route('page.careers.finance') }}">Find out more</a>
                         </div>
                     </div>
 
@@ -299,25 +295,25 @@
                         <img data-aos="fade-in" data-aos-once="true"
                              data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/graduates-thumbnail_v2.jpg?lossy=0&strip=1&webp=1"
                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                             class="lazyload"/>
-                        <noscript><img data-aos="fade-in" data-aos-once="true"
-                                       src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/graduates-thumbnail_v2.jpg?lossy=0&amp;strip=1&amp;webp=1"/>
+                             class="lazyload" />
+                        <noscript>
+                            <img data-aos="fade-in" data-aos-once="true" src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/graduates-thumbnail_v2.jpg?lossy=0&amp;strip=1&amp;webp=1" />
                         </noscript>
                         <div class="text-block" data-aos="fade-up" data-aos-once="true">
                             <h4>Graduates</h4>
                             <p>Discover our exciting opportunities for graduates in trading, finance, marketing, IT,
                                 retail and supply chain</p>
-                            <a class="button" href="../graduates/index.html">Find out more</a>
+                            <a class="button" href="{{ route('page.careers.graduates') }}">Find out more</a>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="grey-cta">
-                <h4>Gender Pay Gap Reporting</h4>
-                <a href="../../gender-pay-gap-reports/index.html">View Reports</a>
-            </div>
+{{--            <div class="grey-cta">--}}
+{{--                <h4>Gender Pay Gap Reporting</h4>--}}
+{{--                <a href="../../gender-pay-gap-reports/index.html">View Reports</a>--}}
+{{--            </div>--}}
 
             <style>
                 .grey-cta {
@@ -336,5 +332,5 @@
         </div><!-- container -->
     </article><!-- #post-7799 -->
 
-    <x-news/>
+    <x-news />
 @endsection

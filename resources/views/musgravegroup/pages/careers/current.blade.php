@@ -9,9 +9,8 @@
             <div class="vacancies-row">
                 <div class="bar-column">
                     <p>Keyword</p>
-                    <form role="search" action="https://www.musgravegroup.com/" method="get" id="searchform">
-                        <input type="text" name="s" placeholder="Search Vacancies"/>
-                        <input type="hidden" name="post_type" value="vacancies"/>
+                    <form role="search" action="{{ route('page.careers.current') }}" method="get" id="searchform">
+                        <input type="text" name="search" placeholder="Search Vacancies" value="{{ request()->get('search') }}"/>
                         <input type="submit" alt="Search" value="Search"/>
                     </form>
                 </div>
@@ -27,17 +26,12 @@
 
                 <div class="entry-content ">
                     <h2><a class="job-title" href="{{ route('page.careers.vacancies.show', $vac->url) }}">{{ $vac->title }}</a></h2>
-{{--                    <h3>{{  }}</h3>--}}
-                    <h4>{{ $vac->location ?? '' }}<br></h4>
-
-
+                    <h4>{{ $vac->location->location ?? '' }}<br></h4>
                     <br><br>
                     <h4> Date Posted: {{ $vac->formatted_date }} </h4> <br>
                     <a class="more-details" href="{{ route('page.careers.vacancies.show', $vac->url) }}">More details </a>
-
-
-                </div><!-- .entry-content -->
-            </article><!-- #post-23663 -->
+                </div>
+            </article>
         @endforeach
     </div>
 @endsection

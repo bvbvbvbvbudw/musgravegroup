@@ -108,14 +108,44 @@ class CareerController extends Controller
         return view('musgravegroup.pages.careers.sectors');
     }
 
-    public function current()
+    public function current(Request $request)
     {
-        $vacancies = Cache::remember("vacancies_data_page", now()->addHour(), function () {
-            return Vacancy::where('is_closed', 0)->get();
-        });
+        $search = $request->input('search');
+
+        if ($request->has('search') && !empty($search)) {
+            // Получаем все колонки таблицы вакансий
+            $vacancyColumns = \Schema::getColumnListing('vacancies');
+
+            $vacancies = Cache::remember("vacancies_data_page_{$search}", now()->addHour(), function() use ($search, $vacancyColumns) {
+                $query = Vacancy::where('is_closed', 0)->where('status', 'approved');
+
+                // Поиск по полям основной таблицы 'vacancies'
+                foreach ($vacancyColumns as $column) {
+                    $query->orWhere($column, 'LIKE', "%{$search}%");
+                }
+
+                // Поиск по связанным моделям, например, 'location' и 'category'
+                $query->orWhereHas('location', function($q) use ($search) {
+                    $q->where('location', 'LIKE', "%{$search}%");
+                });
+
+                $query->orWhereHas('category', function($q) use ($search) {
+                    $q->where('category', 'LIKE', "%{$search}%");
+                });
+
+                return $query->get();
+            });
+        } else {
+            $vacancies = Cache::remember("vacancies_data_page", now()->addHour(), function () {
+                return Vacancy::where('is_closed', 0)->get();
+            });
+        }
+
         if ($vacancies) {
             $vacancies = $this->addFormattedDate($vacancies);
             return view('musgravegroup.pages.careers.current', compact('vacancies'));
         }
     }
+
+
 }
