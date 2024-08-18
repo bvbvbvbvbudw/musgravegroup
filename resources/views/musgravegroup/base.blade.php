@@ -2,7 +2,8 @@
 <html lang="en-GB">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+          rel="stylesheet">
     <style>
         #onetrust-banner-sdk {
             display: none;
@@ -46,7 +47,8 @@
     <link rel='dns-prefetch' href='http://hb.wpmucdn.com/'/>
     <link rel='dns-prefetch' href='http://b2833840.smushcdn.com/'/>
     <link href='http://hb.wpmucdn.com/' rel='preconnect'/>
-    <link rel="alternate" type="application/rss+xml" title="Musgrave Group &raquo; Comments Feed" href="../comments/feed/index.html"/>
+    <link rel="alternate" type="application/rss+xml" title="Musgrave Group &raquo; Comments Feed"
+          href="../comments/feed/index.html"/>
     <style id='classic-theme-styles-inline-css' type='text/css'>
         /*! This file is auto-generated */
         .wp-block-button__link {
@@ -389,8 +391,10 @@
     </style>
     <link rel="stylesheet" id="wp-block-library-css" media="all" href="{{ asset('css/musgravegroup/first.css') }}">
     <link rel="stylesheet" id="wphb-1-css" media="all" href="{{ asset('css/musgravegroup/second.css') }}">
-    <link rel="stylesheet" id="slick-css-css" media="all" type="text/css" href="{{ asset('css/musgravegroup/slick.css') }}">
-    <link rel="stylesheet" id="slick-theme-css-css" media="1" type="text/css" href="{{ asset('css/musgravegroup/third.css') }}">
+    <link rel="stylesheet" id="slick-css-css" media="all" type="text/css"
+          href="{{ asset('css/musgravegroup/slick.css') }}">
+    <link rel="stylesheet" id="slick-theme-css-css" media="1" type="text/css"
+          href="{{ asset('css/musgravegroup/third.css') }}">
     <link rel="stylesheet" id="wphb-2-css" media="1" type="text/css" href="{{ asset('css/musgravegroup/fourth.css') }}">
     <script type="text/javascript" src="{{ asset('js/musgravegroup/first.js') }}" id="wphb-3-js"></script>
     <script type="text/javascript" src="{{ asset('js/musgravegroup/second.js') }}" id="wphb-4-js"></script>
@@ -524,7 +528,8 @@
         }
     </style>
 </head>
-<body class="@yield('body-classes', 'home page-template page-template-page-content page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo')" @yield('body-attr')>
+<body
+    class="@yield('body-classes', 'home page-template page-template-page-content page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo')" @yield('body-attr')>
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -589,9 +594,10 @@
                         class="menu-item menu-item-type-post_type_archive menu-item-object-brands menu-item-86 menu-item-">
                         <a href="{{ route('page.brand') }}">Our brands</a></li>
                     <li id="menu-item-14986"
-                        style="{{ str_contains(request()->path(), 'sustainability') ? 'background: #a9c23f!important; color: white!important;' : '' }}"
+                        style="{{ (str_contains(request()->path(), 'sustainability') && !str_contains(request()->path(), 'news/sustainability')) ? 'background: #a9c23f!important; color: white!important;' : '' }}"
                         class="menu-item menu-item-type-post_type menu-item-object-page {{ str_contains(request()->path(), 'sustainability') ? 'current_page_item' : '' }} menu-item-has-children menu-item-14986 menu-item-sustainability">
-                        <a style="{{ str_contains(request()->path(), 'sustainability') ? 'color: white!important;' : '' }}" href="{{ route('page.sustainability') }}">Sustainability</a>
+                        <a style="{{ (str_contains(request()->path(), 'sustainability') && !str_contains(request()->path(), 'news/sustainability')) ? 'color: white!important;' : '' }}"
+                           href="{{ route('page.sustainability') }}">Sustainability</a>
                         <ul class="sub-menu" style="background: #a9c23f!important;">
                             <li id="menu-item-14987"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14987 menu-item-caring-for-the-planet">
@@ -599,7 +605,8 @@
                             </li>
                             <li id="menu-item-14988"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14988 menu-item-creating-vibrant-communities">
-                                <a href="{{ route('page.sustainability.vibrant') }}">Creating vibrant communities</a></li>
+                                <a href="{{ route('page.sustainability.vibrant') }}">Creating vibrant communities</a>
+                            </li>
                             <li id="menu-item-14989"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14989 menu-item-sourcing-for-good">
                                 <a href="{{ route('page.sustainability.source') }}">Sourcing for good</a></li>
@@ -607,7 +614,7 @@
                     </li>
                     <li id="menu-item-76"
                         class="menu-item menu-item-type-post_type {{ str_contains(request()->path(), 'careers') ? 'current_page_item' : '' }} menu-item-object-page menu-item-has-children menu-item-76 menu-item-careers">
-                        <a href="{{ route('page.careers') }}">Careers</a>
+                        <a style="background: black!important;" href="{{ route('page.careers') }}">Careers</a>
                         <ul class="sub-menu">
                             <li id="menu-item-7801"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7801 menu-item-working-for-musgrave">
@@ -672,7 +679,6 @@
 
 
     </div><!-- #content -->
-
     <div id="search-overlay" class="block">
         <div class="container">
             <h2>What would you like to find?</h2>
@@ -823,40 +829,42 @@
             </section>
         </div>
     </div>
-
     <footer id="colophon" class="site-footer">
         <div class="container">
             <div class="footer-top">
                 <div class="site-branding">
-                    <a href="../index.html" class="custom-logo-link" rel="home"><img width="275" height="68"
-                                                                                     data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/musgrave_logo.png?lossy=0&strip=1&webp=1"
-                                                                                     class="custom-logo lazyload"
-                                                                                     alt="Musgrave Group"
-                                                                                     decoding="async"
-                                                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                                                     style="--smush-placeholder-width: 275px; --smush-placeholder-aspect-ratio: 275/68;"/>
-                        <noscript><img width="275" height="68"
-                                       data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/musgrave_logo.png?lossy=0&strip=1&webp=1"
-                                       class="custom-logo lazyload" alt="Musgrave Group" decoding="async"
-                                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                       style="--smush-placeholder-width: 275px; --smush-placeholder-aspect-ratio: 275/68;"/>
-                            <noscript><img width="275" height="68"
-                                           src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/musgrave_logo.png?lossy=0&amp;strip=1&amp;webp=1"
-                                           class="custom-logo" alt="Musgrave Group" decoding="async"/></noscript>
+                    <a href="{{ route('page.index') }}" class="custom-logo-link" rel="home">
+                        <img width="275" height="68"
+                             data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/musgrave_logo.png?lossy=0&strip=1&webp=1"
+                             class="custom-logo lazyload" alt="Musgrave Group" decoding="async"
+                             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                             style="--smush-placeholder-width: 275px; --smush-placeholder-aspect-ratio: 275/68;"/>
+                        <noscript>
+                            <img width="275" height="68"
+                                 data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/musgrave_logo.png?lossy=0&strip=1&webp=1"
+                                 class="custom-logo lazyload" alt="Musgrave Group" decoding="async"
+                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 style="--smush-placeholder-width: 275px; --smush-placeholder-aspect-ratio: 275/68;"/>
+                            <noscript>
+                                <img width="275" height="68"
+                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/musgrave_logo.png?lossy=0&amp;strip=1&amp;webp=1"
+                                     class="custom-logo" alt="Musgrave Group" decoding="async"/>
+                            </noscript>
                         </noscript>
                     </a></div>
 
                 <div class="socials">
-
                     <a href="https://twitter.com/Musgraveplc" target="_blank">
                         <img
                             data-src="https://b2833840.smushcdn.com/2833840/wp-content/themes/musgrave/img/icon_twitter.png?lossy=0&strip=1&webp=1"
                             alt="twitter"
                             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                             class="lazyload"/>
-                        <noscript><img
+                        <noscript>
+                            <img
                                 src="https://b2833840.smushcdn.com/2833840/wp-content/themes/musgrave/img/icon_twitter.png?lossy=0&amp;strip=1&amp;webp=1"
-                                alt="twitter"/></noscript>
+                                alt="twitter"/>
+                        </noscript>
                     </a>
 
                     <a href="https://www.linkedin.com/company/musgrave" target="_blank">
@@ -865,9 +873,11 @@
                             alt="linked in"
                             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                             class="lazyload"/>
-                        <noscript><img
+                        <noscript>
+                            <img
                                 src="https://b2833840.smushcdn.com/2833840/wp-content/themes/musgrave/img/icon_linkedin.png?lossy=0&amp;strip=1&amp;webp=1"
-                                alt="linked in"/></noscript>
+                                alt="linked in"/>
+                        </noscript>
                     </a>
                 </div>
             </div>
@@ -878,28 +888,28 @@
                         <ul id="menu-quick-links-footer-col-1" class="menu">
                             <li id="menu-item-196"
                                 class="bold-link menu-item menu-item-type-post_type menu-item-object-page menu-item-196 menu-item-home">
-                                <a href="../home/index.html">Home</a></li>
+                                <a href="{{ route('page.index') }}">Home</a></li>
                             <li id="menu-item-13270"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13270 menu-item-musgrave-news">
-                                <a href="../musgrave-news/index.html">News</a></li>
+                                <a href="{{ route('page.news') }}">News</a></li>
                             <li id="menu-item-8665"
                                 class="bold-link menu-item menu-item-type-post_type_archive menu-item-object-brands menu-item-8665 menu-item-">
-                                <a href="../brands/index.html">Brands</a></li>
+                                <a href="{{ route('page.brand') }}">Brands</a></li>
                             <li id="menu-item-197"
                                 class="bold-link menu-item menu-item-type-post_type menu-item-object-page menu-item-197 menu-item-contact">
-                                <a href="../contact/index.html">Contact</a></li>
+                                <a href="{{ route('page.contact') }}">Contact</a></li>
                             <li id="menu-item-8678"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8678 menu-item-cookie-policy">
-                                <a href="../cookie-policy/index.html">Cookie Policy</a></li>
+                                <a href="{{ route('page.cookie') }}">Cookie Policy</a></li>
                             <li id="menu-item-8679"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8679 menu-item-privacy-statement">
-                                <a href="../privacy-statement/index.html">Privacy Statement</a></li>
+                                <a href="{{ route('page.privacy') }}">Privacy Statement</a></li>
                             <li id="menu-item-8680"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8680 menu-item-terms-and-conditions">
-                                <a href="../terms-and-conditions/index.html">Terms and Conditions</a></li>
+                                <a href="{{ route('page.terms') }}">Terms and Conditions</a></li>
                             <li id="menu-item-9512"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9512 menu-item-anti-slavery-and-human-trafficking-statement">
-                                <a href="../anti-slavery-and-human-trafficking-statement/index.html">Anti-Slavery and
+                                <a href="{{ route('page.anti') }}">Anti-Slavery and
                                     Human Trafficking Statement</a></li>
                         </ul>
                     </div>
@@ -909,29 +919,29 @@
                         <ul id="menu-quick-links-footer-col-2" class="menu">
                             <li id="menu-item-8666"
                                 class="bold-link menu-item menu-item-type-post_type menu-item-object-page menu-item-8666 menu-item-about-us">
-                                <a href="../about-us/index.html">About us</a></li>
+                                <a href="{{ route('page.about') }}">About us</a></li>
                             <li id="menu-item-9185"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9185 menu-item-our-retail-partners">
-                                <a href="../about-us/our-retail-partners/index.html">Our retail partners</a></li>
+                                <a href="{{ route('page.about.partners') }}">Our retail partners</a></li>
                             <li id="menu-item-9183"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9183 menu-item-food-leadership">
-                                <a href="../about-us/food-leadership/index.html">Food leadership</a></li>
+                                <a href="{{ route('page.about.food') }}">Food leadership</a></li>
                             <li id="menu-item-9182"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9182 menu-item-board">
-                                <a href="../about-us/board/index.html">Board</a></li>
+                                <a href="{{ route('page.about.board') }}">Board</a></li>
                             <li id="menu-item-21917"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21917 menu-item-podcasts">
-                                <a href="../podcasts/index.html">Podcasts</a></li>
+                                <a href="{{ route('page.about.podcasts') }}">Podcasts</a></li>
                             <li id="menu-item-21213"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21213 menu-item-directors">
-                                <a href="../about-us/directors/index.html">Musgrave Directors</a></li>
+                                <a href="{{ route('page.about.directors') }}">Musgrave Directors</a></li>
                             <li id="menu-item-21177"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21177 menu-item-annual-report-2022">
-                                <a href="../about-us/annual-report-2022/index.html">Annual report</a></li>
+                                <a href="{{ route('page.about.annual') }}">Annual report</a></li>
                             <li id="menu-item-9697"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9697 menu-item-uk-tax-strategy">
                                 <a target="_blank" rel="noopener"
-                                   href="../wp-content/uploads/2023/03/UK-Tax-Strategy-Dec-2023.pdf">UK Tax Strategy</a>
+                                   href="{{ asset('zips/UK-Tax-Strategy-Dec-2023.pdf') }}">UK Tax Strategy</a>
                             </li>
                         </ul>
                     </div>
@@ -941,18 +951,18 @@
                         <ul id="menu-quick-links-footer-col-3" class="menu">
                             <li id="menu-item-14991"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14991 menu-item-sustainability">
-                                <a href="../sustainability/index.html">Sustainability</a></li>
+                                <a href="{{ route('page.sustainability') }}">Sustainability</a></li>
                             <li id="menu-item-14992"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14992 menu-item-caring-for-the-planet">
-                                <a href="../sustainability/caring-for-the-planet/index.html">Caring for the planet</a>
+                                <a href="{{ route('page.sustainability.caring') }}">Caring for the planet</a>
                             </li>
                             <li id="menu-item-14993"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14993 menu-item-creating-vibrant-communities">
-                                <a href="../sustainability/creating-vibrant-communities/index.html">Creating vibrant
-                                    communities</a></li>
+                                <a href="{{ route('page.sustainability.vibrant') }}">Creating vibrant communities</a>
+                            </li>
                             <li id="menu-item-14994"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14994 menu-item-sourcing-for-good">
-                                <a href="../sustainability/sourcing-for-good/index.html">Sourcing for good</a></li>
+                                <a href="{{ route('page.sustainability.source') }}">Sourcing for good</a></li>
                         </ul>
                     </div>
                 </div>
@@ -961,19 +971,19 @@
                         <ul id="menu-quick-links-footer-col-4" class="menu">
                             <li id="menu-item-8667"
                                 class="bold-link menu-item menu-item-type-post_type menu-item-object-page menu-item-8667 menu-item-careers">
-                                <a href="../careers/index.html">Careers</a></li>
+                                <a href="{{ route('page.careers') }}">Careers</a></li>
                             <li id="menu-item-8668"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8668 menu-item-working-for-musgrave">
-                                <a href="../careers/working-for-musgrave/index.html">Working for Musgrave</a></li>
+                                <a href="{{ route('page.careers.working') }}">Working for Musgrave</a></li>
                             <li id="menu-item-8669"
                                 class="menu-item menu-item-type-post_type_archive menu-item-object-careers menu-item-8669 menu-item-">
-                                <a href="../careers/sectors/index.html">Career sectors</a></li>
+                                <a href="{{ route('page.careers.sectors') }}">Career sectors</a></li>
                             <li id="menu-item-8671"
                                 class="menu-item menu-item-type-post_type_archive menu-item-object-vacancies menu-item-8671 menu-item-">
-                                <a href="../careers/current-vacancies/index.html">Vacancies</a></li>
+                                <a href="{{ route('page.careers.current') }}">Vacancies</a></li>
                             <li id="menu-item-8670"
                                 class="menu-item menu-item-type-post_type menu-item-object-careers menu-item-8670 menu-item-graduates">
-                                <a href="../careers/graduates/index.html">Graduates</a></li>
+                                <a href="{{ route('page.careers.graduates') }}">Graduates</a></li>
                         </ul>
                     </div>
                 </div>
@@ -981,20 +991,15 @@
 
             <div class="site-info">
                 <small>
-                    <p>© 2024 Musgrave Group plc, Ballycurreen, Airport Road, Cork. Reg No. 105820. VAT no. IE 8G05913L.
-                        <!-- CookiePro Cookies Settings button start --><br/>
+                    <p>© 2024 Musgrave Group plc, Ballycurreen, Airport Road, Cork. Reg No. 105820. VAT no. IE 8G05913L.<br/>
                         <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
                         <br/>
-                        <!-- CookiePro Cookies Settings button end --></p>
+                    </p>
                 </small>
             </div>
         </div>
     </footer><!-- #colophon -->
 </div><!-- #page -->
-
-{{--<link rel='stylesheet' id='simple-share-buttons-adder-ssba-css'--}}
-{{--      href='https://hb.wpmucdn.com/www.musgravegroup.com/7298efb7-ae35-4dd2-9c88-1eaf8cc86a2f.css' type='text/css'--}}
-{{--      media='all'/>--}}
 <style id='simple-share-buttons-adder-ssba-inline-css' type='text/css'>
     .ssba {
 

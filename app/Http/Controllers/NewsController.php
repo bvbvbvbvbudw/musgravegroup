@@ -30,6 +30,8 @@ class NewsController extends Controller
             ->get()
             ->groupBy('year');
 
+        $news = $this->addFormattedDate($news);
+
         return view('musgravegroup.pages.news.news', compact('news', 'brands', 'dates'));
     }
 

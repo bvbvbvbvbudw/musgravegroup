@@ -1,80 +1,74 @@
 <?php
-
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\Admin\AdminNewsController;
-use App\Http\Controllers\Admin\AdminNewsSustainability;
-use App\Http\Controllers\Admin\AdminVacancyController;
-use App\Http\Controllers\BrandController;
-use App\Http\Controllers\CareerController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\IndexController;
-use App\Http\Controllers\NewsController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\SustainabilityController;
+use App\Http\Controllers\{
+    AboutController, Admin\AdminNewsController, Admin\AdminNewsSustainability, Admin\AdminVacancyController,
+    BrandController, CareerController, ContactController, IndexController, NewsController, ProfileController,
+    SustainabilityController
+};
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
 Route::get('/', [IndexController::class, 'index'])->name('page.index');
-Route::get('/local-and-irish', [IndexController::class, 'local'])->name('page.local');
-Route::get('/mood-ice-cream', [IndexController::class, 'mood'])->name('page.mood');
-Route::get('/caramico-pizza', [IndexController::class, 'pizza'])->name('page.pizza');
-Route::get('/the-green-kitchen', [IndexController::class, 'kitchen'])->name('page.kitchen');
+Route::controller(IndexController::class)->group(function () {
+    Route::get('/local-and-irish', 'local')->name('page.local');
+    Route::get('/mood-ice-cream', 'mood')->name('page.mood');
+    Route::get('/caramico-pizza', 'pizza')->name('page.pizza');
+    Route::get('/the-green-kitchen', 'kitchen')->name('page.kitchen');
+    Route::get('/cookie-policy', 'cookie')->name('page.cookie');
+    Route::get('/privacy-statement', 'privacy')->name('page.privacy');
+    Route::get('/terms-and-conditions', 'terms')->name('page.terms');
+    Route::get('/anti-slavery-and-human-trafficking-statement', 'anti')->name('page.anti');
+    Route::get('/food-academy', 'food')->name('page.food');
+});
 
-Route::get('/about-us', [AboutController::class, 'index'])->name('page.about');
-Route::get('/about-us/out-retail-partners', [AboutController::class, 'partners'])->name('page.about.partners');
-Route::get('/about-us/food-leadership', [AboutController::class, 'food'])->name('page.about.food');
-Route::get('/about-us/board', [AboutController::class, 'board'])->name('page.about.board');
-Route::get('/about-us/annual-report-2022', [AboutController::class, 'annual'])->name('page.about.annual');
-Route::get('/podcasts', [AboutController::class, 'podcasts'])->name('page.about.podcasts');
+Route::controller(AboutController::class)->prefix('about-us')->name('page.about')->group(function () {
+    Route::get('/', 'index');
+    Route::get('/directors', 'directors')->name('.directors');
+    Route::get('/out-retail-partners', 'partners')->name('.partners');
+    Route::get('/food-leadership', 'food')->name('.food');
+    Route::get('/board', 'board')->name('.board');
+    Route::get('/annual-report-2022', 'annual')->name('.annual');
+    Route::get('/podcasts', 'podcasts')->name('.podcasts');
+});
 
 Route::get('/brands', [BrandController::class, 'index'])->name('page.brand');
 
-Route::get('/sustainability', [SustainabilityController::class, 'index'])->name('page.sustainability');
-Route::get('/sustainability/caring-for-the-planet', [SustainabilityController::class, 'carring'])->name('page.sustainability.caring');
-Route::get('/sustainability/creating-vibrant-communities', [SustainabilityController::class, 'vibrant'])->name('page.sustainability.vibrant');
-Route::get('/sustainability/sourcing-for-good', [SustainabilityController::class, 'source'])->name('page.sustainability.source');
+Route::controller(SustainabilityController::class)->prefix('sustainability')->name('page.sustainability')->group(function () {
+    Route::get('/', 'index');
+    Route::get('/caring-for-the-planet', 'carring')->name('.caring');
+    Route::get('/creating-vibrant-communities', 'vibrant')->name('.vibrant');
+    Route::get('/sourcing-for-good', 'source')->name('.source');
+});
 
-Route::get('/careers', [CareerController::class, 'index'])->name('page.careers');
+Route::controller(CareerController::class)->prefix('careers')->name('page.careers')->group(function () {
+    Route::get('/', 'index');
+    Route::get('/form', 'forCompany')->name('.form');
+    Route::post('/form/send', 'forCompanySend')->name('.form.send');
+    Route::get('/job-alerts', 'alerts')->name('.alerts');
+    Route::post('/job-alerts/send', 'send')->name('.alerts.send');
+    Route::get('/supply-chain', 'supply')->name('.supply');
+    Route::get('/technology', 'technology')->name('.technology');
+    Route::get('/sales-ops', 'sales')->name('.sales');
+    Route::get('/commercial', 'commercial')->name('.commercial');
+    Route::get('/finance', 'finance')->name('.finance');
+    Route::get('/graduates', 'graduates')->name('.graduates');
+    Route::get('/working-for-musgrave', 'working')->name('.working');
+    Route::get('/sectors', 'sectors')->name('.sectors');
+    Route::get('/current-vacancies', 'current')->name('.current');
+    Route::get('/vacancy/{url}', 'show')->name('.vacancies.show');
+    Route::get('/vacancy/{id}/apply', 'apply')->name('.vacancies.apply');
+    Route::post('/vacancy/{id}/apply/send', 'applySend')->name('.vacancies.apply.send');
+});
 
-Route::get('/careers/form', [CareerController::class, 'forCompany'])->name('page.careers.form');
-Route::post('/careers/form/send', [CareerController::class, 'forCompanySend'])->name('page.careers.form.send');
-
-Route::get('/careers/job-alerts', [CareerController::class, 'alerts'])->name('page.careers.alerts');
-Route::post('/careers/job-alerts/send', [CareerController::class, 'send'])->name('page.careers.alerts.send');
-Route::get('/careers/supply-chain', [CareerController::class, 'supply'])->name('page.careers.supply');
-Route::get('/careers/technology', [CareerController::class, 'technology'])->name('page.careers.technology');
-Route::get('/careers/sales-ops', [CareerController::class, 'sales'])->name('page.careers.sales');
-Route::get('/careers/commercial', [CareerController::class, 'commercial'])->name('page.careers.commercial');
-Route::get('/careers/finance', [CareerController::class, 'finance'])->name('page.careers.finance');
-Route::get('/careers/graduates', [CareerController::class, 'graduates'])->name('page.careers.graduates');
-Route::get('/careers/working-for-musgrave', [CareerController::class, 'working'])->name('page.careers.working');
-Route::get('/careers/sectors', [CareerController::class, 'sectors'])->name('page.careers.sectors');
-Route::get('/careers/current-vacancies', [CareerController::class, 'current'])->name('page.careers.current');
-Route::get('/careers/vacancy/{url}', [CareerController::class, 'show'])->name('page.careers.vacancies.show');
-Route::get('/careers/vacancy/{id}/apply', [CareerController::class, 'apply'])->name('page.careers.vacancies.apply');
-Route::post('/careers/vacancy/{id}/apply/send', [CareerController::class, 'applySend'])->name('page.careers.vacancies.apply.send');
-
-Route::get('/news', [NewsController::class, 'index'])->name('page.news');
-Route::get('/news/brand/{brand}', [NewsController::class, 'filterByBrand'])->name('page.news.filterByBrand');
-Route::get('/news/{year}/{month}', [NewsController::class, 'filterByDate'])
-    ->where(['year' => '[0-9]{4}', 'month' => '[0-9]{2}'])
-    ->name('page.news.filterByDate');
-
-Route::get('/news/sustainability', [NewsController::class, 'sustainability'])->name('page.news.sus');
-Route::get('/sustainability/{url}', [NewsController::class, 'sustainabilityShow'])->name('page.news.sus.show');
-Route::get('/musgrave-news', [NewsController::class, 'index'])->name('page.news.musgrave');
-Route::get('/press-pack', [NewsController::class, 'press'])->name('page.news.press');
-Route::get('/press-contacts', [NewsController::class, 'contacts'])->name('page.news.contacts');
+Route::controller(NewsController::class)->prefix('news')->name('page.news')->group(function () {
+    Route::get('/', 'index');
+    Route::get('/brand/{brand}', 'filterByBrand')->name('.filterByBrand');
+    Route::get('/{year}/{month}', 'filterByDate')
+        ->where(['year' => '[0-9]{4}', 'month' => '[0-9]{2}'])->name('.filterByDate');
+    Route::get('/sustainability', 'sustainability')->name('.sus');
+    Route::get('/sustainability/{url}', 'sustainabilityShow')->name('.sus.show');
+    Route::get('/musgrave-news', 'index')->name('.musgrave');
+    Route::get('/press-pack', 'press')->name('.press');
+    Route::get('/press-contacts', 'contacts')->name('.contacts');
+});
 
 Route::get('/contact', [ContactController::class, 'index'])->name('page.contact');
 
@@ -93,6 +87,5 @@ Route::middleware('auth')->group(function () {
 
 Route::get('news/{url}', [NewsController::class, 'show'])->name('page.news.show');
 Route::get('podcasts/{url}', [AboutController::class, 'showPodcast'])->name('page.about.podcasts.show');
-// TODO: make dynamic routes
 
 require __DIR__.'/auth.php';

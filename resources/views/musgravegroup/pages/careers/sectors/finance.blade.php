@@ -4,8 +4,7 @@
 @section('content')
     <main id="main" class="site-main">
 
-        <section class="blog-hero lazyload" style="background-image:inherit"
-                 data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/finance_v30aa7.html?lossy=0&amp;strip=1&amp;webp=1)">
+        <section class="blog-hero lazyload" style="background-image:url('{{ asset('img/sectors/finance_v3.webp') }}')">
             <div class="text">
                 <h1>Finance</h1>
             </div>

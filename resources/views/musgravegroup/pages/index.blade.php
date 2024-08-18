@@ -28,7 +28,7 @@
                     <div class="text ">
                         <h1>We support thousands of local suppliers</h1>
                         <p></p>
-                        <a href="local-and-irish/index.html">Find out more</a>
+                        <a href="{{ route('page.local') }}">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     <div class="text ">
                         <h1>Giving small producers a big chance</h1>
                         <p></p>
-                        <a href="food-academy/index.html">Find out more</a>
+                        <a href="{{ route('page.food') }}">Find out more</a>
                     </div>
                 </div>
             </div>
@@ -52,18 +52,18 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="image lazyload" style="background-image:inherit;"
-                     data-bg-image="url(&#039;https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/07/Header_sustainability_1.png?lossy=0&amp;strip=1&amp;webp=1&#039;)">
-                    <div class="text sustainability">
-                        <h1>We are helping to build sustainable communities</h1>
-                        <p></p>
-                        <a
-                            href="supervalu-partners-with-the-all-ireland-pollinator-plan-to-bring-save-the-bees-campaign-to-schools-around-ireland/index.html">Save
-                            the bees</a>
-                    </div>
-                </div>
-            </div>
+{{--            <div>--}}
+{{--                <div class="image lazyload" style="background-image:inherit;"--}}
+{{--                     data-bg-image="url(&#039;https://b2833840.smushcdn.com/2833840/wp-content/uploads/2020/07/Header_sustainability_1.png?lossy=0&amp;strip=1&amp;webp=1&#039;)">--}}
+{{--                    <div class="text sustainability">--}}
+{{--                        <h1>We are helping to build sustainable communities</h1>--}}
+{{--                        <p></p>--}}
+{{--                        <a--}}
+{{--                            href="supervalu-partners-with-the-all-ireland-pollinator-plan-to-bring-save-the-bees-campaign-to-schools-around-ireland/index.html">Save--}}
+{{--                            the bees</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </section>
         <div class="values-container">
             <div class="container">

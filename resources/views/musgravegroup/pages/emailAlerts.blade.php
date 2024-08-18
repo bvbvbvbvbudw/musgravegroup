@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{ asset('css/alerts.css')}}">
 @endsection
 @section('body-classes', 'vacancies-template-default application-form-template single single-vacancies wp-custom-logo')
-@section('title', '')
+@section('title', 'Apply now')
 @section('content')
     <article id="post-9205"
              class="post-9205 vacancies type-vacancies status-publish hentry category-careers sector-retail-sales">
@@ -169,22 +169,22 @@
                     <div class="background-zoom"
                          style="background-image: url(https://www.musgravegroup.com/wp-content/uploads/2019/08/the-green-kitchen.jpg);">
                     </div>
-                    <a href="https://www.musgravegroup.com/careers/current-vacancies/"></a>
-                    <h2><a href="https://www.musgravegroup.com/careers/current-vacancies/">All Jobs</a></h2>
+                    <a href="{{ route('page.careers.current') }}"></a>
+                    <h2><a href="{{ route('page.careers.current') }}">All Jobs</a></h2>
                 </div>
                 <div class="related-column" data-aos="fade-up" data-aos-once="true">
                     <div class="background-zoom"
                          style="background-image: url(https://www.musgravegroup.com/wp-content/uploads/2019/08/our-brands-1.jpg);">
                     </div>
-                    <a href="https://www.musgravegroup.com/brands/"></a>
-                    <h2><a href="https://www.musgravegroup.com/brands/">Our brands</a></h2>
+                    <a href="{{ route('page.brand') }}"></a>
+                    <h2><a href="{{ route('page.brand') }}">Our brands</a></h2>
                 </div>
                 <div class="related-column" data-aos="fade-up" data-aos-once="true">
                     <div class="background-zoom"
                          style="background-image: url(https://www.musgravegroup.com/wp-content/uploads/2019/08/food-innovation.jpg);">
                     </div>
-                    <a href="https://www.musgravegroup.com/news-blogs/"></a>
-                    <h2><a href="https://www.musgravegroup.com/news-blogs/">Latest news</a></h2>
+                    <a href="{{ route('page.news') }}"></a>
+                    <h2><a href="{{ route('page.news') }}">Latest news</a></h2>
                 </div>
             </div>
         </div>

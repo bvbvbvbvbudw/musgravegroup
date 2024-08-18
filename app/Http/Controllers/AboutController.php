@@ -33,6 +33,11 @@ class AboutController extends Controller
     {
         return view('musgravegroup.pages.about.annual');
     }
+
+    public function directors()
+    {
+        return view('musgravegroup.pages.about.directors');
+    }
     public function podcasts ()
     {
         $podcasts = Cache::remember('podcasts_data', now()->addHours(1), function(){

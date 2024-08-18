@@ -8,11 +8,11 @@
                          class="attachment-medium size-medium wp-post-image lazyload" alt=""
                          decoding="async" loading="lazy"
                          data-sizes="(max-width: 300px) 100vw, 300px"
-                         src="{{ $item->media->path }}"
+                         src="{{ asset($item->media->path) }}"
                          style="--smush-placeholder-width: 300px; --smush-placeholder-aspect-ratio: 300/200;"/>
                     <noscript><img
                             width="300" height="200"
-                            src="{{ $item->media->path }}"
+                            src="{{ asset($item->media->path) }}"
                             class="attachment-medium size-medium wp-post-image" alt="" decoding="async"
                             loading="lazy"
                             sizes="(max-width: 300px) 100vw, 300px"/></noscript>
@@ -23,7 +23,6 @@
                     </div>
                 </div>
             @endforeach
-
         </div>
     </div>
 </section>

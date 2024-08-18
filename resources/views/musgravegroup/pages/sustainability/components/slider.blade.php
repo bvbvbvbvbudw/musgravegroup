@@ -7,7 +7,7 @@
                 with a sense of urgency if we are to keep warming to 1.5°C above pre-industrial levels. At
                 Musgrave we are committed to becoming net zero carbon by 2040.</p>
 
-            <a class="button" href="../caring-for-the-planet/index.html">Read more</a>
+            <a class="button" href="{{ route('page.sustainability.caring') }}">Read more</a>
         </div>
 
         <div class="image">
@@ -32,7 +32,7 @@
                 food producers and retailers across the island of Ireland gives us the unique opportunity to
                 multiply our impact by enabling wider change within the industry and beyond.</p>
 
-            <a class="button" href="../sourcing-for-good/index.html">Read more</a>
+            <a class="button" href="{{ route('page.sustainability.source') }}">Read more</a>
         </div>
 
         <div class="image">

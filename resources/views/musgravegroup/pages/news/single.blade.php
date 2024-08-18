@@ -18,7 +18,13 @@
     <meta property="twitter:description" content="{{ $news->small_description }}">
     <meta property="twitter:image" content="{{ asset($news->media->path) }}">
 @endsection
-
+@section('style')
+    <style>
+        .sub-menu {
+            display: none!important;
+        }
+    </style>
+@endsection
 @section('content')
     <article id="post-{{ $news->id }}"
              class="post-{{ $news->id }} post type-post status-publish format-standard hentry category-news">

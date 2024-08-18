@@ -3,8 +3,7 @@
 @section('body-classes', 'careers-template-default single single-careers postid-6867 wp-custom-logo')
 
 @section('content')
-        <section class="blog-hero lazyload" style="background-image:inherit"
-                 data-bg-image="url(https_/b2833840.smushcdn.com/2833840/wp-content/uploads/2019/07/sales_operations0aa7.html?lossy=0&amp;strip=1&amp;webp=1)">
+        <section class="blog-hero lazyload" style="background-image:url('{{ asset('img/sectors/sales_operations.webp') }}')">
             <div class="text">
                 <h1>Sales &#038; Operations</h1>
             </div>

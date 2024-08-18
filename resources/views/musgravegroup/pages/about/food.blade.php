@@ -56,7 +56,7 @@
                                     Irish producers who create this fantastic food and drink that we know consumers
                                     enjoy. Through our market-leading brands we have a range of programmes and
                                     partnerships that support Irish producers.</p>
-                                <a class="button" href="../../local-and-irish/index.html">Find out more</a></div>
+                                <a class="button" href="{{ route('page.local') }}">Find out more</a></div>
 
                             <div class="image">
                                 <img
@@ -79,7 +79,7 @@
                                     producers a big chance to break into the food retail space. The programme currently
                                     supports 290 Irish food and drink producers, often family-run businesses, making
                                     their products available 52 weeks of the year in their local SuperValu stores.</p>
-                                <a class="button" href="../../food-academy/index.html">Find out more</a></div>
+                                <a class="button" href="{{ route('page.food') }}">Find out more</a></div>
 
                             <div class="image">
                                 <img
@@ -99,17 +99,17 @@
                         <div class="related-column" data-aos="fade-up">
                             <div class="background-zoom lazyload" style="background-image: inherit;"
                                  data-bg-image="url('{{ asset('img/about/food/our.webp') }}')"></div>
-                            <a href="../our-retail-partners/index.html"><h2>Our retail partners</h2></a>
+                            <a href="{{ route('page.about.partners') }}"><h2>Our retail partners</h2></a>
                         </div>
                         <div class="related-column" data-aos="fade-up">
                             <div class="background-zoom lazyload" style="background-image: inherit;"
                                  data-bg-image="url('{{ asset('img/about/news.webp') }}')"></div>
-                            <a href="../../news-blogs/index.html"><h2>News</h2></a>
+                            <a href="{{ route('page.news') }}"><h2>News</h2></a>
                         </div>
                         <div class="related-column" data-aos="fade-up">
                             <div class="background-zoom lazyload" style="background-image: inherit;"
                                  data-bg-image="url('{{ asset('img/about/brands.webp') }}')"></div>
-                            <a href="../../brands/index.html"><h2>Our brands</h2></a>
+                            <a href="{{ route('page.brand') }}"><h2>Our brands</h2></a>
                         </div>
                     </div>
 

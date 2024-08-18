@@ -29,13 +29,15 @@
                         <p>Read our full Annual Report and Review 2022 for more information.</p>
 
                         <div style="margin-top: 40px;" class="download-banner">
-                            <a href="../../wp-content/uploads/2023/11/Musgrave-annual-report-2022.pdf">
-                                <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Musgrave-annual-report-2022-download-banner.png?lossy=0&strip=1&webp=1"
-                                     alt="Download Annual report 2022"
-                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                     class="lazyload" /><noscript><img
+                            <a href="{{ asset('zips/Musgrave-annual-report-2022.pdf') }}">
+                                <img
+                                    data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Musgrave-annual-report-2022-download-banner.png?lossy=0&strip=1&webp=1"
+                                    alt="Download Annual report 2022"
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    class="lazyload"/>
+                                <noscript><img
                                         src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Musgrave-annual-report-2022-download-banner.png?lossy=0&amp;strip=1&amp;webp=1"
-                                        alt="Download Annual report 2022" /></noscript>
+                                        alt="Download Annual report 2022"/></noscript>
                             </a>
                         </div>
 
@@ -53,16 +55,18 @@
                                             src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Noel-Keeley-annual-report-page-300x300.png?lossy=0&amp;strip=1&amp;webp=1"
                                             alt="" width="300" height="300"
                                             srcset="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Noel-Keeley-annual-report-page-300x300.png?lossy=0&amp;strip=1&amp;webp=1 300w, https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Noel-Keeley-annual-report-page-150x150.png?lossy=0&amp;strip=1&amp;webp=1 150w, https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Noel-Keeley-annual-report-page-768x768.png?lossy=0&amp;strip=1&amp;webp=1 768w, https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Noel-Keeley-annual-report-page-250x250.png?lossy=0&amp;strip=1&amp;webp=1 250w, https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Noel-Keeley-annual-report-page.png?lossy=0&amp;strip=1&amp;webp=1 1000w"
-                                            sizes="(max-width: 300px) 100vw, 300px" /></p>
+                                            sizes="(max-width: 300px) 100vw, 300px"/></p>
                                     <h3 style="text-align: left">Noel Keeley, CEO</h3>
-                                    <p><span class="ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak"
-                                             dir="ltr">I am pleased to report that our business achieved solid
+                                    <p><span
+                                            class="ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak"
+                                            dir="ltr">I am pleased to report that our business achieved solid
 													results in 2022. Despite rising operational costs, ongoing supply
 													chain challenges, and fiercely competitive market conditions, our
 													brands performed well. Our Group turnover amounted to €4.7 billion,
 													a 3% increase compared to 2021.</span></p>
-                                    <p><span class="ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak"
-                                             dir="ltr"><i>“At the core of our mission lies a promise to deliver
+                                    <p><span
+                                            class="ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak"
+                                            dir="ltr"><i>“At the core of our mission lies a promise to deliver
 														value to our shoppers, which holds even greater significance in
 														these challenging times.”</i></span></p>
                                     <p style="text-align: left"><span
@@ -87,15 +91,18 @@
                         <div class="slide-nav" data-aos="fade-in">
                             <div class="nav-item">
                                 <div>
-                                    Financials </div>
+                                    Financials
+                                </div>
                             </div>
                             <div class="nav-item">
                                 <div>
-                                    Awards </div>
+                                    Awards
+                                </div>
                             </div>
                             <div class="nav-item">
                                 <div>
-                                    Growth </div>
+                                    Growth
+                                </div>
                             </div>
                         </div>
 
@@ -109,30 +116,38 @@
                                             data-src='https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Group-turnover.png?lossy=0&strip=1&webp=1'
                                             alt='' title='Group turnover'
                                             src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
-                                            class='lazyload' /><noscript><img
+                                            class='lazyload'/>
+                                        <noscript><img
                                                 src='https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Group-turnover.png?lossy=0&amp;strip=1&amp;webp=1'
-                                                alt='' title='Group turnover' /></noscript></div>
+                                                alt='' title='Group turnover'/></noscript>
+                                    </div>
                                     <div class='thirdcol even centred clearfix'><img
                                             data-src='https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Profit-before-tax.png?lossy=0&strip=1&webp=1'
                                             alt='' title='Profit before tax'
                                             src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
-                                            class='lazyload' /><noscript><img
+                                            class='lazyload'/>
+                                        <noscript><img
                                                 src='https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Profit-before-tax.png?lossy=0&amp;strip=1&amp;webp=1'
-                                                alt='' title='Profit before tax' /></noscript></div>
+                                                alt='' title='Profit before tax'/></noscript>
+                                    </div>
                                     <div class='thirdcol odd last centred clearfix'><img
                                             data-src='https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Net-cash.png?lossy=0&strip=1&webp=1'
                                             alt='' title='Net cash'
                                             src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
-                                            class='lazyload' /><noscript><img
+                                            class='lazyload'/>
+                                        <noscript><img
                                                 src='https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Net-cash.png?lossy=0&amp;strip=1&amp;webp=1'
-                                                alt='' title='Net cash' /></noscript></div>
+                                                alt='' title='Net cash'/></noscript>
+                                    </div>
                                 </div>
                                 <div class='panel-row copycol clearfix'><img
                                         style="text-align:center; width:100%;"
                                         data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Sales.png?lossy=0&strip=1&webp=1"
                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                        class="lazyload"><noscript><img style="text-align:center; width:100%;"
-                                                                        src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Sales.png?lossy=0&amp;strip=1&amp;webp=1"></noscript>
+                                        class="lazyload">
+                                    <noscript><img style="text-align:center; width:100%;"
+                                                   src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Sales.png?lossy=0&amp;strip=1&amp;webp=1">
+                                    </noscript>
                                 </div>
                             </div>
                             <div class='panel-item'>
@@ -140,36 +155,48 @@
                                     <div class="ar-awards">
                                         <div class="block">
                                             <span>Creative Retail Awards</span>
-                                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Creative-Retail-Awards-2022.png?lossy=0&strip=1&webp=1"
-                                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                 class="lazyload"><noscript><img
-                                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Creative-Retail-Awards-2022.png?lossy=0&amp;strip=1&amp;webp=1"></noscript>
+                                            <img
+                                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Creative-Retail-Awards-2022.png?lossy=0&strip=1&webp=1"
+                                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                class="lazyload">
+                                            <noscript><img
+                                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Creative-Retail-Awards-2022.png?lossy=0&amp;strip=1&amp;webp=1">
+                                            </noscript>
                                             <h4>Best Food, Beverage and Supermarket Design</h4>
                                             <p>SuperValu Knocklyon</p>
                                         </div>
                                         <div class="block">
                                             <span>Deloitte</span>
-                                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Deloitte-Best-Managed-Companies.png?lossy=0&strip=1&webp=1"
-                                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                 class="lazyload"><noscript><img
-                                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Deloitte-Best-Managed-Companies.png?lossy=0&amp;strip=1&amp;webp=1"></noscript>
+                                            <img
+                                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Deloitte-Best-Managed-Companies.png?lossy=0&strip=1&webp=1"
+                                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                class="lazyload">
+                                            <noscript><img
+                                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Deloitte-Best-Managed-Companies.png?lossy=0&amp;strip=1&amp;webp=1">
+                                            </noscript>
                                             <h4>Best Managed Company</h4>
                                         </div>
                                         <div class="block">
                                             <span>ShelfLife Grocery Management Awards</span>
-                                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/ShelfLife-Grocery-Management-Awards.png?lossy=0&strip=1&webp=1"
-                                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                 class="lazyload"><noscript><img
-                                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/ShelfLife-Grocery-Management-Awards.png?lossy=0&amp;strip=1&amp;webp=1"></noscript>
+                                            <img
+                                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/ShelfLife-Grocery-Management-Awards.png?lossy=0&strip=1&webp=1"
+                                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                class="lazyload">
+                                            <noscript><img
+                                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/ShelfLife-Grocery-Management-Awards.png?lossy=0&amp;strip=1&amp;webp=1">
+                                            </noscript>
                                             <h4 style="font-size: 2rem">11 awards</h4>
                                             <p>SuperValu, Centra, Donnybrook Fair and Daybreak combined</p>
                                         </div>
                                         <div class="block">
                                             <span>gradireland</span>
-                                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Winner-Graduate-Employer-of-the-Year-less-40.jpg?lossy=0&strip=1&webp=1"
-                                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                 class="lazyload"><noscript><img
-                                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Winner-Graduate-Employer-of-the-Year-less-40.jpg?lossy=0&amp;strip=1&amp;webp=1"></noscript>
+                                            <img
+                                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Winner-Graduate-Employer-of-the-Year-less-40.jpg?lossy=0&strip=1&webp=1"
+                                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                class="lazyload">
+                                            <noscript><img
+                                                    src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Winner-Graduate-Employer-of-the-Year-less-40.jpg?lossy=0&amp;strip=1&amp;webp=1">
+                                            </noscript>
                                             <h4>Best Graduate Training and Development Programme —
                                                 Business/Management</h4>
                                         </div>
@@ -183,24 +210,28 @@
                             <div class='panel-item'>
                                 <div class='panel-row stat-block copycol clearfix'>
                                     <div class="icon-block">
-                                        <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/05/Italicatessen-logo_transparent.png?lossy=0&strip=1&webp=1"
-                                             alt=""
-                                             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                             class="lazyload" /><noscript><img
+                                        <img
+                                            data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/05/Italicatessen-logo_transparent.png?lossy=0&strip=1&webp=1"
+                                            alt=""
+                                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                            class="lazyload"/>
+                                        <noscript><img
                                                 src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/05/Italicatessen-logo_transparent.png?lossy=0&amp;strip=1&amp;webp=1"
-                                                alt="" /></noscript>
+                                                alt=""/></noscript>
                                         <h3>New wholesale brand</h3>
                                         <p>Authentic Italian food brand Italicatessen acquired</p>
                                     </div>
                                 </div>
                                 <div class='panel-row stat-block copycol clearfix'>
                                     <div class="icon-block">
-                                        <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Frank-Honest-logo.png?lossy=0&strip=1&webp=1"
-                                             alt=""
-                                             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                             class="lazyload" /><noscript><img
+                                        <img
+                                            data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Frank-Honest-logo.png?lossy=0&strip=1&webp=1"
+                                            alt=""
+                                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                            class="lazyload"/>
+                                        <noscript><img
                                                 src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Frank-Honest-logo.png?lossy=0&amp;strip=1&amp;webp=1"
-                                                alt="" /></noscript>
+                                                alt=""/></noscript>
                                         <h3>New app launch</h3>
                                         <p>Frank and Honest loyalty app launch in SuperValu and Centra stores
                                         </p>
@@ -208,12 +239,14 @@
                                 </div>
                                 <div class='panel-row stat-block copycol clearfix'>
                                     <div class="icon-block">
-                                        <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Musgrave-Marketplace-logo-1.png?lossy=0&strip=1&webp=1"
-                                             alt=""
-                                             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                             class="lazyload" /><noscript><img
+                                        <img
+                                            data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Musgrave-Marketplace-logo-1.png?lossy=0&strip=1&webp=1"
+                                            alt=""
+                                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                            class="lazyload"/>
+                                        <noscript><img
                                                 src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Musgrave-Marketplace-logo-1.png?lossy=0&amp;strip=1&amp;webp=1"
-                                                alt="" /></noscript>
+                                                alt=""/></noscript>
                                         <h3>€2.25 million invested</h3>
                                         <p></p>
                                     </div>
@@ -225,10 +258,6 @@
 
                         <div class="icon-block">
                         </div>
-
-
-
-
 
 
                     </div>
@@ -284,60 +313,70 @@
                     <h2 style="text-align: center;">Key Figures</h2>
                     <div class="kpis">
                         <div class="icon-block">
-                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/LED-lighting.png?lossy=0&strip=1&webp=1"
-                                 alt=""
-                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                 class="lazyload" /><noscript><img
+                            <img
+                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/LED-lighting.png?lossy=0&strip=1&webp=1"
+                                alt=""
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                class="lazyload"/>
+                            <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/LED-lighting.png?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt="" /></noscript>
+                                    alt=""/></noscript>
                             <h3>75%</h3>
                             <p> of SuperValu stores will have doors on their refrigeration and all stores will
                                 be equipped with LED lighting by the end of 2025</p>
                         </div>
 
                         <div class="icon-block">
-                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Solar-panels.png?lossy=0&strip=1&webp=1"
-                                 alt=""
-                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                 class="lazyload" /><noscript><img
+                            <img
+                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Solar-panels.png?lossy=0&strip=1&webp=1"
+                                alt=""
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                class="lazyload"/>
+                            <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Solar-panels.png?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt="" /></noscript>
+                                    alt=""/></noscript>
                             <h3>8,373</h3>
                             <p>solar panels installed across SuperValu and Centra stores and the Musgrave
                                 wholesale building in Cork in 2022</p>
                         </div>
 
                         <div class="icon-block">
-                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Recycable-packaging.png?lossy=0&strip=1&webp=1"
-                                 alt=""
-                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                 class="lazyload" /><noscript><img
+                            <img
+                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Recycable-packaging.png?lossy=0&strip=1&webp=1"
+                                alt=""
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                class="lazyload"/>
+                            <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Recycable-packaging.png?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt="" /></noscript>
+                                    alt=""/></noscript>
                             <h3>96% </h3>
                             <p>of all our fruit and veg, own brand, and in-store packaging in SuperValu and
                                 Centra is now recyclable, reusable or compostable</p>
                         </div>
 
                         <div class="icon-block">
-                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Plastic-trays.png?lossy=0&strip=1&webp=1"
-                                 alt=""
-                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                 class="lazyload" /><noscript><img
+                            <img
+                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Plastic-trays.png?lossy=0&strip=1&webp=1"
+                                alt=""
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                class="lazyload"/>
+                            <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Plastic-trays.png?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt="" /></noscript>
+                                    alt=""/></noscript>
                             <h3>100%</h3>
                             <p> of all non-recyclable black plastic trays from fresh meat and fish ranges have
                                 been removed in SuperValu and Centra</p>
                         </div>
 
                         <div class="icon-block">
-                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Food-box.png?lossy=0&strip=1&webp=1"
-                                 alt=""
-                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                 class="lazyload" /><noscript><img
+                            <img
+                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Food-box.png?lossy=0&strip=1&webp=1"
+                                alt=""
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                class="lazyload"/>
+                            <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Food-box.png?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt="" /></noscript>
+                                    alt=""/></noscript>
                             <h3>840</h3>
                             <p> tonnes of surplus food has been redistributed by Musgrave to a network of
                                 charities and community groups across the country since 2016 in partnership with
@@ -345,12 +384,14 @@
                         </div>
 
                         <div class="icon-block">
-                            <img data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Renewable-energy.png?lossy=0&strip=1&webp=1"
-                                 alt=""
-                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                 class="lazyload" /><noscript><img
+                            <img
+                                data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Renewable-energy.png?lossy=0&strip=1&webp=1"
+                                alt=""
+                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                class="lazyload"/>
+                            <noscript><img
                                     src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Renewable-energy.png?lossy=0&amp;strip=1&amp;webp=1"
-                                    alt="" /></noscript>
+                                    alt=""/></noscript>
                             <h3>100%</h3>
                             <p> of the electricity purchased by Musgrave Group is from renewable sources or is
                                 backed by renewable energy certificates</p>
@@ -403,24 +444,27 @@
                 <img class="image1 lazyload"
                      data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Donation_green.png?lossy=0&strip=1&webp=1"
                      alt="giving back"
-                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
+                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                <noscript><img
                         class="image1"
                         src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Donation_green.png?lossy=0&amp;strip=1&amp;webp=1"
-                        alt="giving back" /></noscript>
+                        alt="giving back"/></noscript>
                 <img class="image2 lazyload"
                      data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Ribbon_green.png?lossy=0&strip=1&webp=1"
                      alt="giving back"
-                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
+                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                <noscript><img
                         class="image2"
                         src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Ribbon_green.png?lossy=0&amp;strip=1&amp;webp=1"
-                        alt="giving back" /></noscript>
+                        alt="giving back"/></noscript>
                 <img class="image3 lazyload"
                      data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Cross_green.png?lossy=0&strip=1&webp=1"
                      alt="giving back"
-                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
+                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                <noscript><img
                         class="image3"
                         src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2023/11/Cross_green.png?lossy=0&amp;strip=1&amp;webp=1"
-                        alt="giving back" /></noscript>
+                        alt="giving back"/></noscript>
 
             </div>
 
@@ -429,7 +473,7 @@
         </main><!-- #main -->
     </div><!-- #primary -->
 
-    <a class="download-btn" href="../../wp-content/uploads/2023/11/Musgrave-annual-report-2022.pdf">
+    <a class="download-btn" href="{{ asset('zips/Musgrave-annual-report-2022.pdf') }}">
         <span>Download report</span>
     </a>
 

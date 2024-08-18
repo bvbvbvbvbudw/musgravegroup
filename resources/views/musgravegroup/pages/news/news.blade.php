@@ -91,7 +91,6 @@
         <div class="filtered-posts">
             @foreach($news as $item)
                 <div class="cat-block centra-color ">
-
                     <p class="colour-block post-date">{{ $item->formatted_date }}</p>
                     <a href="{{ route('page.news.show', $item->url) }}">
                         <img width="300" height="200" src="{{ asset($item->media->path) }}" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" fetchpriority="high" sizes="(max-width: 300px) 100vw, 300px">
