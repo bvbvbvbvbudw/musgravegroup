@@ -1,6 +1,7 @@
 @extends('musgravegroup.base')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-contact page-template-page-templatespage-contact-php page page-id-87 wp-custom-logo')
 @section('body-attr', 'data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0"')
+@section('title', 'Contact')
 @section('content')
         <section class="blog-hero lazyload" style="background-image:url('{{asset('img/bg-contact2.webp')}}')">
             <div class="text">

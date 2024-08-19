@@ -141,6 +141,22 @@
                         </ul>
                     </li>
                     <li class="mb-4">
+                        <a href="{{ route('admin.news.index') }}"
+                           class="block p-4 bg-white rounded shadow hover:bg-gray-100">Brands</a>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.brands.index') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show all brands</a>
+                            </li>
+                        </ul>
+                        <ul class="pl-4 mt-2">
+                            <li>
+                                <a href="{{ route('admin.brands.create') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create brand</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mb-4">
                         <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Reports</a>
 {{--                        <ul class="pl-4 mt-2">--}}
 {{--                            <li>--}}
@@ -222,7 +238,7 @@
                         <ul class="pl-4 mt-2">
                             <li>
                                 <a href="{{ route('admin.users.applied') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show users applieds to work</a>
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show users applied to work</a>
                             </li>
                         </ul>
                         <ul class="pl-4 mt-2">
@@ -243,7 +259,7 @@
                         </ul>
                     </li>
 
-                    @if(Auth::user()?->isAdmin())
+{{--                    @if(Auth::user()?->isAdmin())  delete  --}}
                         <li class="mb-4">
                             <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Manage admin</a>
                             <ul class="pl-4 mt-2">
@@ -270,8 +286,14 @@
                                        class="block p-2 bg-gray-200 rounded hover:bg-gray-300">News Sustainability</a>
                                 </li>
                             </ul>
+                            <ul class="pl-4 mt-2">
+                                <li>
+                                    <a href="{{ route('admin.manage.list', ['model' => 'brand']) }}"
+                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Brand</a>
+                                </li>
+                            </ul>
                         </li>
-                    @endif
+{{--                    @endif--}}
 
                 </ul>
             </nav>

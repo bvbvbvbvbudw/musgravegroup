@@ -1,4 +1,5 @@
 @extends('musgravegroup.base')
+@section('title', 'Home')
 @section('body-classes', 'home page-template page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo')
 @section("content")
         <section class="home-hero slick-slider">

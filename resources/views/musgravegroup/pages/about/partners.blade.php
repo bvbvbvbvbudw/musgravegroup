@@ -1,4 +1,5 @@
 @extends('musgravegroup.base')
+@section('title', 'Our retail partners')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-content page-template-page-templatespage-content-php page page-id-8815 page-child parent-pageid-19 wp-custom-logo')
 @section('content')
     <article id="post-8815" class="post-8815 page type-page status-publish hentry">

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminBrandController;
 use App\Http\Controllers\Admin\AdminCategoryController;
 use App\Http\Controllers\Admin\AdminLocationController;
 use App\Http\Controllers\Admin\AdminNewsController;
@@ -62,6 +63,13 @@ Route::post('/reports/store', [AdminReportController::class, 'store'])->name('ad
 Route::get('/reports/edit/{id}', [AdminReportController::class, 'edit'])->name('admin.reports.edit');
 Route::put('/reports/edit/{id}/update', [AdminReportController::class, 'update'])->name('admin.reports.update');
 Route::delete('/reports/destroy/{id}', [AdminReportController::class, 'destroy'])->name('admin.reports.destroy');
+
+Route::get('/brands', [AdminBrandController::class, 'index'])->name('admin.brands.index');
+Route::get('/brands/create', [AdminBrandController::class, 'create'])->name('admin.brands.create');
+Route::post('/brands/store', [AdminBrandController::class, 'store'])->name('admin.brands.store');
+Route::get('/brands/edit/{id}', [AdminBrandController::class, 'edit'])->name('admin.brands.edit');
+Route::put('/brands/edit/{id}/update', [AdminBrandController::class, 'update'])->name('admin.brands.update');
+Route::delete('/brands/destroy/{id}', [AdminBrandController::class, 'destroy'])->name('admin.brands.destroy');
 
 Route::get('/users', [AdminUserController::class, 'index'])->name('admin.users.index');
 Route::get('/users/{id}/edit', [AdminUserController::class, 'edit'])->name('admin.users.edit');

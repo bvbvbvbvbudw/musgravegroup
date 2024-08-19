@@ -1,4 +1,5 @@
 @extends('musgravegroup.base')
+@section('title', 'Food leadership')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-content page-template-page-templatespage-content-php page page-id-8816 page-child parent-pageid-19 wp-custom-logo')
 @section('content')
     <article id="post-8816" class="post-8816 page type-page status-publish hentry">

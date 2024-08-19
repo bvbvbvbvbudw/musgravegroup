@@ -1,4 +1,5 @@
 @extends('musgravegroup.base')
+@section('title', 'Careers')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-careers-template page-template-page-templatespage-careers-template-php page page-id-68 page-parent wp-custom-logo')
 @section('content')
     <section class="blog-hero lazyload" style="background-image:url('{{asset('img/careers/1.webp')}}')"

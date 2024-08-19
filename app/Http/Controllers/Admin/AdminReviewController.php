@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Brand;
 use App\Models\News;
 use App\Models\NewsSustainability;
 use App\Models\Podcast;
 use App\Models\Vacancy;
+use App\Traits\HandlesStatus;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -46,8 +48,14 @@ class AdminReviewController extends Controller
             News::class, NewsSustainability::class => $this->getFieldsNews($modelClass),
             Podcast::class => $this->getFieldsPodcast($modelClass),
             Vacancy::class => $this->getFieldsVacancy($modelClass),
+            Brand::class => $this->getFieldsBrand($modelClass),
             default => $modelClass::query(),
         };
+    }
+
+    private function getFieldsBrand($modelClass)
+    {
+        return $modelClass::with(['bg', 'logo', 'news']);
     }
 
     private function getFieldsNews($modelClass)
@@ -77,8 +85,17 @@ class AdminReviewController extends Controller
             Podcast::class => $this->getPodcastFields(),
             NewsSustainability::class => $this->getNewsSusFields(),
             Vacancy::class => $this->getVacancyFields(),
+            Brand::class => $this->getBrandFields(),
             default => [],
         };
+    }
+
+    protected function getBrandFields(): array
+    {
+        return [
+            ['name' => 'title', 'label' => 'Title', 'type' => 'text', 'required' => true],
+            ['name' => 'small_description', 'label' => 'Small description', 'type' => 'textarea', 'required' => true],
+        ];
     }
 
     protected function getNewsFields(): array

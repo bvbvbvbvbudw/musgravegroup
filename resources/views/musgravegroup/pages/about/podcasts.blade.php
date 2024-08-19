@@ -4,6 +4,7 @@
           href='{{ asset('css/podcasts.css') }}' type='text/css'
           media='all'/>
 @endsection
+@section('title', 'Podcasts')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-podcasts page-template-page-templatespage-podcasts-php page page-id-21630 wp-custom-logo')
 @section('content')
 

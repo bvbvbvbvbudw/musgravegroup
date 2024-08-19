@@ -55,7 +55,7 @@ Route::controller(CareerController::class)->prefix('careers')->name('page.career
     Route::get('/job-alerts', 'alerts')->name('.alerts');
     Route::post('/job-alerts/send', 'send')->name('.alerts.send');
     Route::get('/supply-chain', 'supply')->name('.supply');
-    Route::get('/technology', 'technology')->name('.technology');
+    Route::get('/technology-innovation-and-design', 'technology')->name('.technology');
     Route::get('/sales-ops', 'sales')->name('.sales');
     Route::get('/commercial', 'commercial')->name('.commercial');
     Route::get('/finance', 'finance')->name('.finance');

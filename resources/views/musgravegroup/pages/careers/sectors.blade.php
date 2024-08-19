@@ -1,4 +1,5 @@
 @extends('musgravegroup.base')
+@section('title', 'Career sectors')
 @section('body-classes', 'archive post-type-archive post-type-archive-careers wp-custom-logo hfeed')
 @section('content')
     <section class="blog-hero lazyload" style="background-image:url('{{asset('img/careers/3.webp')}}')" data-aos="fade-in" data-aos-once="true">

@@ -4,7 +4,7 @@
           href='{{ asset('css/an.css') }}' type='text/css'
           media='all'/>
 @endsection
-
+@section('title', 'Annual report 2022')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-annualreport2022 page-template-page-templatespage-annualreport2022-php page page-id-20699 page-child parent-pageid-19 wp-custom-logo')
 
 @section('content')

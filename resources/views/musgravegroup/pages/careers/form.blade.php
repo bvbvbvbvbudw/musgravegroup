@@ -1,6 +1,6 @@
 @extends('musgravegroup.base')
 
-@section('title', '')
+@section('title', 'Application form')
 @section('meta')
 @endsection
 @section('style')

@@ -47,7 +47,7 @@
                     <p>{{ $form -> description_business }}</p>
                 </div>
 
-                <a href="{{ route('admin.vacancy.location.index') }}" class="text-blue-500 hover:underline mt-4 inline-block">Back to News List</a>
+                <a href="{{ route('admin.vacancy.location.index') }}" class="text-blue-500 hover:underline mt-4 inline-block">Back to Company List</a>
             </div>
         @endforeach
     </div>

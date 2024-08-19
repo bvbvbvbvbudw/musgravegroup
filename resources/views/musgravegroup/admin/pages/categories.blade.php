@@ -21,7 +21,7 @@
                     </form>
                 </div>
 
-                <a href="{{ route('admin.vacancy.category.index') }}" class="text-blue-500 hover:underline mt-4 inline-block">Back to News List</a>
+                <a href="{{ route('admin.vacancy.category.index') }}" class="text-blue-500 hover:underline mt-4 inline-block">Back to categories List</a>
             </div>
         @endforeach
     </div>

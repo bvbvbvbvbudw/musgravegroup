@@ -1,6 +1,6 @@
 @extends('musgravegroup.base')
 @section('body-classes', 'careers-template-default single single-careers postid-6867 wp-custom-logo')
-
+@section('title', 'Graduates')
 @section('content')
     <main id="main" class="site-main">
 

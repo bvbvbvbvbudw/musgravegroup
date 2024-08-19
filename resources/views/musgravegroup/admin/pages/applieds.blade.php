@@ -54,7 +54,7 @@
                     <p>{{ $user->role_advertised_source }}</p>
                 </div>
 
-                <a href="{{ route('admin.vacancy.location.index') }}" class="text-blue-500 hover:underline mt-4 inline-block">Back to News List</a>
+                <a href="{{ route('admin.vacancy.location.index') }}" class="text-blue-500 hover:underline mt-4 inline-block">Back to users List</a>
                 <div class="flex space-x-4">
                     <form action="{{ route('admin.users.applied.destroy', $user->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this news item?');">
                         @csrf

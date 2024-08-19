@@ -22,7 +22,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
-    <title>@yield('title', "MusGraveGroup")</title>
+    <title>@yield('title', "Musgrave group") - Musgrave Group</title>
     @yield('meta')
     @yield('head')
     @yield('style')

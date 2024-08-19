@@ -1,6 +1,6 @@
 @extends('musgravegroup.base')
 @section('body-classes', 'careers-template-default single single-careers postid-6867 wp-custom-logo')
-
+@section('title', 'Supply chain')
 @section('content')
         <section class="blog-hero lazyload" style="background-image:url('{{ asset('img/sectors/supply-chain.webp') }}')">
             <div class="text">

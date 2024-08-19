@@ -1,7 +1,7 @@
 @extends('musgravegroup.base')
 
 @section('body-classes', 'careers-template-default single single-careers postid-6867 wp-custom-logo')
-
+@section('title', 'Sales & Operations')
 @section('content')
         <section class="blog-hero lazyload" style="background-image:url('{{ asset('img/sectors/sales_operations.webp') }}')">
             <div class="text">

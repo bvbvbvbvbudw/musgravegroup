@@ -1,6 +1,6 @@
 @extends('musgravegroup.admin.base')
 
-@section('title', 'News Details')
+@section('title', 'News Sustainability Details')
 
 @section('content')
     <div class="container mx-auto px-6 py-8">

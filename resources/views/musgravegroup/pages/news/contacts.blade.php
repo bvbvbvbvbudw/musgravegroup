@@ -1,4 +1,5 @@
 @extends('musgravegroup.base')
+@section('title', 'Press contacts')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-presscontacts page-template-page-templatespage-presscontacts-php page page-id-9726 wp-custom-logo')
 @section('content')
     <section class="blog-hero lazyload" style="background-image:url('{{asset('img/bg-contact.webp ')}}')">

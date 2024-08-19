@@ -1,5 +1,5 @@
 @extends('musgravegroup.base')
-@section('body-classes', '')
+@section('body-classes', 'page-template page-template-page-templates page-template-page-content page-template-page-templatespage-content-php page page-id-8672 wp-custom-logo')
 @section('title', 'Terms and Conditions')
 
 @section('content')

@@ -1,5 +1,6 @@
 @extends('musgravegroup.base')
 @section('body-classes', 'careers-template-default single single-careers postid-6867 wp-custom-logo')
+@section('title', 'Technology Innovation & Design')
 @section('content')
         <section class="blog-hero lazyload" style="background-image:url('{{ asset('img/sectors/IT.webp') }}')">
             <div class="text">

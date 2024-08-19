@@ -1,4 +1,5 @@
 @extends('musgravegroup.base')
+@section('title', 'Board')
 @section('body-classes', 'page-template page-template-page-templates page-template-page-board page-template-page-templatespage-board-php page page-id-8051 page-child parent-pageid-19 wp-custom-logo')
 @section('content')
     <article id="post-8051" class="post-8051 page type-page status-publish hentry">
