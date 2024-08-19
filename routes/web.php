@@ -1,12 +1,22 @@
 <?php
-use App\Http\Controllers\{
-    AboutController, Admin\AdminNewsController, Admin\AdminNewsSustainability, Admin\AdminVacancyController,
-    BrandController, CareerController, ContactController, IndexController, NewsController, ProfileController,
-    SustainabilityController
-};
+
+use App\Http\Controllers\{AboutController,
+    Admin\AdminNewsController,
+    Admin\AdminNewsSustainability,
+    Admin\AdminVacancyController,
+    BrandController,
+    CareerController,
+    ContactController,
+    IndexController,
+    NewsController,
+    ProfileController,
+    SearchController,
+    SustainabilityController};
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'index'])->name('page.index');
+Route::get('/search', [SearchController::class, 'index'])->name('search');
+Route::post('/search', [SearchController::class, 'search'])->name('search.results');
 Route::controller(IndexController::class)->group(function () {
     Route::get('/local-and-irish', 'local')->name('page.local');
     Route::get('/mood-ice-cream', 'mood')->name('page.mood');
@@ -84,6 +94,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
 
 Route::get('news/{url}', [NewsController::class, 'show'])->name('page.news.show');
 Route::get('podcasts/{url}', [AboutController::class, 'showPodcast'])->name('page.about.podcasts.show');

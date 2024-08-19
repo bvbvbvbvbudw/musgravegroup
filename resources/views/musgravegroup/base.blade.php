@@ -682,75 +682,10 @@
     <div id="search-overlay" class="block">
         <div class="container">
             <h2>What would you like to find?</h2>
-
-            <form data-sf-form-id='7228' data-is-rtl='0' data-maintain-state=''
-                  data-results-url='https://www.musgravegroup.com/?sfid=7228'
-                  data-ajax-url='https://www.musgravegroup.com/?sfid=7228&amp;sf_data=all'
-                  data-ajax-form-url='https://www.musgravegroup.com/?sfid=7228&amp;sf_action=get_data&amp;sf_data=form'
-                  data-display-result-method='archive' data-use-history-api='1' data-template-loaded='0'
-                  data-lang-code='en' data-ajax='1' data-ajax-data-type='html' data-ajax-links-selector='.pagination a'
-                  data-ajax-target='.search-main' data-ajax-pagination-type='infinite_scroll' data-show-scroll-loader=''
-                  data-infinite-scroll-container='.search-block' data-infinite-scroll-trigger='-100'
-                  data-update-ajax-url='1' data-only-results-ajax='1' data-scroll-to-pos='results'
-                  data-scroll-on-action='pagination' data-init-paged='1' data-auto-update='' data-auto-count='1'
-                  data-auto-count-refresh-mode='1' action='https://www.musgravegroup.com/?sfid=7228' method='post'
-                  class='searchandfilter' id='search-filter-form-7228' autocomplete='off' data-instance-count='1'>
-                <ul>
-                    <li class="sf-field-category" data-sf-field-name="_sft_category" data-sf-field-type="category"
-                        data-sf-field-input-type="radio">
-                        <ul class="">
-
-                            <li class="sf-level-0 sf-item-0 sf-option-active" data-sf-count="0" data-sf-depth="0"><input
-                                    class="sf-input-radio" type="radio" value="" name="_sft_category[]"
-                                    checked="checked" id="sf-input-f421d8b9bb23a59be492145f6c7c4810"><label
-                                    class="sf-label-radio" for="sf-input-f421d8b9bb23a59be492145f6c7c4810">All</label>
-                            </li>
-                            <li class="sf-level-0 sf-item-7" data-sf-count="42" data-sf-depth="0"><input
-                                    class="sf-input-radio" type="radio" value="careers" name="_sft_category[]"
-                                    id="sf-input-8b9e64e6ac9dcba0b52d71dd29ef8da9"><label class="sf-label-radio"
-                                                                                          for="sf-input-8b9e64e6ac9dcba0b52d71dd29ef8da9">Careers</label>
-                            </li>
-                            <li class="sf-level-0 sf-item-71" data-sf-count="16" data-sf-depth="0"><input
-                                    class="sf-input-radio" type="radio" value="food-leadership" name="_sft_category[]"
-                                    id="sf-input-34b9043a6b9dbb2ee4afc3a9e48ebacc"><label class="sf-label-radio"
-                                                                                          for="sf-input-34b9043a6b9dbb2ee4afc3a9e48ebacc">Food
-                                    Leadership</label></li>
-                            <li class="sf-level-0 sf-item-139" data-sf-count="9" data-sf-depth="0"><input
-                                    class="sf-input-radio" type="radio" value="group-news" name="_sft_category[]"
-                                    id="sf-input-e53934f431daba47cbf767984a97f0ac"><label class="sf-label-radio"
-                                                                                          for="sf-input-e53934f431daba47cbf767984a97f0ac">Group</label>
-                            </li>
-                            <li class="sf-level-0 sf-item-6" data-sf-count="89" data-sf-depth="0"><input
-                                    class="sf-input-radio" type="radio" value="brands" name="_sft_category[]"
-                                    id="sf-input-1e13ed8d882a851a90c5d3a9cd1495ec"><label class="sf-label-radio"
-                                                                                          for="sf-input-1e13ed8d882a851a90c5d3a9cd1495ec">Our
-                                    brands</label></li>
-                            <li class="sf-level-0 sf-item-8" data-sf-count="33" data-sf-depth="0"><input
-                                    class="sf-input-radio" type="radio" value="partnerships" name="_sft_category[]"
-                                    id="sf-input-20625a2d40399ef3badcdf6c6722702f"><label class="sf-label-radio"
-                                                                                          for="sf-input-20625a2d40399ef3badcdf6c6722702f">Retail
-                                    partners</label></li>
-                            <li class="sf-level-0 sf-item-9" data-sf-count="34" data-sf-depth="0"><input
-                                    class="sf-input-radio" type="radio" value="sustainability" name="_sft_category[]"
-                                    id="sf-input-716cd4b977597c9ec0d591e818a8f355"><label class="sf-label-radio"
-                                                                                          for="sf-input-716cd4b977597c9ec0d591e818a8f355">Sustainability</label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sf-field-search" data-sf-field-name="search" data-sf-field-type="search"
-                        data-sf-field-input-type=""><label><input placeholder="Search …" name="_sf_search[]"
-                                                                  class="sf-input-text" type="text" value=""
-                                                                  title=""></label></li>
-                    <li class="sf-field-submit" data-sf-field-name="submit" data-sf-field-type="submit"
-                        data-sf-field-input-type=""><input type="submit" name="_sf_submit" value="Search"></li>
-                </ul>
-            </form>
+            @include('musgravegroup.components.search-input')
             <h3 class="title">Most popular stories</h3>
             <section class="search-articles">
-
-
                 <div class="block group-news-color news-color ">
-
                     <img width="300" height="230"
                          data-src="https://b2833840.smushcdn.com/2833840/wp-content/uploads/2019/09/Noel-Keeley-2-300x230.jpg?lossy=0&strip=1&webp=1"
                          class="attachment-medium size-medium wp-post-image lazyload" alt="" decoding="async"
