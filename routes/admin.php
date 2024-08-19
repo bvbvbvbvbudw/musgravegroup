@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AdminLocationController;
 use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\AdminNewsSustainability;
 use App\Http\Controllers\Admin\AdminPodcastController;
+use App\Http\Controllers\Admin\AdminReportController;
 use App\Http\Controllers\Admin\AdminReviewController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\Admin\AdminUsersAppliedController;
@@ -54,6 +55,13 @@ Route::post('/podcasts/store', [AdminPodcastController::class, 'store'])->name('
 Route::get('/podcasts/edit/{id}', [AdminPodcastController::class, 'edit'])->name('admin.podcasts.edit');
 Route::put('/podcasts/edit/{id}/update', [AdminPodcastController::class, 'update'])->name('admin.podcasts.update');
 Route::delete('/podcasts/destroy/{id}', [AdminPodcastController::class, 'destroy'])->name('admin.podcasts.destroy');
+
+Route::get('/reports', [AdminReportController::class, 'index'])->name('admin.reports.index');
+Route::get('/reports/create', [AdminReportController::class, 'create'])->name('admin.reports.create');
+Route::post('/reports/store', [AdminReportController::class, 'store'])->name('admin.reports.store');
+Route::get('/reports/edit/{id}', [AdminReportController::class, 'edit'])->name('admin.reports.edit');
+Route::put('/reports/edit/{id}/update', [AdminReportController::class, 'update'])->name('admin.reports.update');
+Route::delete('/reports/destroy/{id}', [AdminReportController::class, 'destroy'])->name('admin.reports.destroy');
 
 Route::get('/users', [AdminUserController::class, 'index'])->name('admin.users.index');
 Route::get('/users/{id}/edit', [AdminUserController::class, 'edit'])->name('admin.users.edit');

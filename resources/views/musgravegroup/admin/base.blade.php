@@ -96,7 +96,7 @@
             </label>
         </div>
         <div class="d-flex align-items-center">
-            <span class="me-3 text-sm font-medium text-gray-700">{{ Auth::user()->name }}</span>
+            <span class="me-3 text-sm font-medium text-gray-700">{{ Auth::user()->name ?? 'not logged' }}</span>
             <form method="POST" action="{{ route('logout') }}" class="d-inline">
                 @csrf
                 <button type="submit" class="btn btn-secondary">
@@ -142,15 +142,21 @@
                     </li>
                     <li class="mb-4">
                         <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Reports</a>
+{{--                        <ul class="pl-4 mt-2">--}}
+{{--                            <li>--}}
+{{--                                <a href="{{ route('admin.news.create') }}"--}}
+{{--                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create site report</a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
                         <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.news.create') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create site report</a>
+                                <a href="{{ route('admin.reports.index') }}"
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show reports</a>
                             </li>
                         </ul>
                         <ul class="pl-4 mt-2">
                             <li>
-                                <a href="{{ route('admin.news.create') }}"
+                                <a href="{{ route('admin.reports.create') }}"
                                    class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create report</a>
                             </li>
                         </ul>

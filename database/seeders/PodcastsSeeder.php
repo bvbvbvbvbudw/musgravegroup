@@ -25,6 +25,7 @@ class PodcastsSeeder extends Seeder
             'apple' => 'https://podcasts.apple.com/episode/1',
             'buzz' => 'https://buzzsprout.com/episode/1',
             'small_description' => 'Discussing the future of technology.',
+            'status' => 'approved',
             'media_id' => $media1->id,
         ]);
 
@@ -36,6 +37,8 @@ class PodcastsSeeder extends Seeder
             'apple' => 'https://podcasts.apple.com/episode/2',
             'buzz' => 'https://buzzsprout.com/episode/2',
             'small_description' => 'Latest innovations in AI.',
+            'status' => 'approved',
+
             'media_id' => $media2->id,
         ]);
 
@@ -47,6 +50,8 @@ class PodcastsSeeder extends Seeder
             'apple' => 'https://podcasts.apple.com/episode/3',
             'buzz' => 'https://buzzsprout.com/episode/3',
             'small_description' => 'Exploring the rise of cryptocurrency.',
+            'status' => 'approved',
+
             'media_id' => $media3->id,
         ]);
 
@@ -58,6 +63,7 @@ class PodcastsSeeder extends Seeder
             'apple' => 'https://podcasts.apple.com/episode/4',
             'buzz' => 'https://buzzsprout.com/episode/4',
             'small_description' => 'Strategies for sustainable living.',
+            'status' => 'approved',
             'media_id' => $media4->id,
         ]);
 
@@ -69,6 +75,7 @@ class PodcastsSeeder extends Seeder
             'apple' => 'https://podcasts.apple.com/episode/5',
             'buzz' => 'https://buzzsprout.com/episode/5',
             'small_description' => 'Trends and techniques in digital marketing.',
+            'status' => 'approved',
             'media_id' => $media1->id,  // Reusing media1 for simplicity
         ]);
     }

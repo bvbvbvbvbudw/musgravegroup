@@ -30,6 +30,8 @@ class VacanciesSeeder extends Seeder
             'end_date' => now()->addDays(1),
             'category_id' => 1,
             'content_id' => $content1 -> id,
+            'status' => 'approved',
+
         ]);
         $vacancy2 = Vacancy::create([
             'url' => 'test2',
@@ -40,6 +42,8 @@ class VacanciesSeeder extends Seeder
             'category_id' => 2,
             'end_date' => now()->addDays(1),
             'content_id' => $content2 -> id,
+            'status' => 'approved',
+
         ]);
     }
 }

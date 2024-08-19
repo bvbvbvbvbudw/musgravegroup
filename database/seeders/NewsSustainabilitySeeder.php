@@ -14,12 +14,14 @@ class NewsSustainabilitySeeder extends Seeder
             'title' => 'Centra Run Together back in Ormeau Park for 2024',
             'url' => 'centra-run-together-back-in-ormeau-park-for-2024',
             'small_description' => 'Centra Run Together is back in Ormeau Park for 2024, bringing the community together for a great cause...',
+            'status' => 'approved',
             'media_id' => 1,
         ]);
 
         $news2 = NewsSustainability::create([
             'title' => 'SuperValu and Centra champion environmental change in stores and communities',
             'url' => 'supervalu-and-centra-champion-environmental-change-in-stores-and-communities-as-sustainability-upgrades-lead-to-significant-energy-savings',
+            'status' => 'approved',
             'small_description' => 'We are excited to announce the opening of our new store in downtown...',
             'media_id' => 1,
         ]);
@@ -28,6 +30,7 @@ class NewsSustainabilitySeeder extends Seeder
             'title' => 'SuperValu expands high quality meals offering following acquisition of Clean Cut Meals',
             'url' => 'supervalu-expands-high-quality-meals-offering-following-acquisition-of-clean-cut-meals',
             'small_description' => 'SuperValu has today announced an expansion of its market-leading convenience meal offering...',
+            'status' => 'approved',
             'media_id' => 1,
         ]);
 

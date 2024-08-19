@@ -20,6 +20,7 @@ class NewsSeeder extends Seeder
             'url' => 'centra-run-together-back-in-ormeau-park-for-2024',
             'small_description' => 'Centra Run Together is back in Ormeau Park for 2024, bringing the community together for a great cause...',
             'is_popular' => false,
+            'status' => 'approved',
             'media_id' => $media1->id,
         ]);
 
@@ -28,6 +29,7 @@ class NewsSeeder extends Seeder
             'url' => 'new-store-opening-in-downtown',
             'small_description' => 'We are excited to announce the opening of our new store in downtown...',
             'is_popular' => false,
+            'status' => 'approved',
             'media_id' => $media2->id,
         ]);
 
@@ -36,6 +38,7 @@ class NewsSeeder extends Seeder
             'url' => 'supervalu-expands-high-quality-meals-offering-following-acquisition-of-clean-cut-meals',
             'small_description' => 'SuperValu has today announced an expansion of its market-leading convenience meal offering...',
             'is_popular' => true,
+            'status' => 'approved',
             'media_id' => $media3->id,
         ]);
 

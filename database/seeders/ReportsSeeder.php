@@ -18,6 +18,7 @@ class ReportsSeeder extends Seeder
            'file_id' => $file->id,
            'media_id' => 1,
            'title' => 'Test',
+           'status' => 'approved',
        ]);
     }
 }
