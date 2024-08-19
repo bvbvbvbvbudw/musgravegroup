@@ -18,7 +18,7 @@
         </div>
     </section>
     <div class="container">
-        <h1>We have {{ $vacancies->count() }} job vacancies</h1>
+        <h1>We have {{ $count }} job vacancies</h1>
         @foreach($vacancies as $vac)
             <article id="post-23663" class="post-23663 vacancies type-vacancies status-publish hentry category-careers"
                      data-aos="fade-in" data-aos-once="true">
@@ -34,4 +34,5 @@
             </article>
         @endforeach
     </div>
+    {{ $vacancies->links('musgravegroup.pagination') }}
 @endsection

@@ -108,4 +108,5 @@
             @endforeach
         </div>
     </div>
+    {{ $news->links('musgravegroup.pagination') }}
 @endsection

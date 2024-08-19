@@ -86,4 +86,18 @@
             {{ isset($model) ? 'Update' : 'Create' }}
         </button>
     </form>
+    <style>
+        .cke_notifications_area {
+            display: none!important;
+        }
+    </style>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach(function (textarea) {
+                CKEDITOR.replace(textarea);
+            });
+        })
+    </script>
 @endsection

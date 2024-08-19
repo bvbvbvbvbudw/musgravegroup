@@ -16,7 +16,7 @@ class SustainabilityController extends Controller
     public function index()
     {
         $reports = Cache::remember("reports_data", now()->addHour(1), function(){
-            return Report::all();
+            return Report::where('status', 'approved')->get();
         });
         return view('musgravegroup.pages.sustainability.sustainability', compact('reports'));
     }

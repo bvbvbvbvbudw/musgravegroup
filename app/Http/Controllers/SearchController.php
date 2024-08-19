@@ -18,10 +18,11 @@ class SearchController extends Controller
 
     public function search(Request $request)
     {
-        $searchTerm = $request->input('_sf_search')[0] ?? '';
-        $word = $searchTerm;
+        $searchTerm = trim($request->input('_sf_search')[0] ?? '');
+        if (empty($searchTerm)) {
+            return view('musgravegroup.pages.search', ['results' => collect(), 'word' => '']);
+        }
         $results = collect();
-
         foreach ([Vacancy::class, News::class, Brand::class, NewsSustainability::class] as $modelClass) {
             $instance = new $modelClass;
             $query = $this->filterByFields($instance->newQuery(), $searchTerm, $instance->getTable());
@@ -31,7 +32,7 @@ class SearchController extends Controller
                 return $result;
             }));
         }
-        return view('musgravegroup.pages.search', compact('results', 'word'));
+        return view('musgravegroup.pages.search', compact('results', 'searchTerm'));
     }
 
     private function getRouteForModel($modelInstance, $result)
@@ -42,11 +43,9 @@ class SearchController extends Controller
             NewsSustainability::class => 'page.news.sus.show',
             Brand::class => 'page.brand'
         ];
-
         $modelClass = get_class($modelInstance);
-        $routeName = $routes[$modelClass] ?? '#';
-        if ($routeName !== '#') {
-            return route($routeName, ['url' => $result->url]);
+        if (isset($routes[$modelClass]) && isset($result->url)) {
+            return route($routes[$modelClass], ['url' => $result->url]);
         }
 
         return '#';
@@ -54,12 +53,18 @@ class SearchController extends Controller
 
     private function filterByFields($query, $searchTerm, $table)
     {
-        $columns = Schema::getColumnListing($table);
-        foreach ($columns as $column) {
-            if (Schema::hasColumn($table, $column)) {
-                $query->orWhere($column, 'LIKE', '%' . $searchTerm . '%');
-            }
+        if (Schema::hasColumn($table, 'status')) {
+            $query->where('status', 'approved');
         }
+        $searchableColumns = ['name', 'title', 'description', 'content'];
+        $query->where(function ($query) use ($searchTerm, $table, $searchableColumns) {
+            foreach ($searchableColumns as $column) {
+                if (Schema::hasColumn($table, $column)) {
+                    $query->orWhere($column, 'LIKE', '%' . $searchTerm . '%');
+                }
+            }
+        });
+
         return $query;
     }
 }

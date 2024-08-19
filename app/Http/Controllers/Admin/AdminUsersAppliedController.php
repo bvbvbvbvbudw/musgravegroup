@@ -2,30 +2,56 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Events\VacancyCreated;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreVacancyRequest;
 use App\Models\CareerForm;
 use App\Models\UserApplied;
-use App\Models\Vacancy;
-use App\Models\VacancyCategory;
-use App\Models\VacancyContent;
-use App\Models\VacancyLocation;
-use App\Traits\HandlesStatus;
-use App\Traits\UploadFileTrait;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
 
 class AdminUsersAppliedController extends Controller
 {
+    /**
+     * Display a list of users who have applied.
+     *
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
-        $users = UserApplied::all();
-        return view('musgravegroup.admin.pages.applieds', compact('users'));
+        try {
+            $users = UserApplied::paginate(10);
+            return view('musgravegroup.admin.pages.applieds', compact('users'));
+        } catch (\Exception $e) {
+            Log::error('Error retrieving applied users: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to retrieve applied users.');
+        }
     }
 
+    /**
+     * Display the form for managing career forms.
+     *
+     * @return \Illuminate\View\View
+     */
     public function form()
     {
-        $forms = CareerForm::all();
-        return view('musgravegroup.admin.pages.company', compact('forms'));
+        try {
+            $forms = CareerForm::paginate(10);
+            return view('musgravegroup.admin.pages.company', compact('forms'));
+        } catch (\Exception $e) {
+            Log::error('Error retrieving career forms: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to retrieve career forms.');
+        }
+    }
+
+    public function destroy($id)
+    {
+        try {
+            $applied = UserApplied::find($id);
+            if ($applied) {
+                $applied->delete();
+                return redirect()->back()->with('status', 'Success delete');
+            }
+        } catch (\Exception $e) {
+            Log::error('Error retrieving career forms: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to retrieve career forms.');
+        }
     }
 }

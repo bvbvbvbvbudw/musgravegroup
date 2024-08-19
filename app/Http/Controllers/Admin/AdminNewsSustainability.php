@@ -1,15 +1,18 @@
 <?php
+
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreNewsRequest;
 use App\Models\Brand;
-use App\Models\News;
-use App\Models\NewsContent;
 use App\Models\NewsSustainability;
+use App\Models\NewsContent;
 use App\Traits\HandlesStatus;
 use App\Traits\UploadFileTrait;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
+use Exception;
 
 class AdminNewsSustainability extends Controller
 {
@@ -33,86 +36,120 @@ class AdminNewsSustainability extends Controller
         ];
     }
 
-
-    public function index ()
+    public function index()
     {
-        $news = NewsSustainability::all();
+        $news = NewsSustainability::paginate(10);
         return view('musgravegroup.admin.pages.news.sustainability', compact('news'));
     }
 
-    public function create ()
+    public function create()
     {
-        $title = "Create sustainability news";
-        $fields = $this->getFields();
-        $route = route('admin.news.sustainability.store');
-        return view("musgravegroup.admin.pages.form", compact('fields', 'title', 'route'));
+        return view('musgravegroup.admin.pages.form', [
+            'title' => 'Create sustainability news',
+            'fields' => $this->getFields(),
+            'route' => route('admin.news.sustainability.store')
+        ]);
     }
 
-    public function store (StoreNewsRequest $request)
+    public function store(StoreNewsRequest $request)
     {
         $data = $request->validated();
-        $media = $this->uploadFile($request->file('media_id'), 'public/news', $request->boolean('is_convert'));
-        $data['media_id'] = $media->id;
         $data['url'] = \Str::slug($request->title);
 
-        $news = NewsSustainability::create($data);
-        $this->handleStatus($news);
+        try {
+            DB::beginTransaction();
 
-        NewsContent::create([
-            'content' => $data['content'],
-            'news_sustainability_id' => $news->id,
-            'is_standard' => false,
-        ]);
+            $media = $this->uploadFile($request->file('media_id'), 'public/news', $request->boolean('is_convert'));
+            $data['media_id'] = $media->id;
 
-        return redirect()->back()->with('status', 'Success');
+            $news = NewsSustainability::create($data);
+            $this->handleStatus($news);
+
+            NewsContent::create([
+                'content' => $data['content'],
+                'news_sustainability_id' => $news->id,
+                'is_standard' => false,
+            ]);
+
+            DB::commit();
+            return redirect()->back()->with('status', 'Sustainability news created successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error creating sustainability news: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to create sustainability news.');
+        }
     }
 
     public function edit($id)
     {
-        $model = NewsSustainability::with('media', 'content')->find($id);
-        if ($model) {
-            $title = "Edit news";
-            $fields = $this->getFields();
-            $route = route('admin.news.sustainability.update', $id);
+        $news = NewsSustainability::with('media', 'content')->find($id);
 
-            return view('musgravegroup.admin.pages.form', compact('fields', 'title', 'route', 'model'));
-        } else {
-            return redirect()->back()->with(['status' => 'Not found']);
+        if (!$news) {
+            return redirect()->back()->withErrors('Sustainability news not found.');
         }
-    }
 
+        return view('musgravegroup.admin.pages.form', [
+            'title' => 'Edit sustainability news',
+            'fields' => $this->getFields(),
+            'route' => route('admin.news.sustainability.update', $id),
+            'model' => $news
+        ]);
+    }
 
     public function update(StoreNewsRequest $request, $id)
     {
         $data = $request->validated();
-        $news = NewsSustainability::findOrFail($id);
-        if ($request->hasFile('media_id')) {
-            if ($news->media) {
-                Storage::delete($news->media->path);
-            }
-            $media = $this->uploadFile($request->file('media_id'), 'public/news', $request->boolean('is_convert'));
-            $data['media_id'] = $media->id;
-        }
         $data['url'] = \Str::slug($request->title);
-        $news->update($data);
-        $this->handleStatus($news);
-        $content = NewsContent::updateOrCreate(
-            ['news_id' => $news->id],
-            ['content' => $data['content'], 'is_standard' => false]
-        );
 
-        return redirect()->back()->with('status', 'Success');
+        try {
+            DB::beginTransaction();
+
+            $news = NewsSustainability::findOrFail($id);
+
+            if ($request->hasFile('media_id')) {
+                if ($news->media) {
+                    Storage::delete($news->media->path);
+                }
+                $media = $this->uploadFile($request->file('media_id'), 'public/news', $request->boolean('is_convert'));
+                $data['media_id'] = $media->id;
+            }
+
+            $news->update($data);
+            $this->handleStatus($news);
+
+            NewsContent::updateOrCreate(
+                ['news_sustainability_id' => $news->id],
+                ['content' => $data['content'], 'is_standard' => false]
+            );
+
+            DB::commit();
+            return redirect()->back()->with('status', 'Sustainability news updated successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error updating sustainability news: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to update sustainability news.');
+        }
     }
 
     public function destroy($id)
     {
-        $news = NewsSustainability::findOrFail($id);
+        try {
+            DB::beginTransaction();
 
-        if ($news->media) {
-            Storage::delete($news->media->path);
+            $news = NewsSustainability::findOrFail($id);
+
+            if ($news->media) {
+                Storage::delete($news->media->path);
+            }
+
+            $news->delete();
+
+            DB::commit();
+            return redirect()->back()->with('status', 'Sustainability news deleted successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error deleting sustainability news: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to delete sustainability news.');
         }
-
-        $news->delete();
-        return redirect()->back()->with(['status' => 'Success']);
     }
 }

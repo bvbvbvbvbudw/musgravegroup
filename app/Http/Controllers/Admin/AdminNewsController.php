@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
@@ -6,10 +7,12 @@ use App\Http\Requests\StoreNewsRequest;
 use App\Models\Brand;
 use App\Models\News;
 use App\Models\NewsContent;
-use App\Models\NewsSustainability;
 use App\Traits\HandlesStatus;
 use App\Traits\UploadFileTrait;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
+use Exception;
 
 class AdminNewsController extends Controller
 {
@@ -36,106 +39,147 @@ class AdminNewsController extends Controller
 
     public function index()
     {
-        $news = News::all();
+        $news = News::paginate(10);
         return view('musgravegroup.admin.pages.news.index', compact('news'));
     }
 
-
     public function create()
     {
-        $title = "Create news";
-        $fields = $this->getFields();
-        $route = route('admin.news.store');
-        return view('musgravegroup.admin.pages.form', compact('fields', 'title', 'route'));
+        return view('musgravegroup.admin.pages.form', [
+            'title' => 'Create news',
+            'fields' => $this->getFields(),
+            'route' => route('admin.news.store')
+        ]);
     }
 
     public function store(StoreNewsRequest $request)
     {
         $data = $request->validated();
         $data['is_popular'] = $request->boolean('is_popular');
-        $media = $this->uploadFile($request->file('media_id'), 'public/news', $request->boolean('is_convert'));
-        $data['media_id'] = $media->id;
         $data['url'] = \Str::slug($request->title);
 
-        $news = News::create($data);
-        $this->handleStatus($news);
-        if ($data['is_popular']) {
-            $old = News::where('is_popular', 1)->where('id', '<>', $news->id)->first();
-            if ($old) {
-                $old->is_popular = 0;
-                $old->save();
+        try {
+            DB::beginTransaction();
+
+            $media = $this->uploadFile($request->file('media_id'), 'public/news', $request->boolean('is_convert'));
+            $data['media_id'] = $media->id;
+
+            $news = News::create($data);
+            $this->handleStatus($news);
+
+            if ($data['is_popular']) {
+                $this->unsetOldPopularNews($news->id);
+                $news->is_popular = 1;
+                $news->save();
             }
-            $news->is_popular = 1;
-            $news->save();
+
+            NewsContent::create([
+                'content' => $data['content'],
+                'news_id' => $news->id,
+                'is_standard' => true,
+            ]);
+
+            DB::commit();
+            return redirect()->back()->with('status', 'News created successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error creating news: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to create news.');
         }
-
-        NewsContent::create([
-            'content' => $data['content'],
-            'news_id' => $news->id,
-            'is_standard' => true,
-        ]);
-
-        return redirect()->back()->with('status', 'Success');
     }
 
     public function edit($id)
     {
-        $model = News::find($id);
-        if ($model) {
-            $title = "Edit news";
-            $fields = $this->getFields();
-            $route = route('admin.news.update', $id);
-            return view('musgravegroup.admin.pages.form', compact('fields', 'title', 'route', 'model'));
-        } else {
-            return redirect()->back()->with(['status' => 'Not found']);
+        $news = News::find($id);
+
+        if (!$news) {
+            return redirect()->back()->withErrors('News not found.');
         }
+
+        return view('musgravegroup.admin.pages.form', [
+            'title' => 'Edit news',
+            'fields' => $this->getFields(),
+            'route' => route('admin.news.update', $id),
+            'model' => $news
+        ]);
     }
 
     public function update(StoreNewsRequest $request, $id)
     {
         $data = $request->validated();
-        $news = News::findOrFail($id);
-        if ($request->hasFile('media_id')) {
-            if ($news->media) {
-                Storage::delete($news->media->path);
-            }
-            $media = $this->uploadFile($request->file('media_id'), 'public/news', $request->boolean('is_convert'));
-            $data['media_id'] = $media->id;
-        }
-
         $data['is_popular'] = $request->boolean('is_popular');
         $data['url'] = \Str::slug($request->title);
-        $news->update($data);
-        $this->handleStatus($news);
-        if ($data['is_popular']) {
-            $old = News::where('is_popular', 1)->where('id', '<>', $news->id)->first();
-            if ($old) {
-                $old->is_popular = 0;
-                $old->save();
-            }
-            $news->is_popular = 1;
-            $news->save();
-        } else {
-            $news->is_popular = 0;
-            $news->save();
-        }
-        $content = NewsContent::updateOrCreate(
-            ['news_id' => $news->id],
-            ['content' => $data['content'], 'is_standard' => true]
-        );
 
-        return redirect()->back()->with('status', 'Success');
+        try {
+            DB::beginTransaction();
+
+            $news = News::findOrFail($id);
+
+            if ($request->hasFile('media_id')) {
+                if ($news->media) {
+                    Storage::delete($news->media->path);
+                }
+                $media = $this->uploadFile($request->file('media_id'), 'public/news', $request->boolean('is_convert'));
+                $data['media_id'] = $media->id;
+            }
+
+            $news->update($data);
+            $this->handleStatus($news);
+
+            if ($data['is_popular']) {
+                $this->unsetOldPopularNews($news->id);
+                $news->is_popular = 1;
+                $news->save();
+            } else {
+                $news->is_popular = 0;
+                $news->save();
+            }
+
+            NewsContent::updateOrCreate(
+                ['news_id' => $news->id],
+                ['content' => $data['content'], 'is_standard' => true]
+            );
+
+            DB::commit();
+            return redirect()->back()->with('status', 'News updated successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error updating news: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to update news.');
+        }
     }
 
     public function destroy($id)
     {
-        $news = News::findOrFail($id);
+        try {
+            DB::beginTransaction();
 
-        if ($news->media) {
-            Storage::delete($news->media->path);
+            $news = News::findOrFail($id);
+
+            if ($news->media) {
+                Storage::delete($news->media->path);
+            }
+
+            $news->delete();
+
+            DB::commit();
+            return redirect()->back()->with('status', 'News deleted successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error deleting news: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to delete news.');
         }
+    }
 
-        $news->delete();
-        return redirect()->back()->with(['status' => 'Success']);
+    protected function unsetOldPopularNews($currentNewsId)
+    {
+        $oldPopular = News::where('is_popular', 1)
+            ->where('id', '<>', $currentNewsId)
+            ->first();
+
+        if ($oldPopular) {
+            $oldPopular->is_popular = 0;
+            $oldPopular->save();
+        }
     }
 }

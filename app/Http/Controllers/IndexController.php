@@ -10,7 +10,7 @@ class IndexController extends Controller
     public function index()
     {
         $brands = Cache::remember("brands_page_data", now()->addHours(1), function () {
-            return Brand::all();
+            return Brand::where('status', 'approved')->get();
         });
         return view('musgravegroup.pages.index', compact('brands'));
     }

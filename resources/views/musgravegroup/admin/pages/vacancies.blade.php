@@ -55,4 +55,7 @@
             </div>
         @endforeach
     </div>
+    <div class="d-flex justify-content-center">
+        {{ $vacancies->links('pagination::bootstrap-4') }}
+    </div>
 @endsection

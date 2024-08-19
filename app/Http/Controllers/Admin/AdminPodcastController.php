@@ -1,17 +1,16 @@
 <?php
+
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreNewsRequest;
 use App\Http\Requests\StorePodcastRequest;
-use App\Models\Brand;
-use App\Models\News;
-use App\Models\NewsContent;
-use App\Models\NewsSustainability;
 use App\Models\Podcast;
 use App\Traits\HandlesStatus;
 use App\Traits\UploadFileTrait;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use Exception;
 
 class AdminPodcastController extends Controller
 {
@@ -33,71 +32,107 @@ class AdminPodcastController extends Controller
 
     public function index()
     {
-        $podcasts = Podcast::all();
+        $podcasts = Podcast::paginate(10);
         return view('musgravegroup.admin.pages.podcasts', compact('podcasts'));
     }
 
-
     public function create()
     {
-        $title = "Create podcast";
-        $fields = $this->getFields();
-        $route = route('admin.podcasts.store');
-        return view('musgravegroup.admin.pages.form', compact('fields', 'title', 'route'));
+        return view('musgravegroup.admin.pages.form', [
+            'title' => 'Create podcast',
+            'fields' => $this->getFields(),
+            'route' => route('admin.podcasts.store')
+        ]);
     }
 
     public function store(StorePodcastRequest $request)
     {
         $data = $request->validated();
-        $media = $this->uploadFile($request->file('media_id'), 'public/podcasts', $request->boolean('is_convert'));
-        $data['media_id'] = $media->id;
         $data['url'] = \Str::slug($request->title);
 
-        $podcast = Podcast::create($data);
-        $this->handleStatus($podcast);
+        try {
+            DB::beginTransaction();
 
-        return redirect()->back()->with('status', 'Success');
+            $media = $this->uploadFile($request->file('media_id'), 'public/podcasts', $request->boolean('is_convert'));
+            $data['media_id'] = $media->id;
+
+            $podcast = Podcast::create($data);
+            $this->handleStatus($podcast);
+
+            DB::commit();
+            return redirect()->back()->with('status', 'Podcast created successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error creating podcast: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to create podcast.');
+        }
     }
 
     public function edit($id)
     {
-        $model = Podcast::find($id);
-        if ($model) {
-            $title = "Edit podcast";
-            $fields = $this->getFields();
-            $route = route('admin.podcasts.update', $id);
-            return view('musgravegroup.admin.pages.form', compact('fields', 'title', 'route', 'model'));
-        } else {
-            return redirect()->back()->with(['status' => 'Not found']);
+        $podcast = Podcast::find($id);
+
+        if (!$podcast) {
+            return redirect()->back()->withErrors('Podcast not found.');
         }
+
+        return view('musgravegroup.admin.pages.form', [
+            'title' => 'Edit podcast',
+            'fields' => $this->getFields(),
+            'route' => route('admin.podcasts.update', $id),
+            'model' => $podcast
+        ]);
     }
 
     public function update(StorePodcastRequest $request, $id)
     {
         $data = $request->validated();
-        $podcast = Podcast::findOrFail($id);
-        if ($request->hasFile('media_id')) {
-            if ($podcast->media) {
-                Storage::delete($podcast->media->path);
-            }
-            $media = $this->uploadFile($request->file('media_id'), 'public/podcasts', $request->boolean('is_convert'));
-            $data['media_id'] = $media->id;
-        }
         $data['url'] = \Str::slug($request->title);
-        $podcast->update($data);
-        $this->handleStatus($podcast);
 
+        try {
+            DB::beginTransaction();
 
-        return redirect()->back()->with('status', 'Success');
+            $podcast = Podcast::findOrFail($id);
+
+            if ($request->hasFile('media_id')) {
+                if ($podcast->media) {
+                    Storage::delete($podcast->media->path);
+                }
+                $media = $this->uploadFile($request->file('media_id'), 'public/podcasts', $request->boolean('is_convert'));
+                $data['media_id'] = $media->id;
+            }
+
+            $podcast->update($data);
+            $this->handleStatus($podcast);
+
+            DB::commit();
+            return redirect()->back()->with('status', 'Podcast updated successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error updating podcast: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to update podcast.');
+        }
     }
 
     public function destroy($id)
     {
-        $podcast = Podcast::findOrFail($id);
-        if ($podcast->media) {
-            Storage::delete($podcast->media->path);
+        try {
+            DB::beginTransaction();
+
+            $podcast = Podcast::findOrFail($id);
+
+            if ($podcast->media) {
+                Storage::delete($podcast->media->path);
+            }
+
+            $podcast->delete();
+
+            DB::commit();
+            return redirect()->back()->with('status', 'Podcast deleted successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error deleting podcast: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to delete podcast.');
         }
-        $podcast->delete();
-        return redirect()->back()->with(['status' => 'Success']);
     }
 }

@@ -55,7 +55,17 @@
                 </div>
 
                 <a href="{{ route('admin.vacancy.location.index') }}" class="text-blue-500 hover:underline mt-4 inline-block">Back to News List</a>
+                <div class="flex space-x-4">
+                    <form action="{{ route('admin.users.applied.destroy', $user->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this news item?');">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600">Delete</button>
+                    </form>
+                </div>
             </div>
         @endforeach
+    </div>
+    <div class="d-flex justify-content-center">
+        {{ $users->links('pagination::bootstrap-4') }}
     </div>
 @endsection

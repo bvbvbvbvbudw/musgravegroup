@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
+
 use App\Http\Controllers\Controller;
-use App\Models\VacancyCategory;
 use App\Models\VacancyLocation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use Exception;
 
 class AdminLocationController extends Controller
 {
@@ -17,53 +20,89 @@ class AdminLocationController extends Controller
 
     public function index()
     {
-        $locations = VacancyLocation::all();
+        $locations = VacancyLocation::paginate(10);
         return view('musgravegroup.admin.pages.locations', compact('locations'));
     }
 
     public function create()
     {
-        $title = "Create location";
-        $fields = $this->getFields();
-        $route = route('admin.vacancy.location.store');
-        return view("musgravegroup.admin.pages.form", compact('fields', 'title', 'route'));
+        return view('musgravegroup.admin.pages.form', [
+            'title' => 'Create location',
+            'fields' => $this->getFields(),
+            'route' => route('admin.vacancy.location.store')
+        ]);
     }
 
     public function store(Request $request)
     {
-        $data = $request->validate(['location' => 'string']);
-        $location = VacancyLocation::create($data);
-        return redirect()->back()->with('status', 'Success');
+        $data = $request->validate(['location' => 'required|string']);
+
+        try {
+            DB::beginTransaction();
+
+            $location = VacancyLocation::create($data);
+
+            DB::commit();
+            return redirect()->back()->with('status', 'Location created successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error creating location: ' . $e->getMessage());
+
+            return redirect()->back()->withErrors('Failed to create location.');
+        }
     }
 
     public function edit($id)
     {
-        $model = VacancyLocation::find($id);
-        if ($model) {
-            $title = "Edit location";
-            $fields = $this->getFields();
-            $route = route('admin.vacancy.location.update', $id);
+        $location = VacancyLocation::find($id);
 
-            return view('musgravegroup.admin.pages.form', compact('fields', 'title', 'route', 'model'));
-        } else {
-            return redirect()->back()->with(['status' => 'Not found']);
+        if (!$location) {
+            return redirect()->back()->withErrors('Location not found.');
         }
-    }
 
+        return view('musgravegroup.admin.pages.form', [
+            'title' => 'Edit location',
+            'fields' => $this->getFields(),
+            'route' => route('admin.vacancy.location.update', $id),
+            'model' => $location
+        ]);
+    }
 
     public function update(Request $request, $id)
     {
-        $data = $request->validate(['location' => 'string']);
-        $location = VacancyLocation::findOrFail($id);
-        $location->update($data);
-        return redirect()->back()->with('status', 'Success');
-    }
+        $data = $request->validate(['location' => 'required|string']);
 
+        try {
+            DB::beginTransaction();
+
+            $location = VacancyLocation::findOrFail($id);
+            $location->update($data);
+
+            DB::commit();
+            return redirect()->back()->with('status', 'Location updated successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error updating location: ' . $e->getMessage());
+
+            return redirect()->back()->withErrors('Failed to update location.');
+        }
+    }
 
     public function destroy($id)
     {
-        $location = VacancyLocation::findOrFail($id);
-        $location->delete();
-        return redirect()->back()->with(['status' => 'Success']);
+        try {
+            DB::beginTransaction();
+
+            $location = VacancyLocation::findOrFail($id);
+            $location->delete();
+
+            DB::commit();
+            return redirect()->back()->with('status', 'Location deleted successfully!');
+        } catch (Exception $e) {
+            DB::rollBack();
+            Log::error('Error deleting location: ' . $e->getMessage());
+
+            return redirect()->back()->withErrors('Failed to delete location.');
+        }
     }
 }

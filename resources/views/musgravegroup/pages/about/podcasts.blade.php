@@ -40,5 +40,5 @@
             </div>
         </div>
     </article>
-
+    {{ $podcasts->links('musgravegroup.pagination') }}
 @endsection
