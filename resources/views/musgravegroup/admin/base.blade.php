@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>@yield('title', 'Admin Dashboard')</title>
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+{{--    @vite('resources/css/app.css')--}}
     <style>
         .toggle-switch {
             position: relative;
@@ -236,7 +237,7 @@
                         </ul>
                     </li>
 
-                    @if(Auth::user()->isAdmin())
+                    @if(Auth::user()?->isAdmin())
                         <li class="mb-4">
                             <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Manage admin</a>
                             <ul class="pl-4 mt-2">
