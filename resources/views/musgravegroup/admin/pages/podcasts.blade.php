@@ -34,7 +34,7 @@
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Media:</h2>
-                    <img src="{{ asset($podcast->media->path) }}" alt="IMAGE">
+                    <img src="{{ asset($podcast?->media?->path) }}" alt="IMAGE">
                 </div>
 
 

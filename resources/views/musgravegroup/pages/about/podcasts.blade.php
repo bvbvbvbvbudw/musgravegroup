@@ -25,8 +25,8 @@
                     <div class="podcast-block">
                         <div class="img">
                             <a href="{{ route('page.about.podcasts.show', $podcast->url) }}">
-                                <img alt="title" src="{{ asset($podcast->media->path) }}" class="lazyload"/>
-                                <noscript><img src="{{ asset($podcast->media->path) }}" alt="title"/></noscript>
+                                <img alt="title" src="{{ asset($podcast?->media?->path) }}" class="lazyload"/>
+                                <noscript><img src="{{ asset($podcast?->media?->path) }}" alt="title"/></noscript>
                             </a>
                         </div>
                         <div class="content">
