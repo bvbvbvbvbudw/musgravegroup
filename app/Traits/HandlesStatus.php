@@ -16,7 +16,7 @@ trait HandlesStatus
         if ($newStatus) {
             $model->status = $newStatus;
         } else {
-            if (Auth::user()->isAdmin()) {
+            if (Auth::user()?->isAdmin()) {
                 $model->status = 'approved';
             } else {
                 $model->status = 'pending';
