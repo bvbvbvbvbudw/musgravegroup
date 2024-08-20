@@ -21,15 +21,16 @@
                     <p>{!! $brand->small_description !!}</p>
                 </div>
 
-                <div class="mb-4">
-                    <h2 class="text-xl font-semibold">Logo:</h2>
-                    <img src="{{ asset($brand->logo->path) }}" alt="IMAGE">
+                <div style="display: flex; gap: 2%">
+                    <div class="mb-4">
+                        <h2 class="text-xl font-semibold">Logo:</h2>
+                        <img src="{{ asset($brand->logo->path) }}" alt="IMAGE">
+                    </div>
+                    <div class="mb-4">
+                        <h2 class="text-xl font-semibold">Background:</h2>
+                        <img src="{{ asset($brand->bg->path) }}" alt="IMAGE">
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <h2 class="text-xl font-semibold">Background:</h2>
-                    <img src="{{ asset($brand->bg->path) }}" alt="IMAGE">
-                </div>
-
 
                 <div class="flex space-x-4">
                     <a href="{{ route('admin.brands.edit', $brand->id) }}" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Edit</a>

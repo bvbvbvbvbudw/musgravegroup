@@ -22,7 +22,7 @@ class AdminNewsSustainability extends Controller
     {
         return [
             ['name' => 'title', 'label' => 'Title', 'type' => 'text', 'required' => true],
-            ['name' => 'small_description', 'label' => 'Small description (optional)', 'type' => 'textarea', 'required' => false],
+            ['name' => 'small_description', 'label' => 'Small description', 'type' => 'textarea', 'required' => false],
             ['name' => 'is_convert', 'label' => 'Need convert to .webp?', 'type' => 'checkbox', 'required' => false],
             ['name' => 'media_id', 'label' => 'Photo', 'type' => 'file', 'required' => false],
             [

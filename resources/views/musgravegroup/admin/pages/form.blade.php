@@ -66,7 +66,7 @@
                     <select name="{{ $field['name'] }}" id="{{ $field['name'] }}"
                             class="w-full mt-2 p-2 border rounded @error($field['name']) border-red-500 @enderror"
                         {{ $field['required'] ? 'required' : '' }}>
-                        <option value="">Select a brand</option>
+                        <option value="">Please select</option>
                         @foreach ($field['options'] as $value => $label)
                             <option value="{{ $value }}"
                                 {{ old($field['name'], $model->{$field['name']} ?? '') == $value ? 'selected' : '' }}>

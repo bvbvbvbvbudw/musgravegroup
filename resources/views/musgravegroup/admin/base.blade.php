@@ -2,14 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>@yield('title', 'Admin Dashboard')</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-{{--    @vite('resources/css/app.css')--}}
     <style>
+        .dark-mode  li.nav-item a {
+            color:white !important
+        }
+        .dark-mode .dropdown-menu li {
+            background: #1a202c;
+        }
+        .dark-mode .dropdown-menu li a {
+            background: #1a202c;
+            transition-duration: .5s;
+        }
+        .dark-mode .dropdown-menu li a:hover {
+            background: #595e7c;
+        }
+        .dark-mode .dropdown-menu {
+            padding: 0!important;
+        }
+        a:hover {
+            text-decoration: none;
+            color: rgb(160, 174, 192);
+        }
+
         .toggle-switch {
             position: relative;
             display: inline-block;
@@ -83,11 +102,26 @@
         .dark-mode .bg-gray-300 {
             background-color: #a0aec0 !important;
         }
+
+        .navbar-nav .dropdown-menu {
+            background-color: #fff;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .dropdown-item {
+            padding: 10px 20px;
+        }
+
+        .navbar-nav .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 <header class="bg-white shadow">
-    <div class="container mx-auto p-6 flex justify-between items-center">
+    <div class="container mx-auto p-6 d-flex justify-content-between align-items-center">
         <div class="text-lg font-semibold">
             <a href="{{ route('page.index') }}" target="_blank">Admin Dashboard</a>
             <label class="toggle-switch">
@@ -95,8 +129,116 @@
                 <span class="slider"></span>
             </label>
         </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <!-- News Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarNewsDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                News
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarNewsDropdown">
+                                <li><a class="dropdown-item" href="{{ route('admin.news.create') }}">Create musgrave news</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.news.index') }}">Show musgrave news</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.news.sustainability.create') }}">Create sustainability news</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.news.sustainability.index') }}">Show sustainability news</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Brands Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarBrandsDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Brands
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarBrandsDropdown">
+                                <li><a class="dropdown-item" href="{{ route('admin.brands.index') }}">Show all brands</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.brands.create') }}">Create brand</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Reports Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarReportsDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Reports
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarReportsDropdown">
+                                <li><a class="dropdown-item" href="{{ route('admin.reports.index') }}">Show reports</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.reports.create') }}">Create report</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Vacancies Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarVacanciesDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Vacancies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarVacanciesDropdown">
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.create') }}">Create vacancy</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.index') }}">Show vacancies</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.category.index') }}">Show all categories</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.category.create') }}">Create new category</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.location.index') }}">Show all locations</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.location.create') }}">Create new location</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Podcasts Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarPodcastsDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Podcasts
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarPodcastsDropdown">
+                                <li><a class="dropdown-item" href="{{ route('admin.podcasts.index') }}">Show podcasts</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.podcasts.create') }}">Create podcast</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Forms Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarFormsDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Forms
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarFormsDropdown">
+                                <li><a class="dropdown-item" href="{{ route('admin.users.applied') }}">Show users applied to work</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.users.form') }}">Show users company form</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Users Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarUsersDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Users
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarUsersDropdown">
+                                <li><a class="dropdown-item" href="{{ route('admin.users.index') }}">Manage users</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Admin Dropdown (Visible only to Admin) -->
+                        @if(Auth::user()?->isAdmin())
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarAdminDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    Manage Admin
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarAdminDropdown">
+                                    <li><a class="dropdown-item" href="{{ route('admin.users.index') }}">Manage users</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.podcasts.index') }}">Manage podcasts</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.vacancy.index') }}">Manage vacancies</a></li>
+                                </ul>
+                            </li>
+                        @endif
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="d-flex align-items-center">
-            <span class="me-3 text-sm font-medium text-gray-700">{{ Auth::user()->name ?? 'not logged' }}</span>
+            <span class="me-3 text-sm font-medium text-gray-700">{{ Auth::user()->name ?? 'Not Logged' }}</span>
             <form method="POST" action="{{ route('logout') }}" class="d-inline">
                 @csrf
                 <button type="submit" class="btn btn-secondary">
@@ -106,205 +248,15 @@
         </div>
     </div>
 </header>
+
 <div class="container mx-auto mt-6">
-    <div class="flex" style="gap: 1%;">
-        <aside class="w-1/4">
-            <nav>
-                <ul>
-                    <li class="mb-4">
-                        <a href="{{ route('admin.news.index') }}"
-                           class="block p-4 bg-white rounded shadow hover:bg-gray-100">News</a>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.news.create') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create musgrave news</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.news.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show musgrave news</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.news.sustainability.create') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create sustainability
-                                    news</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.news.sustainability.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show sustainability news</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mb-4">
-                        <a href="{{ route('admin.news.index') }}"
-                           class="block p-4 bg-white rounded shadow hover:bg-gray-100">Brands</a>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.brands.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show all brands</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.brands.create') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create brand</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Reports</a>
-{{--                        <ul class="pl-4 mt-2">--}}
-{{--                            <li>--}}
-{{--                                <a href="{{ route('admin.news.create') }}"--}}
-{{--                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create site report</a>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.reports.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show reports</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.reports.create') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create report</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Vacancies</a>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.vacancy.create') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create vacancy</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.vacancy.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show vacancies</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.vacancy.category.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show all category</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.vacancy.category.create') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create new category</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.vacancy.location.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show all locations</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.vacancy.location.create') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create new location</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="mb-4">
-                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Podcasts</a>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.podcasts.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show podcasts</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.podcasts.create') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Create podcast</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="mb-4">
-                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Forms</a>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.users.applied') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show users applied to work</a>
-                            </li>
-                        </ul>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.users.form') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show users company form</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="mb-4">
-                        <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Users</a>
-                        <ul class="pl-4 mt-2">
-                            <li>
-                                <a href="{{ route('admin.users.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Manage users</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    @if(Auth::user()?->isAdmin())
-                        <li class="mb-4">
-                            <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Manage admin</a>
-                            <ul class="pl-4 mt-2">
-                                <li>
-                                    <a href="{{ route('admin.manage.list', ['model' => 'news']) }}"
-                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">News</a>
-                                </li>
-                            </ul>
-                            <ul class="pl-4 mt-2">
-                                <li>
-                                    <a href="{{ route('admin.manage.list', ['model' => 'vacancy']) }}"
-                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Vacancies</a>
-                                </li>
-                            </ul>
-                            <ul class="pl-4 mt-2">
-                                <li>
-                                    <a href="{{ route('admin.manage.list', ['model' => 'podcast']) }}"
-                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Podcasts</a>
-                                </li>
-                            </ul>
-                            <ul class="pl-4 mt-2">
-                                <li>
-                                    <a href="{{ route('admin.manage.list', ['model' => 'newsSustainability']) }}"
-                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">News Sustainability</a>
-                                </li>
-                            </ul>
-                            <ul class="pl-4 mt-2">
-                                <li>
-                                    <a href="{{ route('admin.manage.list', ['model' => 'brand']) }}"
-                                       class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Brand</a>
-                                </li>
-                            </ul>
-                        </li>
-                    @endif
-                </ul>
-            </nav>
-        </aside>
-
-        <main class="flex-1">
-            <section id="content" class="p-6 bg-white rounded shadow">
-                @yield('content')
-            </section>
-        </main>
-    </div>
+    <main>
+        <section id="content" class="p-6 bg-white rounded shadow">
+            @yield('content')
+        </section>
+    </main>
 </div>
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const themeSwitch = document.getElementById('theme-switch');
@@ -324,5 +276,8 @@
         });
     });
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
