@@ -10,13 +10,7 @@ class PodcastsSeeder extends Seeder
 {
     public function run()
     {
-        // Создаем медиа записи
         $media1 = Media::create(['path' => 'img/podcast1.webp']);
-        $media2 = Media::create(['path' => 'img/podcast2.webp']);
-        $media3 = Media::create(['path' => 'img/podcast3.webp']);
-        $media4 = Media::create(['path' => 'img/podcast4.webp']);
-
-        // Создаем записи подкастов
         Podcast::create([
             'title' => 'Episode 1 – The Future of Tech',
             'url' => 'episode-1-the-future-of-tech',
@@ -38,8 +32,7 @@ class PodcastsSeeder extends Seeder
             'buzz' => 'https://buzzsprout.com/episode/2',
             'small_description' => 'Latest innovations in AI.',
             'status' => 'approved',
-
-            'media_id' => $media2->id,
+            'media_id' => $media1->id,
         ]);
 
         Podcast::create([
@@ -51,8 +44,7 @@ class PodcastsSeeder extends Seeder
             'buzz' => 'https://buzzsprout.com/episode/3',
             'small_description' => 'Exploring the rise of cryptocurrency.',
             'status' => 'approved',
-
-            'media_id' => $media3->id,
+            'media_id' => $media1->id,
         ]);
 
         Podcast::create([
@@ -64,7 +56,7 @@ class PodcastsSeeder extends Seeder
             'buzz' => 'https://buzzsprout.com/episode/4',
             'small_description' => 'Strategies for sustainable living.',
             'status' => 'approved',
-            'media_id' => $media4->id,
+            'media_id' => $media1->id,
         ]);
 
         Podcast::create([
@@ -76,7 +68,7 @@ class PodcastsSeeder extends Seeder
             'buzz' => 'https://buzzsprout.com/episode/5',
             'small_description' => 'Trends and techniques in digital marketing.',
             'status' => 'approved',
-            'media_id' => $media1->id,  // Reusing media1 for simplicity
+            'media_id' => $media1->id,
         ]);
     }
 }
