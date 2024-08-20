@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreBrandRequest;
-use App\Http\Requests\StoreReportRequest;
 use App\Models\Brand;
+use App\Models\News;
 use App\Models\Report;
 use App\Traits\HandlesStatus;
 use App\Traits\UploadFileTrait;
@@ -25,6 +25,13 @@ class AdminBrandController extends Controller
             ['name' => 'name', 'label' => 'Name', 'type' => 'text', 'required' => true],
             ['name' => 'url', 'label' => 'Url site', 'type' => 'text', 'required' => true],
             ['name' => 'small_description', 'label' => 'Small description', 'type' => 'textarea', 'required' => true],
+            [
+                'name' => 'news_id',
+                'label' => 'News',
+                'type' => 'select',
+                'required' => false,
+                'options' => News::pluck('title', 'id')->toArray()
+            ],
             ['name' => 'is_convert', 'label' => 'Need convert to .webp?', 'type' => 'checkbox', 'required' => false],
             ['name' => 'media_logo_id', 'label' => 'Logo', 'type' => 'file', 'required' => false],
             ['name' => 'media_bg_id', 'label' => 'Background', 'type' => 'file', 'required' => false],

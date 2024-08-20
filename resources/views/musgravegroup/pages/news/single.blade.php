@@ -7,15 +7,15 @@
 @section('body-classes', 'post-template-default single single-post postid-2101 single-format-standard wp-custom-logo')
 @section('title', $news->title)
 @section('meta')
-    <meta name="description" content="{{ $news->small_description }}">
+    <meta name="description" content="{{ Str::limit(strip_tags($news->small_description), 160) }}">
     <meta name="keywords" content="News, {{ $news->category }}">
-    <meta property="og:title" content="{{ $news->title }}">
-    <meta property="og:description" content="{{ $news->small_description }}">
+    <meta property="og:title" content="{{ Str::limit($news->title, 70) }}">
+    <meta property="og:description" content="{{ Str::limit(strip_tags($news->small_description), 160) }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ asset($news->media->path) }}">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="{{ $news->title }}">
-    <meta property="twitter:description" content="{{ $news->small_description }}">
+    <meta property="twitter:title" content="{{ Str::limit($news->title, 70) }}">
+    <meta property="twitter:description" content="{{ Str::limit(strip_tags($news->small_description), 160) }}">
     <meta property="twitter:image" content="{{ asset($news->media->path) }}">
 @endsection
 @section('style')

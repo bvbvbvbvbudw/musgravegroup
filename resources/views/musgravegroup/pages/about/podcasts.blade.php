@@ -33,7 +33,7 @@
                             <h4>
                                 <a href="{{ route('page.about.podcasts.show', $podcast->url) }}">{{ $podcast -> title }}</a>
                             </h4>
-                            <p>{{ $podcast -> small_description }}</p>
+                            <p>{!! $podcast -> small_description  !!}</p>
                             <a href="{{ route('page.about.podcasts.show', $podcast -> url) }}" class="button">Listen now</a>
                         </div>
                     </div>

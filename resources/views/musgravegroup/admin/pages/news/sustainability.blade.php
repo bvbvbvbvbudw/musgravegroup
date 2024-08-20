@@ -23,7 +23,7 @@
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Description:</h2>
-                    <p>{{ $item->small_description }}</p>
+                    <p>{!! $item->small_description !!}</p>
                 </div>
 
                 <div class="mb-4">

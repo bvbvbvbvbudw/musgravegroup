@@ -22,7 +22,7 @@ class AdminReportController extends Controller
             ['name' => 'title', 'label' => 'Title', 'type' => 'text', 'required' => true],
             ['name' => 'file_id', 'label' => 'File', 'type' => 'file', 'required' => true],
             ['name' => 'is_convert', 'label' => 'Need convert to .webp?', 'type' => 'checkbox', 'required' => false],
-            ['name' => 'media_id', 'label' => 'Photo', 'type' => 'file', 'required' => true],
+            ['name' => 'media_id', 'label' => 'Photo', 'type' => 'file', 'required' => false],
         ];
     }
 

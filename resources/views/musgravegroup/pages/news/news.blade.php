@@ -102,7 +102,7 @@
                             <a href="{{ route('page.news.show', $item->url) }}"></a>
                             <a href="{{ route('page.news.show', $item->url) }}">{{ $item->title }}</a>
                         </h3>
-                        <p>{{ $item->small_description }}</p>
+                        <p>{!! $item->small_description !!}</p>
                     </div>
                 </div>
             @endforeach

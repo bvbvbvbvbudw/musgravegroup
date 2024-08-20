@@ -59,8 +59,8 @@
                             <div class="brand-content" data-aos="fade-in" data-aos-once="true">
                                 <div class="brand-text">
                                     <h4>{{ $brand -> title }}</h4>
-                                    <p>{{ $brand->small_description }}</p>
-                                    <a class="button" href="https://supervalu.ie/">Find out more</a>
+                                    <p>{!! $brand->small_description !!}</p>
+                                    <a class="button" href="{{ $brand->url }}" target="_blank">Find out more</a>
                                 </div>
                             </div>
                         </div>

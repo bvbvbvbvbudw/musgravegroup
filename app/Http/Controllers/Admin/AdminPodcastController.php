@@ -26,7 +26,7 @@ class AdminPodcastController extends Controller
             ['name' => 'content', 'label' => 'Content', 'type' => 'textarea', 'required' => true],
             ['name' => 'small_description', 'label' => 'Small description', 'type' => 'textarea', 'required' => true],
             ['name' => 'is_convert', 'label' => 'Need convert to .webp?', 'type' => 'checkbox', 'required' => false],
-            ['name' => 'media_id', 'label' => 'Photo', 'type' => 'file', 'required' => true],
+            ['name' => 'media_id', 'label' => 'Photo', 'type' => 'file', 'required' => false],
         ];
     }
 

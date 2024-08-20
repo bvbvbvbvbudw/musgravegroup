@@ -18,7 +18,7 @@
                 </div>
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Small description:</h2>
-                    <p>{{ $brand->small_description }}</p>
+                    <p>{!! $brand->small_description !!}</p>
                 </div>
 
                 <div class="mb-4">

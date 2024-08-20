@@ -85,7 +85,7 @@
                         <div class="colour-block"></div>
                         <div class="text">
                             <h3><a href="{{ route('page.news.show', $item -> url) }}">{{ $item -> title }}</a></h3>
-                            <p>{{ $item -> small_description }}</p>
+                            <p>{!! $item -> small_description !!}</p>
                         </div>
                     </div>
                 @endforeach

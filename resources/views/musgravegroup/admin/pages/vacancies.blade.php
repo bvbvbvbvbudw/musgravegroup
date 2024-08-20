@@ -34,7 +34,7 @@
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Content:</h2>
-                    <p>{{ $vacancy->content->content }}</p>
+                    <p>{!! $vacancy->content->content !!}</p>
                 </div>
 
                 @if($vacancy->is_closed)

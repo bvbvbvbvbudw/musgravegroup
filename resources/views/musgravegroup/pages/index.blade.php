@@ -400,7 +400,7 @@
                                             </noscript>
                                         </a>
                                         <h4><a href="{{ route('page.news.show', $brand->news->url) }}">{{ $brand->news->title }}</a></h4>
-                                        {{ $brand->news->small_description }}
+                                        {!! $brand->news->small_description !!}
                                     </div>
                                 @endif
                             </div>

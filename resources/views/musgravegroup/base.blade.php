@@ -23,32 +23,32 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <title>@yield('title', "Musgrave group") - Musgrave Group</title>
-    @yield('meta')
     @yield('head')
     @yield('style')
-    <meta property="og:locale" content="en_GB"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="About us - Musgrave Group"/>
-    <meta property="og:description"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan..."/>
-    <meta property="og:url" content="https://www.musgravegroup.com/about-us/"/>
-    <meta property="og:site_name" content="Musgrave Group"/>
-    <meta property="article:modified_time" content="2024-01-24T14:56:00+00:00"/>
-    <meta property="og:image"
-          content="https://www.musgravegroup.com/wp-content/uploads/2023/03/Musgrave-logo-black-on-white-background.png"/>
-    <meta property="og:image:width" content="1034"/>
-    <meta property="og:image:height" content="592"/>
-    <meta property="og:image:type" content="image/png"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:label1" content="Estimated reading time"/>
-    <meta name="twitter:data1" content="1 minute"/>
+    @if (View::hasSection('meta'))
+        @yield('meta')
+    @else
+        <meta property="og:locale" content="en_GB"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Home - Musgrave Group"/>
+        <meta property="og:description"
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan..."/>
+        <meta property="og:url" content="{{ route('page.index') }}"/>
+        <meta property="og:site_name" content="Musgrave Group"/>
+        <meta property="og:image"
+              content="https://www.musgravegroup.com/wp-content/uploads/2023/03/Musgrave-logo-black-on-white-background.png"/>
+        <meta property="og:image:width" content="1034"/>
+        <meta property="og:image:height" content="592"/>
+        <meta property="og:image:type" content="image/png"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:label1" content="Estimated reading time"/>
+        <meta name="twitter:data1" content="1 minute"/>
+    @endif
     <link rel='dns-prefetch' href='http://unpkg.com/'/>
     <link rel='dns-prefetch' href='http://cdn.jsdelivr.net/'/>
     <link rel='dns-prefetch' href='http://hb.wpmucdn.com/'/>
     <link rel='dns-prefetch' href='http://b2833840.smushcdn.com/'/>
     <link href='http://hb.wpmucdn.com/' rel='preconnect'/>
-    <link rel="alternate" type="application/rss+xml" title="Musgrave Group &raquo; Comments Feed"
-          href="../comments/feed/index.html"/>
     <style id='classic-theme-styles-inline-css' type='text/css'>
         /*! This file is auto-generated */
         .wp-block-button__link {

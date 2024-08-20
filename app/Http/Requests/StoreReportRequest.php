@@ -14,7 +14,7 @@ class StoreReportRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:255',
-            'file_id' => 'required|mimes:pdf',
+            'file_id' => 'sometimes|mimes:pdf',
             'is_convert' => 'nullable|boolean',
         ];
     }

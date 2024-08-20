@@ -32,7 +32,7 @@
                                             {{ $popularNews->title }}
                                         </a>
                                     </h3>
-                                    <p>{{ $popularNews->small_description }}</p>
+                                    <p>{!! $popularNews->small_description !!}</p>
                                     <a class="find-out-more" href="{{ route('page.news') }}">
                                         Find out more
                                     </a>
