@@ -24,12 +24,12 @@
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Small description:</h2>
-                    <p>{{ $podcast -> small_description ?? 'No contract available' }}</p>
+                    <p>{!! $podcast -> small_description !!}</p>
                 </div>
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Content:</h2>
-                    <p>{{ $podcast -> content }}</p>
+                    <p>{!! $podcast -> content !!}</p>
                 </div>
 
                 <div class="mb-4">

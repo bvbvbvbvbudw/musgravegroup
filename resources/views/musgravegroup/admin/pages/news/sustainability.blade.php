@@ -16,10 +16,10 @@
                     @endif
                 </div>
 
-                <div class="mb-4">
-                    <h2 class="text-xl font-semibold">Category:</h2>
-                    <p>{{ $item->category->name ?? 'Uncategorized' }}</p>
-                </div>
+{{--                <div class="mb-4">--}}
+{{--                    <h2 class="text-xl font-semibold">Category:</h2>--}}
+{{--                    <p>{{ $item->category->name ?? 'Uncategorized' }}</p>--}}
+{{--                </div>--}}
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Description:</h2>
@@ -28,7 +28,7 @@
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Content:</h2>
-                    <p>{{ $item->content->content ?? 'No content available' }}</p>
+                    <p>{!! $item->content->content !!}</p>
                 </div>
 
                 <div class="flex space-x-4">

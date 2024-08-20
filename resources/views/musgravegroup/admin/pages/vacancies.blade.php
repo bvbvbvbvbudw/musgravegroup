@@ -9,22 +9,22 @@
                 <h1 class="text-2xl font-bold mb-4">{{ $vacancy->title }}</h1>
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Type:</h2>
-                    <p>{{ $vacancy->type ?? 'UNdefind' }}</p>
+                    <p>{{ $vacancy->type ?? '' }}</p>
                 </div>
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Location:</h2>
-                    <p>{{ $vacancy->location->location ?? 'none' }}</p>
+                    <p>{{ $vacancy->location->location ?? '' }}</p>
                 </div>
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Category:</h2>
-                    <p>{{ $vacancy->category->category ?? 'none' }}</p>
+                    <p>{{ $vacancy->category->category ?? '' }}</p>
                 </div>
 
                 <div class="mb-4">
                     <h2 class="text-xl font-semibold">Contract type:</h2>
-                    <p>{{ $vacancy->content->content ?? 'No contract available' }}</p>
+                    <p>{{ $vacancy->contract_type ?? 'No contract available' }}</p>
                 </div>
 
                 <div class="mb-4">

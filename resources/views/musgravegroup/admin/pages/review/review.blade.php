@@ -6,8 +6,6 @@
     <div class="container mx-auto px-6 py-8">
         <div class="bg-white shadow rounded-lg p-6 mb-6">
             <h1 class="text-2xl font-bold mb-4">{{ $record->title ?? 'Unnamed Record' }}</h1>
-
-            <!-- Вывод полей записи на основе getFields -->
             <table class="table-auto w-full mb-6">
                 <tbody>
                 @foreach($fields as $field)
@@ -44,8 +42,6 @@
                         </tr>
                     @endif
                 @endforeach
-
-                <!-- Обработка связанных данных -->
                 @foreach($record->getRelations() as $relation => $related)
                     @if ($related instanceof \Illuminate\Database\Eloquent\Collection)
                         @foreach($related as $item)
@@ -53,7 +49,7 @@
                                 <td class="font-semibold p-2">{{ ucfirst(str_replace('_', ' ', $relation)) }}:</td>
                                 <td class="p-2">
                                     @if (isset($item->content))
-                                        {{ $item->content }}
+                                        {!! $item->content !!}
                                     @elseif (isset($item->path))
                                         <img src="{{ asset($item->path) }}" alt="Media" class="w-32 h-32">
                                     @else
@@ -67,7 +63,7 @@
                             <td class="font-semibold p-2">{{ ucfirst(str_replace('_', ' ', $relation)) }}:</td>
                             <td class="p-2">
                                 @if (isset($related->content))
-                                    {{ $related->content }}
+                                    {!! $related->content !!}
                                 @elseif (isset($related->path))
                                     <img src="{{ asset($related->path) }}" alt="Media" class="w-32 h-32">
                                 @else
