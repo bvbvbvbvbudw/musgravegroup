@@ -22,21 +22,17 @@ trait UploadFileTrait
         $extension = $file->getClientOriginalExtension();
         $fileName = time() . '.' . $extension;
         $filePath = $directory . '/' . $fileName;
-
-        // Ensure the directory exists
         if (!Storage::exists($directory)) {
             Storage::makeDirectory($directory);
         }
-
-        // Check if the file is an image
         if (in_array($extension, ['jpg', 'jpeg', 'png'])) {
             $this->storeImage($file, $filePath, $compress);
             $path = str_replace('public', 'storage', $filePath);
             if ($compress) $path = str_replace(['.jpg', '.png', '.jpeg'], '.webp', $path);
             return Media::create(['path' => $path]);
         } elseif ($extension === 'pdf') {
-            // Store PDF file
             $file->storeAs($directory, $fileName);
+            $filePath = str_replace('public', 'storage', $filePath);
             return File::create(['path' => $filePath]);
         } else {
             throw new \Exception('Unsupported file type');
@@ -52,11 +48,8 @@ trait UploadFileTrait
      */
     private function storeImage(UploadedFile $file, string $filePath, bool $compress)
     {
-        // Get the file extension and MIME type
         $extension = pathinfo($filePath, PATHINFO_EXTENSION);
         $mimeType = $file->getMimeType();
-
-        // Create an image resource based on the MIME type
         $image = null;
         switch ($mimeType) {
             case 'image/jpeg':
@@ -68,8 +61,6 @@ trait UploadFileTrait
             default:
                 throw new \Exception('Unsupported image type');
         }
-
-        // Handle compression and conversion to WebP
         if ($compress) {
             $filePath = preg_replace('/\.[^.]+$/', '.webp', $filePath);
             imagewebp($image, storage_path('app/' . $filePath), 80);
@@ -80,9 +71,6 @@ trait UploadFileTrait
                 imagepng($image, storage_path('app/' . $filePath), 8);
             }
         }
-
-        // Free up memory
         imagedestroy($image);
     }
-
 }

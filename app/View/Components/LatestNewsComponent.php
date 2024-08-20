@@ -16,7 +16,7 @@ class LatestNewsComponent extends Component
     public function __construct()
     {
         $this->news = Cache::remember('news_component_data', now()->addMinutes(10), function () {
-            return News::with(['media', 'content'])->latest()->get();
+            return News::with(['media', 'content'])->where('status', 'approved')->latest()->take(10)->get();
         });
         $this->news = $this->addFormattedDate($this->news);
     }

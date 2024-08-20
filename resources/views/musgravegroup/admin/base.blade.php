@@ -136,7 +136,7 @@
                         <ul class="pl-4 mt-2">
                             <li>
                                 <a href="{{ route('admin.news.sustainability.index') }}"
-                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show musgrave news</a>
+                                   class="block p-2 bg-gray-200 rounded hover:bg-gray-300">Show sustainability news</a>
                             </li>
                         </ul>
                     </li>

@@ -80,7 +80,7 @@
                     <div class="related-column" data-aos="fade-up" data-aos-once="true">
                         <div class="background-zoom lazyload"
                              style="background-image:url('{{asset('img/brands/the-green-kitchen.webp')}}');"></div>
-                        <a href="{{ route('page.pizza') }}"><h2>The Green Kitchen</h2></a></div>
+                        <a href="{{ route('page.kitchen') }}"><h2>The Green Kitchen</h2></a></div>
                 </div>
             </section>
         </div>

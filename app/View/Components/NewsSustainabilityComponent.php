@@ -15,7 +15,7 @@ class NewsSustainabilityComponent extends Component
     public function __construct()
     {
         $this->news = Cache::remember('news_sustainability_component_data', now()->addMinutes(10), function () {
-            return NewsSustainability::with(['media', 'content'])->latest()->get();
+            return NewsSustainability::with(['media', 'content'])->where('status', 'approved')->latest()->take(10)->get();
         });
         $this->news = $this->addFormattedDate($this->news);
     }
