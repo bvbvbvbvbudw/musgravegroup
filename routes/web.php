@@ -84,7 +84,7 @@ Route::get('/contact', [ContactController::class, 'index'])->name('page.contact'
 
 Route::group([
     'prefix' => 'dashboard',
-//    'middleware' => ['auth', 'checkRole:admin,moderator'],
+    'middleware' => ['auth', 'checkRole:admin,moderator'],
 ], function() {
     require base_path('routes/admin.php');
 });

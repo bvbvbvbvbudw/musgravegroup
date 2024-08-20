@@ -259,7 +259,7 @@
                         </ul>
                     </li>
 
-{{--                    @if(Auth::user()?->isAdmin())  delete  --}}
+                    @if(Auth::user()?->isAdmin())
                         <li class="mb-4">
                             <a href="#" class="block p-4 bg-white rounded shadow hover:bg-gray-100">Manage admin</a>
                             <ul class="pl-4 mt-2">
@@ -293,8 +293,7 @@
                                 </li>
                             </ul>
                         </li>
-{{--                    @endif--}}
-
+                    @endif
                 </ul>
             </nav>
         </aside>
