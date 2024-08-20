@@ -34,6 +34,16 @@ class CareerController extends Controller
         return view('musgravegroup.pages.emailAlerts', compact('categories', 'locations'));
     }
 
+    public function working()
+    {
+        return view('musgravegroup.pages.careers.working');
+    }
+
+    public function sectors()
+    {
+        return view('musgravegroup.pages.careers.sectors');
+    }
+
     public function forCompany()
     {
         return view('musgravegroup.pages.careers.form');
