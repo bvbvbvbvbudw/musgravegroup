@@ -163,8 +163,10 @@ class CareerController extends Controller
         $page = $request->input('page', 1);
         try {
             if (!empty($search)) {
-                $vacancyColumns = \Schema::getColumnListing('vacancies');
-                $vacancies = Vacancy::where('is_closed', 0)->where('status', 'approved')->where('title', $search)->paginate(10);
+                $vacancies = Vacancy::where('is_closed', 0)
+                    ->where('status', 'approved')
+                    ->where('title', 'LIKE', "%{$search}%")
+                    ->paginate(10);
             } else {
                 $cacheKey = "vacancies_data_page_{$page}";
                 $vacancies = Cache::remember($cacheKey, now()->addHour(), function () {

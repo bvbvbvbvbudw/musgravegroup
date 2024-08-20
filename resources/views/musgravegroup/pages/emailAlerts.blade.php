@@ -51,7 +51,7 @@
                                         <label style="" for="title">
                                             Title<span id="mandmarker_title" class="errorRed">*</span>
                                         </label>
-                                        <select name="title" id="title" class="" style="">
+                                        <select required name="title" id="title" class="" style="">
                                             <option value="Mr">Mr</option>
                                             <option value="Ms">Ms</option>
                                             <option value="Mrs">Mrs</option>
@@ -66,7 +66,7 @@
                                         <label style="" for="firstName">
                                             Forename(s)<span id="mandmarker_firstName" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="firstName" id="firstName" class="" style="" value="" placeholder="">
+                                        <input required type="text" name="firstName" id="firstName" class="" style="" value="" placeholder="">
                                         <div id="firstNameErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="firstNameErrorLabelInline" class="errorLabelDiv" style="display:none;">
                                         </div>
@@ -75,7 +75,7 @@
                                         <label style="" for="secondName">
                                             Surname<span id="mandmarker_secondName" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="secondName" id="secondName" class="" style="" value="" placeholder="">
+                                        <input required type="text" name="secondName" id="secondName" class="" style="" value="" placeholder="">
                                         <div id="secondNameErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="secondNameErrorLabelInline" class="errorLabelDiv" style="display:none;">
                                         </div>
@@ -84,7 +84,7 @@
                                         <label style="" for="mobileTelephone">
                                             Telephone<span id="mandmarker_mobileTelephone" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value="" placeholder="">
+                                        <input required type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value="" placeholder="">
                                         <div id="mobileTelephoneErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="mobileTelephoneErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
@@ -98,7 +98,7 @@
                                         <label style="" for="applicantEmail">
                                             Email<span id="mandmarker_applicantEmail" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="applicantEmail" id="applicantEmail" class="" style="" value="" placeholder="">
+                                        <input required type="text" name="applicantEmail" id="applicantEmail" class="" style="" value="" placeholder="">
                                         <div id="applicantEmailErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="applicantEmailErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
@@ -107,7 +107,7 @@
                                             Confirm email
                                             <span id="mandmarker_emailConfirm" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="emailConfirm" id="emailConfirm" class="" style="" value="" placeholder="">
+                                        <input required type="text" name="emailConfirm" id="emailConfirm" class="" style="" value="" placeholder="">
                                         <div id="emailConfirmErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="emailConfirmErrorLabelInline" class="errorLabelDiv" style="display:none;">
                                         </div>
@@ -120,7 +120,7 @@
                                     <div style="clear:both;" id="divcriteria1[]">
                                         <label style="" for="criteria1[]">Preferred work sector(s) (hold control to
                                             select more than one item)</label>
-                                        <select name="criteria1[]" id="criteria1[]" class="inputCheckbox" style="height:300px !important" multiple="">
+                                        <select required name="criteria1[]" id="criteria1[]" class="inputCheckbox" style="height:300px !important" multiple="">
                                             @foreach($categories as $category)
                                                 <option value="{{ $category -> id }}">{{ $category -> category }}</option>
                                             @endforeach
@@ -133,7 +133,7 @@
                                         <label style="" for="criteria2[]">
                                             Preferred work location(s) (hold control to select more than one item)
                                         </label>
-                                        <select name="criteria2[]" id="criteria2[]" class="inputCheckbox" style="height:130px !important" multiple="">
+                                        <select required name="criteria2[]" id="criteria2[]" class="inputCheckbox" style="height:130px !important" multiple="">
                                             @foreach($locations as $location)
                                                 <option value="{{ $location->id }}">{{ $location->location }}</option>
                                             @endforeach

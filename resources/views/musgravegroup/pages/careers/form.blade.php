@@ -43,7 +43,7 @@
                                             <span id="mandmarker_firstName" class="errorRed">*
                                         </span>
                                         </label>
-                                        <input type="text" name="name_product" id="firstName" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'First Name is required');">
+                                        <input required type="text" name="name_product" id="firstName" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'First Name is required');">
                                         <div id="firstNameErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="firstNameErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
@@ -51,7 +51,7 @@
                                         <label style="" for="secondName">
                                             Company name<span id="mandmarker_secondName" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="company_name" id="secondName" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Surname is required');">
+                                        <input required type="text" name="company_name" id="secondName" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Surname is required');">
                                         <div id="secondNameErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="secondNameErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
@@ -62,32 +62,32 @@
                                     <div style="clear:both;" id="divaddress1">Registered Business address
                                         <label style="" for="address1">Address Line 1<span id="mandmarker_address1" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="address1" id="address1" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Address Line 1 is required');">
+                                        <input required type="text" name="address1" id="address1" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Address Line 1 is required');">
                                         <div id="address1ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="address1ErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divaddress2">
                                         <label style="" for="address2">Address Line 2<span id="mandmarker_address2" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="address2" id="address2" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Address Line 2 is required');">
+                                        <input required type="text" name="address2" id="address2" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Address Line 2 is required');">
                                         <div id="address2ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="address2ErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divaddress3">
                                         <label style="" for="address3">Town</label>
-                                        <input type="text" name="address3" id="address3" class="" style="" value="" placeholder="">
+                                        <input required type="text" name="address3" id="address3" class="" style="" value="" placeholder="">
                                         <div id="address3ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="address3ErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divlocation">
                                         <label style="" for="location">County</label>
-                                        <input type="text" name="location" id="location" class="" style="" value="" placeholder="">
+                                        <input required type="text" name="location" id="location" class="" style="" value="" placeholder="">
                                         <div id="locationErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="locationErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
                                     <div style="clear:both;" id="divpostcode">
                                         <label style="" for="postcode">Postcode</label>
-                                        <input type="text" name="postcode" id="postcode" class="" style="" value="" placeholder="">
+                                        <input required type="text" name="postcode" id="postcode" class="" style="" value="" placeholder="">
                                         <div id="postcodeErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="postcodeErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
@@ -101,8 +101,8 @@
                                             telephone
                                             <span id="mandmarker_formData[500]" class="errorRed">*</span>
                                         </label>
-                                        <select name="formData[500]" id="formData[500]" class="" style="" onchange="doValidation(this, this.value, '', 'International dial code of your mobile telephone is required');">
-                                            <option selected="" value="">Please select</option>
+                                        <select required name="formData[500]" id="formData[500]" class="" style="" onchange="doValidation(this, this.value, '', 'International dial code of your mobile telephone is required');">
+                                            <option disabled selected="" value="">Please select</option>
                                             <option value="353">Ireland (+353)</option>
                                             <option value="44">U.K (+44)</option>
                                             <option value="213">Algeria (+213)</option>
@@ -327,7 +327,7 @@
                                         <label style="" for="mobileTelephone">Mobile Telephone
                                             <span id="mandmarker_mobileTelephone" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Mobile Telephone is required');">
+                                        <input required type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Mobile Telephone is required');">
                                         <div id="mobileTelephoneErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="mobileTelephoneErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
@@ -342,7 +342,7 @@
                                         <label style="" for="applicantEmail">
                                             Email<span id="mandmarker_applicantEmail" class="errorRed">*</span>
                                         </label>
-                                        <input type="text" name="applicantEmail" id="applicantEmail" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, 'SameAs('emailConfirm');ValidEmail();CheckEmailNotUsed();', 'Please ensure you use a valid email address and fill in both the email and confirm email fields');">
+                                        <input required type="text" name="applicantEmail" id="applicantEmail" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, 'SameAs('emailConfirm');ValidEmail();CheckEmailNotUsed();', 'Please ensure you use a valid email address and fill in both the email and confirm email fields');">
                                         <div id="applicantEmailErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="applicantEmailErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
@@ -362,7 +362,7 @@
                                         <label style="" for="formData[7495]">
                                             Product name
                                         </label>
-                                        <input type="text" name="formData[7495]" id="formData[7495]" class="" style="" value="" placeholder="">
+                                        <input required type="text" name="formData[7495]" id="formData[7495]" class="" style="" value="" placeholder="">
                                         <div id="formData[7495]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="formData[7495]ErrorLabelInline" class="errorLabelDiv" style="display:none;">
 
@@ -370,14 +370,14 @@
                                     </div>
                                     <div style="clear:both;" id="divformData[111]">
                                         <label style="" for="formData[79]">Describe your product in a sentence (50 words or less).</label>
-                                        <textarea name="formData[79]" id="formData[79]"></textarea>
+                                        <textarea required name="formData[79]" id="formData[79]"></textarea>
                                         <div id="formData[79]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="formData[79]ErrorLabelInline" class="errorLabelDiv" style="display:none;">
                                         </div>
                                     </div>
                                     <div style="clear:both;" id="divformData[111]">
                                         <label style="" for="formData[111]">Describe your business in a few sentences.</label>
-                                        <textarea name="formData[111]" id="formData[111]"></textarea>
+                                        <textarea required name="formData[111]" id="formData[111]"></textarea>
                                         <div id="formData[111]ErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="formData[111]ErrorLabelInline" class="errorLabelDiv" style="display:none;">
                                         </div>

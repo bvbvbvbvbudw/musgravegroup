@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Log;
 class NewsController extends Controller
 {
     use NewsDate;
-
     protected function getBrands()
     {
         return Cache::remember('brands_news_page_data', now()->addDays(1), function () {
@@ -38,6 +37,7 @@ class NewsController extends Controller
         try {
             $page = $request->input('page', 1);
             $cacheKey = "news_page_data_page_{$page}";
+
             $news = Cache::remember($cacheKey, now()->addHours(1), function () {
                 return News::with('media', 'content')
                     ->where('status', 'approved')
@@ -58,15 +58,18 @@ class NewsController extends Controller
         }
     }
 
-    public function filterByDate($year, $month)
+    public function filterByDate($year, $month, Request $request)
     {
         try {
-            $news = Cache::remember("news_page_data_{$year}_{$month}", now()->addHours(1), function () use ($year, $month) {
+            $page = $request->input('page', 1);
+            $cacheKey = "news_page_data_{$year}_{$month}_page_{$page}";
+
+            $news = Cache::remember($cacheKey, now()->addHours(1), function () use ($year, $month) {
                 return News::with('media', 'content')
                     ->whereYear('created_at', $year)
                     ->whereMonth('created_at', $month)
                     ->where('status', 'approved')
-                    ->get();
+                    ->paginate(10);
             });
 
             $brands = $this->getBrands();
@@ -79,15 +82,18 @@ class NewsController extends Controller
         }
     }
 
-    public function filterByBrand($brandUrl)
+    public function filterByBrand($brandUrl, Request $request)
     {
         try {
             $brand = Brand::where('url', $brandUrl)->firstOrFail();
-            $news = Cache::remember("news_page_data_brand_{$brand->id}", now()->addHours(1), function () use ($brand) {
+            $page = $request->input('page', 1);
+            $cacheKey = "news_page_data_brand_{$brand->id}_page_{$page}";
+
+            $news = Cache::remember($cacheKey, now()->addHours(1), function () use ($brand) {
                 return News::with('media', 'content')
                     ->where('brand_id', $brand->id)
                     ->where('status', 'approved')
-                    ->get();
+                    ->paginate(10);
             });
 
             $brands = $this->getBrands();
