@@ -15,7 +15,6 @@
                     <h1>Annual report 2022</h1>
                 </div>
             </section>
-            todo:
             <article id="post-20699" class="post-20699 page type-page status-publish hentry">
                 <div class="container" style="background:#fff;">
                     <div class="annualstatement-text-block" data-aos="fade-up">

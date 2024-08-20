@@ -14,8 +14,7 @@ trait NewsDate
                 return $newsItem;
             });
         } else {
-            $suffix = "th";
-            $news->formatted_date = Carbon::parse($news->created_at)->format("j F Y"); // TODO: make suffix "th"
+            $news->formatted_date = Carbon::parse($news->created_at)->format("j F Y");
             return $news;
         }
     }
