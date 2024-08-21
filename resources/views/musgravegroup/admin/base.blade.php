@@ -143,10 +143,10 @@
                                 News
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarNewsDropdown">
-                                <li><a class="dropdown-item" href="{{ route('admin.news.create') }}">Create musgrave news</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.news.index') }}">Show musgrave news</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.news.sustainability.create') }}">Create sustainability news</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.news.sustainability.index') }}">Show sustainability news</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.news.create') }}">Create Musgrave News</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.news.index') }}">View Musgrave News</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.news.sustainability.create') }}">Create Sustainability News</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.news.sustainability.index') }}">View Sustainability News</a></li>
                             </ul>
                         </li>
 
@@ -156,8 +156,8 @@
                                 Brands
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarBrandsDropdown">
-                                <li><a class="dropdown-item" href="{{ route('admin.brands.index') }}">Show all brands</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.brands.create') }}">Create brand</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.brands.index') }}">View All Brands</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.brands.create') }}">Create Brand</a></li>
                             </ul>
                         </li>
 
@@ -167,8 +167,8 @@
                                 Reports
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarReportsDropdown">
-                                <li><a class="dropdown-item" href="{{ route('admin.reports.index') }}">Show reports</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.reports.create') }}">Create report</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.reports.index') }}">View Reports</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.reports.create') }}">Create Report</a></li>
                             </ul>
                         </li>
 
@@ -178,12 +178,12 @@
                                 Vacancies
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarVacanciesDropdown">
-                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.create') }}">Create vacancy</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.index') }}">Show vacancies</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.category.index') }}">Show all categories</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.category.create') }}">Create new category</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.location.index') }}">Show all locations</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.location.create') }}">Create new location</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.create') }}">Create Vacancy</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.index') }}">View Vacancies</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.category.index') }}">View All Categories</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.category.create') }}">Create New Category</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.location.index') }}">View All Locations</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.vacancy.location.create') }}">Create New Location</a></li>
                             </ul>
                         </li>
 
@@ -193,8 +193,8 @@
                                 Podcasts
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarPodcastsDropdown">
-                                <li><a class="dropdown-item" href="{{ route('admin.podcasts.index') }}">Show podcasts</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.podcasts.create') }}">Create podcast</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.podcasts.index') }}">View Podcasts</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.podcasts.create') }}">Create Podcast</a></li>
                             </ul>
                         </li>
 
@@ -204,8 +204,8 @@
                                 Forms
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarFormsDropdown">
-                                <li><a class="dropdown-item" href="{{ route('admin.users.applied') }}">Show users applied to work</a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.users.form') }}">Show users company form</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.users.applied') }}">View Applied Users</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.users.form') }}">View Company Forms</a></li>
                             </ul>
                         </li>
 
@@ -215,7 +215,7 @@
                                 Users
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarUsersDropdown">
-                                <li><a class="dropdown-item" href="{{ route('admin.users.index') }}">Manage users</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.users.index') }}">Manage Users</a></li>
                             </ul>
                         </li>
 
@@ -223,17 +223,18 @@
                         @if(Auth::user()?->isAdmin())
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarAdminDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                                    Manage Admin
+                                    Admin Management
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarAdminDropdown">
-                                    <li><a class="dropdown-item" href="{{ route('admin.users.index') }}">Manage users</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('admin.podcasts.index') }}">Manage podcasts</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('admin.vacancy.index') }}">Manage vacancies</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.users.index') }}">Manage Users</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.podcasts.index') }}">Manage Podcasts</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.vacancy.index') }}">Manage Vacancies</a></li>
                                 </ul>
                             </li>
                         @endif
 
                     </ul>
+
                 </div>
             </div>
         </nav>
