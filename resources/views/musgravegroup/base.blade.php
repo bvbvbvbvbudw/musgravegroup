@@ -652,7 +652,7 @@
                         </ul>
                     </li>
                     <li id="menu-item-89"
-                        class="menu-item {{ str_contains(request()->path(), 'contact')  ? 'current_page_item' : '' }} menu-item-type-post_type menu-item-object-page menu-item-89 menu-item-contact">
+                        class="menu-item {{ str_contains(request()->path(), 'contact')  ? 'current_page_item' : '' }} menu-item-has-children menu-item-type-post_type menu-item-object-page menu-item-89 menu-item-contact">
                         <a href="{{ route('page.contact') }}">Contact</a>
                         <ul class="sub-menu">
                             <li id="menu-item-9756"

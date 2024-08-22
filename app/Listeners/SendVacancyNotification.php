@@ -2,11 +2,9 @@
 namespace App\Listeners;
 
 use App\Events\VacancyCreated;
-use App\Mail\NewVacancyNotificationMail;
-use App\Mail\SubscriptionConfirmationMail;
+use App\Jobs\SendVacancyNotificationJob;
 use App\Models\UserSender;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
 
 class SendVacancyNotification
 {
@@ -19,11 +17,11 @@ class SendVacancyNotification
             ->get();
 
         foreach ($subscribers as $subscriber) {
-            Log::info('Send mail', [
+            Log::info('Dispatching email for vacancy', [
                 'email' => $subscriber->email,
                 'vacancy' => $vacancy->title,
             ]);
-            Mail::to($subscriber->email)->send(new NewVacancyNotificationMail($vacancy));
+            SendVacancyNotificationJob::dispatch($subscriber->email, $vacancy);
         }
     }
 }

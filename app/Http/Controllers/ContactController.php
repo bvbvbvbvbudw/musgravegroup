@@ -3,12 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUserSupplierRequest;
-use App\Mail\Supplied\AdminMail;
-use App\Mail\Supplied\UserMail;
-use App\Models\User;
+use App\Jobs\SendEmailsJob;
 use App\Models\UserSupplier;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Log;
 
 class ContactController extends Controller
@@ -25,8 +21,6 @@ class ContactController extends Controller
 
     public function becomeSend(StoreUserSupplierRequest $request)
     {
-        Log::info('Received request:', $request->all());
-
         try {
             $data = $request->validated();
 
@@ -51,19 +45,8 @@ class ContactController extends Controller
             $form->additional_comment = $data['additional_comment'];
             $form->save();
 
-            Queue::push(function () use ($data) {
-                try {
-                    Mail::to($data['applicantEmail'])->send(new UserMail($data));
-                    Mail::to('info@musgraveofficial.com')->send(new AdminMail($data));
+            SendEmailsJob::dispatch($data);
 
-                    $admins = User::where('role', 'admin')->get();
-                    foreach ($admins as $admin) {
-                        Mail::to($admin->email)->send(new AdminMail($data));
-                    }
-                } catch (\Exception $e) {
-                    Log::error('Error sending email notifications: ' . $e->getMessage());
-                }
-            });
             return redirect()->back();
         } catch (\Exception $e) {
             Log::error('Error processing form submission: ' . $e->getMessage());

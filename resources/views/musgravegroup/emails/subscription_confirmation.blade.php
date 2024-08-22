@@ -33,7 +33,10 @@
 <body>
 <div class="container">
     <h1>Thank You for Subscribing!</h1>
-    <p>You have successfully subscribed to our newsletter. We'll keep you updated with the latest news and updates.</p>
+    <p>You have successfully subscribed to receive notifications about new job vacancies.</p>
+    <p><strong>Preferred Categories:</strong> {{ implode(', ', $categories) }}</p>
+    <p><strong>Preferred Locations:</strong> {{ implode(', ', $locations) }}</p>
+    <p>We will notify you when a job matching your preferences is posted.</p>
     <p>If you have any questions, feel free to contact us anytime.</p>
     <p>Best regards,<br>The {{ config('app.name') }} Team</p>
 </div>

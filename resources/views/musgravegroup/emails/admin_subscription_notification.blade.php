@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>New Newsletter Subscriber</title>
+    <title>New Job Subscription</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,9 +32,11 @@
 </head>
 <body>
 <div class="container">
-    <h1>New Newsletter Subscriber</h1>
-    <p>A new user has subscribed to your newsletter.</p>
-    <p><strong>User Email:</strong> {{ $email }}</p>
+    <h1>New Job Subscription</h1>
+    <p>A new user has subscribed to receive notifications about job vacancies.</p>
+    <p><strong>User Email:</strong> {{ $data['applicantEmail'] }}</p>
+    <p><strong>Preferred Categories:</strong> {{ implode(', ', $categories) }}</p>
+    <p><strong>Preferred Locations:</strong> {{ implode(', ', $locations) }}</p>
     <p>Best regards,<br>{{ config('app.name') }} Notification System</p>
 </div>
 <div class="footer">

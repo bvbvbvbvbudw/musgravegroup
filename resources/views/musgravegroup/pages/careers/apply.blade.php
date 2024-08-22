@@ -376,7 +376,7 @@
                                         <label style="" for="mobileTelephone">Mobile Telephone
                                             <span id="mandmarker_mobileTelephone" class="errorRed">*</span>
                                         </label>
-                                        <input required type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Mobile Telephone is required');">
+                                        <input oninput="this.value = this.value.replace(/[^0-9]/g, '')" required type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value="" placeholder="" onblur="doValidation(this, this.value, '', 'Mobile Telephone is required');">
                                         <div id="mobileTelephoneErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="mobileTelephoneErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>

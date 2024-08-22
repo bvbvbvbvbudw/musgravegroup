@@ -94,7 +94,7 @@
                                             Your phone number<span id="mandmarker_mobileTelephone"
                                                                    class="errorRed">*</span>
                                         </label>
-                                        <input required type="text" name="mobileTelephone" id="mobileTelephone" class=""
+                                        <input oninput="this.value = this.value.replace(/[^0-9]/g, '')" required type="text" name="mobileTelephone" id="mobileTelephone" class=""
                                                style="" value="" placeholder="">
                                         <div id="mobileTelephoneErrorLabel" class="errorLabelDiv"
                                              style="display:none;"></div>
@@ -130,7 +130,9 @@
                                         <div style="width:auto;" class="radioDiv">
                                             <input type="radio" name="formData[33]" class="radio"
                                                    style="margin-left:3.5em;margin-right:0.5em;display:inline;"
-                                                   value="Yes" alt="Are you over 16? - Yes" id="formData[33]_Yes">
+                                                   value="Yes"
+                                                   alt="Have you contacted Sainsbury's before with this product? - Yes"
+                                                   id="formData[33]_Yes">
                                             <label for="formData[33]_Yes" class=" radioLabel">
                                                 <span class="outer">
                                                     <span class="inner"></span>
@@ -138,8 +140,10 @@
                                                 <span class="radio_display_text">Yes</span>
                                             </label>
                                             <input type="radio" name="formData[33]" class="radio"
-                                                   style="margin-left:3.5em;margin-right:0.5em;display:inline;"
-                                                   value="No" alt="Are you over 16? - No" id="formData[33]_No"><label
+                                                   style="margin-left:3.5em;margin-right:0.5em;display:inline;" checked
+                                                   value="No"
+                                                   alt="Have you contacted Sainsbury's before with this product? - No"
+                                                   id="formData[33]_No"><label
                                                 for="formData[33]_No" class=" radioLabel">
                                                 <span class="outer">
                                                     <span class="inner"></span>
@@ -157,7 +161,7 @@
                                         <label style="" for="formData[7495]">
                                             Tell us about your product:
                                         </label>
-                                        <textarea name="formData[7495]" id="formData[7495]"></textarea>
+                                        <textarea required name="formData[7495]" id="formData[7495]"></textarea>
                                         <div id="formData[7495]ErrorLabel" class="errorLabelDiv"
                                              style="display:none;"></div>
                                         <div id="formData[7495]ErrorLabelInline" class="errorLabelDiv"
@@ -192,7 +196,7 @@
                                         <label style="" for="description_few">
                                             Describe your business in a few sentences:
                                         </label>
-                                        <textarea name="description_few" id="description_few"></textarea>
+                                        <textarea required name="description_few" id="description_few"></textarea>
                                         <div id="formData[7496]ErrorLabel" class="errorLabelDiv"
                                              style="display:none;"></div>
                                         <div id="formData[7496]ErrorLabelInline" class="errorLabelDiv"
@@ -204,14 +208,14 @@
                                             <span id="mandmarker_formData[1312]" class="errorRed">*</span>
                                         </label>
                                         <div style="width:auto;" class="radioDiv">
-                                            <input type="radio" name="formData[1312]" class="radio"
+                                            <input checked type="radio" name="formData[1312]" class="radio"
                                                    style="margin-left:3.5em;margin-right:0.5em;display:inline;"
                                                    value="prepayment" alt="Payment terms offered - Prepayment only"
                                                    id="formData[1312]_prepayment">
                                             <label for="formData[1312]_prepayment" class="radioLabel">
-            <span class="outer">
-                <span class="inner"></span>
-            </span>
+                                                <span class="outer">
+                                                    <span class="inner"></span>
+                                                </span>
                                                 <span class="radio_display_text">Prepayment only</span>
                                             </label>
 
@@ -220,9 +224,9 @@
                                                    value="net" alt="Payment terms offered - NET Payment"
                                                    id="formData[1312]_net">
                                             <label for="formData[1312]_net" class="radioLabel">
-            <span class="outer">
-                <span class="inner"></span>
-            </span>
+                                                <span class="outer">
+                                                    <span class="inner"></span>
+                                                </span>
                                                 <span class="radio_display_text">NET payment</span>
                                             </label>
 
@@ -231,9 +235,9 @@
                                                    value="credit" alt="Payment terms offered - Credit insurance"
                                                    id="formData[1312]_credit">
                                             <label for="formData[1312]_credit" class="radioLabel">
-            <span class="outer">
-                <span class="inner"></span>
-            </span>
+                                                <span class="outer">
+                                                    <span class="inner"></span>
+                                                </span>
                                                 <span class="radio_display_text">Credit insurance</span>
                                             </label>
                                         </div>

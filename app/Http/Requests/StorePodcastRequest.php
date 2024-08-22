@@ -13,7 +13,7 @@ class StorePodcastRequest extends FormRequest
      */
     public function authorize()
     {
-        return true; // Убедитесь, что авторизация настроена правильно
+        return true;
     }
 
     /**

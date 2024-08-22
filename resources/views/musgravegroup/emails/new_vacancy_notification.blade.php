@@ -45,7 +45,7 @@
     <p><strong>Category:</strong> {{ $vacancy->category->category }}</p>
     <p><strong>Description:</strong></p>
     <p>{!! $vacancy->content->content !!}</p>
-    <p><a href="{{ $vacancy->url }}" class="btn">View Details</a></p>
+    <p><a href="{{ route('page.careers.vacancies.show', $vacancy->url) }}" class="btn">View Details</a></p>
     <p>Best regards,<br>The {{ config('app.name') }} Team</p>
 </div>
 <div class="footer">

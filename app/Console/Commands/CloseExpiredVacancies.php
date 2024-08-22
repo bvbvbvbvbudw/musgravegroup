@@ -10,7 +10,6 @@ class CloseExpiredVacancies extends Command
 {
     protected $signature = 'vacancies:close-expired';
 
-    // Описание команды
     protected $description = 'Close vacancies where the end_date has passed or is today';
 
     public function __construct()

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendConfirmationMailJob;
+use App\Jobs\SendVacancyNotificationJob;
 use App\Mail\AdminSubscriptionNotificationMail;
 use App\Mail\SubscriptionConfirmationMail;
 use App\Models\CareerForm;
@@ -93,16 +95,7 @@ class CareerController extends Controller
                 'preferred_categories' => $preferredCategories,
                 'preferred_locations' => $preferredLocations,
             ]);
-
-            Queue::push(function () use ($validatedData) {
-                Mail::to($validatedData['applicantEmail'])->send(new SubscriptionConfirmationMail());
-
-                $users = User::where('role', 'admin')->get();
-                foreach ($users as $user) {
-                    Mail::to($user->email)->send(new AdminSubscriptionNotificationMail($user->email));
-                }
-            });
-
+            SendConfirmationMailJob::dispatch($validatedData);
             return redirect()->back()->with('status', 'Email alerts saved successfully.');
         } catch (\Exception $e) {
             Log::error('Error processing email alerts: ' . $e->getMessage());

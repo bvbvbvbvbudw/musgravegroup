@@ -23,8 +23,6 @@
         let totalPages = 1; // Общее количество страниц
         const reportsGrid = document.querySelector('.sustainability-reports-grid');
         const loadMoreButton = document.getElementById('loadMore');
-
-        // Изначальная загрузка первой страницы
         fetchReports(currentPage);
 
         loadMoreButton.addEventListener('click', function () {

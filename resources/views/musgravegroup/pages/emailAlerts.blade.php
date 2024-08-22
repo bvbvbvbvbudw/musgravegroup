@@ -84,7 +84,7 @@
                                         <label style="" for="mobileTelephone">
                                             Telephone<span id="mandmarker_mobileTelephone" class="errorRed">*</span>
                                         </label>
-                                        <input required type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value="" placeholder="">
+                                        <input oninput="this.value = this.value.replace(/[^0-9]/g, '')" required type="text" name="mobileTelephone" id="mobileTelephone" class="" style="" value="" placeholder="">
                                         <div id="mobileTelephoneErrorLabel" class="errorLabelDiv" style="display:none;"></div>
                                         <div id="mobileTelephoneErrorLabelInline" class="errorLabelDiv" style="display:none;"></div>
                                     </div>
