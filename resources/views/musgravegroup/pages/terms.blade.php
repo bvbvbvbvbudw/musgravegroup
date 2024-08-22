@@ -26,7 +26,7 @@
                     acknowledge that you have read and agreed to abide by the terms described below and you are deemed
                     to have entered into an agreement with Musgrave Group Plc.</p>
                 <p>The Site is owned and operated by Musgrave Group Plc, Musgrave House, Ballycurreen, Airport Road,
-                    Cork, Ireland, email <a href="mailto:group@musgrave.ie">group@musgrave.ie</a></p>
+                    Cork, Ireland, email <a href="mailto:group@musgraveofficial.com">group@musgraveofficial.com</a></p>
                 <h2>Intellectual Property Protection</h2>
                 <p>The term “Intellectual Property Rights” means copyrights, database rights, trademarks, trade names,
                     domain names, rights in logos, get-up and content, inventions, trade secrets and know-how, patents,
@@ -75,7 +75,7 @@
                     world.</p>
                 <p>Any use of Content not specifically permitted above is expressly prohibited. Requests for permission
                     for other uses may be sent to Musgrave Group Plc, Musgrave House, Ballycurreen, Airport Road, Cork,
-                    Ireland, email group@musgrave.ie. We reserve the right to charge a fee.</p>
+                    Ireland, email group@musgraveofficial.com. We reserve the right to charge a fee.</p>
                 <h2>Changes to the Site</h2>
                 <p>Musgrave Group Plc reserves the right to suspend, change, modify, add or remove portions of Content
                     available on the Site at any time and to restrict the use and accessibility of the Site.</p>

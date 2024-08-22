@@ -15,7 +15,7 @@
                     <p style="text-align: center">Musgrave Group, Musgrave House, Ballycurreen, Airport
                         Road, Cork, T12 TN99</p>
                     <p style="text-align: center">Email: <a
-                            href="mailto:group@musgrave.ie">group@musgrave.ie</a> • Tel: +353 (0) 21 4522100
+                            href="mailto:group@musgraveofficial.com">group@musgraveofficial.com</a> • Tel: +353 21 234 8584
                     </p>
 
                     <div class="two-column-block">
@@ -66,7 +66,7 @@
                                 class="icon-arrow"></span></a>
                         <ul class="inner">
                             <li>
-                                <p>Email <a href="mailto:mrpi@musgrave.ie">mrpi@musgrave.ie</a></p>
+                                <p>Email <a href="mailto:mrpi@musgraveofficial.com">mrpi@musgraveofficial.com</a></p>
                                 <p>Tramore Road, Cork<br />
                                     Tel +353 (0) 21 480 3000<br />
                                     Fax +353 (0) 21 431 3621</p>
@@ -77,7 +77,7 @@
                                     Tel +353 (0)1 502 7500<br />
                                     Fax +353 (0)1 502 7527<br />
                                     Email <a
-                                        href="mailto:kilcock.reception@musgrave.ie">kilcock.reception@musgrave.ie</a>
+                                        href="mailto:kilcock.reception@musgraveofficial.com">kilcock.reception@musgraveofficial.com</a>
                                 </p>
                             </li>
                         </ul>
@@ -85,7 +85,7 @@
                             Ireland<span class="icon-arrow"></span></a>
                         <ul class="inner">
                             <li>
-                                <p>Email <a href="mailto:mopi@musgrave.ie">mopi@musgrave.ie</a></p>
+                                <p>Email <a href="mailto:mopi@musgraveofficial.com">mopi@musgraveofficial.com</a></p>
                                 <p>Newcastle Road, Lucan, Co. Dublin, Ireland.<br />
                                     Tel +353 (0) 1 6302000<br />
                                     Fax +353 (0) 1 6281443</p>
@@ -95,7 +95,7 @@
                             (SuperValu, Centra, Mace, Drinks Inc)<span class="icon-arrow"></span></a>
                         <ul class="inner">
                             <li>
-                                <p>Email <a href="mailto:mrpni@musgrave.ie">mrpni@musgrave.ie</a></p>
+                                <p>Email <a href="mailto:mrpni@musgraveofficial.com">mrpni@musgraveofficial.com</a></p>
                                 <p>Belfast Harbour Estate, 1-19 Dargan Drive, Belfast BT3 9JG<br />
                                     Tel +44 (0) 28 90787100<br />
                                     Fax +44 (0) 4890 787132</p>
@@ -115,7 +115,7 @@
                                 class="icon-arrow"></span></a>
                         <ul class="inner">
                             <li>
-                                <p>Email <a href="mailto:mwp@musgrave.ie">mwp@musgrave.ie</a></p>
+                                <p>Email <a href="mailto:mwp@musgraveofficial.com">mwp@musgraveofficial.com</a></p>
                                 <p>Ballycurreen, Airport Road, Cork<br />
                                     Tel +353 (0) 21 452 2100<br />
                                     Fax +353 (0) 21 452 2250</p>
@@ -190,9 +190,9 @@
                                 <p>Louise Tolerton (for NI press queries only)<br />
                                     Belfast Harbour Estate, 1-19 Dargan Drive, Belfast, BT3 9JG, Northern
                                     Ireland<br />
-                                    Email <u><a title="mailto:louise.tolerton@musgrave.ie"
-                                                href="mailto:Louise.tolerton@musgrave.ie" target="_blank"
-                                                rel="noreferrer noopener">louise.tolerton@musgrave.ie</a></u>
+                                    Email <u><a title="mailto:louise.tolerton@musgraveofficial.com"
+                                                href="mailto:Louise.tolerton@musgraveofficial.com" target="_blank"
+                                                rel="noreferrer noopener">louise.tolerton@musgraveofficial.com</a></u>
                                 </p>
                             </li>
                         </ul>

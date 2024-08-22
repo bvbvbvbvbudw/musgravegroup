@@ -81,6 +81,8 @@ Route::controller(NewsController::class)->prefix('news')->name('page.news')->gro
 });
 
 Route::get('/contact', [ContactController::class, 'index'])->name('page.contact');
+Route::get('/contact/become-supplier', [ContactController::class, 'become'])->name('page.contact.become');
+Route::post('/contact/become-supplier', [ContactController::class, 'becomeSend'])->name('page.contact.become.send');
 
 Route::group([
     'prefix' => 'dashboard',

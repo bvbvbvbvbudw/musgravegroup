@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\CareerForm;
 use App\Models\UserApplied;
+use App\Models\UserSupplier;
 use Illuminate\Support\Facades\Log;
 
 class AdminUsersAppliedController extends Controller
@@ -38,6 +39,31 @@ class AdminUsersAppliedController extends Controller
         } catch (\Exception $e) {
             Log::error('Error retrieving career forms: ' . $e->getMessage());
             return redirect()->back()->withErrors('Failed to retrieve career forms.');
+        }
+    }
+
+    public function supplied()
+    {
+        try {
+            $users = UserSupplier::paginate(10);
+            return view('musgravegroup.admin.pages.supplied', compact('users'));
+        } catch (\Exception $e) {
+            Log::error('Error retrieving career forms: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to retrieve user suppliers.');
+        }
+    }
+
+    public function suppliedDestroy ($id)
+    {
+        try {
+            $supplier = UserSupplier::find($id);
+            if ($supplier) {
+                $supplier->delete();
+                return redirect()->back()->with('status', 'Success delete');
+            }
+        } catch (\Exception $e) {
+            Log::error('Error retrieving supplied form: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to retrieve supplied form.');
         }
     }
 

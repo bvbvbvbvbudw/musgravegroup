@@ -356,7 +356,7 @@
                         href="http://tools.google.com/dlpage/gaoptout">http://tools.google.com/dlpage/gaoptout</a>.</p>
                 <p>Hopefully that has clarified the use of cookies on this website, however if you would like further
                     information then you can contact our Data Protection Officer at the following email address: <a
-                        href="mailto:dpo@musgrave.ie">dpo@musgrave.ie</a></p>
+                        href="mailto:dpo@musgraveofficial.com">dpo@musgraveofficial.com</a></p>
                 <p>&nbsp;</p>
 
 

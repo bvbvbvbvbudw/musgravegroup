@@ -13,8 +13,8 @@
                 <h1 style="text-align: center">Group HQ</h1>
                 <p style="text-align: center">Musgrave Group, Musgrave House, Ballycurreen, Airport Road, Cork, T12
                     TN99</p>
-                <p style="text-align: center">Email: <a href="mailto:group@musgrave.ie">group@musgrave.ie</a> • Tel:
-                    +353 (0) 21 4522100</p>
+                <p style="text-align: center">Email: <a href="mailto:group@musgraveofficial.com">group@musgraveofficial.com</a> • Tel:
+                    +353 21 234 8584</p>
                 <div class="two-column-block">
                 </div>
             </div>

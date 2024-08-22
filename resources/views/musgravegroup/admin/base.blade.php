@@ -206,6 +206,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarFormsDropdown">
                                 <li><a class="dropdown-item" href="{{ route('admin.users.applied') }}">View Applied Users</a></li>
                                 <li><a class="dropdown-item" href="{{ route('admin.users.form') }}">View Company Forms</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.users.supplied') }}">View Supplied Forms</a></li>
                             </ul>
                         </li>
 

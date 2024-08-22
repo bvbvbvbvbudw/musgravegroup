@@ -51,7 +51,7 @@
                 <p>For the purpose of data protection legislation, we are the Data Controller of your Personal Data. In
                     addition, where you provided Personal Data to a local store owner, the owner of the local store to
                     which you supplied that data is also a data controller of your Information.</p>
-                <p>Our data protection officer may be contacted by emailing <a href="mailto:dpo@musgrave.ie">dpo@musgrave.ie</a>
+                <p>Our data protection officer may be contacted by emailing <a href="mailto:dpo@musgraveofficial.com">dpo@musgraveofficial.com</a>
                 </p>
                 <ol>
                     <li><strong>Personal Data we may collect about you</strong></li>
@@ -449,7 +449,7 @@
                 </ol>
                 <p>Questions, comments and requests regarding this Policy are welcomed and should be addressed to our
                     Data Protection Team at Musgrave Group , Musgrave House, Ballycurreen, Airport Road, Cork, T12 TN99
-                    or by email to: <a href="mailto:dpo@musgrave.ie">dpo@musgrave.ie</a></p>
+                    or by email to: <a href="mailto:dpo@musgraveofficial.com">dpo@musgraveofficial.com</a></p>
                 <p>Last updated: July 2020</p>
 
 

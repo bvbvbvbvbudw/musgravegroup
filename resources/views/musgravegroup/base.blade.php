@@ -8,6 +8,9 @@
         #onetrust-banner-sdk {
             display: none;
         }
+        .become:hover {
+            opacity: 1!important;
+        }
     </style>
 
     <script src="{{ asset('js/autoBlock.js') }}"></script>
@@ -528,8 +531,7 @@
         }
     </style>
 </head>
-<body
-    class="@yield('body-classes', 'home page-template page-template-page-content page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo')" @yield('body-attr')>
+<body class="@yield('body-classes', 'home page-template page-template-page-content page-template-page-templates page-template-page-homepage-c19 page-template-page-templatespage-homepage-c19-php page page-id-9904 wp-custom-logo')" @yield('body-attr')>
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -650,8 +652,14 @@
                         </ul>
                     </li>
                     <li id="menu-item-89"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89 menu-item-contact">
-                        <a href="{{ route('page.contact') }}">Contact</a></li>
+                        class="menu-item {{ str_contains(request()->path(), 'contact')  ? 'current_page_item' : '' }} menu-item-type-post_type menu-item-object-page menu-item-89 menu-item-contact">
+                        <a href="{{ route('page.contact') }}">Contact</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-9756"
+                                class="become menu-item">
+                                <a href="{{ route('page.contact.become') }}">BECOME SUPPLIER</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
 
