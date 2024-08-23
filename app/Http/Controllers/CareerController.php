@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendCompanyFormEmail;
 use App\Jobs\SendConfirmationMailJob;
 use App\Jobs\SendVacancyNotificationJob;
 use App\Mail\AdminSubscriptionNotificationMail;
@@ -71,7 +72,7 @@ class CareerController extends Controller
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
-
+            SendCompanyFormEmail::dispatch($form);
             return redirect()->back()->with('status', 'Form submitted successfully.');
         } catch (\Exception $e) {
             Log::error('Error submitting company form: ' . $e->getMessage());
