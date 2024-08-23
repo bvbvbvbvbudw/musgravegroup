@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\CareerForm;
 use App\Models\UserApplied;
+use App\Models\UserSender;
 use App\Models\UserSupplier;
 use Illuminate\Support\Facades\Log;
 
@@ -23,6 +24,29 @@ class AdminUsersAppliedController extends Controller
         } catch (\Exception $e) {
             Log::error('Error retrieving applied users: ' . $e->getMessage());
             return redirect()->back()->withErrors('Failed to retrieve applied users.');
+        }
+    }
+
+    public function sender()
+    {
+        try {
+            $users = UserSender::paginate(10);
+            return view('musgravegroup.admin.pages.sender', compact('users'));
+        } catch (\Exception $e) {
+            Log::error('Error retrieving applied users: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to retrieve applied users.');
+        }
+    }
+
+    public function senderDestroy($id)
+    {
+        try {
+            $user = UserSender::findOrFail($id);
+            $user->delete();
+            return redirect()->route('admin.sender')->with('success', 'User deleted successfully');
+        } catch (\Exception $e) {
+            Log::error('Error deleting user: ' . $e->getMessage());
+            return redirect()->back()->withErrors('Failed to delete user.');
         }
     }
 

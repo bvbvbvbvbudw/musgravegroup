@@ -83,6 +83,8 @@ Route::post('/manage/{model}/{id}/reject', [AdminReviewController::class, 'rejec
 
 Route::get('user-applied', [AdminUsersAppliedController::class, 'index'])->name('admin.users.applied');
 Route::get('user-supplied', [AdminUsersAppliedController::class, 'supplied'])->name('admin.users.supplied');
+Route::get('user-sender', [AdminUsersAppliedController::class, 'sender'])->name('admin.users.sender');
+Route::delete('user-sender/{id}/destroy', [AdminUsersAppliedController::class, 'senderDestroy'])->name('admin.users.sender.destroy');
 Route::delete('user-supplied/{id}/destroy', [AdminUsersAppliedController::class, 'suppliedDestroy'])->name('admin.users.supplied.destroy');
 Route::delete('user-applied/{id}/destroy', [AdminUsersAppliedController::class, 'destroy'])->name('admin.users.applied.destroy');
 Route::get('company-form', [AdminUsersAppliedController::class, 'form'])->name('admin.users.form');

@@ -205,6 +205,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarFormsDropdown">
                                 <li><a class="dropdown-item" href="{{ route('admin.users.applied') }}">View Applied Users</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.users.sender') }}">View Vacancy Users</a></li>
                                 <li><a class="dropdown-item" href="{{ route('admin.users.form') }}">View Company Forms</a></li>
                                 <li><a class="dropdown-item" href="{{ route('admin.users.supplied') }}">View Supplied Forms</a></li>
                             </ul>
@@ -227,9 +228,11 @@
                                     Admin Management
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarAdminDropdown">
-                                    <li><a class="dropdown-item" href="{{ route('admin.users.index') }}">Manage Users</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('admin.podcasts.index') }}">Manage Podcasts</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('admin.vacancy.index') }}">Manage Vacancies</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.manage.list', ['model' => 'news']) }}">Manage News</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.manage.list', ['model' => 'vacancy']) }}">Manage Vacancies</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.manage.list', ['model' => 'podcast']) }}">Manage Podcasts</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.manage.list', ['model' => 'newsSustainability']) }}">News Sustainability</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('admin.manage.list', ['model' => 'brand']) }}">Manage Brand</a></li>
                                 </ul>
                             </li>
                         @endif
