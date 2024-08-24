@@ -16,6 +16,26 @@
         </header>
 
         <div class="entry-content container" data-aos="fade-up" data-aos-once="true">
+            {{--            @if(session('status'))--}}
+            {{--                <div id="statusAlert" class="alert alert-{{ session('status') === 'Success' ? 'success' : 'danger' }} alert-dismissible fade show" role="alert">--}}
+            {{--                    {{ session('status') }}--}}
+            {{--                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>--}}
+            {{--                </div>--}}
+            {{--            @endif--}}
+            {{--                <script>--}}
+            {{--                    document.addEventListener('DOMContentLoaded', function() {--}}
+            {{--                        setTimeout(function() {--}}
+            {{--                            let alertElement = document.getElementById('statusAlert');--}}
+            {{--                            if (alertElement) {--}}
+            {{--                                alertElement.classList.remove('show');--}}
+            {{--                                alertElement.classList.add('fade');--}}
+            {{--                                setTimeout(function() {--}}
+            {{--                                    alertElement.remove();--}}
+            {{--                                }, 500); // Time to complete the fade-out transition--}}
+            {{--                            }--}}
+            {{--                        }, 5000); // 5 seconds delay before auto-dismissing the alert--}}
+            {{--                    });--}}
+            {{--                </script>--}}
 
             <p></p>
             <div id="emailalerts">
@@ -94,7 +114,8 @@
                                             Your phone number<span id="mandmarker_mobileTelephone"
                                                                    class="errorRed">*</span>
                                         </label>
-                                        <input oninput="this.value = this.value.replace(/[^0-9]/g, '')" required type="text" name="mobileTelephone" id="mobileTelephone" class=""
+                                        <input oninput="this.value = this.value.replace(/[^0-9]/g, '')" required
+                                               type="text" name="mobileTelephone" id="mobileTelephone" class=""
                                                style="" value="" placeholder="">
                                         <div id="mobileTelephoneErrorLabel" class="errorLabelDiv"
                                              style="display:none;"></div>

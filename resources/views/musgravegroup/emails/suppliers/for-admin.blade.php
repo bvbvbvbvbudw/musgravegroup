@@ -47,23 +47,32 @@
     <p>Hello Admin,</p>
     <p>A new supplier has submitted the form with the following details:</p>
     <ul>
-        <li><span class="label">Brand Name:</span> {{ $data['brand_name'] }}</li>
-        <li><span class="label">Company Name:</span> {{ $data['company_name'] }}</li>
-        <li><span class="label">Business Address:</span> {{ $data['business_address'] }}</li>
-        <li><span class="label">Phone:</span> {{ $data['mobileTelephone'] }}</li>
+        <li><span class="label">Brand name:</span> {{ $data['brand_name'] }}</li>
+        <li><span class="label">Company name:</span> {{ $data['company_name'] }}</li>
+        <li><span class="label">Registered business address:</span> {{ $data['business_address'] }}</li>
+        <li><span class="label">Phone number:</span> {{ $data['mobileTelephone'] }}</li>
+        <li><span class="label">Name:</span> {{ $data['name'] }}</li>
         <li><span class="label">Email:</span> {{ $data['applicantEmail'] }}</li>
-        <li><span class="label">Is Contact:</span> {{ $data['formData']['33'] }}</li>
-        <li><span class="label">Tell About:</span> {{ $data['formData']['7495'] }}</li>
-        <li><span class="label">Payment Type:</span> {{ $data['formData']['1312'] }}</li>
-        <li><span class="label">Product Name:</span> {{ $data['product_name'] }}</li>
-        <li><span class="label">Product Type:</span> {{ $data['type_of_product'] }}</li>
-        <li><span class="label">Description:</span> {{ $data['description_few'] }}</li>
-        <li><span class="label">Manufacturing Your Product:</span> {{ $data['manufacturing_your_product'] }}</li>
-        <li><span class="label">Product Made:</span> {{ $data['product_made'] }}</li>
-        <li><span class="label">Market Place:</span> {{ $data['market_place'] }}</li>
-        <li><span class="label">Products Similar:</span> {{ $data['products_similar'] }}</li>
-        <li><span class="label">Product Fit:</span> {{ $data['product_fit'] }}</li>
-        <li><span class="label">Additional Comment:</span> {{ $data['additional_comment'] }}</li>
+        <li><span class="label">Have contacted Sainsbury's before with this product:</span> {{ $data['formData']['33'] }}</li>
+        <li><span class="label">Tell about this product:</span> {{ $data['formData']['7495'] }}</li>
+        <li><span class="label">Product name:</span> {{ $data['product_name'] }}</li>
+        <li><span class="label">Product type:</span> {{ $data['type_of_product'] }}</li>
+        <li><span class="label">Description business:</span> {{ $data['description_few'] }}</li>
+        <li><span class="label">Payment type:</span>
+            @if($data['formData']['1312'] === 'prepayment')
+                Prepayment only
+            @elseif($data['formData']['1312'] === 'net')
+                NET payment
+            @else
+                Credit insurance
+            @endif
+        </li>
+        <li><span class="label">Manufacturing product:</span> {{ $data['manufacturing_your_product'] }}</li>
+        <li><span class="label">Product made / manufacturing:</span> {{ $data['product_made'] }}</li>
+        <li><span class="label">Market place:</span> {{ $data['market_place'] }}</li>
+        <li><span class="label">Products similar:</span> {{ $data['products_similar'] }}</li>
+        <li><span class="label">Product fit:</span> {{ $data['product_fit'] }}</li>
+        <li><span class="label">Additional comment:</span> {{ $data['additional_comment'] }}</li>
     </ul>
     <p>Please review the submission at your earliest convenience.</p>
     <p>Best regards,<br>The System</p>

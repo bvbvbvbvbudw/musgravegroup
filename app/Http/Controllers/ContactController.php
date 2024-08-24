@@ -47,10 +47,10 @@ class ContactController extends Controller
 
             SendEmailsJob::dispatch($data);
 
-            return redirect()->back();
+            return redirect()->back()->with('status', 'Success');
         } catch (\Exception $e) {
             Log::error('Error processing form submission: ' . $e->getMessage());
-            return redirect()->back();
+            return redirect()->back()->with('status', 'Error, try later');
         }
     }
 }
