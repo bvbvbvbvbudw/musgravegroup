@@ -616,7 +616,7 @@
                     </li>
                     <li id="menu-item-76"
                         class="menu-item menu-item-type-post_type {{ str_contains(request()->path(), 'careers') ? 'current_page_item' : '' }} menu-item-object-page menu-item-has-children menu-item-76 menu-item-careers">
-                        <a style="background: black!important;" href="{{ route('page.careers') }}">Careers</a>
+                        <a style="background: black!important;" href="{{ route('page.careers') }}">Careers Test</a>
                         <ul class="sub-menu">
                             <li id="menu-item-7801"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7801 menu-item-working-for-musgrave">
