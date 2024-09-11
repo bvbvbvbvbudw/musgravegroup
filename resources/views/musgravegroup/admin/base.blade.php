@@ -208,6 +208,7 @@
                                 <li><a class="dropdown-item" href="{{ route('admin.users.sender') }}">View Vacancy Users</a></li>
                                 <li><a class="dropdown-item" href="{{ route('admin.users.form') }}">View Company Forms</a></li>
                                 <li><a class="dropdown-item" href="{{ route('admin.users.supplied') }}">View Supplied Forms</a></li>
+                                <li><a class="dropdown-item" href="{{ route('admin.email.settings') }}">Settings</a></li>
                             </ul>
                         </li>
 

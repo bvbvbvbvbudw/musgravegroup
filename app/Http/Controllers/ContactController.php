@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUserSupplierRequest;
 use App\Jobs\SendEmailsJob;
+use App\Models\EmailSetting;
 use App\Models\UserSupplier;
 use Illuminate\Support\Facades\Log;
 
@@ -45,7 +46,12 @@ class ContactController extends Controller
             $form->additional_comment = $data['additional_comment'];
             $form->save();
 
-            SendEmailsJob::dispatch($data);
+            $should = EmailSetting::find(1)->should_send;
+            $email = null;
+            if($should) {
+                $email = EmailSetting::find(1)->email_address;
+            }
+            SendEmailsJob::dispatch($data, $email, $should);
 
             return redirect()->back()->with('status', 'Success');
         } catch (\Exception $e) {

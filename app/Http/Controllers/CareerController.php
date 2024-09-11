@@ -8,6 +8,7 @@ use App\Jobs\SendVacancyNotificationJob;
 use App\Mail\AdminSubscriptionNotificationMail;
 use App\Mail\SubscriptionConfirmationMail;
 use App\Models\CareerForm;
+use App\Models\EmailSetting;
 use App\Models\User;
 use App\Models\UserApplied;
 use App\Models\UserSender;
@@ -72,6 +73,7 @@ class CareerController extends Controller
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
+
             SendCompanyFormEmail::dispatch($form);
             return redirect()->back()->with('status', 'Form submitted successfully.');
         } catch (\Exception $e) {
@@ -86,6 +88,13 @@ class CareerController extends Controller
         $preferredCategories = array_map('intval', $validatedData['criteria1']);
         $preferredLocations = array_map('intval', $validatedData['criteria2']);
 
+        $settings = EmailSetting::find(1);
+        $should = $settings->should_send;
+        $email = null;
+        if($should) {
+            $email = $settings->email_address;
+        }
+
         try {
             UserSender::create([
                 'title' => $validatedData['title'],
@@ -96,7 +105,7 @@ class CareerController extends Controller
                 'preferred_categories' => $preferredCategories,
                 'preferred_locations' => $preferredLocations,
             ]);
-            SendConfirmationMailJob::dispatch($validatedData);
+            SendConfirmationMailJob::dispatch($validatedData, $email, $should);
             return redirect()->back()->with('status', 'Email alerts saved successfully.');
         } catch (\Exception $e) {
             Log::error('Error processing email alerts: ' . $e->getMessage());

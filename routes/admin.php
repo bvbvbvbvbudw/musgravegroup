@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminBrandController;
 use App\Http\Controllers\Admin\AdminCategoryController;
+use App\Http\Controllers\Admin\AdminEmailSettingControler;
 use App\Http\Controllers\Admin\AdminLocationController;
 use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\AdminNewsSustainability;
@@ -82,6 +83,10 @@ Route::post('/manage/{model}/{id}/approve', [AdminReviewController::class, 'appr
 Route::post('/manage/{model}/{id}/reject', [AdminReviewController::class, 'reject'])->name('admin.manage.reject');
 
 Route::get('user-applied', [AdminUsersAppliedController::class, 'index'])->name('admin.users.applied');
+
+Route::get('email-settings', [AdminEmailSettingControler::class, 'index'])->name('admin.email.settings');
+Route::put('email-settings/update', [AdminEmailSettingControler::class, 'update'])->name('admin.email.settings.update');
+
 Route::get('user-supplied', [AdminUsersAppliedController::class, 'supplied'])->name('admin.users.supplied');
 Route::get('user-sender', [AdminUsersAppliedController::class, 'sender'])->name('admin.users.sender');
 Route::delete('user-sender/{id}/destroy', [AdminUsersAppliedController::class, 'senderDestroy'])->name('admin.users.sender.destroy');

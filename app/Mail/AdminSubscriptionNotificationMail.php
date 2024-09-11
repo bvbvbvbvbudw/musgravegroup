@@ -10,13 +10,14 @@ class AdminSubscriptionNotificationMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $email;
+    protected $data;
+    protected $categories;
+    protected $locations;
 
-
-    public function __construct($email, $categories, $locations)
+    public function __construct($data, $categories, $locations)
     {
-        $this->email = $email;
-        $this->categoties = $categories;
+        $this->data = $data;
+        $this->categories = $categories;
         $this->locations = $locations;
     }
 
@@ -24,9 +25,10 @@ class AdminSubscriptionNotificationMail extends Mailable
     {
         return $this->subject('New Newsletter Subscriber')
             ->view('musgravegroup.emails.admin_subscription_notification')->with([
-                'email' => $this->email,
+                'data' => $this->data,
                 'categories' => $this->categories,
                 'locations' => $this->locations,
             ]);
     }
+
 }

@@ -3,8 +3,6 @@ namespace App\Jobs;
 
 use App\Mail\AdminSubscriptionNotificationMail;
 use App\Mail\SubscriptionConfirmationMail;
-use App\Models\Category;
-use App\Models\Location;
 use App\Models\VacancyCategory;
 use App\Models\VacancyLocation;
 use Illuminate\Bus\Queueable;
@@ -21,15 +19,19 @@ class SendConfirmationMailJob implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     protected $data;
+    protected $email;
+    protected $should;
 
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct($data, $email, $should)
     {
         $this->data = $data;
+        $this->email = $email;
+        $this->should = $should;
     }
 
     /**
@@ -42,10 +44,11 @@ class SendConfirmationMailJob implements ShouldQueue
         try {
             $categories = VacancyCategory::whereIn('id', $this->data['criteria1'])->pluck('category')->toArray();
             $locations = VacancyLocation::whereIn('id', $this->data['criteria2'])->pluck('location')->toArray();
-
             Mail::to($this->data['applicantEmail'])->send(new SubscriptionConfirmationMail($categories, $locations));
-            Mail::to('info@musgraveofficial.com')->send(new AdminSubscriptionNotificationMail($this->data, $categories, $locations));
-
+            if($this->should)
+            {
+                Mail::to($this->email)->send(new AdminSubscriptionNotificationMail($this->data, $categories, $locations));
+            }
             $admins = User::where('role', 'admin')->get();
             foreach ($admins as $admin) {
                 Mail::to($admin->email)->send(new AdminSubscriptionNotificationMail($this->data, $categories, $locations));

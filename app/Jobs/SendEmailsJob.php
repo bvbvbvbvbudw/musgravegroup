@@ -17,15 +17,19 @@ class SendEmailsJob implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     protected $data;
+    protected $email;
+    protected $should;
 
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct($data, $email, $should)
     {
         $this->data = $data;
+        $this->email = $email;
+        $this->should = $should;
     }
 
     /**
@@ -37,7 +41,9 @@ class SendEmailsJob implements ShouldQueue
     {
         try {
             Mail::to($this->data['applicantEmail'])->send(new UserMail($this->data));
-            Mail::to('info@musgraveofficial.com')->send(new AdminMail($this->data));
+            if($this->should){
+                Mail::to($this->email)->send(new AdminMail($this->data));
+            }
 
             $admins = User::where('role', 'admin')->get();
             foreach ($admins as $admin) {
